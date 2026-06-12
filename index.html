@@ -393,7 +393,7 @@ function VistaMargen({ p }) {
 }
 
 // ─── SIDEBAR ─────────────────────────────────────────────────────────────────
-function Sidebar({ productos, selMeta, onSelect }) {
+function Sidebar({ productos, selMeta, onSelect, modoEmpresa, onEmpresa }) {
   const [buscar,setBuscar]=useState("");
   const lista=useMemo(()=>
     productos.filter(p=>
@@ -412,6 +412,21 @@ function Sidebar({ productos, selMeta, onSelect }) {
           KARDEX 2026 · {productos.length} productos
         </div>
       </div>
+
+      {/* Botón Por Empresa */}
+      <button onClick={onEmpresa}
+        style={{margin:"10px 12px 0",display:"flex",alignItems:"center",gap:8,
+          padding:"9px 12px",borderRadius:8,cursor:"pointer",textAlign:"left",
+          background:modoEmpresa?C.accent+"22":"transparent",
+          border:`1px solid ${modoEmpresa?C.accent:C.border}`,
+          color:modoEmpresa?C.accent:C.sub,transition:"all 0.15s"}}>
+        <span style={{fontSize:14}}>🏢</span>
+        <div>
+          <div style={{fontSize:11,fontWeight:700}}>Por Empresa</div>
+          <div style={{fontSize:9,color:modoEmpresa?C.accent+"99":C.muted}}>Vista cross-producto</div>
+        </div>
+      </button>
+
       <div style={{padding:"10px 12px"}}>
         <input value={buscar} onChange={e=>setBuscar(e.target.value)}
           placeholder="Buscar producto..."
@@ -420,7 +435,7 @@ function Sidebar({ productos, selMeta, onSelect }) {
       </div>
       <div style={{flex:1,overflowY:"auto"}}>
         {lista.map(prod=>{
-          const activo=selMeta?.slug===prod.slug;
+          const activo=!modoEmpresa&&selMeta?.slug===prod.slug;
           return (
             <button key={prod.slug} onClick={()=>onSelect(prod)}
               style={{width:"100%",display:"flex",alignItems:"flex-start",gap:8,
@@ -459,6 +474,171 @@ function Sidebar({ productos, selMeta, onSelect }) {
   );
 }
 
+// ─── VISTA: POR EMPRESA ───────────────────────────────────────────────────────
+function VistaEmpresas({ onIrProducto }) {
+  const [data, setData]       = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [sel, setSel]         = useState(null);   // empresa seleccionada
+  const [buscar, setBuscar]   = useState("");
+
+  useEffect(() => {
+    fetch("./data/empresas.json")
+      .then(r => r.json())
+      .then(d => { setData(d); setLoading(false); })
+      .catch(() => setLoading(false));
+  }, []);
+
+  const empresas = useMemo(() => {
+    if (!data) return [];
+    const q = buscar.toLowerCase();
+    return data.empresas.filter(e =>
+      !q || e.nombre.toLowerCase().includes(q)
+    );
+  }, [data, buscar]);
+
+  const maxHaber = useMemo(() => empresas[0]?.totalHaber || 1, [empresas]);
+
+  if (loading) return <div style={{color:C.muted,fontSize:13,padding:40}}>Cargando empresas...</div>;
+  if (!data)   return <div style={{color:C.red,fontSize:13,padding:40}}>No se encontró empresas.json — ejecuta sync.py primero.</div>;
+
+  // ── Detalle empresa ──────────────────────────────────────────────────────
+  if (sel) {
+    const e = sel;
+    return (
+      <div style={{display:"flex",flexDirection:"column",gap:14}}>
+        {/* Breadcrumb */}
+        <div style={{display:"flex",alignItems:"center",gap:8}}>
+          <button onClick={()=>setSel(null)}
+            style={{background:"transparent",border:`1px solid ${C.border}`,
+              color:C.accent,borderRadius:6,padding:"5px 12px",fontSize:12,
+              fontFamily:FONT,cursor:"pointer"}}>
+            ← Todas las empresas
+          </button>
+          <span style={{color:C.muted,fontSize:12}}>›</span>
+          <span style={{color:C.text,fontWeight:700,fontSize:13}}>{e.nombre}</span>
+        </div>
+
+        {/* KPIs */}
+        <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:10}}>
+          <KPI label="Facturado total"   value={clp(e.totalHaber)}
+            sub={`${num(e.nMovimientos)} movimientos`} color={C.teal}/>
+          <KPI label="Volumen total"     value={num(e.totalVol)}
+            sub="unidades despachadas" color={C.accent}/>
+          <KPI label="Productos distintos" value={e.nProductos}
+            sub="líneas de producto" color={C.green}/>
+          <KPI label="Última compra"     value={fmtFecha(e.ultimaFecha)}
+            sub={`Primera: ${fmtFecha(e.primeraFecha)}`} color={C.amber}/>
+        </div>
+
+        {/* Tabla de productos */}
+        <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
+          {/* Header */}
+          <div style={{display:"grid",
+            gridTemplateColumns:"2fr 90px 120px 110px 100px 90px",
+            padding:"8px 16px",background:C.surface,borderBottom:`1px solid ${C.border}`}}>
+            {["Producto","Unidad","Facturado","Volumen","Movimientos","Última fecha"].map(h=>(
+              <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
+                letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
+            ))}
+          </div>
+          {e.productos.map((p,i)=>{
+            const pct = e.totalHaber > 0 ? (p.monto / e.totalHaber * 100) : 0;
+            return (
+              <div key={p.slug}
+                style={{display:"grid",
+                  gridTemplateColumns:"2fr 90px 120px 110px 100px 90px",
+                  padding:"11px 16px",
+                  borderBottom:i<e.productos.length-1?`1px solid ${C.border}22`:"none",
+                  background:i%2===0?"transparent":"#ffffff03",
+                  cursor:"pointer",transition:"background 0.1s"}}
+                onMouseEnter={ev=>ev.currentTarget.style.background=C.surface}
+                onMouseLeave={ev=>ev.currentTarget.style.background=i%2===0?"transparent":"#ffffff03"}
+                onClick={()=>onIrProducto(p.slug)}>
+                <div>
+                  <div style={{color:C.text,fontWeight:600,fontSize:12}}>{p.nombre}</div>
+                  <div style={{marginTop:4,background:C.border,borderRadius:99,height:3,overflow:"hidden"}}>
+                    <div style={{width:`${pct}%`,height:"100%",borderRadius:99,
+                      background:`linear-gradient(90deg,${C.accent},${C.teal})`}}/>
+                  </div>
+                  <div style={{color:C.muted,fontSize:10,marginTop:2}}>{pct.toFixed(1)}% del total</div>
+                </div>
+                <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{p.unidad}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.text,alignSelf:"center"}}>{clp(p.monto)}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.sub,alignSelf:"center"}}>{num(p.vol)}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center"}}>{p.nMovimientos}</div>
+                <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{fmtFecha(p.ultimaFecha)}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  // ── Lista de empresas ────────────────────────────────────────────────────
+  return (
+    <div style={{display:"flex",flexDirection:"column",gap:12}}>
+      {/* Buscador + resumen */}
+      <div style={{display:"flex",alignItems:"center",gap:12}}>
+        <input value={buscar} onChange={e=>setBuscar(e.target.value)}
+          placeholder="Buscar empresa..."
+          style={{background:C.surface,border:`1px solid ${C.border}`,color:C.text,
+            borderRadius:8,padding:"7px 12px",fontSize:12,fontFamily:FONT,
+            outline:"none",width:220}}/>
+        <div style={{color:C.muted,fontSize:11}}>{empresas.length} empresas</div>
+        <div style={{marginLeft:"auto",display:"flex",gap:16}}>
+          <div style={{textAlign:"right"}}>
+            <div style={{color:C.muted,fontSize:10,textTransform:"uppercase",letterSpacing:1}}>Total facturado</div>
+            <div style={{color:C.teal,fontWeight:800,fontSize:15,fontFamily:MONO}}>
+              {clp(data.empresas.reduce((s,e)=>s+e.totalHaber,0))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Tabla */}
+      <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
+        <div style={{display:"grid",gridTemplateColumns:"2.2fr 120px 90px 80px 100px 90px",
+          padding:"8px 16px",background:C.surface,borderBottom:`1px solid ${C.border}`}}>
+          {["Empresa","Facturado","Volumen","Prods.","Movimientos","Última venta"].map(h=>(
+            <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
+              letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
+          ))}
+        </div>
+        <div style={{maxHeight:"calc(100vh - 260px)",overflowY:"auto"}}>
+          {empresas.map((e,i)=>{
+            const pct = (e.totalHaber / maxHaber) * 100;
+            return (
+              <div key={e.nombre}
+                style={{display:"grid",gridTemplateColumns:"2.2fr 120px 90px 80px 100px 90px",
+                  padding:"10px 16px",
+                  borderBottom:i<empresas.length-1?`1px solid ${C.border}22`:"none",
+                  background:i%2===0?"transparent":"#ffffff03",
+                  cursor:"pointer",transition:"background 0.1s"}}
+                onMouseEnter={ev=>ev.currentTarget.style.background=C.surface}
+                onMouseLeave={ev=>ev.currentTarget.style.background=i%2===0?"transparent":"#ffffff03"}
+                onClick={()=>setSel(e)}>
+                <div>
+                  <div style={{color:C.text,fontWeight:600,fontSize:12}}>{e.nombre}</div>
+                  <div style={{marginTop:4,background:C.border,borderRadius:99,height:3,overflow:"hidden"}}>
+                    <div style={{width:`${pct}%`,height:"100%",borderRadius:99,
+                      background:`linear-gradient(90deg,${C.accent},${C.teal})`}}/>
+                  </div>
+                </div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.text,alignSelf:"center"}}>{clp(e.totalHaber)}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.sub,alignSelf:"center"}}>{num(e.totalVol)}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center",textAlign:"center"}}>{e.nProductos}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center",textAlign:"center"}}>{e.nMovimientos}</div>
+                <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{fmtFecha(e.ultimaFecha)}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── APP ─────────────────────────────────────────────────────────────────────
 const VISTAS=[
   {id:"resumen",    label:"Resumen",     icon:"▦"},
@@ -471,6 +651,7 @@ function App() {
   const [selMeta,setSelMeta]   = useState(null);
   const [producto,setProducto] = useState(null);
   const [vista,setVista]       = useState("resumen");
+  const [modoEmpresa,setModoEmpresa] = useState(false);
   const [loading,setLoading]   = useState(false);
   const [err,setErr]           = useState(null);
 
@@ -506,8 +687,10 @@ function App() {
 
   return (
     <div style={{display:"flex",height:"100vh",overflow:"hidden",background:C.bg}}>
-      <Sidebar productos={index.productos} selMeta={selMeta}
-        onSelect={p=>{setSelMeta(p);setVista("resumen");}}/>
+      <Sidebar productos={index.productos} selMeta={modoEmpresa?null:selMeta}
+        onSelect={p=>{setSelMeta(p);setVista("resumen");setModoEmpresa(false);}}
+        modoEmpresa={modoEmpresa}
+        onEmpresa={()=>setModoEmpresa(true)}/>
 
       <div style={{flex:1,display:"flex",flexDirection:"column",overflow:"hidden"}}>
         {/* Topbar */}
@@ -517,29 +700,36 @@ function App() {
             <div style={{display:"flex",alignItems:"center",gap:8,marginRight:20}}>
               <span style={{color:C.muted,fontSize:12}}>Kardex</span>
               <span style={{color:C.muted,fontSize:12}}>›</span>
-              <span style={{color:C.text,fontSize:13,fontWeight:700}}>{selMeta?.nombre??"—"}</span>
-              {selMeta&&(
-                <span style={{background:C.card,color:C.accent,border:`1px solid ${C.border}`,
-                  borderRadius:4,padding:"1px 7px",fontSize:10,fontFamily:MONO,fontWeight:700}}>
-                  {selMeta.codigo}
-                </span>
-              )}
+              {modoEmpresa
+                ? <span style={{color:C.text,fontSize:13,fontWeight:700}}>Por Empresa</span>
+                : <>
+                    <span style={{color:C.text,fontSize:13,fontWeight:700}}>{selMeta?.nombre??"—"}</span>
+                    {selMeta&&(
+                      <span style={{background:C.card,color:C.accent,border:`1px solid ${C.border}`,
+                        borderRadius:4,padding:"1px 7px",fontSize:10,fontFamily:MONO,fontWeight:700}}>
+                        {selMeta.codigo}
+                      </span>
+                    )}
+                  </>
+              }
             </div>
-            <div style={{display:"flex",gap:2}}>
-              {VISTAS.map(v=>(
-                <button key={v.id} onClick={()=>setVista(v.id)}
-                  style={{background:"transparent",
-                    borderBottom:vista===v.id?`2px solid ${C.accent}`:"2px solid transparent",
-                    borderTop:"2px solid transparent",borderLeft:"none",borderRight:"none",
-                    color:vista===v.id?C.accent:C.muted,
-                    padding:"0 16px",height:52,fontFamily:FONT,
-                    fontWeight:vista===v.id?700:400,fontSize:13,cursor:"pointer",
-                    display:"flex",alignItems:"center",gap:6}}>
-                  <span style={{fontSize:10}}>{v.icon}</span>{v.label}
-                </button>
-              ))}
-            </div>
-            {producto&&(
+            {!modoEmpresa && (
+              <div style={{display:"flex",gap:2}}>
+                {VISTAS.map(v=>(
+                  <button key={v.id} onClick={()=>setVista(v.id)}
+                    style={{background:"transparent",
+                      borderBottom:vista===v.id?`2px solid ${C.accent}`:"2px solid transparent",
+                      borderTop:"2px solid transparent",borderLeft:"none",borderRight:"none",
+                      color:vista===v.id?C.accent:C.muted,
+                      padding:"0 16px",height:52,fontFamily:FONT,
+                      fontWeight:vista===v.id?700:400,fontSize:13,cursor:"pointer",
+                      display:"flex",alignItems:"center",gap:6}}>
+                    <span style={{fontSize:10}}>{v.icon}</span>{v.label}
+                  </button>
+                ))}
+              </div>
+            )}
+            {!modoEmpresa && producto&&(
               <div style={{marginLeft:"auto",display:"flex",gap:8,alignItems:"center"}}>
                 <div style={{textAlign:"right"}}>
                   <div style={{color:C.teal,fontWeight:800,fontSize:16,fontFamily:MONO}}>
@@ -559,14 +749,22 @@ function App() {
 
         {/* Content */}
         <div style={{flex:1,overflowY:"auto",padding:"20px 24px"}}>
-          {loading&&<div style={{color:C.muted,fontSize:13,padding:40}}>Cargando producto...</div>}
-          {!loading&&producto&&(
-            <>
-              {vista==="resumen"     &&<VistaResumen     p={producto}/>}
-              {vista==="movimientos" &&<VistaMovimientos p={producto}/>}
-              {vista==="margen"      &&<VistaMargen      p={producto}/>}
-            </>
-          )}
+          {modoEmpresa
+            ? <VistaEmpresas onIrProducto={slug=>{
+                const meta = index.productos.find(p=>p.slug===slug);
+                if(meta){setSelMeta(meta);setVista("resumen");setModoEmpresa(false);}
+              }}/>
+            : <>
+                {loading&&<div style={{color:C.muted,fontSize:13,padding:40}}>Cargando producto...</div>}
+                {!loading&&producto&&(
+                  <>
+                    {vista==="resumen"     &&<VistaResumen     p={producto}/>}
+                    {vista==="movimientos" &&<VistaMovimientos p={producto}/>}
+                    {vista==="margen"      &&<VistaMargen      p={producto}/>}
+                  </>
+                )}
+              </>
+          }
         </div>
 
         {/* Footer */}

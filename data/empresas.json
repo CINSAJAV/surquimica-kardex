@@ -1,0 +1,3856 @@
+{
+  "generado": "2026-06-12T11:52:44",
+  "total": 157,
+  "empresas": [
+    {
+      "nombre": "ESVAL S.A",
+      "totalHaber": 128768350.82498246,
+      "totalVol": 374821.0,
+      "nMovimientos": 265,
+      "ultimaFecha": "2026-04-30",
+      "primeraFecha": "2026-01-02",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "lt",
+          "vol": 269921.0,
+          "monto": 80816749.19682792,
+          "nMovimientos": 234,
+          "ultimaFecha": "2026-04-29",
+          "primeraFecha": "2026-01-02"
+        },
+        {
+          "codigo": "K-2",
+          "slug": "K-2",
+          "nombre": "ACIDO FLUORSILICICO",
+          "unidad": "kg",
+          "vol": 104900.0,
+          "monto": 47951601.62815458,
+          "nMovimientos": 31,
+          "ultimaFecha": "2026-04-30",
+          "primeraFecha": "2026-01-08"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "NUEVA ATACAMA S.A",
+      "totalHaber": 46440175.41306341,
+      "totalVol": 167300.0,
+      "nMovimientos": 21,
+      "ultimaFecha": "2026-05-13",
+      "primeraFecha": "2026-01-14",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 142000.0,
+          "monto": 34953316.51582286,
+          "nMovimientos": 13,
+          "ultimaFecha": "2026-05-13",
+          "primeraFecha": "2026-01-14"
+        },
+        {
+          "codigo": "K-2",
+          "slug": "K-2",
+          "nombre": "ACIDO FLUORSILICICO",
+          "unidad": "kg",
+          "vol": 25300.0,
+          "monto": 11486858.897240544,
+          "nMovimientos": 8,
+          "ultimaFecha": "2026-04-29",
+          "primeraFecha": "2026-01-16"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 38986802.654001504,
+      "totalVol": 141959.0,
+      "nMovimientos": 87,
+      "ultimaFecha": "2026-05-15",
+      "primeraFecha": "2026-01-02",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 138354.0,
+          "monto": 34479022.38350585,
+          "nMovimientos": 73,
+          "ultimaFecha": "2026-05-15",
+          "primeraFecha": "2026-01-02"
+        },
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 3105.0,
+          "monto": 4364476.939751831,
+          "nMovimientos": 12,
+          "ultimaFecha": "2026-03-02",
+          "primeraFecha": "2026-01-02"
+        },
+        {
+          "codigo": "K-10",
+          "slug": "K-10",
+          "nombre": "SULFATO DE ALUMINIO",
+          "unidad": "kg",
+          "vol": 500.0,
+          "monto": 143303.33074383377,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-03-20",
+          "primeraFecha": "2026-02-23"
+        }
+      ],
+      "nProductos": 3
+    },
+    {
+      "nombre": "002",
+      "totalHaber": 37629846.10779712,
+      "totalVol": 151325.0,
+      "nMovimientos": 19,
+      "ultimaFecha": "2026-05-20",
+      "primeraFecha": "2026-01-06",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 150900.0,
+          "monto": 36798079.11608337,
+          "nMovimientos": 5,
+          "ultimaFecha": "2026-05-12",
+          "primeraFecha": "2026-01-28"
+        },
+        {
+          "codigo": "K-43",
+          "slug": "K-43",
+          "nombre": "TCCA 87% TABLETAS",
+          "unidad": "kg",
+          "vol": 235.0,
+          "monto": 547918.631900853,
+          "nMovimientos": 11,
+          "ultimaFecha": "2026-05-20",
+          "primeraFecha": "2026-01-06"
+        },
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 180.0,
+          "monto": 253013.15592764228,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-07",
+          "primeraFecha": "2026-04-07"
+        },
+        {
+          "codigo": "K-39",
+          "slug": "K-39",
+          "nombre": "BUZYME 2516",
+          "unidad": "kg",
+          "vol": 5.0,
+          "monto": 16056.617283950618,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-20",
+          "primeraFecha": "2026-01-20"
+        },
+        {
+          "codigo": "K-41",
+          "slug": "K-41",
+          "nombre": "BUFLOC 5122",
+          "unidad": "kg",
+          "vol": 5.0,
+          "monto": 14778.58660130719,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-20",
+          "primeraFecha": "2026-01-20"
+        }
+      ],
+      "nProductos": 5
+    },
+    {
+      "nombre": "002 TRASPASO",
+      "totalHaber": 26200827.163177315,
+      "totalVol": 108069.0,
+      "nMovimientos": 6,
+      "ultimaFecha": "2026-04-28",
+      "primeraFecha": "2026-02-10",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 108069.0,
+          "monto": 26200827.163177315,
+          "nMovimientos": 6,
+          "ultimaFecha": "2026-04-28",
+          "primeraFecha": "2026-02-10"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "AGUAS DEL VALLE S.A",
+      "totalHaber": 23786353.35233027,
+      "totalVol": 77680.0,
+      "nMovimientos": 23,
+      "ultimaFecha": "2026-04-24",
+      "primeraFecha": "2026-01-23",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "lt",
+          "vol": 61000.0,
+          "monto": 17989787.683712445,
+          "nMovimientos": 14,
+          "ultimaFecha": "2026-04-24",
+          "primeraFecha": "2026-01-23"
+        },
+        {
+          "codigo": "K-2",
+          "slug": "K-2",
+          "nombre": "ACIDO FLUORSILICICO",
+          "unidad": "kg",
+          "vol": 16680.0,
+          "monto": 5796565.66861783,
+          "nMovimientos": 9,
+          "ultimaFecha": "2026-04-24",
+          "primeraFecha": "2026-02-10"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "OC 5400011540 NUEVOSUR S.A.",
+      "totalHaber": 22634893.712429594,
+      "totalVol": 29000.0,
+      "nMovimientos": 7,
+      "ultimaFecha": "2026-04-24",
+      "primeraFecha": "2026-01-29",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 29000.0,
+          "monto": 22634893.712429594,
+          "nMovimientos": 7,
+          "ultimaFecha": "2026-04-24",
+          "primeraFecha": "2026-01-29"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "C-4313 DESPACHO 2 EP. AGUAS DE ANTOFAGASTA S.A",
+      "totalHaber": 20022905.24137931,
+      "totalVol": 7000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-05",
+      "primeraFecha": "2026-01-05",
+      "productos": [
+        {
+          "codigo": "K-5",
+          "slug": "K-5",
+          "nombre": "FLUORURO DE SODIO",
+          "unidad": "kg",
+          "vol": 7000.0,
+          "monto": 20022905.24137931,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-05",
+          "primeraFecha": "2026-01-05"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "AGUAS PATAGONIA DE AYSEN S.A",
+      "totalHaber": 16782781.064265754,
+      "totalVol": 43000.0,
+      "nMovimientos": 9,
+      "ultimaFecha": "2026-04-24",
+      "primeraFecha": "2026-02-26",
+      "productos": [
+        {
+          "codigo": "K-2",
+          "slug": "K-2",
+          "nombre": "ACIDO FLUORSILICICO",
+          "unidad": "kg",
+          "vol": 23000.0,
+          "monto": 9931625.851957614,
+          "nMovimientos": 5,
+          "ultimaFecha": "2026-04-24",
+          "primeraFecha": "2026-02-26"
+        },
+        {
+          "codigo": "K-10",
+          "slug": "K-10",
+          "nombre": "SULFATO DE ALUMINIO",
+          "unidad": "kg",
+          "vol": 19000.0,
+          "monto": 5445526.568265683,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-04-10",
+          "primeraFecha": "2026-03-19"
+        },
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 1000.0,
+          "monto": 1405628.6440424577,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-26",
+          "primeraFecha": "2026-02-26"
+        }
+      ],
+      "nProductos": 3
+    },
+    {
+      "nombre": "002 SALIDA",
+      "totalHaber": 16135235.769084617,
+      "totalVol": 66578.0,
+      "nMovimientos": 4,
+      "ultimaFecha": "2026-05-06",
+      "primeraFecha": "2026-02-25",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 66578.0,
+          "monto": 16135235.769084617,
+          "nMovimientos": 4,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-02-25"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "C-4313 E.P. AGUAS DE ANTOFAGASTA S.A",
+      "totalHaber": 14192148.553834874,
+      "totalVol": 11000.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-02-26",
+      "primeraFecha": "2026-02-26",
+      "productos": [
+        {
+          "codigo": "K-5",
+          "slug": "K-5",
+          "nombre": "FLUORURO DE SODIO",
+          "unidad": "kg",
+          "vol": 10000.0,
+          "monto": 13408558.351957222,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-26",
+          "primeraFecha": "2026-02-26"
+        },
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 1000.0,
+          "monto": 783590.2018776523,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-26",
+          "primeraFecha": "2026-02-26"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "C-4313 E.P. DESPACHO 3 AGUAS DE ANTOFAGASTA S.A",
+      "totalHaber": 14169843.018329296,
+      "totalVol": 11000.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-01-29",
+      "primeraFecha": "2026-01-29",
+      "productos": [
+        {
+          "codigo": "K-5",
+          "slug": "K-5",
+          "nombre": "FLUORURO DE SODIO",
+          "unidad": "kg",
+          "vol": 10000.0,
+          "monto": 13408558.351957224,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-29",
+          "primeraFecha": "2026-01-29"
+        },
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 1000.0,
+          "monto": 761284.6663720724,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-29",
+          "primeraFecha": "2026-01-29"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "OC 4000198035 SURALIS S.A.",
+      "totalHaber": 10970262.826287132,
+      "totalVol": 14000.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-04-28",
+      "primeraFecha": "2026-02-04",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 14000.0,
+          "monto": 10970262.826287132,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-04-28",
+          "primeraFecha": "2026-02-04"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "AGUAS DE ANTOFAGASTA S.A",
+      "totalHaber": 10593780.0,
+      "totalVol": 3000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-13",
+      "primeraFecha": "2026-05-13",
+      "productos": [
+        {
+          "codigo": "K-103",
+          "slug": "K-103",
+          "nombre": "ALAR P-23 A",
+          "unidad": "kg",
+          "vol": 3000.0,
+          "monto": 10593780.0,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-13",
+          "primeraFecha": "2026-05-13"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "FACTURA[FT]8385 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
+      "totalHaber": 7150881.066013531,
+      "totalVol": 20530.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-26",
+      "primeraFecha": "2026-01-26",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 20530.0,
+          "monto": 7150881.066013531,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-26",
+          "primeraFecha": "2026-01-26"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "FACTURA[FT]8413 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
+      "totalHaber": 7049870.081642173,
+      "totalVol": 20240.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-28",
+      "primeraFecha": "2026-01-28",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 20240.0,
+          "monto": 7049870.081642173,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-28",
+          "primeraFecha": "2026-01-28"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "COMERCIALIZADORA YUKON LIMITADA",
+      "totalHaber": 6994705.939159825,
+      "totalVol": 3000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-28",
+      "primeraFecha": "2026-01-28",
+      "productos": [
+        {
+          "codigo": "K-43",
+          "slug": "K-43",
+          "nombre": "TCCA 87% TABLETAS",
+          "unidad": "kg",
+          "vol": 3000.0,
+          "monto": 6994705.939159825,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-28",
+          "primeraFecha": "2026-01-28"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8373 COMERCIALIZADORA YUKON LIMITADA",
+      "totalHaber": 6196749.282546307,
+      "totalVol": 4000.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-03-06",
+      "primeraFecha": "2026-03-06",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 4000.0,
+          "monto": 6196749.282546307,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-03-06",
+          "primeraFecha": "2026-03-06"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 5400011539 ESSBIO S.A.",
+      "totalHaber": 5810009.907565652,
+      "totalVol": 7500.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-04-01",
+      "primeraFecha": "2026-01-08",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 7500.0,
+          "monto": 5810009.907565652,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-04-01",
+          "primeraFecha": "2026-01-08"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4543006179 ESVAL S.A.",
+      "totalHaber": 5485131.413143564,
+      "totalVol": 7000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-21",
+      "primeraFecha": "2026-04-21",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 7000.0,
+          "monto": 5485131.413143564,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-21",
+          "primeraFecha": "2026-04-21"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4543005639 ESVAL S.A.",
+      "totalHaber": 5328992.664604507,
+      "totalVol": 7000.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-01-15",
+      "primeraFecha": "2026-01-12",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 7000.0,
+          "monto": 5328992.664604507,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-01-15",
+          "primeraFecha": "2026-01-12"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "SERVICIOS MARITIMOS PACIFIC SHIPS SERVICES",
+      "totalHaber": 4973368.246966043,
+      "totalVol": 4740.0,
+      "nMovimientos": 4,
+      "ultimaFecha": "2026-04-14",
+      "primeraFecha": "2026-02-05",
+      "productos": [
+        {
+          "codigo": "K-99",
+          "slug": "K-99",
+          "nombre": "ACIDO NITRICO 42º 35 KGNU2031 CLASE 8",
+          "unidad": "kg",
+          "vol": 4115.0,
+          "monto": 2880149.113086748,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-04-14",
+          "primeraFecha": "2026-02-05"
+        },
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 625.0,
+          "monto": 2093219.133879295,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-04-14",
+          "primeraFecha": "2026-02-05"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "FACTURA[FT]8606 ZETAENE SA",
+      "totalHaber": 4729628.030986982,
+      "totalVol": 16000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-06",
+      "primeraFecha": "2026-03-06",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 16000.0,
+          "monto": 4729628.030986982,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-06",
+          "primeraFecha": "2026-03-06"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "FACTURA[FT]8768 ZETAENE SA",
+      "totalHaber": 4720759.978428882,
+      "totalVol": 15970.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-13",
+      "primeraFecha": "2026-04-13",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 15970.0,
+          "monto": 4720759.978428882,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-13",
+          "primeraFecha": "2026-04-13"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4532061957 NUEVA ATACAMA S.A.",
+      "totalHaber": 4523822.7881066445,
+      "totalVol": 5525.0,
+      "nMovimientos": 6,
+      "ultimaFecha": "2026-04-30",
+      "primeraFecha": "2026-03-20",
+      "productos": [
+        {
+          "codigo": "K-6",
+          "slug": "K-6",
+          "nombre": "METABISULFITO DE SODIO",
+          "unidad": "kg",
+          "vol": 5525.0,
+          "monto": 4523822.7881066445,
+          "nMovimientos": 6,
+          "ultimaFecha": "2026-04-30",
+          "primeraFecha": "2026-03-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "SURALIS S.A",
+      "totalHaber": 4492941.7182176495,
+      "totalVol": 6490.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-01-27",
+      "primeraFecha": "2026-01-13",
+      "productos": [
+        {
+          "codigo": "K-4",
+          "slug": "K-4",
+          "nombre": "FLUORSILICATO DE SODIO",
+          "unidad": "un",
+          "vol": 6490.0,
+          "monto": 4492941.7182176495,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-01-27",
+          "primeraFecha": "2026-01-13"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "FACTURA[FT]8365 ZETAENE SA",
+      "totalHaber": 4200663.694891532,
+      "totalVol": 12060.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-20",
+      "primeraFecha": "2026-01-20",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 12060.0,
+          "monto": 4200663.694891532,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-20",
+          "primeraFecha": "2026-01-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8548 AGUAS PATAGONIA DE AYSEN S.A",
+      "totalHaber": 4108236.50273224,
+      "totalVol": 2800.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-10",
+      "primeraFecha": "2026-04-10",
+      "productos": [
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 2800.0,
+          "monto": 4108236.50273224,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-10",
+          "primeraFecha": "2026-04-10"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8656 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 4018308.5427291375,
+      "totalVol": 2350.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-05-06",
+      "primeraFecha": "2026-05-06",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 600.0,
+          "monto": 2630095.067912856,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-05-06"
+        },
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 750.0,
+          "monto": 1100420.4918032787,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-05-06"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 1000.0,
+          "monto": 287792.9830130029,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-05-06"
+        }
+      ],
+      "nProductos": 3
+    },
+    {
+      "nombre": "OC 4000197488 SURALIS S.A.",
+      "totalHaber": 3917951.009388262,
+      "totalVol": 5000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-03",
+      "primeraFecha": "2026-03-03",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 5000.0,
+          "monto": 3917951.009388262,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-03",
+          "primeraFecha": "2026-03-03"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4543005995 ESVAL S.A.",
+      "totalHaber": 3917951.009388262,
+      "totalVol": 5000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-16",
+      "primeraFecha": "2026-03-16",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 5000.0,
+          "monto": 3917951.009388262,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-16",
+          "primeraFecha": "2026-03-16"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8495 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 3892394.4629849857,
+      "totalVol": 2050.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-04-01",
+      "primeraFecha": "2026-04-01",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 600.0,
+          "monto": 2626363.313811189,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-01",
+          "primeraFecha": "2026-04-01"
+        },
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 750.0,
+          "monto": 1100420.4918032787,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-01",
+          "primeraFecha": "2026-04-01"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 700.0,
+          "monto": 165610.65737051793,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-01",
+          "primeraFecha": "2026-04-01"
+        }
+      ],
+      "nProductos": 3
+    },
+    {
+      "nombre": "8520 COMERCIALIZADORA YUKON LIMITADA",
+      "totalHaber": 3872968.3015914424,
+      "totalVol": 2500.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-07",
+      "primeraFecha": "2026-04-07",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 2500.0,
+          "monto": 3872968.3015914424,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-07",
+          "primeraFecha": "2026-04-07"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OREGON CHEM GROUP",
+      "totalHaber": 3773035.1765652415,
+      "totalVol": 6600.0,
+      "nMovimientos": 8,
+      "ultimaFecha": "2026-04-29",
+      "primeraFecha": "2026-01-12",
+      "productos": [
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 1420.0,
+          "monto": 1995992.6745402894,
+          "nMovimientos": 4,
+          "ultimaFecha": "2026-03-20",
+          "primeraFecha": "2026-01-14"
+        },
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 5000.0,
+          "monto": 1357360.1456753626,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-01-15",
+          "primeraFecha": "2026-01-15"
+        },
+        {
+          "codigo": "K-43",
+          "slug": "K-43",
+          "nombre": "TCCA 87% TABLETAS",
+          "unidad": "kg",
+          "vol": 180.0,
+          "monto": 419682.35634958954,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-04-29",
+          "primeraFecha": "2026-01-12"
+        }
+      ],
+      "nProductos": 3
+    },
+    {
+      "nombre": "FACTURA[FT]8896 ZETAENE SA",
+      "totalHaber": 3724582.074402248,
+      "totalVol": 12600.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-12",
+      "primeraFecha": "2026-05-12",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 12600.0,
+          "monto": 3724582.074402248,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-12",
+          "primeraFecha": "2026-05-12"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "FACTURA[FT]8652 GALVANIZADO BBOSCH S.A",
+      "totalHaber": 3718670.039363515,
+      "totalVol": 12580.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-16",
+      "primeraFecha": "2026-03-16",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 12580.0,
+          "monto": 3718670.039363515,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-16",
+          "primeraFecha": "2026-03-16"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "GUÍA[ST]8477 GALVANIZADO BBOSCH S.A",
+      "totalHaber": 3718670.039363515,
+      "totalVol": 12580.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-30",
+      "primeraFecha": "2026-03-30",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 12580.0,
+          "monto": 3718670.039363515,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-30",
+          "primeraFecha": "2026-03-30"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "SOC DE SERVICIOS TECNICOS GEOLOGICOS GEOTEC BOYLES BROS S A",
+      "totalHaber": 3713527.108495806,
+      "totalVol": 2750.0,
+      "nMovimientos": 6,
+      "ultimaFecha": "2026-05-15",
+      "primeraFecha": "2026-03-31",
+      "productos": [
+        {
+          "codigo": "K-88",
+          "slug": "K-88",
+          "nombre": "BULAB 5033",
+          "unidad": "kg",
+          "vol": 2750.0,
+          "monto": 3713527.108495806,
+          "nMovimientos": 6,
+          "ultimaFecha": "2026-05-15",
+          "primeraFecha": "2026-03-31"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "FACTURA[FT]8733 MAESTRANZA Y GALVANIZADORA P Y P",
+      "totalHaber": 3692065.881689213,
+      "totalVol": 12490.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-31",
+      "primeraFecha": "2026-03-31",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 12490.0,
+          "monto": 3692065.881689213,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-31",
+          "primeraFecha": "2026-03-31"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4532054576 NUEVA ATACAMA S.A.",
+      "totalHaber": 3301793.6494660117,
+      "totalVol": 3925.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-02-20",
+      "primeraFecha": "2026-01-16",
+      "productos": [
+        {
+          "codigo": "K-6",
+          "slug": "K-6",
+          "nombre": "METABISULFITO DE SODIO",
+          "unidad": "kg",
+          "vol": 3925.0,
+          "monto": 3301793.6494660117,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-02-20",
+          "primeraFecha": "2026-01-16"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4000197969 SURALIS S.A.",
+      "totalHaber": 3134360.8075106097,
+      "totalVol": 4000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-02",
+      "primeraFecha": "2026-02-02",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 4000.0,
+          "monto": 3134360.8075106097,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-02",
+          "primeraFecha": "2026-02-02"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4543006026 ESVAL S.A.",
+      "totalHaber": 3134360.807510609,
+      "totalVol": 4000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-18",
+      "primeraFecha": "2026-03-18",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 4000.0,
+          "monto": 3134360.807510609,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-18",
+          "primeraFecha": "2026-03-18"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8222 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 2743372.350552336,
+      "totalVol": 1300.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-02-05",
+      "primeraFecha": "2026-02-05",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 600.0,
+          "monto": 2577761.693181818,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-05",
+          "primeraFecha": "2026-02-05"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 700.0,
+          "monto": 165610.65737051793,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-05",
+          "primeraFecha": "2026-02-05"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "8339 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 2701879.2849928956,
+      "totalVol": 1300.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-03-02",
+      "primeraFecha": "2026-03-02",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 600.0,
+          "monto": 2536268.6276223776,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-02",
+          "primeraFecha": "2026-03-02"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 700.0,
+          "monto": 165610.6573705179,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-02",
+          "primeraFecha": "2026-03-02"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "I. MUNICIPALIDAD DE MAIPU",
+      "totalHaber": 2619217.933136412,
+      "totalVol": 3500.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-17",
+      "primeraFecha": "2026-02-17",
+      "productos": [
+        {
+          "codigo": "K-2",
+          "slug": "K-2",
+          "nombre": "ACIDO FLUORSILICICO",
+          "unidad": "kg",
+          "vol": 3500.0,
+          "monto": 2619217.933136412,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-17",
+          "primeraFecha": "2026-02-17"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "002 TRASPASO K8L 04.05.26",
+      "totalHaber": 2575291.508545929,
+      "totalVol": 10556.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-04",
+      "primeraFecha": "2026-05-04",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 10556.0,
+          "monto": 2575291.508545929,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-04",
+          "primeraFecha": "2026-05-04"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4000196822 SURALIS S.A.",
+      "totalHaber": 2350770.6056329575,
+      "totalVol": 3000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-04",
+      "primeraFecha": "2026-02-04",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 3000.0,
+          "monto": 2350770.6056329575,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-04",
+          "primeraFecha": "2026-02-04"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4000198121 SURALIS S.A.",
+      "totalHaber": 2350770.6056329566,
+      "totalVol": 3000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-27",
+      "primeraFecha": "2026-03-27",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 3000.0,
+          "monto": 2350770.6056329566,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-27",
+          "primeraFecha": "2026-03-27"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "PROQUIMSA S.A",
+      "totalHaber": 2009490.368524123,
+      "totalVol": 600.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-05-11",
+      "primeraFecha": "2026-01-08",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 600.0,
+          "monto": 2009490.368524123,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-05-11",
+          "primeraFecha": "2026-01-08"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8028 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 1953040.9073705182,
+      "totalVol": 1100.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-01-03",
+      "primeraFecha": "2026-01-03",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 400.0,
+          "monto": 1787430.2500000002,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-03",
+          "primeraFecha": "2026-01-03"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 700.0,
+          "monto": 165610.65737051793,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-03",
+          "primeraFecha": "2026-01-03"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "FACTURA[FT]8367 ZETAENE SA",
+      "totalHaber": 1929658.1152320972,
+      "totalVol": 5540.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-23",
+      "primeraFecha": "2026-01-23",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 5540.0,
+          "monto": 1929658.1152320972,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-23",
+          "primeraFecha": "2026-01-23"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8192 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 1771191.4375,
+      "totalVol": 400.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-03",
+      "primeraFecha": "2026-02-03",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 400.0,
+          "monto": 1771191.4375,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-03",
+          "primeraFecha": "2026-02-03"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "IDADQUIM",
+      "totalHaber": 1767409.5417482643,
+      "totalVol": 525.0,
+      "nMovimientos": 4,
+      "ultimaFecha": "2026-04-30",
+      "primeraFecha": "2026-01-21",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 475.0,
+          "monto": 1590846.5417482643,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-04-30",
+          "primeraFecha": "2026-01-21"
+        },
+        {
+          "codigo": "K-103",
+          "slug": "K-103",
+          "nombre": "ALAR P-23 A",
+          "unidad": "kg",
+          "vol": 50.0,
+          "monto": 176563.0,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-30",
+          "primeraFecha": "2026-04-30"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "8503 AGUAS PATAGONIA DE AYSEN S.A",
+      "totalHaber": 1760672.786885246,
+      "totalVol": 1200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-02",
+      "primeraFecha": "2026-04-02",
+      "productos": [
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 1200.0,
+          "monto": 1760672.786885246,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-02",
+          "primeraFecha": "2026-04-02"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8644 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 1750908.875874126,
+      "totalVol": 400.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-05",
+      "primeraFecha": "2026-05-05",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 400.0,
+          "monto": 1750908.875874126,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-05",
+          "primeraFecha": "2026-05-05"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8360 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 1690845.751748252,
+      "totalVol": 400.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-04",
+      "primeraFecha": "2026-03-04",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 400.0,
+          "monto": 1690845.751748252,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-04",
+          "primeraFecha": "2026-03-04"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OVEL",
+      "totalHaber": 1674575.3071034362,
+      "totalVol": 500.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-27",
+      "primeraFecha": "2026-03-27",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 500.0,
+          "monto": 1674575.3071034362,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-27",
+          "primeraFecha": "2026-03-27"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "DESARROLLO E INVESTIGACIONES TECNOLOGICAS",
+      "totalHaber": 1674575.307103436,
+      "totalVol": 500.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-16",
+      "primeraFecha": "2026-02-16",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 500.0,
+          "monto": 1674575.307103436,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-16",
+          "primeraFecha": "2026-02-16"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "I MUNICIPALIDAD DE SANTIAGO",
+      "totalHaber": 1568731.4066085573,
+      "totalVol": 5000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-02",
+      "primeraFecha": "2026-02-02",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "lt",
+          "vol": 5000.0,
+          "monto": 1568731.4066085573,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-02",
+          "primeraFecha": "2026-02-02"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8743 AGUAS DEL VALLE S.A",
+      "totalHaber": 1393865.956284153,
+      "totalVol": 950.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-25",
+      "primeraFecha": "2026-05-25",
+      "productos": [
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 950.0,
+          "monto": 1393865.956284153,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-25",
+          "primeraFecha": "2026-05-25"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "FACTURA[FT]8607 ZETAENE SA",
+      "totalHaber": 1279955.585885852,
+      "totalVol": 4330.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-06",
+      "primeraFecha": "2026-03-06",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 4330.0,
+          "monto": 1279955.585885852,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-06",
+          "primeraFecha": "2026-03-06"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4532073785 AGUAS DEL VALLE S.A.",
+      "totalHaber": 1275684.8486568183,
+      "totalVol": 1628.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-02-02",
+      "primeraFecha": "2026-02-02",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 1628.0,
+          "monto": 1275684.8486568183,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-02-02",
+          "primeraFecha": "2026-02-02"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
+      "totalHaber": 1257858.0921966815,
+      "totalVol": 2300.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-04-14",
+      "primeraFecha": "2026-04-14",
+      "productos": [
+        {
+          "codigo": "K-43",
+          "slug": "K-43",
+          "nombre": "TCCA 87% TABLETAS",
+          "unidad": "kg",
+          "vol": 300.0,
+          "monto": 699470.5939159828,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-14",
+          "primeraFecha": "2026-04-14"
+        },
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "lt",
+          "vol": 2000.0,
+          "monto": 558387.4982806988,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-14",
+          "primeraFecha": "2026-04-14"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "8655 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 1221715.6224169678,
+      "totalVol": 1030.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-05-06",
+      "primeraFecha": "2026-05-06",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 876698.3559709522,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-05-06"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 740.0,
+          "monto": 212966.80742962216,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-05-06"
+        },
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 90.0,
+          "monto": 132050.45901639343,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-05-06"
+        }
+      ],
+      "nProductos": 3
+    },
+    {
+      "nombre": "OC 4543006038 ESVAL S.A.",
+      "totalHaber": 1175385.3028164783,
+      "totalVol": 1500.0,
+      "nMovimientos": 4,
+      "ultimaFecha": "2026-03-18",
+      "primeraFecha": "2026-03-18",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 1500.0,
+          "monto": 1175385.3028164783,
+          "nMovimientos": 4,
+          "ultimaFecha": "2026-03-18",
+          "primeraFecha": "2026-03-18"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8648 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 1109758.9831152903,
+      "totalVol": 600.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-05-06",
+      "primeraFecha": "2026-05-06",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 876698.3559709522,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-05-06"
+        },
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 146722.73224043715,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-05-06"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 300.0,
+          "monto": 86337.89490390087,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-05-06"
+        }
+      ],
+      "nProductos": 3
+    },
+    {
+      "nombre": "8746 AGUAS DEL VALLE S.A",
+      "totalHaber": 1100420.4918032787,
+      "totalVol": 750.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-25",
+      "primeraFecha": "2026-05-25",
+      "productos": [
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 750.0,
+          "monto": 1100420.4918032787,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-25",
+          "primeraFecha": "2026-05-25"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8494 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 1069494.5008547911,
+      "totalVol": 500.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-04-01",
+      "primeraFecha": "2026-04-01",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 875454.437937063,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-01",
+          "primeraFecha": "2026-04-01"
+        },
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 146722.73224043715,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-01",
+          "primeraFecha": "2026-04-01"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 47317.33067729083,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-01",
+          "primeraFecha": "2026-04-01"
+        }
+      ],
+      "nProductos": 3
+    },
+    {
+      "nombre": "GUÍA[ST]8390 GALVANIZADO BBOSCH S.A",
+      "totalHaber": 975485.7813910651,
+      "totalVol": 3300.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-10",
+      "primeraFecha": "2026-03-10",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 3300.0,
+          "monto": 975485.7813910651,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-10",
+          "primeraFecha": "2026-03-10"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4000194237 SURALIS S.A.",
+      "totalHaber": 952062.0952813474,
+      "totalVol": 1215.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-27",
+      "primeraFecha": "2026-03-27",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 1215.0,
+          "monto": 952062.0952813474,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-27",
+          "primeraFecha": "2026-03-27"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8027 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 941032.4556772909,
+      "totalVol": 400.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-01-03",
+      "primeraFecha": "2026-01-03",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 893715.1250000001,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-03",
+          "primeraFecha": "2026-01-03"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 47317.33067729083,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-03",
+          "primeraFecha": "2026-01-03"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "8211 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 932913.0494272908,
+      "totalVol": 400.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-02-04",
+      "primeraFecha": "2026-02-04",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 885595.71875,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-04",
+          "primeraFecha": "2026-02-04"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 47317.330677290825,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-04",
+          "primeraFecha": "2026-02-04"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "8340 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 892740.2065514168,
+      "totalVol": 400.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-03-02",
+      "primeraFecha": "2026-03-02",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 845422.875874126,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-02",
+          "primeraFecha": "2026-03-02"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 47317.33067729083,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-02",
+          "primeraFecha": "2026-03-02"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "8048 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 885595.71875,
+      "totalVol": 200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-07",
+      "primeraFecha": "2026-01-07",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 885595.71875,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-07",
+          "primeraFecha": "2026-01-07"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8051 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 885595.71875,
+      "totalVol": 200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-08",
+      "primeraFecha": "2026-01-08",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 885595.71875,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-08",
+          "primeraFecha": "2026-01-08"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8052 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 885595.71875,
+      "totalVol": 200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-08",
+      "primeraFecha": "2026-01-08",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 885595.71875,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-08",
+          "primeraFecha": "2026-01-08"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8115 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 885595.71875,
+      "totalVol": 200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-20",
+      "primeraFecha": "2026-01-20",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 885595.71875,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-20",
+          "primeraFecha": "2026-01-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8197 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 885595.71875,
+      "totalVol": 200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-03",
+      "primeraFecha": "2026-02-03",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 885595.71875,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-03",
+          "primeraFecha": "2026-02-03"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8712 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 876698.3559709522,
+      "totalVol": 200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-19",
+      "primeraFecha": "2026-05-19",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 876698.3559709522,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-19",
+          "primeraFecha": "2026-05-19"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8501 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 875454.437937063,
+      "totalVol": 200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-02",
+      "primeraFecha": "2026-04-02",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 875454.437937063,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-02",
+          "primeraFecha": "2026-04-02"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8641 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 875454.437937063,
+      "totalVol": 200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-05",
+      "primeraFecha": "2026-05-05",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 875454.437937063,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-05",
+          "primeraFecha": "2026-05-05"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8318 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 859253.8977272727,
+      "totalVol": 200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-25",
+      "primeraFecha": "2026-02-25",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 859253.8977272727,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-25",
+          "primeraFecha": "2026-02-25"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8330 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 859253.8977272727,
+      "totalVol": 200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-27",
+      "primeraFecha": "2026-02-27",
+      "productos": [
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 859253.8977272727,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-27",
+          "primeraFecha": "2026-02-27"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "CORPORACION MUNICIPAL DE DESARROLLO SOCIAL DE COLINA",
+      "totalHaber": 852985.0529336487,
+      "totalVol": 3480.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-05-11",
+      "primeraFecha": "2026-02-09",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 3480.0,
+          "monto": 852985.0529336487,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-05-11",
+          "primeraFecha": "2026-02-09"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 1233 SOCIEDAD IMPORTADORA LIPLATA LTDA",
+      "totalHaber": 821883.868358017,
+      "totalVol": 1000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-10",
+      "primeraFecha": "2026-03-10",
+      "productos": [
+        {
+          "codigo": "K-6",
+          "slug": "K-6",
+          "nombre": "METABISULFITO DE SODIO",
+          "unidad": "kg",
+          "vol": 1000.0,
+          "monto": 821883.868358017,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-10",
+          "primeraFecha": "2026-03-10"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8021 CORP MUNICIPAL DE DESARROLLO SOCIAL DE PUDAHUEL",
+      "totalHaber": 774593.6603182886,
+      "totalVol": 500.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-02",
+      "primeraFecha": "2026-01-02",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 500.0,
+          "monto": 774593.6603182886,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-02",
+          "primeraFecha": "2026-01-02"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4000197489 SURALIS S.A.",
+      "totalHaber": 705231.1816898872,
+      "totalVol": 900.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-02",
+      "primeraFecha": "2026-02-02",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 900.0,
+          "monto": 705231.1816898872,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-02",
+          "primeraFecha": "2026-02-02"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "AGUAS DE ANTOFAGASTA S.A.  C-4313 DESPACHO 2 EP",
+      "totalHaber": 692286.8595096533,
+      "totalVol": 1000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-05",
+      "primeraFecha": "2026-01-05",
+      "productos": [
+        {
+          "codigo": "K-4",
+          "slug": "K-4",
+          "nombre": "FLUORSILICATO DE SODIO",
+          "unidad": "un",
+          "vol": 1000.0,
+          "monto": 692286.8595096533,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-05",
+          "primeraFecha": "2026-01-05"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "INVERSIONES CIELO CUATRO",
+      "totalHaber": 669830.1228413744,
+      "totalVol": 200.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-30",
+      "primeraFecha": "2026-01-30",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 200.0,
+          "monto": 669830.1228413744,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-30",
+          "primeraFecha": "2026-01-30"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4532061015 NUEVA ATACAMA S.A.",
+      "totalHaber": 630477.9980986011,
+      "totalVol": 2000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-09",
+      "primeraFecha": "2026-03-09",
+      "productos": [
+        {
+          "codigo": "K-7",
+          "slug": "K-7",
+          "nombre": "CLORURO FERRICO 42%",
+          "unidad": "kg",
+          "vol": 2000.0,
+          "monto": 630477.9980986011,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-09",
+          "primeraFecha": "2026-03-09"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4532058298 NUEVA ATACAMA S.A.",
+      "totalHaber": 472858.49857395084,
+      "totalVol": 1500.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-02",
+      "primeraFecha": "2026-01-02",
+      "productos": [
+        {
+          "codigo": "K-7",
+          "slug": "K-7",
+          "nombre": "CLORURO FERRICO 42%",
+          "unidad": "kg",
+          "vol": 1500.0,
+          "monto": 472858.49857395084,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-02",
+          "primeraFecha": "2026-01-02"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "SERVICIOS SANITARIOS LARAPINTA S.A",
+      "totalHaber": 463318.238044111,
+      "totalVol": 1000.0,
+      "nMovimientos": 4,
+      "ultimaFecha": "2026-04-16",
+      "primeraFecha": "2026-01-20",
+      "productos": [
+        {
+          "codigo": "K-2",
+          "slug": "K-2",
+          "nombre": "ACIDO FLUORSILICICO",
+          "unidad": "kg",
+          "vol": 1000.0,
+          "monto": 463318.238044111,
+          "nMovimientos": 4,
+          "ultimaFecha": "2026-04-16",
+          "primeraFecha": "2026-01-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8627 PATAGONIA SOSTENIBLE DE AYSEN",
+      "totalHaber": 440168.1967213115,
+      "totalVol": 300.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-30",
+      "primeraFecha": "2026-04-30",
+      "productos": [
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 300.0,
+          "monto": 440168.1967213115,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-30",
+          "primeraFecha": "2026-04-30"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8441 OREGON CHEM GROUP",
+      "totalHaber": 396151.37704918033,
+      "totalVol": 270.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-20",
+      "primeraFecha": "2026-03-20",
+      "productos": [
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 270.0,
+          "monto": 396151.37704918033,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-20",
+          "primeraFecha": "2026-03-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 4543006027 ESVAL S.A.",
+      "totalHaber": 391795.10093882604,
+      "totalVol": 500.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-30",
+      "primeraFecha": "2026-03-30",
+      "productos": [
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 500.0,
+          "monto": 391795.10093882604,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-30",
+          "primeraFecha": "2026-03-30"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8221 OREGON CHEM GROUP",
+      "totalHaber": 387296.83015914424,
+      "totalVol": 250.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-05",
+      "primeraFecha": "2026-02-05",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 250.0,
+          "monto": 387296.83015914424,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-05",
+          "primeraFecha": "2026-02-05"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8745 AGUAS DEL VALLE S.A",
+      "totalHaber": 366806.83060109295,
+      "totalVol": 250.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-25",
+      "primeraFecha": "2026-05-25",
+      "productos": [
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 250.0,
+          "monto": 366806.83060109295,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-25",
+          "primeraFecha": "2026-05-25"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8744 AGUAS DEL VALLE S.A",
+      "totalHaber": 366806.8306010929,
+      "totalVol": 250.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-25",
+      "primeraFecha": "2026-05-25",
+      "productos": [
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 250.0,
+          "monto": 366806.8306010929,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-25",
+          "primeraFecha": "2026-05-25"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "CORRETAJES Y SERVICIOS DE NUTRICION ANIMAL",
+      "totalHaber": 353126.0,
+      "totalVol": 100.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-28",
+      "primeraFecha": "2026-04-28",
+      "productos": [
+        {
+          "codigo": "K-103",
+          "slug": "K-103",
+          "nombre": "ALAR P-23 A",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 353126.0,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-28",
+          "primeraFecha": "2026-04-28"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "SOC COMERCIALIZADORA DIST. E INVERS. QUIMICOS ROBLES",
+      "totalHaber": 334915.06142068724,
+      "totalVol": 100.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-05-14",
+      "primeraFecha": "2026-01-27",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 334915.06142068724,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-05-14",
+          "primeraFecha": "2026-01-27"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "QUÍMICOS LUCÍA RODRÍGUEZ",
+      "totalHaber": 334915.06142068724,
+      "totalVol": 100.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-05-15",
+      "primeraFecha": "2026-02-19",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 334915.06142068724,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-05-15",
+          "primeraFecha": "2026-02-19"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "INDUSTRIAL ALIANZA",
+      "totalHaber": 334915.06142068724,
+      "totalVol": 100.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-27",
+      "primeraFecha": "2026-02-27",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 334915.06142068724,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-27",
+          "primeraFecha": "2026-02-27"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "CIA TRATAMIENTOS DE AGUA Y COMBUSTION",
+      "totalHaber": 334915.0614206872,
+      "totalVol": 100.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-21",
+      "primeraFecha": "2026-01-21",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 334915.0614206872,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-21",
+          "primeraFecha": "2026-01-21"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "ALA BASE N.2",
+      "totalHaber": 297402.8044077591,
+      "totalVol": 1000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-19",
+      "primeraFecha": "2026-02-19",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "lt",
+          "vol": 1000.0,
+          "monto": 297402.8044077591,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-19",
+          "primeraFecha": "2026-02-19"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "IDADQUIM P210126",
+      "totalHaber": 286041.5034482762,
+      "totalVol": 100.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-21",
+      "primeraFecha": "2026-01-21",
+      "productos": [
+        {
+          "codigo": "K-5",
+          "slug": "K-5",
+          "nombre": "FLUORURO DE SODIO",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 286041.5034482762,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-21",
+          "primeraFecha": "2026-01-21"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "IVAN ANDRES SCHAPIRA PEREZ COT/",
+      "totalHaber": 282999.066873179,
+      "totalVol": 1160.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-21",
+      "primeraFecha": "2026-04-21",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 1160.0,
+          "monto": 282999.066873179,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-21",
+          "primeraFecha": "2026-04-21"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "COMITE DE AGUA POTABLE RURAL LA LLAVERIA",
+      "totalHaber": 253013.15592764234,
+      "totalVol": 180.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-23",
+      "primeraFecha": "2026-01-23",
+      "productos": [
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 180.0,
+          "monto": 253013.15592764234,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-23",
+          "primeraFecha": "2026-01-23"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "DISTRIBUIDORA CIENTIFICA",
+      "totalHaber": 251186.29606551537,
+      "totalVol": 75.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-04-22",
+      "primeraFecha": "2026-01-14",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 75.0,
+          "monto": 251186.29606551537,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-04-22",
+          "primeraFecha": "2026-01-14"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "TRANSFERENCIA HACIA OTRA BODEGA",
+      "totalHaber": 234002.98739423242,
+      "totalVol": 100.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-03-31",
+      "primeraFecha": "2026-01-21",
+      "productos": [
+        {
+          "codigo": "K-35",
+          "slug": "K-35",
+          "nombre": "SDIC 56% TABLETAS",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 234002.98739423242,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-03-31",
+          "primeraFecha": "2026-01-21"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OSCAR RENE ALVAREZ MONDON",
+      "totalHaber": 233156.86463866092,
+      "totalVol": 100.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-27",
+      "primeraFecha": "2026-01-27",
+      "productos": [
+        {
+          "codigo": "K-43",
+          "slug": "K-43",
+          "nombre": "TCCA 87% TABLETAS",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 233156.86463866092,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-27",
+          "primeraFecha": "2026-01-27"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8493 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 220084.09836065574,
+      "totalVol": 150.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-01",
+      "primeraFecha": "2026-04-01",
+      "productos": [
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 150.0,
+          "monto": 220084.09836065574,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-01",
+          "primeraFecha": "2026-04-01"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8647 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 220084.09836065574,
+      "totalVol": 150.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-06",
+      "primeraFecha": "2026-05-06",
+      "productos": [
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 150.0,
+          "monto": 220084.09836065574,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-05-06"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "PROVEEDOR LOCAL",
+      "totalHaber": 175703.58050530715,
+      "totalVol": 125.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-04-10",
+      "primeraFecha": "2026-01-15",
+      "productos": [
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 125.0,
+          "monto": 175703.58050530715,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-04-10",
+          "primeraFecha": "2026-01-15"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 6141 CORRETAJES Y SERVICIOS DE NUTRICION ANIMAL SPA",
+      "totalHaber": 167606.9793994653,
+      "totalVol": 125.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-25",
+      "primeraFecha": "2026-02-25",
+      "productos": [
+        {
+          "codigo": "K-5",
+          "slug": "K-5",
+          "nombre": "FLUORURO DE SODIO",
+          "unidad": "kg",
+          "vol": 125.0,
+          "monto": 167606.9793994653,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-25",
+          "primeraFecha": "2026-02-25"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "COMERCIALIZADORA FOSFAMET",
+      "totalHaber": 167457.5307103436,
+      "totalVol": 50.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-04-16",
+      "primeraFecha": "2026-01-06",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 50.0,
+          "monto": 167457.5307103436,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-04-16",
+          "primeraFecha": "2026-01-06"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8482 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 165172.590490497,
+      "totalVol": 230.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-03-31",
+      "primeraFecha": "2026-03-31",
+      "productos": [
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 90.0,
+          "monto": 132050.45901639343,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-31",
+          "primeraFecha": "2026-03-31"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 140.0,
+          "monto": 33122.13147410359,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-31",
+          "primeraFecha": "2026-03-31"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "LUIS RENE LOPEZ RODRIGUEZ COT 0005",
+      "totalHaber": 164429.615929589,
+      "totalVol": 500.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-27",
+      "primeraFecha": "2026-01-27",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "lt",
+          "vol": 500.0,
+          "monto": 164429.615929589,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-27",
+          "primeraFecha": "2026-01-27"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8690 FULLSOLUTION",
+      "totalHaber": 154918.73206365755,
+      "totalVol": 100.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-14",
+      "primeraFecha": "2026-05-14",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 154918.73206365755,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-14",
+          "primeraFecha": "2026-05-14"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "QUIMICOS MYM",
+      "totalHaber": 151534.7889819106,
+      "totalVol": 70.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-04-17",
+      "primeraFecha": "2026-02-27",
+      "productos": [
+        {
+          "codigo": "K-103",
+          "slug": "K-103",
+          "nombre": "ALAR P-23 A",
+          "unidad": "kg",
+          "vol": 25.0,
+          "monto": 88281.5,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-17",
+          "primeraFecha": "2026-04-17"
+        },
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 45.0,
+          "monto": 63253.28898191059,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-27",
+          "primeraFecha": "2026-02-27"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
+      "nombre": "SERVICIOS SANITARIOS LARAPINTA S.A.  1206305302-1271",
+      "totalHaber": 133813.0452788515,
+      "totalVol": 250.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-29",
+      "primeraFecha": "2026-01-29",
+      "productos": [
+        {
+          "codigo": "K-2",
+          "slug": "K-2",
+          "nombre": "ACIDO FLUORSILICICO",
+          "unidad": "kg",
+          "vol": 250.0,
+          "monto": 133813.0452788515,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-29",
+          "primeraFecha": "2026-01-29"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "AGUAS BLANCAS SA",
+      "totalHaber": 126506.57796382118,
+      "totalVol": 90.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-20",
+      "primeraFecha": "2026-01-20",
+      "productos": [
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 90.0,
+          "monto": 126506.57796382118,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-20",
+          "primeraFecha": "2026-01-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "FULLSOLUTION",
+      "totalHaber": 116578.43231933043,
+      "totalVol": 50.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-14",
+      "primeraFecha": "2026-05-14",
+      "productos": [
+        {
+          "codigo": "K-43",
+          "slug": "K-43",
+          "nombre": "TCCA 87% TABLETAS",
+          "unidad": "kg",
+          "vol": 50.0,
+          "monto": 116578.43231933043,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-14",
+          "primeraFecha": "2026-05-14"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8260 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
+      "totalHaber": 109401.24550235261,
+      "totalVol": 50.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-12",
+      "primeraFecha": "2026-02-12",
+      "productos": [
+        {
+          "codigo": "K-33",
+          "slug": "K-33",
+          "nombre": "SDIC 56% GRANULAR",
+          "unidad": "kg",
+          "vol": 50.0,
+          "monto": 109401.24550235261,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-12",
+          "primeraFecha": "2026-02-12"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8276 AGRICOLA EL QUISCAL LIMITADA",
+      "totalHaber": 109401.24550235261,
+      "totalVol": 50.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-17",
+      "primeraFecha": "2026-02-17",
+      "productos": [
+        {
+          "codigo": "K-33",
+          "slug": "K-33",
+          "nombre": "SDIC 56% GRANULAR",
+          "unidad": "kg",
+          "vol": 50.0,
+          "monto": 109401.24550235261,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-17",
+          "primeraFecha": "2026-02-17"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 23789 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "totalHaber": 106437.78269719347,
+      "totalVol": 125.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-15",
+      "primeraFecha": "2026-05-15",
+      "productos": [
+        {
+          "codigo": "K-6",
+          "slug": "K-6",
+          "nombre": "METABISULFITO DE SODIO",
+          "unidad": "kg",
+          "vol": 125.0,
+          "monto": 106437.78269719347,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-15",
+          "primeraFecha": "2026-05-15"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "LAVANDERÍA QUICK CLEANING",
+      "totalHaber": 96474.53139354216,
+      "totalVol": 390.0,
+      "nMovimientos": 4,
+      "ultimaFecha": "2026-05-11",
+      "primeraFecha": "2026-01-06",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 390.0,
+          "monto": 96474.53139354216,
+          "nMovimientos": 4,
+          "ultimaFecha": "2026-05-11",
+          "primeraFecha": "2026-01-06"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "COMITE DE AGUA POTABLE RURAL HUALCAPO COT 0009",
+      "totalHaber": 89220.84132232776,
+      "totalVol": 300.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-10",
+      "primeraFecha": "2026-02-10",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "lt",
+          "vol": 300.0,
+          "monto": 89220.84132232776,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-10",
+          "primeraFecha": "2026-02-10"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "PAPELERA Y PRODUCTOS BELPRO LIMITADA",
+      "totalHaber": 83728.7653551718,
+      "totalVol": 25.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-08",
+      "primeraFecha": "2026-04-08",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 25.0,
+          "monto": 83728.7653551718,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-08",
+          "primeraFecha": "2026-04-08"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 21552 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "totalHaber": 83561.52166214144,
+      "totalVol": 100.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-04",
+      "primeraFecha": "2026-02-04",
+      "productos": [
+        {
+          "codigo": "K-6",
+          "slug": "K-6",
+          "nombre": "METABISULFITO DE SODIO",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 83561.52166214144,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-04",
+          "primeraFecha": "2026-02-04"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 22184 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "totalHaber": 82188.38683580168,
+      "totalVol": 100.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-03",
+      "primeraFecha": "2026-03-03",
+      "productos": [
+        {
+          "codigo": "K-6",
+          "slug": "K-6",
+          "nombre": "METABISULFITO DE SODIO",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 82188.38683580168,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-03",
+          "primeraFecha": "2026-03-03"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 23790 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "totalHaber": 78809.74976232514,
+      "totalVol": 250.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-15",
+      "primeraFecha": "2026-05-15",
+      "productos": [
+        {
+          "codigo": "K-7",
+          "slug": "K-7",
+          "nombre": "CLORURO FERRICO 42%",
+          "unidad": "kg",
+          "vol": 250.0,
+          "monto": 78809.74976232514,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-15",
+          "primeraFecha": "2026-05-15"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8035 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
+      "totalHaber": 77459.36603182885,
+      "totalVol": 50.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-06",
+      "primeraFecha": "2026-01-06",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 50.0,
+          "monto": 77459.36603182885,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-06",
+          "primeraFecha": "2026-01-06"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8108 002",
+      "totalHaber": 77459.36603182885,
+      "totalVol": 50.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-16",
+      "primeraFecha": "2026-01-16",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 50.0,
+          "monto": 77459.36603182885,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-16",
+          "primeraFecha": "2026-01-16"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8113 002",
+      "totalHaber": 77459.36603182885,
+      "totalVol": 50.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-20",
+      "primeraFecha": "2026-01-20",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 50.0,
+          "monto": 77459.36603182885,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-20",
+          "primeraFecha": "2026-01-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "COMITE DE AGUA POTABLE RURAL HUALCAPO COT 0142",
+      "totalHaber": 73072.19885634257,
+      "totalVol": 300.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-08",
+      "primeraFecha": "2026-05-08",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 300.0,
+          "monto": 73072.19885634257,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-08",
+          "primeraFecha": "2026-05-08"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "TRATAGUA",
+      "totalHaber": 70281.43220212286,
+      "totalVol": 50.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-27",
+      "primeraFecha": "2026-03-27",
+      "productos": [
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 50.0,
+          "monto": 70281.43220212286,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-27",
+          "primeraFecha": "2026-03-27"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 21554 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "totalHaber": 62671.14124660607,
+      "totalVol": 75.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-04",
+      "primeraFecha": "2026-02-04",
+      "productos": [
+        {
+          "codigo": "K-6",
+          "slug": "K-6",
+          "nombre": "METABISULFITO DE SODIO",
+          "unidad": "kg",
+          "vol": 75.0,
+          "monto": 62671.14124660607,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-04",
+          "primeraFecha": "2026-02-04"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "OC 22185 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "totalHaber": 61641.290126851265,
+      "totalVol": 75.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-03",
+      "primeraFecha": "2026-03-03",
+      "productos": [
+        {
+          "codigo": "K-6",
+          "slug": "K-6",
+          "nombre": "METABISULFITO DE SODIO",
+          "unidad": "kg",
+          "vol": 75.0,
+          "monto": 61641.290126851265,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-03",
+          "primeraFecha": "2026-03-03"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8175 002",
+      "totalHaber": 54700.622751176306,
+      "totalVol": 25.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-30",
+      "primeraFecha": "2026-01-30",
+      "productos": [
+        {
+          "codigo": "K-33",
+          "slug": "K-33",
+          "nombre": "SDIC 56% GRANULAR",
+          "unidad": "kg",
+          "vol": 25.0,
+          "monto": 54700.622751176306,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-30",
+          "primeraFecha": "2026-01-30"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "SERVICIOS DE INGENIERIA Y CONSTRUCCION GOCAT LIMITADA",
+      "totalHaber": 48364.918444165625,
+      "totalVol": 20.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-07",
+      "primeraFecha": "2026-04-07",
+      "productos": [
+        {
+          "codigo": "K-44",
+          "slug": "K-44",
+          "nombre": "TCCA 90% TABLETAS",
+          "unidad": "kg",
+          "vol": 20.0,
+          "monto": 48364.918444165625,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-07",
+          "primeraFecha": "2026-04-07"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "AGRICOLA RINCON NATURAL LIMITADA",
+      "totalHaber": 46631.37292773217,
+      "totalVol": 20.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-12",
+      "primeraFecha": "2026-02-12",
+      "productos": [
+        {
+          "codigo": "K-43",
+          "slug": "K-43",
+          "nombre": "TCCA 87% TABLETAS",
+          "unidad": "kg",
+          "vol": 20.0,
+          "monto": 46631.37292773217,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-12",
+          "primeraFecha": "2026-02-12"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "002 ROSARIO JOANNON GREZ",
+      "totalHaber": 45356.68645745814,
+      "totalVol": 176.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-20",
+      "primeraFecha": "2026-01-20",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 176.0,
+          "monto": 45356.68645745814,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-20",
+          "primeraFecha": "2026-01-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8350 002",
+      "totalHaber": 38729.683015914416,
+      "totalVol": 25.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-03",
+      "primeraFecha": "2026-03-03",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 25.0,
+          "monto": 38729.683015914416,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-03",
+          "primeraFecha": "2026-03-03"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8729 002",
+      "totalHaber": 38729.68301591439,
+      "totalVol": 25.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-20",
+      "primeraFecha": "2026-05-20",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 25.0,
+          "monto": 38729.68301591439,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-20",
+          "primeraFecha": "2026-05-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "LAVANDERÍA QUICK CLEANING SPA  LAVANDERÍA QUICK CLEANING P210426",
+      "totalHaber": 31715.412666821783,
+      "totalVol": 130.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-04-21",
+      "primeraFecha": "2026-04-21",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 130.0,
+          "monto": 31715.412666821783,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-21",
+          "primeraFecha": "2026-04-21"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "LAVANDERÍA QUICK CLEANING SPA  65 KILOS",
+      "totalHaber": 16497.610572834557,
+      "totalVol": 65.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-21",
+      "primeraFecha": "2026-01-21",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 65.0,
+          "monto": 16497.610572834557,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-21",
+          "primeraFecha": "2026-01-21"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "LAVANDERÍA QUICK CLEANING SPA  LAVANDERÍA QUICK CLEANING P020226",
+      "totalHaber": 16497.610572834554,
+      "totalVol": 65.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-03",
+      "primeraFecha": "2026-02-03",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 65.0,
+          "monto": 16497.610572834554,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-03",
+          "primeraFecha": "2026-02-03"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "REFRIGERACION INDUSTRIAL HC-FRIO LIMITADA",
+      "totalHaber": 16056.617283950618,
+      "totalVol": 5.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-20",
+      "primeraFecha": "2026-01-20",
+      "productos": [
+        {
+          "codigo": "K-39",
+          "slug": "K-39",
+          "nombre": "BUZYME 2516",
+          "unidad": "kg",
+          "vol": 5.0,
+          "monto": 16056.617283950618,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-20",
+          "primeraFecha": "2026-01-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "LAVANDERÍA QUICK CLEANING SPA  P130226",
+      "totalHaber": 15644.699041035483,
+      "totalVol": 65.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-19",
+      "primeraFecha": "2026-02-19",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 65.0,
+          "monto": 15644.699041035483,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-19",
+          "primeraFecha": "2026-02-19"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "LAVANDERÍA QUICK CLEANING SPA  LAVANDERÍA QUICK CLEANING P170326",
+      "totalHaber": 15334.618531922866,
+      "totalVol": 65.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-17",
+      "primeraFecha": "2026-03-17",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 65.0,
+          "monto": 15334.618531922866,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-17",
+          "primeraFecha": "2026-03-17"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "SERVICIOS ADMINISTRATIVOS E INMOBILIARIOS PAUPE LIMITADA",
+      "totalHaber": 10380.357160070862,
+      "totalVol": 44.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-04",
+      "primeraFecha": "2026-03-04",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 44.0,
+          "monto": 10380.357160070862,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-04",
+          "primeraFecha": "2026-03-04"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "8083 002",
+      "totalHaber": 7745.936603182885,
+      "totalVol": 5.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-15",
+      "primeraFecha": "2026-01-15",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 5.0,
+          "monto": 7745.936603182885,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-15",
+          "primeraFecha": "2026-01-15"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "002 RODRIGO AGUAYO",
+      "totalHaber": 5449.2154047235135,
+      "totalVol": 22.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-06",
+      "primeraFecha": "2026-02-06",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 22.0,
+          "monto": 5449.2154047235135,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-06",
+          "primeraFecha": "2026-02-06"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "COMERCIAL SERVICETRANS SPA COT 0036",
+      "totalHaber": 5358.627916131787,
+      "totalVol": 22.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-05-14",
+      "primeraFecha": "2026-05-14",
+      "productos": [
+        {
+          "codigo": "K-8",
+          "slug": "K-8",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 22.0,
+          "monto": 5358.627916131787,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-14",
+          "primeraFecha": "2026-05-14"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "VENTA CON BOLETA A CLIENTES NO HABITUALES",
+      "totalHaber": 2340.0298739423242,
+      "totalVol": 1.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-31",
+      "primeraFecha": "2026-03-31",
+      "productos": [
+        {
+          "codigo": "K-35",
+          "slug": "K-35",
+          "nombre": "SDIC 56% TABLETAS",
+          "unidad": "kg",
+          "vol": 1.0,
+          "monto": 2340.0298739423242,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-31",
+          "primeraFecha": "2026-03-31"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "5125",
+      "totalHaber": 1549.187320636577,
+      "totalVol": 1.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-30",
+      "primeraFecha": "2026-01-30",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 1.0,
+          "monto": 1549.187320636577,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-30",
+          "primeraFecha": "2026-01-30"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "GUÍA[EA]41212016 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
+      "totalHaber": -7150881.066013529,
+      "totalVol": -20530.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-28",
+      "primeraFecha": "2026-01-28",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": -20530.0,
+          "monto": -7150881.066013529,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-28",
+          "primeraFecha": "2026-01-28"
+        }
+      ],
+      "nProductos": 1
+    }
+  ]
+}
