@@ -1,0 +1,53 @@
+{
+  "codigo": "K-46-47",
+  "nombre": "POLFLOC POLFLOC 9615C - POLFLOC 9610C",
+  "unidad": "kg",
+  "archivo": "K 46-47 POLFLOC - 2026.xlsx",
+  "stockInicial": 5000.0,
+  "saldoInicialPesos": 12198376.0,
+  "pmpInicial": 2439.6752,
+  "stockActual": 3950.0,
+  "pmpActual": 0,
+  "saldoActualPesos": 9684901.0,
+  "totalEntradas": 12900.0,
+  "totalSalidas": 0,
+  "totalHaber": 0,
+  "movimientos": [
+    {
+      "fecha": "",
+      "detalle": "",
+      "cliente": "DESCONOCIDO",
+      "tipo": "Compra",
+      "entrada": 5000.0,
+      "salida": 0,
+      "saldo_kg": 5000.0,
+      "haber": 0,
+      "saldo_p": 12198376.0,
+      "pmp": 0
+    },
+    {
+      "fecha": "",
+      "detalle": "SALDO INICIAL",
+      "cliente": "SALDO INICIAL",
+      "tipo": "Compra",
+      "entrada": 3950.0,
+      "salida": 0,
+      "saldo_kg": 3950.0,
+      "haber": 0,
+      "saldo_p": 9684901.0,
+      "pmp": 2451.8737
+    },
+    {
+      "fecha": "",
+      "detalle": "",
+      "cliente": "DESCONOCIDO",
+      "tipo": "Compra",
+      "entrada": 3950.0,
+      "salida": 0,
+      "saldo_kg": 3950.0,
+      "haber": 0,
+      "saldo_p": 9684901.0,
+      "pmp": 0
+    }
+  ]
+}

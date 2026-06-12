@@ -1,0 +1,29 @@
+{
+  "codigo": "K-44",
+  "nombre": "TCCA 90% TABLETAS",
+  "unidad": "kg",
+  "archivo": "K 44 TCCA90_ TABLETAS - 2026.xlsx",
+  "stockInicial": 797.0,
+  "saldoInicialPesos": 1927342.0,
+  "pmpInicial": 2418.245922208281,
+  "stockActual": 777.0,
+  "pmpActual": 2418.2459,
+  "saldoActualPesos": 1878977.0815558343,
+  "totalEntradas": 0,
+  "totalSalidas": 20.0,
+  "totalHaber": 48364.918444165625,
+  "movimientos": [
+    {
+      "fecha": "2026-04-07",
+      "detalle": "SERVICIOS DE INGENIERIA Y CONSTRUCCION GOCAT LIMITADA",
+      "cliente": "SERVICIOS DE INGENIERIA Y CONSTRUCCION GOCAT LIMITADA",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 20.0,
+      "saldo_kg": 777.0,
+      "haber": 48364.918444165625,
+      "saldo_p": 1878977.0815558343,
+      "pmp": 2418.2459
+    }
+  ]
+}

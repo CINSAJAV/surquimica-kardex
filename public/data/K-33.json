@@ -1,0 +1,53 @@
+{
+  "codigo": "K-33",
+  "nombre": "SDIC 56% GRANULAR",
+  "unidad": "kg",
+  "archivo": "K 33 SDIC 56_ GRANULAR - 2026.xlsx",
+  "stockInicial": 3613.0,
+  "saldoInicialPesos": 7905334.0,
+  "pmpInicial": 2188.0249100470523,
+  "stockActual": 3488.0,
+  "pmpActual": 2188.0249,
+  "saldoActualPesos": 7631830.886244118,
+  "totalEntradas": 0,
+  "totalSalidas": 125.0,
+  "totalHaber": 273503.11375588155,
+  "movimientos": [
+    {
+      "fecha": "2026-01-30",
+      "detalle": "8175 002",
+      "cliente": "8175 002",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 25.0,
+      "saldo_kg": 3588.0,
+      "haber": 54700.622751176306,
+      "saldo_p": 7850633.377248824,
+      "pmp": 2188.0249
+    },
+    {
+      "fecha": "2026-02-12",
+      "detalle": "8260 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO E.I.R.L.",
+      "cliente": "8260 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 50.0,
+      "saldo_kg": 3538.0,
+      "haber": 109401.24550235261,
+      "saldo_p": 7741232.131746471,
+      "pmp": 2188.0249
+    },
+    {
+      "fecha": "2026-02-17",
+      "detalle": "8276 AGRICOLA EL QUISCAL LIMITADA",
+      "cliente": "8276 AGRICOLA EL QUISCAL LIMITADA",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 50.0,
+      "saldo_kg": 3488.0,
+      "haber": 109401.24550235261,
+      "saldo_p": 7631830.886244118,
+      "pmp": 2188.0249
+    }
+  ]
+}

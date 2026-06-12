@@ -1,0 +1,29 @@
+{
+  "codigo": "K-36",
+  "nombre": "SULFATO DE ALUMINIO FINO",
+  "unidad": "kg",
+  "archivo": "K 36-37-38 SULFATO DE ALUMINIO FINO, POLVO, LIQUIDO - 2026.xlsx",
+  "stockInicial": 9746.0,
+  "saldoInicialPesos": 3130993.0,
+  "pmpInicial": 321.259285860866,
+  "stockActual": 9746.0,
+  "pmpActual": 0,
+  "saldoActualPesos": 3130993.0,
+  "totalEntradas": 9746.0,
+  "totalSalidas": 0,
+  "totalHaber": 0,
+  "movimientos": [
+    {
+      "fecha": "",
+      "detalle": "",
+      "cliente": "DESCONOCIDO",
+      "tipo": "Compra",
+      "entrada": 9746.0,
+      "salida": 0,
+      "saldo_kg": 9746.0,
+      "haber": 0,
+      "saldo_p": 3130993.0,
+      "pmp": 0
+    }
+  ]
+}

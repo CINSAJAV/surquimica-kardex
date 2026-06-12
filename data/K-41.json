@@ -1,0 +1,29 @@
+{
+  "codigo": "K-41",
+  "nombre": "BUFLOC 5122",
+  "unidad": "kg",
+  "archivo": "K 39-40-41-42 - 2026.xlsx",
+  "stockInicial": 1224.0,
+  "saldoInicialPesos": 3617798.0,
+  "pmpInicial": 2955.717320261438,
+  "stockActual": 1219.0,
+  "pmpActual": 2955.7173,
+  "saldoActualPesos": 3603019.413398693,
+  "totalEntradas": 0,
+  "totalSalidas": 5.0,
+  "totalHaber": 14778.58660130719,
+  "movimientos": [
+    {
+      "fecha": "2026-01-20",
+      "detalle": "002",
+      "cliente": "002",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 5.0,
+      "saldo_kg": 1219.0,
+      "haber": 14778.58660130719,
+      "saldo_p": 3603019.413398693,
+      "pmp": 2955.7173
+    }
+  ]
+}
