@@ -1,7 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
 
-const { useState, useEffect, useMemo } = React;
-
 // ─── TOKENS ──────────────────────────────────────────────────────────────────
 const C = {
   bg:      "#07111E",
