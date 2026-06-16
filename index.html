@@ -657,9 +657,9 @@ function App() {
 
   useEffect(()=>{
     fetch("./data/index.json")
-      .then(r=>r.json())
+      .then(r=>{ if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(d=>{setIndex(d);if(d.productos.length>0)setSelMeta(d.productos[0]);})
-      .catch(()=>setErr("No se encontró data/index.json — ejecuta sync.py primero."));
+      .catch(e=>setErr(`Error cargando datos: ${e.message} — verifica que data/index.json existe.`));
   },[]);
 
   useEffect(()=>{
