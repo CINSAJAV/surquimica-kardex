@@ -1,0 +1,65 @@
+{
+  "codigo": "K-99",
+  "nombre": "ACIDO NITRICO 42º 35 KGNU2031 CLASE 8",
+  "unidad": "kg",
+  "archivo": "K 99 ACIDO NITRICO 42º 35 KGNU2031 CLASE 8 - 2026.xlsx",
+  "stockInicial": 0,
+  "saldoInicialPesos": 0.1,
+  "pmpInicial": 0,
+  "stockActual": 25.000000099999852,
+  "pmpActual": 711.7595,
+  "saldoActualPesos": 17793.98691325239,
+  "totalEntradas": 4140.0,
+  "totalSalidas": 4115.0,
+  "totalHaber": 2880149.113086748,
+  "movimientos": [
+    {
+      "fecha": "2026-02-03",
+      "detalle": "HOLCHEM SA",
+      "cliente": "HOLCHEM SA",
+      "tipo": "Compra",
+      "entrada": 2240.0,
+      "salida": 0,
+      "saldo_kg": 2240.0000001,
+      "haber": 0,
+      "saldo_p": 1545600.1,
+      "pmp": 690.0
+    },
+    {
+      "fecha": "2026-02-05",
+      "detalle": "SERVICIOS MARITIMOS PACIFIC SHIPS SERVICES SpA",
+      "cliente": "SERVICIOS MARITIMOS PACIFIC SHIPS SERVICES",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 2240.0,
+      "saldo_kg": 9.999985195463523e-08,
+      "haber": 1545600.0999310003,
+      "saldo_p": 6.899982690811157e-05,
+      "pmp": 689.9993
+    },
+    {
+      "fecha": "2026-04-13",
+      "detalle": "PROQUIEL QUIMICOS LTDA",
+      "cliente": "PROQUIEL QUIMICOS",
+      "tipo": "Compra",
+      "entrada": 1900.0,
+      "salida": 0,
+      "saldo_kg": 1900.0000000999999,
+      "haber": 0,
+      "saldo_p": 1352343.0000689998,
+      "pmp": 711.7595
+    },
+    {
+      "fecha": "2026-04-14",
+      "detalle": "SERVICIOS MARITIMOS PACIFIC SHIPS SERVICES SpA",
+      "cliente": "SERVICIOS MARITIMOS PACIFIC SHIPS SERVICES",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 1875.0,
+      "saldo_kg": 25.000000099999852,
+      "haber": 1334549.0131557474,
+      "saldo_p": 17793.98691325239,
+      "pmp": 711.7595
+    }
+  ]
+}

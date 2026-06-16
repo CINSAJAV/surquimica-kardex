@@ -1,0 +1,113 @@
+{
+  "codigo": "K-5",
+  "nombre": "FLUORURO DE SODIO",
+  "unidad": "kg",
+  "archivo": "K 5 FLUORURO DE SODIO - 2026.xlsx",
+  "stockInicial": 6000.0,
+  "saldoInicialPesos": 20738009.0,
+  "pmpInicial": 3456.3348333333333,
+  "stockActual": 7625.0,
+  "pmpActual": 883.646,
+  "saldoActualPesos": 6737800.571858505,
+  "totalEntradas": 28850.0,
+  "totalSalidas": 27225.0,
+  "totalHaber": 47293670.428141505,
+  "movimientos": [
+    {
+      "fecha": "2026-01-05",
+      "detalle": "K5 50 SACOS BODEGA 001",
+      "cliente": "K5 50 SACOS BODEGA 001",
+      "tipo": "Compra",
+      "entrada": 1250.0,
+      "salida": 0,
+      "saldo_kg": 7250.0,
+      "haber": 0,
+      "saldo_p": 20738009.0,
+      "pmp": 2860.415
+    },
+    {
+      "fecha": "2026-01-05",
+      "detalle": "C-4313 DESPACHO 2 EP. AGUAS DE ANTOFAGASTA S.A.",
+      "cliente": "C-4313 DESPACHO 2 EP. AGUAS DE ANTOFAGASTA S.A",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 7000.0,
+      "saldo_kg": 250.0,
+      "haber": 20022905.24137931,
+      "saldo_p": 715103.7586206906,
+      "pmp": 2860.415
+    },
+    {
+      "fecha": "2026-01-21",
+      "detalle": "Idadquim P210126 K1 K5 IDADQUIM SPA",
+      "cliente": "IDADQUIM P210126",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 100.0,
+      "saldo_kg": 150.0,
+      "haber": 286041.5034482762,
+      "saldo_p": 429062.25517241436,
+      "pmp": 2860.415
+    },
+    {
+      "fecha": "2026-01-26",
+      "detalle": "K5 GD-8139 PANGS PANGS CHEM HK LIMITED",
+      "cliente": "K5 GD-8139 PANGS PANGS CHEM HK LIMITED",
+      "tipo": "Compra",
+      "entrada": 25000.0,
+      "salida": 0,
+      "saldo_kg": 25150.0,
+      "haber": 0,
+      "saldo_p": 33722524.25517242,
+      "pmp": 1340.8558
+    },
+    {
+      "fecha": "2026-01-29",
+      "detalle": "C-4313 E.P. DESPACHO 3 AGUAS DE ANTOFAGASTA S.A.",
+      "cliente": "C-4313 E.P. DESPACHO 3 AGUAS DE ANTOFAGASTA S.A",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 10000.0,
+      "saldo_kg": 15150.0,
+      "haber": 13408558.351957224,
+      "saldo_p": 20313965.903215192,
+      "pmp": 1340.8558
+    },
+    {
+      "fecha": "2026-02-25",
+      "detalle": "OC 6141 CORRETAJES Y SERVICIOS DE NUTRICION ANIMAL SPA",
+      "cliente": "OC 6141 CORRETAJES Y SERVICIOS DE NUTRICION ANIMAL SPA",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 125.0,
+      "saldo_kg": 15025.0,
+      "haber": 167606.9793994653,
+      "saldo_p": 20146358.923815727,
+      "pmp": 1340.8558
+    },
+    {
+      "fecha": "2026-02-26",
+      "detalle": "C-4313 E.P. AGUAS DE ANTOFAGASTA S.A.",
+      "cliente": "C-4313 E.P. AGUAS DE ANTOFAGASTA S.A",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 10000.0,
+      "saldo_kg": 5025.0,
+      "haber": 13408558.351957222,
+      "saldo_p": 6737800.571858505,
+      "pmp": 1340.8558
+    },
+    {
+      "fecha": "2026-03-31",
+      "detalle": "K5 INGRESO 2.600 104 SACOS PANGS CHEM HK LIMITED",
+      "cliente": "K5 INGRESO 2.600 104 SACOS PANGS CHEM HK LIMITED",
+      "tipo": "Compra",
+      "entrada": 2600.0,
+      "salida": 0,
+      "saldo_kg": 7625.0,
+      "haber": 0,
+      "saldo_p": 6737800.571858505,
+      "pmp": 883.646
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "codigo": "K-103",
+  "nombre": "ALAR P-23 A",
+  "unidad": "kg",
+  "archivo": "K 103 ALAR P-23 A - 2026.xlsx",
+  "stockInicial": 0,
+  "saldoInicialPesos": 0,
+  "pmpInicial": 0,
+  "stockActual": 3825.0,
+  "pmpActual": 3531.26,
+  "saldoActualPesos": 13507069.5,
+  "totalEntradas": 7000.0,
+  "totalSalidas": 3175.0,
+  "totalHaber": 11211750.5,
+  "movimientos": [
+    {
+      "fecha": "2026-04-07",
+      "detalle": "LARING",
+      "cliente": "LARING",
+      "tipo": "Compra",
+      "entrada": 7000.0,
+      "salida": 0,
+      "saldo_kg": 7000.0,
+      "haber": 0,
+      "saldo_p": 24718820.0,
+      "pmp": 3531.26
+    },
+    {
+      "fecha": "2026-04-17",
+      "detalle": "QUIMICOS MYM SPA",
+      "cliente": "QUIMICOS MYM",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 25.0,
+      "saldo_kg": 6975.0,
+      "haber": 88281.5,
+      "saldo_p": 24630538.5,
+      "pmp": 3531.26
+    },
+    {
+      "fecha": "",
+      "detalle": "",
+      "cliente": "DESCONOCIDO",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 2375.0,
+      "saldo_kg": 4600.0,
+      "haber": 8386742.500000001,
+      "saldo_p": 16243796.0,
+      "pmp": 3531.26
+    },
+    {
+      "fecha": "2026-04-28",
+      "detalle": "CORRETAJES Y SERVICIOS DE NUTRICION ANIMAL SPA",
+      "cliente": "CORRETAJES Y SERVICIOS DE NUTRICION ANIMAL",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 100.0,
+      "saldo_kg": 4500.0,
+      "haber": 353126.0,
+      "saldo_p": 15890670.0,
+      "pmp": 3531.26
+    },
+    {
+      "fecha": "2026-04-30",
+      "detalle": "IDADQUIM SPA",
+      "cliente": "IDADQUIM",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 50.0,
+      "saldo_kg": 4450.0,
+      "haber": 176563.0,
+      "saldo_p": 15714107.0,
+      "pmp": 3531.26
+    },
+    {
+      "fecha": "",
+      "detalle": "",
+      "cliente": "DESCONOCIDO",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": -2375.0,
+      "saldo_kg": 6825.0,
+      "haber": -8386742.500000001,
+      "saldo_p": 24100849.5,
+      "pmp": 3531.26
+    },
+    {
+      "fecha": "2026-05-13",
+      "detalle": "AGUAS DE ANTOFAGASTA S.A.",
+      "cliente": "AGUAS DE ANTOFAGASTA S.A",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 3000.0,
+      "saldo_kg": 3825.0,
+      "haber": 10593780.0,
+      "saldo_p": 13507069.5,
+      "pmp": 3531.26
+    }
+  ]
+}

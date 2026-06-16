@@ -1,0 +1,41 @@
+{
+  "codigo": "K-39",
+  "nombre": "BUZYME 2516",
+  "unidad": "kg",
+  "archivo": "K 39-40-41-42 - 2026.xlsx",
+  "stockInicial": 405.0,
+  "saldoInicialPesos": 1300586.0,
+  "pmpInicial": 3211.3234567901236,
+  "stockActual": 395.0,
+  "pmpActual": 3211.3235,
+  "saldoActualPesos": 1268472.7654320989,
+  "totalEntradas": 0,
+  "totalSalidas": 10.0,
+  "totalHaber": 32113.234567901236,
+  "movimientos": [
+    {
+      "fecha": "2026-01-20",
+      "detalle": "REFRIGERACION INDUSTRIAL HC-FRIO LIMITADA",
+      "cliente": "REFRIGERACION INDUSTRIAL HC-FRIO LIMITADA",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 5.0,
+      "saldo_kg": 400.0,
+      "haber": 16056.617283950618,
+      "saldo_p": 1284529.3827160494,
+      "pmp": 3211.3235
+    },
+    {
+      "fecha": "2026-01-20",
+      "detalle": "002",
+      "cliente": "002",
+      "tipo": "Venta",
+      "entrada": 0,
+      "salida": 5.0,
+      "saldo_kg": 395.0,
+      "haber": 16056.617283950618,
+      "saldo_p": 1268472.7654320989,
+      "pmp": 3211.3235
+    }
+  ]
+}
