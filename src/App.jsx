@@ -1,4 +1,7 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useContext, createContext } from "react";
+
+// Contexto global de bodega (cargado una vez en App)
+const BodegaCtx = createContext(null);
 
 // ─── TOKENS ──────────────────────────────────────────────────────────────────
 const C = {
@@ -87,6 +90,79 @@ function Spark({ points, color, h=32, w=100 }) {
   );
 }
 
+// ─── PANEL STOCK BODEGA ───────────────────────────────────────────────────────
+function PanelBodega({ slug, unidad }) {
+  const bodega = useContext(BodegaCtx);
+  if (!bodega) return null;
+  const b = bodega.productos?.[slug];
+  if (!b) return null;
+
+  const mayo = b.mayo;
+  const abril = b.abril;
+  if (!mayo && !abril) return null;
+
+  const ultimo = mayo?.fisico != null ? mayo : abril;
+  const fisico = ultimo?.fisico ?? 0;
+  const diff   = ultimo?.diferencia ?? 0;
+  const obs    = ultimo?.obs;
+  const fecha  = ultimo?.fecha;
+
+  const diffColor = diff === 0 ? C.green : Math.abs(diff) < 500 ? C.amber : C.red;
+  const diffLabel = diff > 0 ? `+${num(diff)}` : num(diff);
+
+  return (
+    <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,padding:16}}>
+      <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:12}}>
+        <div style={{color:C.muted,fontSize:10,textTransform:"uppercase",letterSpacing:1.2}}>
+          Inventario Bodega
+        </div>
+        <div style={{color:C.muted,fontSize:10}}>{fmtFecha(fecha)}</div>
+      </div>
+
+      <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:10}}>
+        {/* Stock físico */}
+        <div style={{background:C.surface,borderRadius:8,padding:"10px 12px"}}>
+          <div style={{color:C.muted,fontSize:9,textTransform:"uppercase",letterSpacing:1,marginBottom:4}}>Físico bodega</div>
+          <div style={{color:C.text,fontWeight:800,fontSize:18,fontFamily:MONO}}>{num(fisico)}</div>
+          <div style={{color:C.sub,fontSize:10}}>{unidad}</div>
+        </div>
+
+        {/* Stock Kardex (teórico) */}
+        <div style={{background:C.surface,borderRadius:8,padding:"10px 12px"}}>
+          <div style={{color:C.muted,fontSize:9,textTransform:"uppercase",letterSpacing:1,marginBottom:4}}>Softland / Kardex</div>
+          <div style={{color:C.accent,fontWeight:800,fontSize:18,fontFamily:MONO}}>{num(ultimo?.softland ?? 0)}</div>
+          <div style={{color:C.sub,fontSize:10}}>{unidad}</div>
+        </div>
+
+        {/* Diferencia */}
+        <div style={{background:C.surface,borderRadius:8,padding:"10px 12px",
+          border:`1px solid ${diff===0?C.green+"44":Math.abs(diff)<500?C.amber+"44":C.red+"44"}`}}>
+          <div style={{color:C.muted,fontSize:9,textTransform:"uppercase",letterSpacing:1,marginBottom:4}}>Diferencia</div>
+          <div style={{color:diffColor,fontWeight:800,fontSize:18,fontFamily:MONO}}>{diffLabel}</div>
+          <div style={{color:diffColor,fontSize:10}}>{diff===0?"✓ Sin diferencia":"Físico vs Softland"}</div>
+        </div>
+      </div>
+
+      {/* Comparación Abril */}
+      {abril && (
+        <div style={{marginTop:10,paddingTop:10,borderTop:`1px solid ${C.border}`}}>
+          <div style={{color:C.muted,fontSize:10,marginBottom:6}}>Conteo anterior — {fmtFecha(abril.fecha)}</div>
+          <div style={{display:"flex",gap:16}}>
+            <span style={{color:C.sub,fontSize:11,fontFamily:MONO}}>Físico: {num(abril.fisico ?? 0)}</span>
+            <span style={{color:C.sub,fontSize:11,fontFamily:MONO}}>Softland: {num(abril.softland ?? 0)}</span>
+            <span style={{color:abril.diferencia===0?C.green:C.amber,fontSize:11,fontFamily:MONO}}>
+              Δ {abril.diferencia > 0 ? `+${num(abril.diferencia)}` : num(abril.diferencia ?? 0)}
+            </span>
+          </div>
+          {abril.obs && <div style={{color:C.amber,fontSize:11,marginTop:4}}>⚠ {abril.obs}</div>}
+        </div>
+      )}
+
+      {obs && <div style={{color:C.amber,fontSize:11,marginTop:8}}>⚠ {obs}</div>}
+    </div>
+  );
+}
+
 // ─── VISTA RESUMEN ────────────────────────────────────────────────────────────
 function VistaResumen({ p }) {
   const ventas  = p.movimientos.filter(m=>m.tipo==="Venta");
@@ -168,6 +244,8 @@ function VistaResumen({ p }) {
           </div>
         </div>
       </div>
+
+      <PanelBodega slug={p.codigo} unidad={p.unidad}/>
 
       {compras.length>0&&(
         <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,padding:16}}>
@@ -366,7 +444,7 @@ function VistaMargen({ p }) {
 }
 
 // ─── SIDEBAR ─────────────────────────────────────────────────────────────────
-function Sidebar({ productos, selMeta, onSelect, modoEmpresa, onEmpresa }) {
+function Sidebar({ productos, selMeta, onSelect, modoEmpresa, onEmpresa, bodega }) {
   const [buscar,setBuscar]=useState("");
   const lista=useMemo(()=>
     productos.filter(p=>
@@ -432,9 +510,20 @@ function Sidebar({ productos, selMeta, onSelect, modoEmpresa, onEmpresa }) {
                   </span>
                 </div>
               </div>
-              {prod.stockActual>0&&(
-                <div style={{width:6,height:6,borderRadius:"50%",background:C.green,marginTop:4,flexShrink:0}}/>
-              )}
+              {(()=>{
+                const b = bodega?.productos?.[prod.slug];
+                const diff = b?.mayo?.diferencia ?? b?.abril?.diferencia;
+                if (diff != null && diff !== 0) return (
+                  <div title={`Diferencia bodega: ${diff>0?"+":""}${Math.round(diff)}`}
+                    style={{width:7,height:7,borderRadius:"50%",
+                      background:Math.abs(diff)<500?C.amber:C.red,
+                      marginTop:3,flexShrink:0,boxShadow:`0 0 4px ${Math.abs(diff)<500?C.amber:C.red}`}}/>
+                );
+                if (prod.stockActual>0) return (
+                  <div style={{width:6,height:6,borderRadius:"50%",background:C.green,marginTop:4,flexShrink:0}}/>
+                );
+                return null;
+              })()}
             </button>
           );
         })}
@@ -627,12 +716,15 @@ function App() {
   const [modoEmpresa,setModoEmpresa] = useState(false);
   const [loading,setLoading]   = useState(false);
   const [err,setErr]           = useState(null);
+  const [bodega,setBodega]     = useState(null);
 
   useEffect(()=>{
     fetch("./data/index.json")
       .then(r=>{ if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(d=>{setIndex(d);if(d.productos.length>0)setSelMeta(d.productos[0]);})
       .catch(e=>setErr(`Error cargando datos: ${e.message} — verifica que data/index.json existe.`));
+    // Cargar bodega en paralelo (silencioso si no existe)
+    fetch("./data/bodega.json").then(r=>r.json()).then(setBodega).catch(()=>{});
   },[]);
 
   useEffect(()=>{
@@ -659,11 +751,13 @@ function App() {
   );
 
   return (
+    <BodegaCtx.Provider value={bodega}>
     <div style={{display:"flex",height:"100vh",overflow:"hidden",background:C.bg}}>
       <Sidebar productos={index.productos} selMeta={modoEmpresa?null:selMeta}
         onSelect={p=>{setSelMeta(p);setVista("resumen");setModoEmpresa(false);}}
         modoEmpresa={modoEmpresa}
-        onEmpresa={()=>setModoEmpresa(true)}/>
+        onEmpresa={()=>setModoEmpresa(true)}
+        bodega={bodega}/>
 
       <div style={{flex:1,display:"flex",flexDirection:"column",overflow:"hidden"}}>
         {/* Topbar */}
@@ -752,6 +846,7 @@ function App() {
         </div>
       </div>
     </div>
+    </BodegaCtx.Provider>
   );
 }
 

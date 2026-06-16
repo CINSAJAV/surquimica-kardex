@@ -1,0 +1,1060 @@
+{
+  "generado": "2026-06-16T12:09:56",
+  "archivo": "INVENTARIO BODEGAS SQ 29052026.xlsx",
+  "productos": {
+    "K-1": {
+      "nombre": "ACIDO FLUORHIDRICO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 2692.0,
+        "fisico": 2513.0,
+        "diferencia": -179.0,
+        "obs": "Merma procesos trasvasije."
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 1667.0,
+        "fisico": 1488.0,
+        "diferencia": -179.0,
+        "obs": null
+      }
+    },
+    "K-2": {
+      "nombre": "ACIDO FLUORSILICICO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 35925.0,
+        "fisico": 35925.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 102226.0,
+        "fisico": 104134.0,
+        "diferencia": 1908.0,
+        "obs": "Ganancia por uso de mas agua"
+      }
+    },
+    "K-3": {
+      "nombre": "BIFLORURO DE AMONIO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": null,
+        "obs": null
+      }
+    },
+    "K-4": {
+      "nombre": "FLUORSILICATO DE SODIO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 1372.5000034375103,
+        "fisico": 0.0,
+        "diferencia": -1372.5000034375103,
+        "obs": "Probable error de conteo en proceso de auditoria"
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": null,
+        "obs": null
+      }
+    },
+    "K-94": {
+      "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 24313.0,
+        "fisico": 18400.0,
+        "diferencia": -5913.0,
+        "obs": "Probable error de conteo en proceso de auditoria"
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 54570.0,
+        "fisico": 55706.0,
+        "diferencia": 1136.0,
+        "obs": "Recuperacion de producto en mal estado"
+      }
+    },
+    "K-5": {
+      "nombre": "FLUORURO DE SODIO NaF",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 3275.0,
+        "fisico": 6525.0,
+        "diferencia": 3250.0,
+        "obs": "Recuperacion de producto en mal estado"
+      }
+    },
+    "K-6": {
+      "nombre": "METABISULFITO DE SODIO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 6500.0,
+        "fisico": 10500.0,
+        "diferencia": 4000.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 10325.0,
+        "fisico": 12661.0,
+        "diferencia": 2336.0,
+        "obs": "Recuperacion de producto en mal estado"
+      }
+    },
+    "K-7": {
+      "nombre": "CLORURO FERRICO 42%",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 55404.0,
+        "fisico": 56850.0,
+        "diferencia": 1446.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 55154.0,
+        "fisico": 56600.0,
+        "diferencia": 1446.0,
+        "obs": null
+      }
+    },
+    "K-8": {
+      "nombre": "HIPOCLORITO DE SODIO LTS",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-9": {
+      "nombre": "ANTIFOAM SNAPSIL TG 10",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-10": {
+      "nombre": "SULFATO DE ALUMINIO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 31990.0,
+        "fisico": 29600.0,
+        "diferencia": -2390.0,
+        "obs": "Merma producto duro."
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 31990.0,
+        "fisico": 29600.0,
+        "diferencia": -2390.0,
+        "obs": "Merma producto duro, se considera reproceso Junio 2026."
+      }
+    },
+    "K-11": {
+      "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 8365.0,
+        "fisico": 8365.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 3285.0,
+        "fisico": 4775.0,
+        "diferencia": 1490.0,
+        "obs": "Recuperacion de producto en mal estado"
+      }
+    },
+    "K-12": {
+      "nombre": "SODA CAUSTICA EN ESCAMAS",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 4675.0,
+        "diferencia": 4675.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 4675.0,
+        "diferencia": 4675.0,
+        "obs": null
+      }
+    },
+    "K-13": {
+      "nombre": "CAL APAGADA SUPERFINA",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 1280.0,
+        "fisico": 632.0,
+        "diferencia": -648.0,
+        "obs": "Merma por daño en sacos."
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 5240.0,
+        "fisico": 4952.0,
+        "diferencia": -288.0,
+        "obs": "Merma final, se realizo recuperacion de producto en mal estado."
+      }
+    },
+    "K-14": {
+      "nombre": "BIG FLOC 868A",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 1800.0,
+        "fisico": 1800.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 2800.0,
+        "fisico": 2800.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-15": {
+      "nombre": "AWC A-102 PLUS",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-16": {
+      "nombre": "HICAT 1",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 240.0,
+        "fisico": 240.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-17": {
+      "nombre": "PERMANGANATO DE POTASIO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 50.0,
+        "fisico": 50.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 50.0,
+        "fisico": 50.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-19": {
+      "nombre": "POLFLOC 5050C",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 60.0,
+        "fisico": 60.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-20": {
+      "nombre": "ACIDO CITRICO ANHIDRO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-21": {
+      "nombre": "POLFLOC 9740C",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 9505.0,
+        "fisico": 9505.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 9505.0,
+        "fisico": 9505.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-22": {
+      "nombre": "POLFLOC 9640C",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 20.0,
+        "fisico": 20.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 20.0,
+        "fisico": 20.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-23": {
+      "nombre": "POLFLOC 9635C",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-24": {
+      "nombre": "POLFLOC 9620C",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 11350.0,
+        "fisico": 11350.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 11350.0,
+        "fisico": 11350.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-25": {
+      "nombre": "POLFLOC 2535A",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 2225.0,
+        "fisico": 2225.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 2225.0,
+        "fisico": 2225.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-26": {
+      "nombre": "POLFLOC 2530A",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 2975.0,
+        "fisico": 2975.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 2975.0,
+        "fisico": 2975.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-27": {
+      "nombre": "CARBONATO DE SODIO LIGERO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-28": {
+      "nombre": "DEFOAMER SQ-4103",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-29": {
+      "nombre": "DEFOAMER SQ-4378",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-30": {
+      "nombre": "ANTICRUST SQ-8809",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-31": {
+      "nombre": "ANTICRUST SQ-8812",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-32": {
+      "nombre": "POLICLORURO DE ALUMINIO 18%",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-33": {
+      "nombre": "SDIC 56% GRANULAR",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 3488.0,
+        "fisico": 3488.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 3488.0,
+        "fisico": 3488.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-34": {
+      "nombre": "SDIC 60% GRANULAR",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 235.0,
+        "fisico": 235.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 35.0,
+        "fisico": 35.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-35": {
+      "nombre": "SDIC 56% TABLETAS",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 5689.5,
+        "fisico": 5690.0,
+        "diferencia": 0.5,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 5690.0,
+        "fisico": 5690.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-36": {
+      "nombre": "SULFATO DE ALUMINIO FINO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 9746.0,
+        "fisico": 9750.0,
+        "diferencia": 4.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 9746.0,
+        "fisico": 9750.0,
+        "diferencia": 4.0,
+        "obs": null
+      }
+    },
+    "K-37": {
+      "nombre": "SULFATO DE ALUMINIO POLVO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 774.0,
+        "fisico": 675.0,
+        "diferencia": -99.0,
+        "obs": "Sacos en mal estado."
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 774.0,
+        "fisico": 675.0,
+        "diferencia": -99.0,
+        "obs": "Merma final. Sacos y producto en mal estado."
+      }
+    },
+    "K-38": {
+      "nombre": "SULFATO DE ALUMINIO LIQUIDO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-39": {
+      "nombre": "BUZYME 2516",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 395.0,
+        "fisico": 395.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 245.0,
+        "fisico": 245.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-40": {
+      "nombre": "BUFLOC 565 PWG",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-41": {
+      "nombre": "BUFLOC 5122",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 1219.0,
+        "fisico": 1219.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 1219.0,
+        "fisico": 1219.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-42": {
+      "nombre": "APCA-IB2",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 2.0,
+        "fisico": 2.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 2.0,
+        "fisico": 2.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-43": {
+      "nombre": "TCCA 87% TABLETAS",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 14962.0,
+        "fisico": 14962.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 14727.0,
+        "fisico": 14727.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-44": {
+      "nombre": "TCCA 90% TABLETAS",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 777.0,
+        "fisico": 777.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 777.0,
+        "fisico": 777.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-45": {
+      "nombre": "HIPOCLORITO DE CALCIO 70%",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 493.5,
+        "fisico": 494.0,
+        "diferencia": 0.5,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 494.0,
+        "fisico": 494.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-46": {
+      "nombre": "POLFLOC 9615C",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 5000.0,
+        "fisico": 5000.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 5000.0,
+        "fisico": 5000.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-47": {
+      "nombre": "POLFLOC 9610C",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 3950.0,
+        "fisico": 3775.0,
+        "diferencia": -175.0,
+        "obs": "Merma trasvasijes"
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 3950.0,
+        "fisico": 3775.0,
+        "diferencia": -175.0,
+        "obs": "Merma trasvasijes."
+      }
+    },
+    "K-88": {
+      "nombre": "CLARIFICADOR BIDON",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 523.0,
+        "fisico": 523.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 273.0,
+        "fisico": 273.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-89": {
+      "nombre": "CENIZA DE SODA PESADA",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 1.0,
+        "fisico": 0.0,
+        "diferencia": -1.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 1.0,
+        "fisico": 0.0,
+        "diferencia": -1.0,
+        "obs": null
+      }
+    },
+    "K-90": {
+      "nombre": "CARBONATO DE CALCIO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-91": {
+      "nombre": "BULAB 5955",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-92": {
+      "nombre": "BULAB 5953",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 32.0,
+        "fisico": 32.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 32.0,
+        "fisico": 32.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-93": {
+      "nombre": "SODA CAUSTICA LIQUIDA",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-95": {
+      "nombre": "AWC Pureflux SW",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 150.0,
+        "fisico": 150.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 30.0,
+        "fisico": 30.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-96": {
+      "nombre": "Acido Clorhidrico",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 31450.0,
+        "fisico": 39100.0,
+        "diferencia": 7650.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 80980.0,
+        "fisico": 88550.0,
+        "diferencia": 7570.0,
+        "obs": null
+      }
+    },
+    "K-97": {
+      "nombre": "Tester Cloro (cl) / pH basico",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 3.0,
+        "fisico": 3.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 3.0,
+        "fisico": 3.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-98": {
+      "nombre": "Óxido de Zinc",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-99": {
+      "nombre": "ACIDO NITRICO 42º",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 25.0,
+        "fisico": 25.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 25.0,
+        "fisico": 25.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-100": {
+      "nombre": "Hiposulfito de Sodio",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-101": {
+      "nombre": "CLORURO DE AMONIO",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 0.0,
+        "fisico": 0.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-102": {
+      "nombre": "Hipoclorito de Calcio 65% (Tabletas)",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 3000.0,
+        "fisico": 3000.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 3000.0,
+        "fisico": 3000.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    },
+    "K-103": {
+      "nombre": "ALAR P-23 A",
+      "abril": {
+        "fecha": "2026-04-30",
+        "softland": 4600.0,
+        "fisico": 4600.0,
+        "diferencia": 0.0,
+        "obs": null
+      },
+      "mayo": {
+        "fecha": "2026-05-29",
+        "softland": 3825.0,
+        "fisico": 3825.0,
+        "diferencia": 0.0,
+        "obs": null
+      }
+    }
+  }
+}
