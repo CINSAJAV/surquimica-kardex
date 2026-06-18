@@ -1,7 +1,8 @@
 import { useState, useEffect, useMemo, useContext, createContext } from "react";
 
-// Contexto global de bodega (cargado una vez en App)
-const BodegaCtx = createContext(null);
+// Contextos globales cargados una vez en App
+const BodegaCtx  = createContext(null);
+const PreciosCtx = createContext(null);
 
 // ─── TOKENS ──────────────────────────────────────────────────────────────────
 const C = {
@@ -165,6 +166,7 @@ function PanelBodega({ slug, unidad }) {
 
 // ─── VISTA RESUMEN ────────────────────────────────────────────────────────────
 function VistaResumen({ p }) {
+  const preciosCtx = useContext(PreciosCtx);
   const ventas  = p.movimientos.filter(m=>m.tipo==="Venta");
   const compras = p.movimientos.filter(m=>m.tipo==="Compra");
 
@@ -180,10 +182,25 @@ function VistaResumen({ p }) {
     .sort((a,b)=>b.vol-a.vol);
   const maxVol = cli[0]?.vol||1;
 
-  const totalH = ventas.reduce((s,v)=>s+v.haber,0);
-  const costo  = ventas.reduce((s,v)=>s+v.salida*v.pmp,0);
-  const margen = totalH-costo;
-  const mPct   = totalH>0?(margen/totalH)*100:0;
+  // Margen: usa precios acordados si existen (igual que VistaMargen)
+  const preciosProd = preciosCtx?.productos?.[p.codigo] ?? null;
+  const { totalIngreso, totalCosto } = ventas.reduce((acc, v) => {
+    const ac = preciosProd
+      ? Object.keys(preciosProd).find(n => n === v.cliente || v.cliente.includes(n) || n.includes(v.cliente))
+      : null;
+    const acuerdo = ac ? preciosProd[ac] : null;
+    if (acuerdo?.precio_venta != null && acuerdo?.pmp_ultimo != null) {
+      const vol = acuerdo.cantidad ?? v.salida;
+      acc.totalIngreso += acuerdo.precio_venta * vol;
+      acc.totalCosto   += acuerdo.pmp_ultimo   * vol;
+    } else {
+      acc.totalIngreso += v.haber;
+      acc.totalCosto   += v.salida * v.pmp;
+    }
+    return acc;
+  }, { totalIngreso: 0, totalCosto: 0 });
+  const margen = totalIngreso - totalCosto;
+  const mPct   = totalIngreso > 0 ? (margen / totalIngreso) * 100 : 0;
 
   const saldoEvol = p.movimientos.filter(m=>m.saldo_kg!=null).map(m=>m.saldo_kg);
   const pmpEvol   = p.movimientos.filter(m=>m.pmp>0).map(m=>m.pmp);
@@ -197,7 +214,7 @@ function VistaResumen({ p }) {
           sub="Precio medio ponderado" color={C.accent} mono/>
         <KPI label="Vol. vendido 2026" value={`${num(p.totalSalidas)} ${p.unidad}`}
           sub={`${ventas.length} movimientos`} color={C.green}/>
-        <KPI label="Margen bruto est." value={`${mPct.toFixed(1)}%`}
+        <KPI label="Margen bruto" value={`${mPct.toFixed(1)}%`}
           sub={clp(margen)} color={mPct>20?C.green:C.amber}/>
       </div>
 
@@ -365,13 +382,7 @@ function VistaMovimientos({ p }) {
 
 // ─── VISTA MÁRGENES ───────────────────────────────────────────────────────────
 function VistaMargen({ p }) {
-  const [preciosData, setPreciosData] = useState(null);
-
-  useEffect(() => {
-    fetch("./data/precios.json").then(r=>r.json()).then(setPreciosData).catch(()=>{});
-  }, []);
-
-  // Precios acordados para este producto (puede ser null si no hay archivo)
+  const preciosData = useContext(PreciosCtx);
   const preciosProd = preciosData?.productos?.[p.codigo] ?? null;
 
   const ventas = p.movimientos.filter(m=>m.tipo==="Venta");
@@ -653,21 +664,17 @@ function calcMargen(prod, acuerdo) {
 }
 
 function VistaEmpresas({ onIrProducto }) {
+  const precios               = useContext(PreciosCtx);
   const [data, setData]       = useState(null);
-  const [precios, setPrecios] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [sel, setSel]         = useState(null);   // empresa seleccionada
+  const [sel, setSel]         = useState(null);
   const [buscar, setBuscar]   = useState("");
 
   useEffect(() => {
-    Promise.all([
-      fetch("./data/empresas.json").then(r => r.json()),
-      fetch("./data/precios.json").then(r => r.json()).catch(() => null),
-    ]).then(([emp, prec]) => {
-      setData(emp);
-      setPrecios(prec);
-      setLoading(false);
-    }).catch(() => setLoading(false));
+    fetch("./data/empresas.json")
+      .then(r => r.json())
+      .then(d => { setData(d); setLoading(false); })
+      .catch(() => setLoading(false));
   }, []);
 
   const empresas = useMemo(() => {
@@ -875,14 +882,15 @@ function App() {
   const [loading,setLoading]   = useState(false);
   const [err,setErr]           = useState(null);
   const [bodega,setBodega]     = useState(null);
+  const [precios,setPrecios]   = useState(null);
 
   useEffect(()=>{
     fetch("./data/index.json")
       .then(r=>{ if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(d=>{setIndex(d);if(d.productos.length>0)setSelMeta(d.productos[0]);})
       .catch(e=>setErr(`Error cargando datos: ${e.message} — verifica que data/index.json existe.`));
-    // Cargar bodega en paralelo (silencioso si no existe)
     fetch("./data/bodega.json").then(r=>r.json()).then(setBodega).catch(()=>{});
+    fetch("./data/precios.json").then(r=>r.json()).then(setPrecios).catch(()=>{});
   },[]);
 
   useEffect(()=>{
@@ -909,6 +917,7 @@ function App() {
   );
 
   return (
+    <PreciosCtx.Provider value={precios}>
     <BodegaCtx.Provider value={bodega}>
     <div style={{display:"flex",height:"100vh",overflow:"hidden",background:C.bg}}>
       <Sidebar productos={index.productos} selMeta={modoEmpresa?null:selMeta}
@@ -1005,6 +1014,7 @@ function App() {
       </div>
     </div>
     </BodegaCtx.Provider>
+    </PreciosCtx.Provider>
   );
 }
 
