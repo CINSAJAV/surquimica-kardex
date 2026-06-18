@@ -1,5 +1,5 @@
 {
-  "generado": "2026-06-18T13:07:51",
+  "generado": "2026-06-18T13:18:11",
   "total": 30,
   "productos": [
     {
@@ -339,10 +339,10 @@
       "slug": "K-7"
     },
     {
-      "codigo": "K-8",
+      "codigo": "K-8-1",
       "nombre": "HIPOCLORITO DE SODIO",
       "unidad": "kg",
-      "archivo": "K 8 KGS HIPOCLORITO DE SODIO - 2026.xlsx",
+      "archivo": "K 8.1 KGS HIPOCLORITO DE SODIO - 2026.xlsx",
       "stockActual": 98014.0,
       "pmpActual": 243.574,
       "saldoActualPesos": 23873661.662351865,
@@ -350,13 +350,13 @@
       "totalSalidas": 627441.0,
       "totalHaber": 153966898.29027593,
       "nMovimientos": 142,
-      "slug": "K-8"
+      "slug": "K-8-1"
     },
     {
-      "codigo": "K-8",
+      "codigo": "K-8-2",
       "nombre": "HIPOCLORITO DE SODIO",
       "unidad": "lt",
-      "archivo": "K 8 LTS HIPOCLORITO DE SODIO - 2026.xlsx",
+      "archivo": "K 8.2 LTS HIPOCLORITO DE SODIO - 2026.xlsx",
       "stockActual": 9.999930625781417e-07,
       "pmpActual": 283.0198,
       "saldoActualPesos": 0.00028301787097007036,
@@ -364,7 +364,7 @@
       "totalSalidas": 339721.0,
       "totalHaber": 101484709.04708935,
       "nMovimientos": 264,
-      "slug": "K-8"
+      "slug": "K-8-2"
     },
     {
       "codigo": "K-88",

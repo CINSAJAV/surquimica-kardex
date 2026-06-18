@@ -1,5 +1,5 @@
 {
-  "generado": "2026-06-18T13:07:51",
+  "generado": "2026-06-18T13:18:11",
   "total": 157,
   "empresas": [
     {
@@ -12,8 +12,8 @@
       "primeraFecha": "2026-01-02",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-2",
+          "slug": "K-8-2",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "lt",
           "vol": 269921.0,
@@ -48,8 +48,8 @@
       "primeraFecha": "2026-01-14",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 142000.0,
@@ -84,8 +84,8 @@
       "primeraFecha": "2026-01-02",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 138354.0,
@@ -132,8 +132,8 @@
       "primeraFecha": "2026-01-06",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 150900.0,
@@ -204,8 +204,8 @@
       "primeraFecha": "2026-02-10",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 108069.0,
@@ -228,8 +228,8 @@
       "primeraFecha": "2026-01-23",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-2",
+          "slug": "K-8-2",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "lt",
           "vol": 61000.0,
@@ -360,8 +360,8 @@
       "primeraFecha": "2026-02-25",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 66578.0,
@@ -1032,8 +1032,8 @@
           "primeraFecha": "2026-01-14"
         },
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 5000.0,
@@ -1356,8 +1356,8 @@
       "primeraFecha": "2026-05-04",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 10556.0,
@@ -1692,8 +1692,8 @@
       "primeraFecha": "2026-02-02",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-2",
+          "slug": "K-8-2",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "lt",
           "vol": 5000.0,
@@ -1800,8 +1800,8 @@
           "primeraFecha": "2026-04-14"
         },
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-2",
+          "slug": "K-8-2",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "lt",
           "vol": 2000.0,
@@ -2412,8 +2412,8 @@
       "primeraFecha": "2026-02-09",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 3480.0,
@@ -2892,8 +2892,8 @@
       "primeraFecha": "2026-02-19",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-2",
+          "slug": "K-8-2",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "lt",
           "vol": 1000.0,
@@ -2940,8 +2940,8 @@
       "primeraFecha": "2026-04-21",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 1160.0,
@@ -3216,8 +3216,8 @@
       "primeraFecha": "2026-01-27",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-2",
+          "slug": "K-8-2",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "lt",
           "vol": 500.0,
@@ -3444,8 +3444,8 @@
       "primeraFecha": "2026-01-06",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 390.0,
@@ -3468,8 +3468,8 @@
       "primeraFecha": "2026-02-10",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-2",
+          "slug": "K-8-2",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "lt",
           "vol": 300.0,
@@ -3660,8 +3660,8 @@
       "primeraFecha": "2026-05-08",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 300.0,
@@ -3828,8 +3828,8 @@
       "primeraFecha": "2026-01-20",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 176.0,
@@ -3900,8 +3900,8 @@
       "primeraFecha": "2026-04-21",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 130.0,
@@ -3924,8 +3924,8 @@
       "primeraFecha": "2026-01-21",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 65.0,
@@ -3948,8 +3948,8 @@
       "primeraFecha": "2026-02-03",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 65.0,
@@ -3996,8 +3996,8 @@
       "primeraFecha": "2026-02-19",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 65.0,
@@ -4020,8 +4020,8 @@
       "primeraFecha": "2026-03-17",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 65.0,
@@ -4044,8 +4044,8 @@
       "primeraFecha": "2026-03-04",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 44.0,
@@ -4092,8 +4092,8 @@
       "primeraFecha": "2026-02-06",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 22.0,
@@ -4116,8 +4116,8 @@
       "primeraFecha": "2026-05-14",
       "productos": [
         {
-          "codigo": "K-8",
-          "slug": "K-8",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
           "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
           "vol": 22.0,

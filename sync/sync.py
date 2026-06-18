@@ -23,7 +23,7 @@ import openpyxl
 
 # ─── CONFIGURACIÓN ────────────────────────────────────────────────────────────
 
-DRIVE_PATH  = Path(r"G:\.shortcut-targets-by-id\1WGFMVMyGH8IRTORT5hrk8YRxX_7RNtp2\2026")
+DRIVE_PATH  = Path(r"G:\Mi unidad\Surquimica\Kardex")
 BODEGA_PATH   = Path(r"G:\Mi unidad\Surquimica\INVENTARIO BODEGAS SQ 29052026.xlsx")
 PRECIOS_GLOB  = r"G:\Mi unidad\Surquimica\Clientes_K*.xlsx"
 OUTPUT_DIR  = Path(__file__).parent.parent / "public" / "data"
@@ -325,6 +325,12 @@ def main():
     for arch in archivos:
         print(f"Procesando: {arch.name}")
         prods = parse_archivo(arch)
+        # Si el nombre de archivo tiene variante decimal (K 8.1, K 8.2), forzar codigo
+        mv = re.match(r"K\s+(\d+\.\d+)\s", arch.name)
+        if mv and prods:
+            codigo_forzado = f"K-{mv.group(1).replace('.', '-')}"
+            for pr in prods:
+                pr["codigo"] = codigo_forzado
         if not prods:
             errores.append(arch.name)
             print(f"  → Sin productos extraídos")
@@ -333,8 +339,8 @@ def main():
             print(f"  OK {p['codigo']} {p['nombre']} | "
                   f"stock={p['stockActual']:,.0f} {p['unidad']} | "
                   f"movs={len(p['movimientos'])}")
-            # Guardar JSON individual
-            slug = re.sub(r"[^\w\-]", "", p["codigo"].replace(" ", "-"))
+            # Guardar JSON individual (puntos → guiones para slugs limpios)
+            slug = re.sub(r"[^\w\-]", "", p["codigo"].replace(" ", "-").replace(".", "-"))
             out_file = OUTPUT_DIR / f"{slug}.json"
             with open(out_file, "w", encoding="utf-8") as f:
                 json.dump(p, f, ensure_ascii=False, indent=2, default=str)
@@ -396,7 +402,7 @@ def main():
                 if not e["primeraFecha"] or mv["fecha"] < e["primeraFecha"]:
                     e["primeraFecha"] = mv["fecha"]
 
-            slug = re.sub(r"[^\w\-]", "", p["codigo"].replace(" ", "-"))
+            slug = re.sub(r"[^\w\-]", "", p["codigo"].replace(" ", "-").replace(".", "-"))
             if slug not in e["productos"]:
                 e["productos"][slug] = {
                     "codigo": p["codigo"],
@@ -561,11 +567,18 @@ def parse_precios() -> dict:
 
     for ruta in archivos:
         path = Path(ruta)
-        # Extraer código del nombre: Clientes_K1_... → K-1
-        m = re.match(r"Clientes_K(\d+)_", path.name)
+        # Extraer código del nombre: Clientes_K1_... → K-1, Clientes_K8L_... → K-8-2
+        # Soporta: K8 → K-8, K8.1 → K-8-1, K8L → K-8-2 (L = litros, segunda variante)
+        m = re.match(r"Clientes_K(\d+(?:\.\d+)?)(L?)_", path.name, re.IGNORECASE)
         if not m:
             continue
-        slug = f"K-{m.group(1)}"
+        num_part = m.group(1).replace(".", "-")
+        l_suffix = m.group(2).upper()
+        if l_suffix == "L":
+            # Variante litros: busca K-{num}-2 si existe, si no K-{num}L
+            slug = f"K-{num_part}-2"
+        else:
+            slug = f"K-{num_part}"
 
         try:
             wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
