@@ -392,34 +392,44 @@ function VistaMargen({ p }) {
       );
       if (key) acuerdo = preciosProd[key];
     }
-    const pMed = v.vol>0 ? v.monto/v.vol : 0;
-    const margenAcordado = acuerdo?.margen ?? null;
     const precioAcordado = acuerdo?.precio_venta ?? null;
-    // Diferencia precio real vs acordado
-    const diffPrecio = precioAcordado != null ? pMed - precioAcordado : null;
-    return {
-      cliente:k,...v,
-      margen:v.monto-v.costo,
-      mPct:v.monto>0?((v.monto-v.costo)/v.monto)*100:0,
-      pMed,
-      precioAcordado,
-      margenAcordado,
-      diffPrecio,
-    };
-  }).sort((a,b)=>b.monto-a.monto);
+    const pmpUltimo      = acuerdo?.pmp_ultimo   ?? null;
+    const cantAcuerdo    = acuerdo?.cantidad      ?? v.vol;
 
-  const totM=arr.reduce((s,r)=>s+r.monto,0);
-  const totC=arr.reduce((s,r)=>s+r.costo,0);
-  const totMg=totM-totC;
-  const totPct=totM>0?(totMg/totM)*100:0;
+    // Si tenemos datos acordados: ingreso = precio_venta × cantidad, costo = pmp_ultimo × cantidad
+    const ingreso = precioAcordado != null
+      ? precioAcordado * cantAcuerdo
+      : v.monto;
+    const costo = pmpUltimo != null
+      ? pmpUltimo * cantAcuerdo
+      : v.costo;
+    const margenCalc = ingreso - costo;
+    const mPct = ingreso > 0 ? (margenCalc / ingreso) * 100 : 0;
+
+    return {
+      cliente: k,
+      vol: cantAcuerdo,
+      ingreso,
+      costo,
+      margen: margenCalc,
+      mPct,
+      precioAcordado,
+      pmpUltimo,
+    };
+  }).sort((a,b)=>b.ingreso-a.ingreso);
+
+  const totM  = arr.reduce((s,r)=>s+r.ingreso,0);
+  const totC  = arr.reduce((s,r)=>s+r.costo,0);
+  const totMg = totM-totC;
+  const totPct = totM>0?(totMg/totM)*100:0;
   const hayAcuerdos = arr.some(r=>r.precioAcordado!=null);
 
   // Columnas variables según si hay datos de precios acordados
   const GRID = hayAcuerdos
-    ? "1.4fr 75px 105px 90px 95px 95px 80px 90px"
+    ? "1.6fr 80px 110px 110px 95px 95px 90px"
     : "1.6fr 80px 108px 108px 90px 108px 90px";
   const headers = hayAcuerdos
-    ? ["Cliente",`Vol(${p.unidad})`,"Ingreso","Costo",`P.real/$${p.unidad}`,`P.acordado/$${p.unidad}`,"Δ precio","Margen %"]
+    ? ["Cliente",`Vol(${p.unidad})`,"Ingreso","Costo",`P.venta/$${p.unidad}`,`PMP último/$${p.unidad}`,"Margen %"]
     : ["Cliente",`Vol(${p.unidad})`,"Ingreso","Costo",`P.vta/$${p.unidad}`,"Margen $","Margen %"];
 
   return (
@@ -427,16 +437,16 @@ function VistaMargen({ p }) {
       <div style={{background:"#0A1F0A",border:`1px solid #2A5A2A`,borderRadius:8,
         padding:"10px 14px",fontSize:12,color:"#6EE68E"}}>
         {hayAcuerdos
-          ? "Precio real = haber ÷ salida del Kardex. Precio acordado = tabla de precios por cliente (Enero–Abril 2026). Δ = real − acordado."
-          : "Margen = precio real de venta (haber/salida del Kardex) menos costo PMP al momento de cada venta."}
+          ? "Ingreso = precio acordado × cantidad. Costo = PMP último × cantidad. Margen % = (Ingreso − Costo) ÷ Ingreso."
+          : "Ingreso = haber del Kardex. Costo = volumen × PMP al momento de venta."}
       </div>
       <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:10}}>
         <KPI label="Margen bruto total" value={clp(totMg)}
-          sub={`${totPct.toFixed(1)}% sobre ventas`} color={totPct>20?C.green:C.amber}/>
+          sub={`${totPct.toFixed(1)}% sobre ingresos`} color={totPct>20?C.green:C.amber}/>
         <KPI label="Ingresos totales" value={clp(totM)}
-          sub={`${num(ventas.reduce((s,v)=>s+v.salida,0))} ${p.unidad} vendidos`} color={C.accent}/>
-        <KPI label="Costo estimado" value={clp(totC)}
-          sub="Vol × PMP al momento de venta" color={C.sub}/>
+          sub={hayAcuerdos?"P.venta × cantidad":"Haber Kardex"} color={C.accent}/>
+        <KPI label="Costo total" value={clp(totC)}
+          sub={hayAcuerdos?"PMP último × cantidad":"Vol × PMP venta"} color={C.sub}/>
       </div>
       <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
         <div style={{display:"grid",gridTemplateColumns:GRID,padding:"8px 16px",
@@ -453,24 +463,22 @@ function VistaMargen({ p }) {
             <div style={{color:C.text,fontWeight:600,fontSize:12,
               overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{corto(r.cliente)}</div>
             <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>{num(r.vol)}</div>
-            <div style={{fontFamily:MONO,fontSize:12,color:C.text}}>{clp(r.monto)}</div>
-            {!hayAcuerdos && <div style={{fontFamily:MONO,fontSize:12,color:C.muted}}>{clp(r.costo)}</div>}
-            <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>${num(r.pMed,0)}</div>
-            {hayAcuerdos && (
+            <div style={{fontFamily:MONO,fontSize:12,color:C.text}}>{clp(r.ingreso)}</div>
+            <div style={{fontFamily:MONO,fontSize:12,color:C.muted}}>{clp(r.costo)}</div>
+            {hayAcuerdos ? (
               <>
-                <div style={{fontFamily:MONO,fontSize:12,color:r.precioAcordado!=null?C.sub:C.muted}}>
-                  {r.precioAcordado!=null ? `$${num(r.precioAcordado,0)}` : "—"}
+                <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>
+                  {r.precioAcordado!=null?`$${num(r.precioAcordado,0)}`:"—"}
                 </div>
-                <div style={{fontFamily:MONO,fontSize:12,
-                  color:r.diffPrecio==null?C.muted:r.diffPrecio>=0?C.green:C.red}}>
-                  {r.diffPrecio!=null
-                    ? `${r.diffPrecio>=0?"+":""}$${num(r.diffPrecio,0)}`
-                    : "—"}
+                <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>
+                  {r.pmpUltimo!=null?`$${num(r.pmpUltimo,0)}`:"—"}
                 </div>
               </>
-            )}
-            {!hayAcuerdos && (
-              <div style={{fontFamily:MONO,fontSize:12,color:r.margen>=0?C.green:C.red}}>{clp(r.margen)}</div>
+            ) : (
+              <>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>${num(r.vol>0?r.ingreso/r.vol:0,0)}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:r.margen>=0?C.green:C.red}}>{clp(r.margen)}</div>
+              </>
             )}
             <div>
               <span style={{fontFamily:MONO,fontSize:14,fontWeight:800,
@@ -485,10 +493,8 @@ function VistaMargen({ p }) {
           <div style={{color:C.text,fontWeight:800}}>TOTAL</div>
           <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{num(arr.reduce((s,r)=>s+r.vol,0))}</div>
           <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{clp(totM)}</div>
-          {!hayAcuerdos && <div style={{fontFamily:MONO,fontWeight:700,color:C.muted}}>{clp(totC)}</div>}
-          <div/>
-          {hayAcuerdos && <><div/><div/></>}
-          {!hayAcuerdos && <div style={{fontFamily:MONO,fontWeight:700,color:C.green}}>{clp(totMg)}</div>}
+          <div style={{fontFamily:MONO,fontWeight:700,color:C.muted}}>{clp(totC)}</div>
+          <div/><div/>
           <div style={{fontFamily:MONO,fontSize:14,fontWeight:800,
             color:totPct>=20?C.green:C.amber}}>{totPct.toFixed(1)}%</div>
         </div>

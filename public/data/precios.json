@@ -1,82 +1,159 @@
 {
-  "generado": "2026-06-18T10:41:47",
+  "generado": "2026-06-18T11:00:26",
   "productos": {
+    "K-10": {
+      "AGUAS PATAGONIA DE AYSEN": {
+        "cantidad": 19000.0,
+        "pmp_pond": 286.61,
+        "pmp_ultimo": 286.61,
+        "precio_venta": 649.8,
+        "margen": 363.19
+      },
+      "EMP.SERV.SANIT.SAN.ISIDRO": {
+        "cantidad": 500.0,
+        "pmp_pond": 286.61,
+        "pmp_ultimo": 286.61,
+        "precio_venta": 570.0,
+        "margen": 283.39
+      }
+    },
+    "K-11": {
+      "AGUAS PATAGONIA DE AYSEN": {
+        "cantidad": 4000.0,
+        "pmp_pond": 1467.23,
+        "pmp_ultimo": 1467.23,
+        "precio_venta": 1900.8,
+        "margen": 433.57
+      },
+      "EMP.SERV.SANIT.SAN.ISIDRO S.A. (VÁLIDO HASTA 31-05)": {
+        "cantidad": 1090.0,
+        "pmp_pond": 1467.23,
+        "pmp_ultimo": 1467.23,
+        "precio_venta": 2105.94,
+        "margen": 638.71
+      },
+      "PATAGONIA SOSTENIBLE DE AYSEN": {
+        "cantidad": 300.0,
+        "pmp_pond": 1467.23,
+        "pmp_ultimo": 1467.23,
+        "precio_venta": 2655.0,
+        "margen": 1187.77
+      },
+      "OREGON CHEM GROUP SPA (VÁLIDO HASTA ABRIL)": {
+        "cantidad": 270.0,
+        "pmp_pond": 1467.23,
+        "pmp_ultimo": 1467.23,
+        "precio_venta": 1890.0,
+        "margen": 422.77
+      }
+    },
+    "K-13": {
+      "EMP.SERV.SANIT.SAN.ISIDRO S.A. (VÁLIDO HASTA 31-05)": {
+        "cantidad": 3740.0,
+        "pmp_pond": 236.59,
+        "pmp_ultimo": 236.59,
+        "precio_venta": 268.82,
+        "margen": 32.23
+      }
+    },
+    "K-14": {
+      "EMP.SERV.SANIT.SAN.ISIDRO S.A. - PADRE HURTADO (VÁLIDO HASTA 31-05)": {
+        "cantidad": 5400.0,
+        "pmp_pond": 4354.07,
+        "pmp_ultimo": 4377.27,
+        "precio_venta": 5030.9,
+        "margen": 653.63
+      }
+    },
     "K-1": {
       "SERVICIOS MARITIMOS PACIFIC SHIPS SERVICES": {
         "cantidad": 625.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 6420.0,
         "margen": 3070.85
       },
       "PROQUIMSA": {
         "cantidad": 600.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 6256.0,
         "margen": 2906.85
       },
       "OVEL": {
         "cantidad": 500.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 6076.0,
         "margen": 2726.85
       },
       "DESARROLLO E INVESTIGACIONES TECNOLOGICAS": {
         "cantidad": 500.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 6240.0,
         "margen": 2890.85
       },
       "IDADQUIM": {
         "cantidad": 475.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 7154.0,
         "margen": 3804.85
       },
       "INVERSIONES CIELO CUATRO": {
         "cantidad": 200.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 6240.0,
         "margen": 2890.85
       },
       "QUÍMICOS LUCÍA RODRÍGUEZ": {
         "cantidad": 100.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 7154.0,
         "margen": 3804.85
       },
       "CIA TRATAMIENTOS DE AGUA Y COMBUSTION": {
         "cantidad": 100.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 6379.0,
         "margen": 3029.85
       },
       "INDUSTRIAL ALIANZA": {
         "cantidad": 100.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 6379.0,
         "margen": 3029.85
       },
       "SOC COMERCIALIZADORA DIST. E INVERS. QUIMICOS ROBLES": {
         "cantidad": 100.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 7154.0,
         "margen": 3804.85
       },
       "DISTRIBUIDORA CIENTIFICA": {
         "cantidad": 75.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 6256.0,
         "margen": 2906.85
       },
       "COMERCIALIZADORA FOSFAMET": {
         "cantidad": 50.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 7154.0,
         "margen": 3804.85
       },
       "PAPELERA Y PRODUCTOS BELPRO LIMITADA": {
         "cantidad": 25.0,
         "pmp_pond": 3349.15,
+        "pmp_ultimo": 3349.15,
         "precio_venta": 7739.0,
         "margen": 4389.85
       }
@@ -85,36 +162,42 @@
       "ESVAL": {
         "cantidad": 104900.0,
         "pmp_pond": 457.12,
+        "pmp_ultimo": 429.98,
         "precio_venta": null,
         "margen": null
       },
       "NUEVA ATACAMA": {
         "cantidad": 25300.0,
         "pmp_pond": 454.03,
+        "pmp_ultimo": 429.98,
         "precio_venta": 819.0,
         "margen": 389.02
       },
       "AGUAS PATAGONIA DE AYSEN": {
         "cantidad": 23000.0,
         "pmp_pond": 431.81,
+        "pmp_ultimo": 429.98,
         "precio_venta": 771.3,
         "margen": 341.32
       },
       "AGUAS DEL VALLE": {
         "cantidad": 16680.0,
         "pmp_pond": 347.52,
+        "pmp_ultimo": 429.98,
         "precio_venta": 588.69,
         "margen": 158.71
       },
       "I. MUNICIPALIDAD DE MAIPU": {
         "cantidad": 3500.0,
         "pmp_pond": 748.35,
+        "pmp_ultimo": 748.35,
         "precio_venta": 1425.0,
         "margen": 676.65
       },
       "SERVICIOS SANITARIOS LARAPINTA": {
         "cantidad": 1250.0,
         "pmp_pond": 477.71,
+        "pmp_ultimo": 429.98,
         "precio_venta": 1463.0,
         "margen": 1033.02
       }
@@ -123,12 +206,14 @@
       "SURALIS S.A. (FORMATO 25 KG)": {
         "cantidad": 6490.0,
         "pmp_pond": 692.29,
+        "pmp_ultimo": 692.29,
         "precio_venta": 1244.0,
         "margen": 551.71
       },
       "AGUAS DE ANTOFAGASTA": {
         "cantidad": 1000.0,
         "pmp_pond": 692.29,
+        "pmp_ultimo": 692.29,
         "precio_venta": 977.0,
         "margen": 284.71
       }
@@ -137,18 +222,21 @@
       "AGUAS DE ANTOFAGASTA": {
         "cantidad": 27000.0,
         "pmp_pond": 1734.82,
+        "pmp_ultimo": 1340.86,
         "precio_venta": 1740.0,
         "margen": 399.14
       },
       "CORRETAJES Y SERVICIOS DE NUTRICION ANIMAL": {
         "cantidad": 125.0,
         "pmp_pond": 1340.86,
+        "pmp_ultimo": 1340.86,
         "precio_venta": 4327.0,
         "margen": 2986.14
       },
       "IDADQUIM": {
         "cantidad": 100.0,
         "pmp_pond": 2860.42,
+        "pmp_ultimo": 2860.42,
         "precio_venta": 5505.0,
         "margen": 2644.58
       }
@@ -157,18 +245,21 @@
       "NUEVA ATACAMA": {
         "cantidad": 9450.0,
         "pmp_pond": 828.11,
+        "pmp_ultimo": 851.5,
         "precio_venta": 972.0,
         "margen": 120.5
       },
       "SOCIEDAD IMPORTADORA LIPLATA": {
         "cantidad": 1000.0,
         "pmp_pond": 821.88,
+        "pmp_ultimo": 821.88,
         "precio_venta": null,
         "margen": null
       },
       "EMP.SERV.SANIT.SAN.ISIDRO S.A. (VÁLIDO HASTA 31-05)": {
         "cantidad": 475.0,
         "pmp_pond": 834.74,
+        "pmp_ultimo": 851.5,
         "precio_venta": 1338.49,
         "margen": 486.99
       }
@@ -177,12 +268,14 @@
       "NUEVA ATACAMA": {
         "cantidad": 3500.0,
         "pmp_pond": 315.24,
+        "pmp_ultimo": 315.24,
         "precio_venta": 612.0,
         "margen": 296.76
       },
       "EMP.SERV.SANIT.SAN.ISIDRO": {
         "cantidad": 250.0,
         "pmp_pond": 315.24,
+        "pmp_ultimo": 315.24,
         "precio_venta": 591.0,
         "margen": 275.76
       }

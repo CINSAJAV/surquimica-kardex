@@ -26,7 +26,7 @@ import openpyxl
 DRIVE_PATH  = Path(r"G:\.shortcut-targets-by-id\1WGFMVMyGH8IRTORT5hrk8YRxX_7RNtp2\2026")
 BODEGA_PATH   = Path(r"G:\Mi unidad\Surquimica\INVENTARIO BODEGAS SQ 29052026.xlsx")
 PRECIOS_GLOB  = r"G:\Mi unidad\Surquimica\Clientes_K*.xlsx"
-OUTPUT_DIR  = Path(__file__).parent.parent / "web" / "public" / "data"
+OUTPUT_DIR  = Path(__file__).parent.parent / "public" / "data"
 
 # Patrones de texto en detalle que indican que NO es nombre de cliente
 SKIP_PATTERNS = re.compile(
@@ -630,15 +630,18 @@ def parse_precios() -> dict:
             margen = _num(margen_raw)
             cantidad = _num(cantidad_raw)
             pmp_pond = _num(pmp_pond_raw)
+            pmp_ultimo_raw = row[col_map.get("pmp_ultimo", -1)] if "pmp_ultimo" in col_map else None
+            pmp_ultimo = _num(pmp_ultimo_raw)
 
             # Normalizar nombre cliente (quitar sufijos legales)
             nombre = _SUFIJOS.sub("", cliente_raw).strip().upper()
 
             clientes[nombre] = {
-                "cantidad": round(cantidad, 2) if cantidad is not None else None,
-                "pmp_pond": round(pmp_pond, 2) if pmp_pond is not None else None,
-                "precio_venta": round(precio, 2) if precio is not None else None,
-                "margen": round(margen, 2) if margen is not None else None,
+                "cantidad":    round(cantidad, 2)   if cantidad   is not None else None,
+                "pmp_pond":    round(pmp_pond, 2)   if pmp_pond   is not None else None,
+                "pmp_ultimo":  round(pmp_ultimo, 2) if pmp_ultimo is not None else None,
+                "precio_venta":round(precio, 2)     if precio     is not None else None,
+                "margen":      round(margen, 2)     if margen     is not None else None,
             }
 
         if clientes:
