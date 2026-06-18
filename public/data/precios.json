@@ -1,5 +1,5 @@
 {
-  "generado": "2026-06-18T11:00:26",
+  "generado": "2026-06-18T13:07:51",
   "productos": {
     "K-10": {
       "AGUAS PATAGONIA DE AYSEN": {
@@ -278,6 +278,85 @@
         "pmp_ultimo": 315.24,
         "precio_venta": 591.0,
         "margen": 275.76
+      }
+    },
+    "K-8": {
+      "NUEVA ATACAMA": {
+        "cantidad": 142000.0,
+        "pmp_pond": 246.15,
+        "pmp_ultimo": 243.57,
+        "precio_venta": 396.0,
+        "margen": 152.43
+      },
+      "EMP.SERV.SANIT.SAN.ISIDRO": {
+        "cantidad": 138354.0,
+        "pmp_pond": 249.21,
+        "pmp_ultimo": 243.57,
+        "precio_venta": 468.0,
+        "margen": 224.43
+      },
+      "OREGON CHEM GROUP": {
+        "cantidad": 5000.0,
+        "pmp_pond": 271.47,
+        "pmp_ultimo": 271.47,
+        "precio_venta": 495.0,
+        "margen": 223.53
+      },
+      "CORPORACION MUNICIPAL DE DESARROLLO SOCIAL DE COLINA": {
+        "cantidad": 3480.0,
+        "pmp_pond": 245.11,
+        "pmp_ultimo": 243.57,
+        "precio_venta": 470.83,
+        "margen": 227.26
+      },
+      "IVAN ANDRES SCHAPIRA PEREZ COT/": {
+        "cantidad": 1160.0,
+        "pmp_pond": 243.96,
+        "pmp_ultimo": 243.96,
+        "precio_venta": 484.83,
+        "margen": 240.87
+      },
+      "LAVANDERÍA QUICK CLEANING": {
+        "cantidad": 780.0,
+        "pmp_pond": 246.36,
+        "pmp_ultimo": 243.57,
+        "precio_venta": 388.93,
+        "margen": 145.36
+      },
+      "COMITE DE AGUA POTABLE RURAL HUALCAPO": {
+        "cantidad": 300.0,
+        "pmp_pond": 243.57,
+        "pmp_ultimo": 243.57,
+        "precio_venta": 402.93,
+        "margen": 159.36
+      },
+      "ROSARIO JOANNON GREZ": {
+        "cantidad": 176.0,
+        "pmp_pond": 257.71,
+        "pmp_ultimo": 257.71,
+        "precio_venta": 416.16,
+        "margen": 158.45
+      },
+      "SERVICIOS ADMINISTRATIVOS E INMOBILIARIOS PAUPE LIMITADA": {
+        "cantidad": 44.0,
+        "pmp_pond": 235.92,
+        "pmp_ultimo": 235.92,
+        "precio_venta": 430.16,
+        "margen": 194.24
+      },
+      "COMERCIAL SERVICETRANS": {
+        "cantidad": 22.0,
+        "pmp_pond": 243.57,
+        "pmp_ultimo": 243.57,
+        "precio_venta": 488.34,
+        "margen": 244.77
+      },
+      "RODRIGO AGUAYO": {
+        "cantidad": 22.0,
+        "pmp_pond": 247.69,
+        "pmp_ultimo": 247.69,
+        "precio_venta": 513.34,
+        "margen": 265.65
       }
     }
   }
