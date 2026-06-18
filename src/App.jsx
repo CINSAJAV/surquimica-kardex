@@ -629,17 +629,45 @@ function Sidebar({ productos, selMeta, onSelect, modoEmpresa, onEmpresa, bodega 
 }
 
 // ─── VISTA: POR EMPRESA ───────────────────────────────────────────────────────
+// Busca precio acordado para un cliente en un producto (comparación flexible)
+function buscarAcuerdo(preciosData, slug, nombreEmpresa) {
+  const prod = preciosData?.productos?.[slug];
+  if (!prod) return null;
+  const key = Object.keys(prod).find(name =>
+    name === nombreEmpresa ||
+    nombreEmpresa.includes(name) ||
+    name.includes(nombreEmpresa)
+  );
+  return key ? prod[key] : null;
+}
+
+// Calcula ingreso y costo usando precios acordados si existen, o datos Kardex si no
+function calcMargen(prod, acuerdo) {
+  if (acuerdo?.precio_venta != null && acuerdo?.pmp_ultimo != null) {
+    const vol     = acuerdo.cantidad ?? prod.vol;
+    const ingreso = acuerdo.precio_venta * vol;
+    const costo   = acuerdo.pmp_ultimo  * vol;
+    return { ingreso, costo, margen: ingreso - costo, usaAcuerdo: true };
+  }
+  return { ingreso: prod.monto, costo: prod.costo ?? 0, margen: prod.monto - (prod.costo ?? 0), usaAcuerdo: false };
+}
+
 function VistaEmpresas({ onIrProducto }) {
   const [data, setData]       = useState(null);
+  const [precios, setPrecios] = useState(null);
   const [loading, setLoading] = useState(true);
   const [sel, setSel]         = useState(null);   // empresa seleccionada
   const [buscar, setBuscar]   = useState("");
 
   useEffect(() => {
-    fetch("./data/empresas.json")
-      .then(r => r.json())
-      .then(d => { setData(d); setLoading(false); })
-      .catch(() => setLoading(false));
+    Promise.all([
+      fetch("./data/empresas.json").then(r => r.json()),
+      fetch("./data/precios.json").then(r => r.json()).catch(() => null),
+    ]).then(([emp, prec]) => {
+      setData(emp);
+      setPrecios(prec);
+      setLoading(false);
+    }).catch(() => setLoading(false));
   }, []);
 
   const empresas = useMemo(() => {
@@ -672,17 +700,23 @@ function VistaEmpresas({ onIrProducto }) {
           <span style={{color:C.text,fontWeight:700,fontSize:13}}>{e.nombre}</span>
         </div>
 
-        {/* KPIs */}
+        {/* KPIs — recalcula con precios acordados si existen */}
         {(()=>{
-          const totalCosto  = e.totalCosto ?? 0;
-          const totalMargen = e.totalHaber - totalCosto;
-          const mPct        = e.totalHaber > 0 ? (totalMargen / e.totalHaber) * 100 : 0;
+          const totales = e.productos.reduce((acc, p) => {
+            const ac = buscarAcuerdo(precios, p.slug, e.nombre);
+            const m  = calcMargen(p, ac);
+            acc.ingreso += m.ingreso;
+            acc.costo   += m.costo;
+            return acc;
+          }, { ingreso: 0, costo: 0 });
+          const totalMargen = totales.ingreso - totales.costo;
+          const mPct = totales.ingreso > 0 ? (totalMargen / totales.ingreso) * 100 : 0;
           return (
             <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:10}}>
               <KPI label="Facturado total"      value={clp(e.totalHaber)}
                 sub={`${num(e.nMovimientos)} movimientos`} color={C.teal}/>
-              <KPI label="Costo total"          value={clp(totalCosto)}
-                sub="Vol × PMP venta" color={C.sub}/>
+              <KPI label="Costo total"          value={clp(totales.costo)}
+                sub="PMP último × cantidad" color={C.sub}/>
               <KPI label="Margen bruto"         value={clp(totalMargen)}
                 sub={`${mPct.toFixed(1)}% sobre ventas`} color={mPct>=20?C.green:C.amber}/>
               <KPI label="Productos distintos"  value={e.nProductos}
@@ -698,16 +732,17 @@ function VistaEmpresas({ onIrProducto }) {
           <div style={{display:"grid",
             gridTemplateColumns:"2fr 70px 115px 105px 95px 80px 80px",
             padding:"8px 16px",background:C.surface,borderBottom:`1px solid ${C.border}`}}>
-            {["Producto","Unidad","Facturado","Costo","Margen $","Margen %","Última fecha"].map(h=>(
+            {["Producto","Unidad","Ingreso","Costo","Margen $","Margen %","Última fecha"].map(h=>(
               <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
                 letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
             ))}
           </div>
           {e.productos.map((p,i)=>{
             const pct    = e.totalHaber > 0 ? (p.monto / e.totalHaber * 100) : 0;
-            const costo  = p.costo ?? 0;
-            const margen = p.monto - costo;
-            const mPct   = p.monto > 0 ? (margen / p.monto) * 100 : 0;
+            const ac     = buscarAcuerdo(precios, p.slug, e.nombre);
+            const m      = calcMargen(p, ac);
+            const { ingreso, costo, margen } = m;
+            const mPct   = ingreso > 0 ? (margen / ingreso) * 100 : 0;
             return (
               <div key={p.slug}
                 style={{display:"grid",
@@ -728,7 +763,7 @@ function VistaEmpresas({ onIrProducto }) {
                   <div style={{color:C.muted,fontSize:10,marginTop:2}}>{pct.toFixed(1)}% del facturado</div>
                 </div>
                 <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{p.unidad}</div>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.text,alignSelf:"center"}}>{clp(p.monto)}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.text,alignSelf:"center"}}>{clp(ingreso)}</div>
                 <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center"}}>{clp(costo)}</div>
                 <div style={{fontFamily:MONO,fontSize:12,color:margen>=0?C.green:C.red,alignSelf:"center"}}>{clp(margen)}</div>
                 <div style={{alignSelf:"center"}}>
@@ -778,10 +813,16 @@ function VistaEmpresas({ onIrProducto }) {
         </div>
         <div style={{maxHeight:"calc(100vh - 260px)",overflowY:"auto"}}>
           {empresas.map((e,i)=>{
-            const pct      = (e.totalHaber / maxHaber) * 100;
-            const costo    = e.totalCosto ?? 0;
-            const margen   = e.totalHaber - costo;
-            const mPct     = e.totalHaber > 0 ? (margen / e.totalHaber) * 100 : 0;
+            const pct = (e.totalHaber / maxHaber) * 100;
+            const totales = e.productos.reduce((acc, p) => {
+              const ac = buscarAcuerdo(precios, p.slug, e.nombre);
+              const m  = calcMargen(p, ac);
+              acc.ingreso += m.ingreso;
+              acc.costo   += m.costo;
+              return acc;
+            }, { ingreso: 0, costo: 0 });
+            const margen = totales.ingreso - totales.costo;
+            const mPct   = totales.ingreso > 0 ? (margen / totales.ingreso) * 100 : 0;
             return (
               <div key={e.nombre}
                 style={{display:"grid",gridTemplateColumns:"2fr 115px 105px 75px 80px 80px",
