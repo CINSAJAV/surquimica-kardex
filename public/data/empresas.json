@@ -1,6 +1,6 @@
 {
-  "generado": "2026-06-18T15:01:15",
-  "total": 117,
+  "generado": "2026-06-18T16:00:09",
+  "total": 109,
   "empresas": [
     {
       "nombre": "ESVAL S.A",
@@ -40,10 +40,10 @@
     },
     {
       "nombre": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 75055833.49405825,
-      "totalCosto": 75055833.2693,
-      "totalVol": 157119.0,
-      "nMovimientos": 131,
+      "totalHaber": 75134643.24382058,
+      "totalCosto": 75134643.0193,
+      "totalVol": 157369.0,
+      "nMovimientos": 132,
       "ultimaFecha": "2026-05-19",
       "primeraFecha": "2026-01-02",
       "productos": [
@@ -118,18 +118,30 @@
           "nMovimientos": 2,
           "ultimaFecha": "2026-03-20",
           "primeraFecha": "2026-02-23"
+        },
+        {
+          "codigo": "K-7",
+          "slug": "K-7",
+          "nombre": "CLORURO FERRICO 42%",
+          "unidad": "kg",
+          "vol": 250.0,
+          "monto": 78809.74976232514,
+          "costo": 78809.75,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-15",
+          "primeraFecha": "2026-05-15"
         }
       ],
-      "nProductos": 6
+      "nProductos": 7
     },
     {
       "nombre": "NUEVA ATACAMA S.A",
-      "totalHaber": 46440175.41306341,
-      "totalCosto": 46440175.758,
-      "totalVol": 167300.0,
-      "nMovimientos": 21,
+      "totalHaber": 47543511.90973596,
+      "totalCosto": 47543512.25800001,
+      "totalVol": 170800.0,
+      "nMovimientos": 23,
       "ultimaFecha": "2026-05-13",
-      "primeraFecha": "2026-01-14",
+      "primeraFecha": "2026-01-02",
       "productos": [
         {
           "codigo": "K-8-1",
@@ -154,9 +166,21 @@
           "nMovimientos": 8,
           "ultimaFecha": "2026-04-29",
           "primeraFecha": "2026-01-16"
+        },
+        {
+          "codigo": "K-7",
+          "slug": "K-7",
+          "nombre": "CLORURO FERRICO 42%",
+          "unidad": "kg",
+          "vol": 3500.0,
+          "monto": 1103336.496672552,
+          "costo": 1103336.5,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-03-09",
+          "primeraFecha": "2026-01-02"
         }
       ],
-      "nProductos": 2
+      "nProductos": 3
     },
     {
       "nombre": "AGUAS DEL VALLE S.A",
@@ -1863,54 +1887,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "OC 4532061015 NUEVA ATACAMA S.A.",
-      "totalHaber": 630477.9980986011,
-      "totalCosto": 630478.0,
-      "totalVol": 2000.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-03-09",
-      "primeraFecha": "2026-03-09",
-      "productos": [
-        {
-          "codigo": "K-7",
-          "slug": "K-7",
-          "nombre": "CLORURO FERRICO 42%",
-          "unidad": "kg",
-          "vol": 2000.0,
-          "monto": 630477.9980986011,
-          "costo": 630478.0,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-09",
-          "primeraFecha": "2026-03-09"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "OC 4532058298 NUEVA ATACAMA S.A.",
-      "totalHaber": 472858.49857395084,
-      "totalCosto": 472858.49999999994,
-      "totalVol": 1500.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-02",
-      "primeraFecha": "2026-01-02",
-      "productos": [
-        {
-          "codigo": "K-7",
-          "slug": "K-7",
-          "nombre": "CLORURO FERRICO 42%",
-          "unidad": "kg",
-          "vol": 1500.0,
-          "monto": 472858.49857395084,
-          "costo": 472858.49999999994,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-02",
-          "primeraFecha": "2026-01-02"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "SERVICIOS SANITARIOS LARAPINTA S.A",
       "totalHaber": 463318.238044111,
       "totalCosto": 463318.225,
@@ -2151,7 +2127,7 @@
       "nProductos": 1
     },
     {
-      "nombre": "IVAN ANDRES SCHAPIRA PEREZ COT/",
+      "nombre": "IVAN ANDRES SCHAPIRA PEREZ",
       "totalHaber": 282999.066873179,
       "totalCosto": 282999.05199999997,
       "totalVol": 1160.0,
@@ -2302,6 +2278,30 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-27",
           "primeraFecha": "2026-01-27"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "LAVANDERÍA QUICK CLEANING",
+      "totalHaber": 192164.4827789914,
+      "totalCosto": 192164.47900000002,
+      "totalVol": 780.0,
+      "nMovimientos": 9,
+      "ultimaFecha": "2026-05-11",
+      "primeraFecha": "2026-01-06",
+      "productos": [
+        {
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 780.0,
+          "monto": 192164.4827789914,
+          "costo": 192164.47900000002,
+          "nMovimientos": 9,
+          "ultimaFecha": "2026-05-11",
+          "primeraFecha": "2026-01-06"
         }
       ],
       "nProductos": 1
@@ -2571,30 +2571,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "LAVANDERÍA QUICK CLEANING",
-      "totalHaber": 96474.53139354216,
-      "totalCosto": 96474.5275,
-      "totalVol": 390.0,
-      "nMovimientos": 4,
-      "ultimaFecha": "2026-05-11",
-      "primeraFecha": "2026-01-06",
-      "productos": [
-        {
-          "codigo": "K-8-1",
-          "slug": "K-8-1",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "kg",
-          "vol": 390.0,
-          "monto": 96474.53139354216,
-          "costo": 96474.5275,
-          "nMovimientos": 4,
-          "ultimaFecha": "2026-05-11",
-          "primeraFecha": "2026-01-06"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "COMITE DE AGUA POTABLE RURAL HUALCAPO COT 0009",
       "totalHaber": 89220.84132232776,
       "totalCosto": 89220.84000000001,
@@ -2691,31 +2667,7 @@
       "nProductos": 1
     },
     {
-      "nombre": "OC 23790 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "totalHaber": 78809.74976232514,
-      "totalCosto": 78809.75,
-      "totalVol": 250.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-15",
-      "primeraFecha": "2026-05-15",
-      "productos": [
-        {
-          "codigo": "K-7",
-          "slug": "K-7",
-          "nombre": "CLORURO FERRICO 42%",
-          "unidad": "kg",
-          "vol": 250.0,
-          "monto": 78809.74976232514,
-          "costo": 78809.75,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-15",
-          "primeraFecha": "2026-05-15"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "COMITE DE AGUA POTABLE RURAL HUALCAPO COT 0142",
+      "nombre": "COMITE DE AGUA POTABLE RURAL HUALCAPO",
       "totalHaber": 73072.19885634257,
       "totalCosto": 73072.2,
       "totalVol": 300.0,
@@ -2883,78 +2835,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "LAVANDERÍA QUICK CLEANING SPA  LAVANDERÍA QUICK CLEANING P210426",
-      "totalHaber": 31715.412666821783,
-      "totalCosto": 31715.411,
-      "totalVol": 130.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-04-21",
-      "primeraFecha": "2026-04-21",
-      "productos": [
-        {
-          "codigo": "K-8-1",
-          "slug": "K-8-1",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "kg",
-          "vol": 130.0,
-          "monto": 31715.412666821783,
-          "costo": 31715.411,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-21",
-          "primeraFecha": "2026-04-21"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "LAVANDERÍA QUICK CLEANING SPA  65 KILOS",
-      "totalHaber": 16497.610572834557,
-      "totalCosto": 16497.611,
-      "totalVol": 65.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-21",
-      "primeraFecha": "2026-01-21",
-      "productos": [
-        {
-          "codigo": "K-8-1",
-          "slug": "K-8-1",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "kg",
-          "vol": 65.0,
-          "monto": 16497.610572834557,
-          "costo": 16497.611,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-21",
-          "primeraFecha": "2026-01-21"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "LAVANDERÍA QUICK CLEANING SPA  LAVANDERÍA QUICK CLEANING P020226",
-      "totalHaber": 16497.610572834554,
-      "totalCosto": 16497.611,
-      "totalVol": 65.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-02-03",
-      "primeraFecha": "2026-02-03",
-      "productos": [
-        {
-          "codigo": "K-8-1",
-          "slug": "K-8-1",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "kg",
-          "vol": 65.0,
-          "monto": 16497.610572834554,
-          "costo": 16497.611,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-03",
-          "primeraFecha": "2026-02-03"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "REFRIGERACION INDUSTRIAL HC-FRIO LIMITADA",
       "totalHaber": 16056.617283950618,
       "totalCosto": 16056.6175,
@@ -2974,54 +2854,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-20",
           "primeraFecha": "2026-01-20"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "LAVANDERÍA QUICK CLEANING SPA  P130226",
-      "totalHaber": 15644.699041035483,
-      "totalCosto": 15644.7005,
-      "totalVol": 65.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-02-19",
-      "primeraFecha": "2026-02-19",
-      "productos": [
-        {
-          "codigo": "K-8-1",
-          "slug": "K-8-1",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "kg",
-          "vol": 65.0,
-          "monto": 15644.699041035483,
-          "costo": 15644.7005,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-19",
-          "primeraFecha": "2026-02-19"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "LAVANDERÍA QUICK CLEANING SPA  LAVANDERÍA QUICK CLEANING P170326",
-      "totalHaber": 15334.618531922866,
-      "totalCosto": 15334.618,
-      "totalVol": 65.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-03-17",
-      "primeraFecha": "2026-03-17",
-      "productos": [
-        {
-          "codigo": "K-8-1",
-          "slug": "K-8-1",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "kg",
-          "vol": 65.0,
-          "monto": 15334.618531922866,
-          "costo": 15334.618,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-17",
-          "primeraFecha": "2026-03-17"
         }
       ],
       "nProductos": 1
@@ -3075,7 +2907,7 @@
       "nProductos": 1
     },
     {
-      "nombre": "COMERCIAL SERVICETRANS SPA COT 0036",
+      "nombre": "COMERCIAL SERVICETRANS",
       "totalHaber": 5358.627916131787,
       "totalCosto": 5358.628000000001,
       "totalVol": 22.0,

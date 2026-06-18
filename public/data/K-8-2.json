@@ -2799,7 +2799,7 @@
     },
     {
       "fecha": "2026-04-16",
-      "detalle": "ESVAL S.A. OC 4543005810",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2811,7 +2811,7 @@
     },
     {
       "fecha": "2026-04-17",
-      "detalle": "ESVAL S.A. OC 4532074147 T/C 07.04 914.47",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2823,7 +2823,7 @@
     },
     {
       "fecha": "2026-04-17",
-      "detalle": "AGUAS DEL VALLE S.A.  OC 4543006183",
+      "detalle": "AGUAS DEL VALLE S.A.",
       "cliente": "AGUAS DEL VALLE S.A",
       "tipo": "Venta",
       "entrada": 0,

@@ -15,8 +15,8 @@
   "movimientos": [
     {
       "fecha": "2026-01-02",
-      "detalle": "OC 4532058298 NUEVA ATACAMA S.A.",
-      "cliente": "OC 4532058298 NUEVA ATACAMA S.A.",
+      "detalle": "NUEVA ATACAMA S.A.",
+      "cliente": "NUEVA ATACAMA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1500.0,
@@ -27,8 +27,8 @@
     },
     {
       "fecha": "2026-03-09",
-      "detalle": "OC 4532061015 NUEVA ATACAMA S.A.",
-      "cliente": "OC 4532061015 NUEVA ATACAMA S.A.",
+      "detalle": "NUEVA ATACAMA S.A.",
+      "cliente": "NUEVA ATACAMA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 2000.0,
@@ -39,8 +39,8 @@
     },
     {
       "fecha": "2026-05-15",
-      "detalle": "OC 23790 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "OC 23790 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "detalle": "EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 250.0,
