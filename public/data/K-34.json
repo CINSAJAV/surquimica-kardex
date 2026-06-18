@@ -16,7 +16,7 @@
     {
       "fecha": "2026-01-02",
       "detalle": "8021 CORP MUNICIPAL DE DESARROLLO SOCIAL DE PUDAHUEL",
-      "cliente": "8021 CORP MUNICIPAL DE DESARROLLO SOCIAL DE PUDAHUEL",
+      "cliente": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE PUDAHUEL",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 500.0,
@@ -28,7 +28,7 @@
     {
       "fecha": "2026-01-06",
       "detalle": "8035 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO E.I.R.L.",
-      "cliente": "8035 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
+      "cliente": "AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 50.0,
@@ -40,7 +40,7 @@
     {
       "fecha": "2026-01-15",
       "detalle": "8083 002",
-      "cliente": "8083 002",
+      "cliente": "002",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 5.0,
@@ -52,7 +52,7 @@
     {
       "fecha": "2026-01-16",
       "detalle": "8108 002",
-      "cliente": "8108 002",
+      "cliente": "002",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 50.0,
@@ -64,7 +64,7 @@
     {
       "fecha": "2026-01-20",
       "detalle": "8113 002",
-      "cliente": "8113 002",
+      "cliente": "002",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 50.0,
@@ -88,7 +88,7 @@
     {
       "fecha": "2026-02-05",
       "detalle": "8221 OREGON CHEM GROUP SPA",
-      "cliente": "8221 OREGON CHEM GROUP",
+      "cliente": "OREGON CHEM GROUP",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 250.0,
@@ -100,7 +100,7 @@
     {
       "fecha": "2026-03-03",
       "detalle": "8350 002",
-      "cliente": "8350 002",
+      "cliente": "002",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 25.0,
@@ -112,7 +112,7 @@
     {
       "fecha": "2026-03-06",
       "detalle": "8373 COMERCIALIZADORA YUKON LIMITADA",
-      "cliente": "8373 COMERCIALIZADORA YUKON LIMITADA",
+      "cliente": "COMERCIALIZADORA YUKON LIMITADA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1500.0,
@@ -124,7 +124,7 @@
     {
       "fecha": "2026-03-06",
       "detalle": "8373 COMERCIALIZADORA YUKON LIMITADA",
-      "cliente": "8373 COMERCIALIZADORA YUKON LIMITADA",
+      "cliente": "COMERCIALIZADORA YUKON LIMITADA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 2500.0,
@@ -136,7 +136,7 @@
     {
       "fecha": "2026-04-07",
       "detalle": "8520 COMERCIALIZADORA YUKON LIMITADA",
-      "cliente": "8520 COMERCIALIZADORA YUKON LIMITADA",
+      "cliente": "COMERCIALIZADORA YUKON LIMITADA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 2500.0,
@@ -148,7 +148,7 @@
     {
       "fecha": "2026-05-14",
       "detalle": "8690 FULLSOLUTION SPA",
-      "cliente": "8690 FULLSOLUTION",
+      "cliente": "FULLSOLUTION",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 100.0,
@@ -160,7 +160,7 @@
     {
       "fecha": "2026-05-20",
       "detalle": "8729 002",
-      "cliente": "8729 002",
+      "cliente": "002",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 25.0,

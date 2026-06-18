@@ -2739,7 +2739,7 @@
     },
     {
       "fecha": "2026-04-15",
-      "detalle": "ESVAL S.A. OC 4543005953",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2751,7 +2751,7 @@
     },
     {
       "fecha": "2026-04-15",
-      "detalle": "ESVAL S.A. OC 4543005952",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2763,7 +2763,7 @@
     },
     {
       "fecha": "2026-04-15",
-      "detalle": "ESVAL S.A. OC 4543005695",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2775,7 +2775,7 @@
     },
     {
       "fecha": "2026-04-15",
-      "detalle": "ESVAL S.A. OC 4543005943",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2835,7 +2835,7 @@
     },
     {
       "fecha": "2026-04-17",
-      "detalle": "ESVAL S.A. OC 4543006184",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2847,7 +2847,7 @@
     },
     {
       "fecha": "2026-04-17",
-      "detalle": "ESVAL S.A. OC 4543006184",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2859,7 +2859,7 @@
     },
     {
       "fecha": "2026-04-17",
-      "detalle": "ESVAL S.A. OC 4543006184",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2871,7 +2871,7 @@
     },
     {
       "fecha": "2026-04-17",
-      "detalle": "ESVAL S.A. OC 4543006184",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2883,7 +2883,7 @@
     },
     {
       "fecha": "2026-04-20",
-      "detalle": "ESVAL S.A. OC 4543006146",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2895,7 +2895,7 @@
     },
     {
       "fecha": "2026-04-20",
-      "detalle": "ESVAL S.A. OC 4543005592",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2907,7 +2907,7 @@
     },
     {
       "fecha": "2026-04-20",
-      "detalle": "ESVAL S.A. OC 4543005593",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2919,7 +2919,7 @@
     },
     {
       "fecha": "2026-04-20",
-      "detalle": "ESVAL S.A. OC 4543005594",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2931,7 +2931,7 @@
     },
     {
       "fecha": "2026-04-20",
-      "detalle": "ESVAL S.A. OC 4543005595",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2943,7 +2943,7 @@
     },
     {
       "fecha": "2026-04-21",
-      "detalle": "ESVAL S.A. OC 4543006190",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2955,7 +2955,7 @@
     },
     {
       "fecha": "2026-04-22",
-      "detalle": "ESVAL S.A. OC 4543005953",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2967,7 +2967,7 @@
     },
     {
       "fecha": "2026-04-22",
-      "detalle": "ESVAL S.A. OC 4543005952",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2979,7 +2979,7 @@
     },
     {
       "fecha": "2026-04-22",
-      "detalle": "ESVAL S.A. OC 4543005695",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -2991,7 +2991,7 @@
     },
     {
       "fecha": "2026-04-22",
-      "detalle": "ESVAL S.A. OC 4543005943",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3003,7 +3003,7 @@
     },
     {
       "fecha": "2026-04-23",
-      "detalle": "ESVAL S.A. OC 4543005810",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3015,8 +3015,8 @@
     },
     {
       "fecha": "2026-04-24",
-      "detalle": "QUIMICA DEL PACIFICO LTDA.  K8L INGRESO LITROS ESVAL AG ADUANA 83",
-      "cliente": "QUIMICA DEL PACIFICO LTDA.  K8L INGRESO LITROS ESVAL AG ADUANA 83",
+      "detalle": "QUIMICA DEL PACIFICO LTDA.",
+      "cliente": "QUIMICA DEL PACIFICO",
       "tipo": "Compra",
       "entrada": 886.0,
       "salida": 0,
@@ -3027,7 +3027,7 @@
     },
     {
       "fecha": "2026-04-24",
-      "detalle": "AGUAS DEL VALLE S.A.  OC 4543005983",
+      "detalle": "AGUAS DEL VALLE S.A.",
       "cliente": "AGUAS DEL VALLE S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3039,7 +3039,7 @@
     },
     {
       "fecha": "2026-04-24",
-      "detalle": "AGUAS DEL VALLE S.A.  OC 4543005983",
+      "detalle": "AGUAS DEL VALLE S.A.",
       "cliente": "AGUAS DEL VALLE S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3051,7 +3051,7 @@
     },
     {
       "fecha": "2026-04-27",
-      "detalle": "ESVAL S.A. OC 4543005592",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3063,7 +3063,7 @@
     },
     {
       "fecha": "2026-04-27",
-      "detalle": "ESVAL S.A. OC 4543005593",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3075,7 +3075,7 @@
     },
     {
       "fecha": "2026-04-27",
-      "detalle": "ESVAL S.A. OC 4543005594",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3087,7 +3087,7 @@
     },
     {
       "fecha": "2026-04-27",
-      "detalle": "ESVAL S.A. OC 4543005595",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3099,7 +3099,7 @@
     },
     {
       "fecha": "2026-04-27",
-      "detalle": "ESVAL S.A. OC 4543005596",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3111,8 +3111,8 @@
     },
     {
       "fecha": "2026-04-28",
-      "detalle": "QUIMICA DEL PACIFICO LTDA.  K8L INGRESO DESPACHO 29.04 ESVAL",
-      "cliente": "QUIMICA DEL PACIFICO LTDA.  K8L INGRESO DESPACHO 29.04 ESVAL",
+      "detalle": "QUIMICA DEL PACIFICO LTDA.",
+      "cliente": "QUIMICA DEL PACIFICO",
       "tipo": "Compra",
       "entrada": 4680.0,
       "salida": 0,
@@ -3123,7 +3123,7 @@
     },
     {
       "fecha": "2026-04-29",
-      "detalle": "ESVAL S.A. OC 4543005953",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3135,7 +3135,7 @@
     },
     {
       "fecha": "2026-04-29",
-      "detalle": "ESVAL S.A. OC 4543006217",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3147,7 +3147,7 @@
     },
     {
       "fecha": "2026-04-29",
-      "detalle": "ESVAL S.A. OC 4543005943",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3159,7 +3159,7 @@
     },
     {
       "fecha": "2026-04-29",
-      "detalle": "ESVAL S.A. OC 4543005695",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
@@ -3171,7 +3171,7 @@
     },
     {
       "fecha": "2026-04-29",
-      "detalle": "ESVAL S.A. OC 4543005810",
+      "detalle": "ESVAL S.A.",
       "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,

@@ -84,8 +84,10 @@ _TOKENS_OC = re.compile(
 def extraer_cliente(detalle: str) -> str:
     if not detalle:
         return "DESCONOCIDO"
+    # Quitar número de OC/factura al inicio (ej: "8656 EMP.SERV..." → "EMP.SERV...")
+    nombre = re.sub(r"^\d+\s+", "", detalle.strip())
     # Quitar tokens de OC / GD / F- etc. y todo lo que sigue
-    nombre = _TOKENS_OC.sub("", detalle).strip().rstrip(",.-")
+    nombre = _TOKENS_OC.sub("", nombre).strip().rstrip(",.-")
     # Quitar sufijos legales para normalizar
     nombre = _SUFIJOS.sub("", nombre).strip()
     return nombre.upper() if nombre else detalle.upper()

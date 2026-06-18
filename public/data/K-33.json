@@ -16,7 +16,7 @@
     {
       "fecha": "2026-01-30",
       "detalle": "8175 002",
-      "cliente": "8175 002",
+      "cliente": "002",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 25.0,
@@ -28,7 +28,7 @@
     {
       "fecha": "2026-02-12",
       "detalle": "8260 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO E.I.R.L.",
-      "cliente": "8260 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
+      "cliente": "AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 50.0,
@@ -40,7 +40,7 @@
     {
       "fecha": "2026-02-17",
       "detalle": "8276 AGRICOLA EL QUISCAL LIMITADA",
-      "cliente": "8276 AGRICOLA EL QUISCAL LIMITADA",
+      "cliente": "AGRICOLA EL QUISCAL LIMITADA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 50.0,

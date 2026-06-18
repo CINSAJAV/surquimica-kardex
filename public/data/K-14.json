@@ -16,7 +16,7 @@
     {
       "fecha": "2026-01-03",
       "detalle": "8027 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8027 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -28,7 +28,7 @@
     {
       "fecha": "2026-01-03",
       "detalle": "8028 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8028 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 400.0,
@@ -40,7 +40,7 @@
     {
       "fecha": "2026-01-07",
       "detalle": "41212005 ALQUIMIA SPA",
-      "cliente": "41212005 ALQUIMIA",
+      "cliente": "ALQUIMIA",
       "tipo": "Compra",
       "entrada": 1400.0,
       "salida": 0,
@@ -52,7 +52,7 @@
     {
       "fecha": "2026-01-07",
       "detalle": "8048 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8048 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -64,7 +64,7 @@
     {
       "fecha": "2026-01-08",
       "detalle": "8051 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8051 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -76,7 +76,7 @@
     {
       "fecha": "2026-01-08",
       "detalle": "8052 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8052 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -88,7 +88,7 @@
     {
       "fecha": "2026-01-20",
       "detalle": "8115 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8115 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -100,7 +100,7 @@
     {
       "fecha": "2026-02-03",
       "detalle": "8192 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8192 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 400.0,
@@ -112,7 +112,7 @@
     {
       "fecha": "2026-02-03",
       "detalle": "8197 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8197 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -124,7 +124,7 @@
     {
       "fecha": "2026-02-04",
       "detalle": "8211 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8211 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -136,7 +136,7 @@
     {
       "fecha": "2026-02-05",
       "detalle": "41212028 ALQUIMIA SPA",
-      "cliente": "41212028 ALQUIMIA",
+      "cliente": "ALQUIMIA",
       "tipo": "Compra",
       "entrada": 1400.0,
       "salida": 0,
@@ -148,7 +148,7 @@
     {
       "fecha": "2026-02-05",
       "detalle": "8222 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8222 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 600.0,
@@ -160,7 +160,7 @@
     {
       "fecha": "2026-02-25",
       "detalle": "8318 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8318 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -172,7 +172,7 @@
     {
       "fecha": "2026-02-27",
       "detalle": "8330 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8330 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -184,7 +184,7 @@
     {
       "fecha": "2026-03-02",
       "detalle": "41212049 ALQUIMIA SPA",
-      "cliente": "41212049 ALQUIMIA",
+      "cliente": "ALQUIMIA",
       "tipo": "Compra",
       "entrada": 1400.0,
       "salida": 0,
@@ -196,7 +196,7 @@
     {
       "fecha": "2026-03-02",
       "detalle": "8339 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8339 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 600.0,
@@ -208,7 +208,7 @@
     {
       "fecha": "2026-03-02",
       "detalle": "8340 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8340 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -220,7 +220,7 @@
     {
       "fecha": "2026-03-04",
       "detalle": "8360 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8360 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 400.0,
@@ -232,7 +232,7 @@
     {
       "fecha": "2026-04-01",
       "detalle": "41212070 ALQUIMIA SPA",
-      "cliente": "41212070 ALQUIMIA",
+      "cliente": "ALQUIMIA",
       "tipo": "Compra",
       "entrada": 1400.0,
       "salida": 0,
@@ -244,7 +244,7 @@
     {
       "fecha": "2026-04-01",
       "detalle": "8494 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8494 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -256,7 +256,7 @@
     {
       "fecha": "2026-04-01",
       "detalle": "8495 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8495 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 600.0,
@@ -268,7 +268,7 @@
     {
       "fecha": "2026-04-02",
       "detalle": "8501 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8501 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -280,7 +280,7 @@
     {
       "fecha": "2026-05-05",
       "detalle": "8641 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8641 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -292,7 +292,7 @@
     {
       "fecha": "2026-05-05",
       "detalle": "8644 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8644 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 400.0,
@@ -304,7 +304,7 @@
     {
       "fecha": "2026-05-06",
       "detalle": "41212096 ALQUIMIA SPA",
-      "cliente": "41212096 ALQUIMIA",
+      "cliente": "ALQUIMIA",
       "tipo": "Compra",
       "entrada": 1400.0,
       "salida": 0,
@@ -316,7 +316,7 @@
     {
       "fecha": "2026-05-06",
       "detalle": "8648 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8648 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -328,7 +328,7 @@
     {
       "fecha": "2026-05-06",
       "detalle": "8655 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8655 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -340,7 +340,7 @@
     {
       "fecha": "2026-05-06",
       "detalle": "8656 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8656 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 600.0,
@@ -352,7 +352,7 @@
     {
       "fecha": "2026-05-19",
       "detalle": "8712 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "8712 EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,

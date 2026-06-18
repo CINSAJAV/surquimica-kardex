@@ -1,6 +1,6 @@
 {
-  "generado": "2026-06-18T13:18:11",
-  "total": 157,
+  "generado": "2026-06-18T15:01:15",
+  "total": 117,
   "empresas": [
     {
       "nombre": "ESVAL S.A",
@@ -39,6 +39,90 @@
       "nProductos": 2
     },
     {
+      "nombre": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
+      "totalHaber": 75055833.49405825,
+      "totalCosto": 75055833.2693,
+      "totalVol": 157119.0,
+      "nMovimientos": 131,
+      "ultimaFecha": "2026-05-19",
+      "primeraFecha": "2026-01-02",
+      "productos": [
+        {
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 138354.0,
+          "monto": 34479022.38350585,
+          "costo": 34479022.04429999,
+          "nMovimientos": 73,
+          "ultimaFecha": "2026-05-15",
+          "primeraFecha": "2026-01-02"
+        },
+        {
+          "codigo": "K-14",
+          "slug": "K-14",
+          "nombre": "BIG FLOC 868A",
+          "unidad": "kg",
+          "vol": 7200.0,
+          "monto": 31398543.50820334,
+          "costo": 31398543.580000006,
+          "nMovimientos": 24,
+          "ultimaFecha": "2026-05-19",
+          "primeraFecha": "2026-01-03"
+        },
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 3105.0,
+          "monto": 4364476.939751831,
+          "costo": 4364476.803,
+          "nMovimientos": 12,
+          "ultimaFecha": "2026-03-02",
+          "primeraFecha": "2026-01-02"
+        },
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 2180.0,
+          "monto": 3198555.56284153,
+          "costo": 3198555.5140000004,
+          "nMovimientos": 8,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-03-31"
+        },
+        {
+          "codigo": "K-13",
+          "slug": "K-13",
+          "nombre": "CAL APAGADA SUPERFINA",
+          "unidad": "kg",
+          "vol": 5780.0,
+          "monto": 1471931.7690118647,
+          "costo": 1471931.978,
+          "nMovimientos": 12,
+          "ultimaFecha": "2026-05-06",
+          "primeraFecha": "2026-01-03"
+        },
+        {
+          "codigo": "K-10",
+          "slug": "K-10",
+          "nombre": "SULFATO DE ALUMINIO",
+          "unidad": "kg",
+          "vol": 500.0,
+          "monto": 143303.33074383377,
+          "costo": 143303.35,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-03-20",
+          "primeraFecha": "2026-02-23"
+        }
+      ],
+      "nProductos": 6
+    },
+    {
       "nombre": "NUEVA ATACAMA S.A",
       "totalHaber": 46440175.41306341,
       "totalCosto": 46440175.758,
@@ -75,156 +159,12 @@
       "nProductos": 2
     },
     {
-      "nombre": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 38986802.654001504,
-      "totalCosto": 38986802.19729999,
-      "totalVol": 141959.0,
-      "nMovimientos": 87,
-      "ultimaFecha": "2026-05-15",
-      "primeraFecha": "2026-01-02",
-      "productos": [
-        {
-          "codigo": "K-8-1",
-          "slug": "K-8-1",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "kg",
-          "vol": 138354.0,
-          "monto": 34479022.38350585,
-          "costo": 34479022.04429999,
-          "nMovimientos": 73,
-          "ultimaFecha": "2026-05-15",
-          "primeraFecha": "2026-01-02"
-        },
-        {
-          "codigo": "K-45",
-          "slug": "K-45",
-          "nombre": "HIPOCLORITO DE CALCIO 70%",
-          "unidad": "kg",
-          "vol": 3105.0,
-          "monto": 4364476.939751831,
-          "costo": 4364476.803,
-          "nMovimientos": 12,
-          "ultimaFecha": "2026-03-02",
-          "primeraFecha": "2026-01-02"
-        },
-        {
-          "codigo": "K-10",
-          "slug": "K-10",
-          "nombre": "SULFATO DE ALUMINIO",
-          "unidad": "kg",
-          "vol": 500.0,
-          "monto": 143303.33074383377,
-          "costo": 143303.35,
-          "nMovimientos": 2,
-          "ultimaFecha": "2026-03-20",
-          "primeraFecha": "2026-02-23"
-        }
-      ],
-      "nProductos": 3
-    },
-    {
-      "nombre": "002",
-      "totalHaber": 37629846.10779712,
-      "totalCosto": 37629844.85210001,
-      "totalVol": 151325.0,
-      "nMovimientos": 19,
-      "ultimaFecha": "2026-05-20",
-      "primeraFecha": "2026-01-06",
-      "productos": [
-        {
-          "codigo": "K-8-1",
-          "slug": "K-8-1",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "kg",
-          "vol": 150900.0,
-          "monto": 36798079.11608337,
-          "costo": 36798077.8791,
-          "nMovimientos": 5,
-          "ultimaFecha": "2026-05-12",
-          "primeraFecha": "2026-01-28"
-        },
-        {
-          "codigo": "K-43",
-          "slug": "K-43",
-          "nombre": "TCCA 87% TABLETAS",
-          "unidad": "kg",
-          "vol": 235.0,
-          "monto": 547918.631900853,
-          "costo": 547918.621,
-          "nMovimientos": 11,
-          "ultimaFecha": "2026-05-20",
-          "primeraFecha": "2026-01-06"
-        },
-        {
-          "codigo": "K-45",
-          "slug": "K-45",
-          "nombre": "HIPOCLORITO DE CALCIO 70%",
-          "unidad": "kg",
-          "vol": 180.0,
-          "monto": 253013.15592764228,
-          "costo": 253013.148,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-07",
-          "primeraFecha": "2026-04-07"
-        },
-        {
-          "codigo": "K-39",
-          "slug": "K-39",
-          "nombre": "BUZYME 2516",
-          "unidad": "kg",
-          "vol": 5.0,
-          "monto": 16056.617283950618,
-          "costo": 16056.6175,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-20",
-          "primeraFecha": "2026-01-20"
-        },
-        {
-          "codigo": "K-41",
-          "slug": "K-41",
-          "nombre": "BUFLOC 5122",
-          "unidad": "kg",
-          "vol": 5.0,
-          "monto": 14778.58660130719,
-          "costo": 14778.5865,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-20",
-          "primeraFecha": "2026-01-20"
-        }
-      ],
-      "nProductos": 5
-    },
-    {
-      "nombre": "002 TRASPASO",
-      "totalHaber": 26200827.163177315,
-      "totalCosto": 26200826.701799996,
-      "totalVol": 108069.0,
-      "nMovimientos": 6,
-      "ultimaFecha": "2026-04-28",
-      "primeraFecha": "2026-02-10",
-      "productos": [
-        {
-          "codigo": "K-8-1",
-          "slug": "K-8-1",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "kg",
-          "vol": 108069.0,
-          "monto": 26200827.163177315,
-          "costo": 26200826.701799996,
-          "nMovimientos": 6,
-          "ultimaFecha": "2026-04-28",
-          "primeraFecha": "2026-02-10"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "AGUAS DEL VALLE S.A",
-      "totalHaber": 23786353.35233027,
-      "totalCosto": 23786352.164000005,
-      "totalVol": 77680.0,
-      "nMovimientos": 23,
-      "ultimaFecha": "2026-04-24",
+      "totalHaber": 27014253.461619895,
+      "totalCosto": 27014252.224000003,
+      "totalVol": 79880.0,
+      "nMovimientos": 27,
+      "ultimaFecha": "2026-05-25",
       "primeraFecha": "2026-01-23",
       "productos": [
         {
@@ -250,9 +190,105 @@
           "nMovimientos": 9,
           "ultimaFecha": "2026-04-24",
           "primeraFecha": "2026-02-10"
+        },
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 2200.0,
+          "monto": 3227900.1092896177,
+          "costo": 3227900.06,
+          "nMovimientos": 4,
+          "ultimaFecha": "2026-05-25",
+          "primeraFecha": "2026-05-25"
         }
       ],
-      "nProductos": 2
+      "nProductos": 3
+    },
+    {
+      "nombre": "TRASPASO",
+      "totalHaber": 26200827.163177315,
+      "totalCosto": 26200826.701799996,
+      "totalVol": 108069.0,
+      "nMovimientos": 6,
+      "ultimaFecha": "2026-04-28",
+      "primeraFecha": "2026-02-10",
+      "productos": [
+        {
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 108069.0,
+          "monto": 26200827.163177315,
+          "costo": 26200826.701799996,
+          "nMovimientos": 6,
+          "ultimaFecha": "2026-04-28",
+          "primeraFecha": "2026-02-10"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "AGUAS PATAGONIA DE AYSEN S.A",
+      "totalHaber": 22651690.35388324,
+      "totalCosto": 22651691.0,
+      "totalVol": 47000.0,
+      "nMovimientos": 11,
+      "ultimaFecha": "2026-04-24",
+      "primeraFecha": "2026-02-26",
+      "productos": [
+        {
+          "codigo": "K-2",
+          "slug": "K-2",
+          "nombre": "ACIDO FLUORSILICICO",
+          "unidad": "kg",
+          "vol": 23000.0,
+          "monto": 9931625.851957614,
+          "costo": 9931625.899999999,
+          "nMovimientos": 5,
+          "ultimaFecha": "2026-04-24",
+          "primeraFecha": "2026-02-26"
+        },
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 4000.0,
+          "monto": 5868909.289617486,
+          "costo": 5868909.2,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-04-10",
+          "primeraFecha": "2026-04-02"
+        },
+        {
+          "codigo": "K-10",
+          "slug": "K-10",
+          "nombre": "SULFATO DE ALUMINIO",
+          "unidad": "kg",
+          "vol": 19000.0,
+          "monto": 5445526.568265683,
+          "costo": 5445527.3,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-04-10",
+          "primeraFecha": "2026-03-19"
+        },
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 1000.0,
+          "monto": 1405628.6440424577,
+          "costo": 1405628.6,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-26",
+          "primeraFecha": "2026-02-26"
+        }
+      ],
+      "nProductos": 4
     },
     {
       "nombre": "OC 5400011540 NUEVOSUR S.A.",
@@ -303,55 +339,43 @@
       "nProductos": 1
     },
     {
-      "nombre": "AGUAS PATAGONIA DE AYSEN S.A",
-      "totalHaber": 16782781.064265754,
-      "totalCosto": 16782781.8,
-      "totalVol": 43000.0,
-      "nMovimientos": 9,
-      "ultimaFecha": "2026-04-24",
-      "primeraFecha": "2026-02-26",
+      "nombre": "COMERCIALIZADORA YUKON LIMITADA",
+      "totalHaber": 17064423.523297574,
+      "totalCosto": 17064423.25,
+      "totalVol": 9500.0,
+      "nMovimientos": 4,
+      "ultimaFecha": "2026-04-07",
+      "primeraFecha": "2026-01-28",
       "productos": [
         {
-          "codigo": "K-2",
-          "slug": "K-2",
-          "nombre": "ACIDO FLUORSILICICO",
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
           "unidad": "kg",
-          "vol": 23000.0,
-          "monto": 9931625.851957614,
-          "costo": 9931625.899999999,
-          "nMovimientos": 5,
-          "ultimaFecha": "2026-04-24",
-          "primeraFecha": "2026-02-26"
-        },
-        {
-          "codigo": "K-10",
-          "slug": "K-10",
-          "nombre": "SULFATO DE ALUMINIO",
-          "unidad": "kg",
-          "vol": 19000.0,
-          "monto": 5445526.568265683,
-          "costo": 5445527.3,
+          "vol": 6500.0,
+          "monto": 10069717.584137749,
+          "costo": 10069717.45,
           "nMovimientos": 3,
-          "ultimaFecha": "2026-04-10",
-          "primeraFecha": "2026-03-19"
+          "ultimaFecha": "2026-04-07",
+          "primeraFecha": "2026-03-06"
         },
         {
-          "codigo": "K-45",
-          "slug": "K-45",
-          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "codigo": "K-43",
+          "slug": "K-43",
+          "nombre": "TCCA 87% TABLETAS",
           "unidad": "kg",
-          "vol": 1000.0,
-          "monto": 1405628.6440424577,
-          "costo": 1405628.6,
+          "vol": 3000.0,
+          "monto": 6994705.939159825,
+          "costo": 6994705.8,
           "nMovimientos": 1,
-          "ultimaFecha": "2026-02-26",
-          "primeraFecha": "2026-02-26"
+          "ultimaFecha": "2026-01-28",
+          "primeraFecha": "2026-01-28"
         }
       ],
-      "nProductos": 3
+      "nProductos": 2
     },
     {
-      "nombre": "002 SALIDA",
+      "nombre": "SALIDA",
       "totalHaber": 16135235.769084617,
       "totalCosto": 16135235.8538,
       "totalVol": 66578.0,
@@ -447,6 +471,30 @@
       "nProductos": 2
     },
     {
+      "nombre": "002 K8 TRASPASO A K8L",
+      "totalHaber": 11929041.491126526,
+      "totalCosto": 11929041.8,
+      "totalVol": 47000.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-01-28",
+      "primeraFecha": "2026-01-28",
+      "productos": [
+        {
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 47000.0,
+          "monto": 11929041.491126526,
+          "costo": 11929041.8,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-28",
+          "primeraFecha": "2026-01-28"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
       "nombre": "OC 4000198035 SURALIS S.A.",
       "totalHaber": 10970262.826287132,
       "totalCosto": 10970262.8,
@@ -490,6 +538,54 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-13",
           "primeraFecha": "2026-05-13"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "002 K8 L TRASPASO QUIMPAC GD AD.59448",
+      "totalHaber": 7846273.756124327,
+      "totalCosto": 7846272.1341,
+      "totalVol": 32853.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-27",
+      "primeraFecha": "2026-03-27",
+      "productos": [
+        {
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 32853.0,
+          "monto": 7846273.756124327,
+          "costo": 7846272.1341,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-27",
+          "primeraFecha": "2026-03-27"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "002 K8 A K8 L QUIMPAC AG ADUANA 58383",
+      "totalHaber": 7750588.040450184,
+      "totalCosto": 7750587.771600001,
+      "totalVol": 32853.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-03-03",
+      "primeraFecha": "2026-03-03",
+      "productos": [
+        {
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 32853.0,
+          "monto": 7750588.040450184,
+          "costo": 7750587.771600001,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-03",
+          "primeraFecha": "2026-03-03"
         }
       ],
       "nProductos": 1
@@ -543,49 +639,25 @@
       "nProductos": 1
     },
     {
-      "nombre": "COMERCIALIZADORA YUKON LIMITADA",
-      "totalHaber": 6994705.939159825,
-      "totalCosto": 6994705.8,
-      "totalVol": 3000.0,
+      "nombre": "002 K8 L SALIDA DESPACHO 13.05.26",
+      "totalHaber": 6696336.3031952325,
+      "totalCosto": 6696336.408000001,
+      "totalVol": 27492.0,
       "nMovimientos": 1,
-      "ultimaFecha": "2026-01-28",
-      "primeraFecha": "2026-01-28",
+      "ultimaFecha": "2026-05-12",
+      "primeraFecha": "2026-05-12",
       "productos": [
         {
-          "codigo": "K-43",
-          "slug": "K-43",
-          "nombre": "TCCA 87% TABLETAS",
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
+          "nombre": "HIPOCLORITO DE SODIO",
           "unidad": "kg",
-          "vol": 3000.0,
-          "monto": 6994705.939159825,
-          "costo": 6994705.8,
+          "vol": 27492.0,
+          "monto": 6696336.3031952325,
+          "costo": 6696336.408000001,
           "nMovimientos": 1,
-          "ultimaFecha": "2026-01-28",
-          "primeraFecha": "2026-01-28"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8373 COMERCIALIZADORA YUKON LIMITADA",
-      "totalHaber": 6196749.282546307,
-      "totalCosto": 6196749.2,
-      "totalVol": 4000.0,
-      "nMovimientos": 2,
-      "ultimaFecha": "2026-03-06",
-      "primeraFecha": "2026-03-06",
-      "productos": [
-        {
-          "codigo": "K-34",
-          "slug": "K-34",
-          "nombre": "SDIC 60% GRANULAR",
-          "unidad": "kg",
-          "vol": 4000.0,
-          "monto": 6196749.282546307,
-          "costo": 6196749.2,
-          "nMovimientos": 2,
-          "ultimaFecha": "2026-03-06",
-          "primeraFecha": "2026-03-06"
+          "ultimaFecha": "2026-05-12",
+          "primeraFecha": "2026-05-12"
         }
       ],
       "nProductos": 1
@@ -747,6 +819,78 @@
       "nProductos": 1
     },
     {
+      "nombre": "OREGON CHEM GROUP",
+      "totalHaber": 4556483.383773566,
+      "totalCosto": 4556483.1559999995,
+      "totalVol": 7120.0,
+      "nMovimientos": 10,
+      "ultimaFecha": "2026-04-29",
+      "primeraFecha": "2026-01-12",
+      "productos": [
+        {
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
+          "unidad": "kg",
+          "vol": 1420.0,
+          "monto": 1995992.6745402894,
+          "costo": 1995992.6120000002,
+          "nMovimientos": 4,
+          "ultimaFecha": "2026-03-20",
+          "primeraFecha": "2026-01-14"
+        },
+        {
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 5000.0,
+          "monto": 1357360.1456753626,
+          "costo": 1357360.0,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-01-15",
+          "primeraFecha": "2026-01-15"
+        },
+        {
+          "codigo": "K-43",
+          "slug": "K-43",
+          "nombre": "TCCA 87% TABLETAS",
+          "unidad": "kg",
+          "vol": 180.0,
+          "monto": 419682.35634958954,
+          "costo": 419682.348,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-04-29",
+          "primeraFecha": "2026-01-12"
+        },
+        {
+          "codigo": "K-11",
+          "slug": "K-11",
+          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "unidad": "kg",
+          "vol": 270.0,
+          "monto": 396151.37704918033,
+          "costo": 396151.371,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-03-20",
+          "primeraFecha": "2026-03-20"
+        },
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 250.0,
+          "monto": 387296.83015914424,
+          "costo": 387296.825,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-05",
+          "primeraFecha": "2026-02-05"
+        }
+      ],
+      "nProductos": 5
+    },
+    {
       "nombre": "OC 4532061957 NUEVA ATACAMA S.A.",
       "totalHaber": 4523822.7881066445,
       "totalCosto": 4523822.9575,
@@ -819,78 +963,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "8548 AGUAS PATAGONIA DE AYSEN S.A",
-      "totalHaber": 4108236.50273224,
-      "totalCosto": 4108236.44,
-      "totalVol": 2800.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-04-10",
-      "primeraFecha": "2026-04-10",
-      "productos": [
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 2800.0,
-          "monto": 4108236.50273224,
-          "costo": 4108236.44,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-10",
-          "primeraFecha": "2026-04-10"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8656 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 4018308.5427291375,
-      "totalCosto": 4018308.555,
-      "totalVol": 2350.0,
-      "nMovimientos": 3,
-      "ultimaFecha": "2026-05-06",
-      "primeraFecha": "2026-05-06",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 600.0,
-          "monto": 2630095.067912856,
-          "costo": 2630095.08,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-06",
-          "primeraFecha": "2026-05-06"
-        },
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 750.0,
-          "monto": 1100420.4918032787,
-          "costo": 1100420.475,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-06",
-          "primeraFecha": "2026-05-06"
-        },
-        {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
-          "unidad": "kg",
-          "vol": 1000.0,
-          "monto": 287792.9830130029,
-          "costo": 287793.0,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-06",
-          "primeraFecha": "2026-05-06"
-        }
-      ],
-      "nProductos": 3
-    },
-    {
       "nombre": "OC 4000197488 SURALIS S.A.",
       "totalHaber": 3917951.009388262,
       "totalCosto": 3917951.0,
@@ -937,126 +1009,6 @@
         }
       ],
       "nProductos": 1
-    },
-    {
-      "nombre": "8495 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 3892394.4629849857,
-      "totalCosto": 3892394.4850000003,
-      "totalVol": 2050.0,
-      "nMovimientos": 3,
-      "ultimaFecha": "2026-04-01",
-      "primeraFecha": "2026-04-01",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 600.0,
-          "monto": 2626363.313811189,
-          "costo": 2626363.3200000003,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-01",
-          "primeraFecha": "2026-04-01"
-        },
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 750.0,
-          "monto": 1100420.4918032787,
-          "costo": 1100420.475,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-01",
-          "primeraFecha": "2026-04-01"
-        },
-        {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
-          "unidad": "kg",
-          "vol": 700.0,
-          "monto": 165610.65737051793,
-          "costo": 165610.69,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-01",
-          "primeraFecha": "2026-04-01"
-        }
-      ],
-      "nProductos": 3
-    },
-    {
-      "nombre": "8520 COMERCIALIZADORA YUKON LIMITADA",
-      "totalHaber": 3872968.3015914424,
-      "totalCosto": 3872968.25,
-      "totalVol": 2500.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-04-07",
-      "primeraFecha": "2026-04-07",
-      "productos": [
-        {
-          "codigo": "K-34",
-          "slug": "K-34",
-          "nombre": "SDIC 60% GRANULAR",
-          "unidad": "kg",
-          "vol": 2500.0,
-          "monto": 3872968.3015914424,
-          "costo": 3872968.25,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-07",
-          "primeraFecha": "2026-04-07"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "OREGON CHEM GROUP",
-      "totalHaber": 3773035.1765652415,
-      "totalCosto": 3773034.96,
-      "totalVol": 6600.0,
-      "nMovimientos": 8,
-      "ultimaFecha": "2026-04-29",
-      "primeraFecha": "2026-01-12",
-      "productos": [
-        {
-          "codigo": "K-45",
-          "slug": "K-45",
-          "nombre": "HIPOCLORITO DE CALCIO 70%",
-          "unidad": "kg",
-          "vol": 1420.0,
-          "monto": 1995992.6745402894,
-          "costo": 1995992.6120000002,
-          "nMovimientos": 4,
-          "ultimaFecha": "2026-03-20",
-          "primeraFecha": "2026-01-14"
-        },
-        {
-          "codigo": "K-8-1",
-          "slug": "K-8-1",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "kg",
-          "vol": 5000.0,
-          "monto": 1357360.1456753626,
-          "costo": 1357360.0,
-          "nMovimientos": 2,
-          "ultimaFecha": "2026-01-15",
-          "primeraFecha": "2026-01-15"
-        },
-        {
-          "codigo": "K-43",
-          "slug": "K-43",
-          "nombre": "TCCA 87% TABLETAS",
-          "unidad": "kg",
-          "vol": 180.0,
-          "monto": 419682.35634958954,
-          "costo": 419682.348,
-          "nMovimientos": 2,
-          "ultimaFecha": "2026-04-29",
-          "primeraFecha": "2026-01-12"
-        }
-      ],
-      "nProductos": 3
     },
     {
       "nombre": "FACTURA[FT]8896 ZETAENE SA",
@@ -1251,78 +1203,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "8222 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 2743372.350552336,
-      "totalCosto": 2743372.39,
-      "totalVol": 1300.0,
-      "nMovimientos": 2,
-      "ultimaFecha": "2026-02-05",
-      "primeraFecha": "2026-02-05",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 600.0,
-          "monto": 2577761.693181818,
-          "costo": 2577761.7,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-05",
-          "primeraFecha": "2026-02-05"
-        },
-        {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
-          "unidad": "kg",
-          "vol": 700.0,
-          "monto": 165610.65737051793,
-          "costo": 165610.69,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-05",
-          "primeraFecha": "2026-02-05"
-        }
-      ],
-      "nProductos": 2
-    },
-    {
-      "nombre": "8339 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 2701879.2849928956,
-      "totalCosto": 2701879.33,
-      "totalVol": 1300.0,
-      "nMovimientos": 2,
-      "ultimaFecha": "2026-03-02",
-      "primeraFecha": "2026-03-02",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 600.0,
-          "monto": 2536268.6276223776,
-          "costo": 2536268.64,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-02",
-          "primeraFecha": "2026-03-02"
-        },
-        {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
-          "unidad": "kg",
-          "vol": 700.0,
-          "monto": 165610.6573705179,
-          "costo": 165610.69,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-02",
-          "primeraFecha": "2026-03-02"
-        }
-      ],
-      "nProductos": 2
-    },
-    {
       "nombre": "I. MUNICIPALIDAD DE MAIPU",
       "totalHaber": 2619217.933136412,
       "totalCosto": 2619218.0,
@@ -1347,7 +1227,31 @@
       "nProductos": 1
     },
     {
-      "nombre": "002 TRASPASO K8L 04.05.26",
+      "nombre": "002 K8 SALIDA A K8 L QUIMPAC AG ADUANA 57756",
+      "totalHaber": 2575839.5251871035,
+      "totalCosto": 2575839.7654,
+      "totalVol": 10702.0,
+      "nMovimientos": 1,
+      "ultimaFecha": "2026-02-23",
+      "primeraFecha": "2026-02-23",
+      "productos": [
+        {
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 10702.0,
+          "monto": 2575839.5251871035,
+          "costo": 2575839.7654,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-23",
+          "primeraFecha": "2026-02-23"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "TRASPASO K8L 04.05.26",
       "totalHaber": 2575291.508545929,
       "totalCosto": 2575291.3732,
       "totalVol": 10556.0,
@@ -1443,42 +1347,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "8028 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 1953040.9073705182,
-      "totalCosto": 1953040.93,
-      "totalVol": 1100.0,
-      "nMovimientos": 2,
-      "ultimaFecha": "2026-01-03",
-      "primeraFecha": "2026-01-03",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 400.0,
-          "monto": 1787430.2500000002,
-          "costo": 1787430.24,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-03",
-          "primeraFecha": "2026-01-03"
-        },
-        {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
-          "unidad": "kg",
-          "vol": 700.0,
-          "monto": 165610.65737051793,
-          "costo": 165610.69,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-03",
-          "primeraFecha": "2026-01-03"
-        }
-      ],
-      "nProductos": 2
-    },
-    {
       "nombre": "FACTURA[FT]8367 ZETAENE SA",
       "totalHaber": 1929658.1152320972,
       "totalCosto": 1929657.8979999998,
@@ -1498,30 +1366,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-23",
           "primeraFecha": "2026-01-23"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8192 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 1771191.4375,
-      "totalCosto": 1771191.4400000002,
-      "totalVol": 400.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-02-03",
-      "primeraFecha": "2026-02-03",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 400.0,
-          "monto": 1771191.4375,
-          "costo": 1771191.4400000002,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-03",
-          "primeraFecha": "2026-02-03"
         }
       ],
       "nProductos": 1
@@ -1561,78 +1405,6 @@
         }
       ],
       "nProductos": 2
-    },
-    {
-      "nombre": "8503 AGUAS PATAGONIA DE AYSEN S.A",
-      "totalHaber": 1760672.786885246,
-      "totalCosto": 1760672.76,
-      "totalVol": 1200.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-04-02",
-      "primeraFecha": "2026-04-02",
-      "productos": [
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 1200.0,
-          "monto": 1760672.786885246,
-          "costo": 1760672.76,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-02",
-          "primeraFecha": "2026-04-02"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8644 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 1750908.875874126,
-      "totalCosto": 1750908.8800000001,
-      "totalVol": 400.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-05",
-      "primeraFecha": "2026-05-05",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 400.0,
-          "monto": 1750908.875874126,
-          "costo": 1750908.8800000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-05",
-          "primeraFecha": "2026-05-05"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8360 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 1690845.751748252,
-      "totalCosto": 1690845.7600000002,
-      "totalVol": 400.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-03-04",
-      "primeraFecha": "2026-03-04",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 400.0,
-          "monto": 1690845.751748252,
-          "costo": 1690845.7600000002,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-04",
-          "primeraFecha": "2026-03-04"
-        }
-      ],
-      "nProductos": 1
     },
     {
       "nombre": "OVEL",
@@ -1702,30 +1474,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-02",
           "primeraFecha": "2026-02-02"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8743 AGUAS DEL VALLE S.A",
-      "totalHaber": 1393865.956284153,
-      "totalCosto": 1393865.935,
-      "totalVol": 950.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-25",
-      "primeraFecha": "2026-05-25",
-      "productos": [
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 950.0,
-          "monto": 1393865.956284153,
-          "costo": 1393865.935,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-25",
-          "primeraFecha": "2026-05-25"
         }
       ],
       "nProductos": 1
@@ -1815,54 +1563,6 @@
       "nProductos": 2
     },
     {
-      "nombre": "8655 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 1221715.6224169678,
-      "totalCosto": 1221715.637,
-      "totalVol": 1030.0,
-      "nMovimientos": 3,
-      "ultimaFecha": "2026-05-06",
-      "primeraFecha": "2026-05-06",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 876698.3559709522,
-          "costo": 876698.36,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-06",
-          "primeraFecha": "2026-05-06"
-        },
-        {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
-          "unidad": "kg",
-          "vol": 740.0,
-          "monto": 212966.80742962216,
-          "costo": 212966.82,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-06",
-          "primeraFecha": "2026-05-06"
-        },
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 90.0,
-          "monto": 132050.45901639343,
-          "costo": 132050.457,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-06",
-          "primeraFecha": "2026-05-06"
-        }
-      ],
-      "nProductos": 3
-    },
-    {
       "nombre": "OC 4543006038 ESVAL S.A.",
       "totalHaber": 1175385.3028164783,
       "totalCosto": 1175385.2999999998,
@@ -1887,124 +1587,88 @@
       "nProductos": 1
     },
     {
-      "nombre": "8648 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 1109758.9831152903,
-      "totalCosto": 1109758.99,
-      "totalVol": 600.0,
-      "nMovimientos": 3,
-      "ultimaFecha": "2026-05-06",
-      "primeraFecha": "2026-05-06",
+      "nombre": "002",
+      "totalHaber": 1126591.649163599,
+      "totalCosto": 1126591.6269999999,
+      "totalVol": 605.0,
+      "nMovimientos": 20,
+      "ultimaFecha": "2026-05-20",
+      "primeraFecha": "2026-01-06",
       "productos": [
         {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
+          "codigo": "K-43",
+          "slug": "K-43",
+          "nombre": "TCCA 87% TABLETAS",
           "unidad": "kg",
-          "vol": 200.0,
-          "monto": 876698.3559709522,
-          "costo": 876698.36,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-06",
-          "primeraFecha": "2026-05-06"
+          "vol": 235.0,
+          "monto": 547918.631900853,
+          "costo": 547918.621,
+          "nMovimientos": 11,
+          "ultimaFecha": "2026-05-20",
+          "primeraFecha": "2026-01-06"
         },
         {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "codigo": "K-45",
+          "slug": "K-45",
+          "nombre": "HIPOCLORITO DE CALCIO 70%",
           "unidad": "kg",
-          "vol": 100.0,
-          "monto": 146722.73224043715,
-          "costo": 146722.73,
+          "vol": 180.0,
+          "monto": 253013.15592764228,
+          "costo": 253013.148,
           "nMovimientos": 1,
-          "ultimaFecha": "2026-05-06",
-          "primeraFecha": "2026-05-06"
+          "ultimaFecha": "2026-04-07",
+          "primeraFecha": "2026-04-07"
         },
         {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
           "unidad": "kg",
-          "vol": 300.0,
-          "monto": 86337.89490390087,
-          "costo": 86337.90000000001,
+          "vol": 155.0,
+          "monto": 240124.0346986694,
+          "costo": 240124.03149999998,
+          "nMovimientos": 5,
+          "ultimaFecha": "2026-05-20",
+          "primeraFecha": "2026-01-15"
+        },
+        {
+          "codigo": "K-33",
+          "slug": "K-33",
+          "nombre": "SDIC 56% GRANULAR",
+          "unidad": "kg",
+          "vol": 25.0,
+          "monto": 54700.622751176306,
+          "costo": 54700.6225,
           "nMovimientos": 1,
-          "ultimaFecha": "2026-05-06",
-          "primeraFecha": "2026-05-06"
+          "ultimaFecha": "2026-01-30",
+          "primeraFecha": "2026-01-30"
+        },
+        {
+          "codigo": "K-39",
+          "slug": "K-39",
+          "nombre": "BUZYME 2516",
+          "unidad": "kg",
+          "vol": 5.0,
+          "monto": 16056.617283950618,
+          "costo": 16056.6175,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-20",
+          "primeraFecha": "2026-01-20"
+        },
+        {
+          "codigo": "K-41",
+          "slug": "K-41",
+          "nombre": "BUFLOC 5122",
+          "unidad": "kg",
+          "vol": 5.0,
+          "monto": 14778.58660130719,
+          "costo": 14778.5865,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-20",
+          "primeraFecha": "2026-01-20"
         }
       ],
-      "nProductos": 3
-    },
-    {
-      "nombre": "8746 AGUAS DEL VALLE S.A",
-      "totalHaber": 1100420.4918032787,
-      "totalCosto": 1100420.475,
-      "totalVol": 750.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-25",
-      "primeraFecha": "2026-05-25",
-      "productos": [
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 750.0,
-          "monto": 1100420.4918032787,
-          "costo": 1100420.475,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-25",
-          "primeraFecha": "2026-05-25"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8494 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 1069494.5008547911,
-      "totalCosto": 1069494.51,
-      "totalVol": 500.0,
-      "nMovimientos": 3,
-      "ultimaFecha": "2026-04-01",
-      "primeraFecha": "2026-04-01",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 875454.437937063,
-          "costo": 875454.4400000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-01",
-          "primeraFecha": "2026-04-01"
-        },
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 100.0,
-          "monto": 146722.73224043715,
-          "costo": 146722.73,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-01",
-          "primeraFecha": "2026-04-01"
-        },
-        {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 47317.33067729083,
-          "costo": 47317.340000000004,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-01",
-          "primeraFecha": "2026-04-01"
-        }
-      ],
-      "nProductos": 3
+      "nProductos": 6
     },
     {
       "nombre": "GUÍA[ST]8390 GALVANIZADO BBOSCH S.A",
@@ -2050,354 +1714,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-27",
           "primeraFecha": "2026-03-27"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8027 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 941032.4556772909,
-      "totalCosto": 941032.46,
-      "totalVol": 400.0,
-      "nMovimientos": 2,
-      "ultimaFecha": "2026-01-03",
-      "primeraFecha": "2026-01-03",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 893715.1250000001,
-          "costo": 893715.12,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-03",
-          "primeraFecha": "2026-01-03"
-        },
-        {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 47317.33067729083,
-          "costo": 47317.340000000004,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-03",
-          "primeraFecha": "2026-01-03"
-        }
-      ],
-      "nProductos": 2
-    },
-    {
-      "nombre": "8211 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 932913.0494272908,
-      "totalCosto": 932913.06,
-      "totalVol": 400.0,
-      "nMovimientos": 2,
-      "ultimaFecha": "2026-02-04",
-      "primeraFecha": "2026-02-04",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 885595.71875,
-          "costo": 885595.7200000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-04",
-          "primeraFecha": "2026-02-04"
-        },
-        {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 47317.330677290825,
-          "costo": 47317.340000000004,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-04",
-          "primeraFecha": "2026-02-04"
-        }
-      ],
-      "nProductos": 2
-    },
-    {
-      "nombre": "8340 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 892740.2065514168,
-      "totalCosto": 892740.2200000001,
-      "totalVol": 400.0,
-      "nMovimientos": 2,
-      "ultimaFecha": "2026-03-02",
-      "primeraFecha": "2026-03-02",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 845422.875874126,
-          "costo": 845422.8800000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-02",
-          "primeraFecha": "2026-03-02"
-        },
-        {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 47317.33067729083,
-          "costo": 47317.340000000004,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-02",
-          "primeraFecha": "2026-03-02"
-        }
-      ],
-      "nProductos": 2
-    },
-    {
-      "nombre": "8048 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 885595.71875,
-      "totalCosto": 885595.7200000001,
-      "totalVol": 200.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-07",
-      "primeraFecha": "2026-01-07",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 885595.71875,
-          "costo": 885595.7200000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-07",
-          "primeraFecha": "2026-01-07"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8051 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 885595.71875,
-      "totalCosto": 885595.7200000001,
-      "totalVol": 200.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-08",
-      "primeraFecha": "2026-01-08",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 885595.71875,
-          "costo": 885595.7200000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-08",
-          "primeraFecha": "2026-01-08"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8052 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 885595.71875,
-      "totalCosto": 885595.7200000001,
-      "totalVol": 200.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-08",
-      "primeraFecha": "2026-01-08",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 885595.71875,
-          "costo": 885595.7200000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-08",
-          "primeraFecha": "2026-01-08"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8115 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 885595.71875,
-      "totalCosto": 885595.7200000001,
-      "totalVol": 200.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-20",
-      "primeraFecha": "2026-01-20",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 885595.71875,
-          "costo": 885595.7200000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-20",
-          "primeraFecha": "2026-01-20"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8197 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 885595.71875,
-      "totalCosto": 885595.7200000001,
-      "totalVol": 200.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-02-03",
-      "primeraFecha": "2026-02-03",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 885595.71875,
-          "costo": 885595.7200000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-03",
-          "primeraFecha": "2026-02-03"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8712 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 876698.3559709522,
-      "totalCosto": 876698.36,
-      "totalVol": 200.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-19",
-      "primeraFecha": "2026-05-19",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 876698.3559709522,
-          "costo": 876698.36,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-19",
-          "primeraFecha": "2026-05-19"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8501 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 875454.437937063,
-      "totalCosto": 875454.4400000001,
-      "totalVol": 200.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-04-02",
-      "primeraFecha": "2026-04-02",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 875454.437937063,
-          "costo": 875454.4400000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-02",
-          "primeraFecha": "2026-04-02"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8641 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 875454.437937063,
-      "totalCosto": 875454.4400000001,
-      "totalVol": 200.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-05",
-      "primeraFecha": "2026-05-05",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 875454.437937063,
-          "costo": 875454.4400000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-05",
-          "primeraFecha": "2026-05-05"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8318 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 859253.8977272727,
-      "totalCosto": 859253.9,
-      "totalVol": 200.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-02-25",
-      "primeraFecha": "2026-02-25",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 859253.8977272727,
-          "costo": 859253.9,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-25",
-          "primeraFecha": "2026-02-25"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8330 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 859253.8977272727,
-      "totalCosto": 859253.9,
-      "totalVol": 200.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-02-27",
-      "primeraFecha": "2026-02-27",
-      "productos": [
-        {
-          "codigo": "K-14",
-          "slug": "K-14",
-          "nombre": "BIG FLOC 868A",
-          "unidad": "kg",
-          "vol": 200.0,
-          "monto": 859253.8977272727,
-          "costo": 859253.9,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-27",
-          "primeraFecha": "2026-02-27"
         }
       ],
       "nProductos": 1
@@ -2451,7 +1767,7 @@
       "nProductos": 1
     },
     {
-      "nombre": "8021 CORP MUNICIPAL DE DESARROLLO SOCIAL DE PUDAHUEL",
+      "nombre": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE PUDAHUEL",
       "totalHaber": 774593.6603182886,
       "totalCosto": 774593.65,
       "totalVol": 500.0,
@@ -2619,7 +1935,7 @@
       "nProductos": 1
     },
     {
-      "nombre": "8627 PATAGONIA SOSTENIBLE DE AYSEN",
+      "nombre": "PATAGONIA SOSTENIBLE DE AYSEN",
       "totalHaber": 440168.1967213115,
       "totalCosto": 440168.19,
       "totalVol": 300.0,
@@ -2638,30 +1954,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-30",
           "primeraFecha": "2026-04-30"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8441 OREGON CHEM GROUP",
-      "totalHaber": 396151.37704918033,
-      "totalCosto": 396151.371,
-      "totalVol": 270.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-03-20",
-      "primeraFecha": "2026-03-20",
-      "productos": [
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 270.0,
-          "monto": 396151.37704918033,
-          "costo": 396151.371,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-20",
-          "primeraFecha": "2026-03-20"
         }
       ],
       "nProductos": 1
@@ -2686,78 +1978,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-30",
           "primeraFecha": "2026-03-30"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8221 OREGON CHEM GROUP",
-      "totalHaber": 387296.83015914424,
-      "totalCosto": 387296.825,
-      "totalVol": 250.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-02-05",
-      "primeraFecha": "2026-02-05",
-      "productos": [
-        {
-          "codigo": "K-34",
-          "slug": "K-34",
-          "nombre": "SDIC 60% GRANULAR",
-          "unidad": "kg",
-          "vol": 250.0,
-          "monto": 387296.83015914424,
-          "costo": 387296.825,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-05",
-          "primeraFecha": "2026-02-05"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8745 AGUAS DEL VALLE S.A",
-      "totalHaber": 366806.83060109295,
-      "totalCosto": 366806.825,
-      "totalVol": 250.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-25",
-      "primeraFecha": "2026-05-25",
-      "productos": [
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 250.0,
-          "monto": 366806.83060109295,
-          "costo": 366806.825,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-25",
-          "primeraFecha": "2026-05-25"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8744 AGUAS DEL VALLE S.A",
-      "totalHaber": 366806.8306010929,
-      "totalCosto": 366806.825,
-      "totalVol": 250.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-25",
-      "primeraFecha": "2026-05-25",
-      "productos": [
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 250.0,
-          "monto": 366806.8306010929,
-          "costo": 366806.825,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-25",
-          "primeraFecha": "2026-05-25"
         }
       ],
       "nProductos": 1
@@ -2955,6 +2175,42 @@
       "nProductos": 1
     },
     {
+      "nombre": "FULLSOLUTION",
+      "totalHaber": 271497.164382988,
+      "totalCosto": 271497.16000000003,
+      "totalVol": 150.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-05-14",
+      "primeraFecha": "2026-05-14",
+      "productos": [
+        {
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 154918.73206365755,
+          "costo": 154918.73,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-14",
+          "primeraFecha": "2026-05-14"
+        },
+        {
+          "codigo": "K-43",
+          "slug": "K-43",
+          "nombre": "TCCA 87% TABLETAS",
+          "unidad": "kg",
+          "vol": 50.0,
+          "monto": 116578.43231933043,
+          "costo": 116578.43000000001,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-14",
+          "primeraFecha": "2026-05-14"
+        }
+      ],
+      "nProductos": 2
+    },
+    {
       "nombre": "COMITE DE AGUA POTABLE RURAL LA LLAVERIA",
       "totalHaber": 253013.15592764234,
       "totalCosto": 253013.148,
@@ -3051,52 +2307,40 @@
       "nProductos": 1
     },
     {
-      "nombre": "8493 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 220084.09836065574,
-      "totalCosto": 220084.095,
-      "totalVol": 150.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-04-01",
-      "primeraFecha": "2026-04-01",
+      "nombre": "AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
+      "totalHaber": 186860.61153418146,
+      "totalCosto": 186860.61,
+      "totalVol": 100.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-02-12",
+      "primeraFecha": "2026-01-06",
       "productos": [
         {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "codigo": "K-33",
+          "slug": "K-33",
+          "nombre": "SDIC 56% GRANULAR",
           "unidad": "kg",
-          "vol": 150.0,
-          "monto": 220084.09836065574,
-          "costo": 220084.095,
+          "vol": 50.0,
+          "monto": 109401.24550235261,
+          "costo": 109401.245,
           "nMovimientos": 1,
-          "ultimaFecha": "2026-04-01",
-          "primeraFecha": "2026-04-01"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8647 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 220084.09836065574,
-      "totalCosto": 220084.095,
-      "totalVol": 150.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-06",
-      "primeraFecha": "2026-05-06",
-      "productos": [
+          "ultimaFecha": "2026-02-12",
+          "primeraFecha": "2026-02-12"
+        },
         {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
+          "codigo": "K-34",
+          "slug": "K-34",
+          "nombre": "SDIC 60% GRANULAR",
           "unidad": "kg",
-          "vol": 150.0,
-          "monto": 220084.09836065574,
-          "costo": 220084.095,
+          "vol": 50.0,
+          "monto": 77459.36603182885,
+          "costo": 77459.365,
           "nMovimientos": 1,
-          "ultimaFecha": "2026-05-06",
-          "primeraFecha": "2026-05-06"
+          "ultimaFecha": "2026-01-06",
+          "primeraFecha": "2026-01-06"
         }
       ],
-      "nProductos": 1
+      "nProductos": 2
     },
     {
       "nombre": "PROVEEDOR LOCAL",
@@ -3171,42 +2415,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "8482 EMP.SERV.SANIT.SAN.ISIDRO S.A",
-      "totalHaber": 165172.590490497,
-      "totalCosto": 165172.595,
-      "totalVol": 230.0,
-      "nMovimientos": 2,
-      "ultimaFecha": "2026-03-31",
-      "primeraFecha": "2026-03-31",
-      "productos": [
-        {
-          "codigo": "K-11",
-          "slug": "K-11",
-          "nombre": "HIPOCLORITO DE CALCIO GRANULADO 65%",
-          "unidad": "kg",
-          "vol": 90.0,
-          "monto": 132050.45901639343,
-          "costo": 132050.457,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-31",
-          "primeraFecha": "2026-03-31"
-        },
-        {
-          "codigo": "K-13",
-          "slug": "K-13",
-          "nombre": "CAL APAGADA SUPERFINA",
-          "unidad": "kg",
-          "vol": 140.0,
-          "monto": 33122.13147410359,
-          "costo": 33122.138,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-31",
-          "primeraFecha": "2026-03-31"
-        }
-      ],
-      "nProductos": 2
-    },
-    {
       "nombre": "LUIS RENE LOPEZ RODRIGUEZ COT 0005",
       "totalHaber": 164429.615929589,
       "totalCosto": 164429.6,
@@ -3226,30 +2434,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-27",
           "primeraFecha": "2026-01-27"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8690 FULLSOLUTION",
-      "totalHaber": 154918.73206365755,
-      "totalCosto": 154918.73,
-      "totalVol": 100.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-14",
-      "primeraFecha": "2026-05-14",
-      "productos": [
-        {
-          "codigo": "K-34",
-          "slug": "K-34",
-          "nombre": "SDIC 60% GRANULAR",
-          "unidad": "kg",
-          "vol": 100.0,
-          "monto": 154918.73206365755,
-          "costo": 154918.73,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-14",
-          "primeraFecha": "2026-05-14"
         }
       ],
       "nProductos": 1
@@ -3339,55 +2523,7 @@
       "nProductos": 1
     },
     {
-      "nombre": "FULLSOLUTION",
-      "totalHaber": 116578.43231933043,
-      "totalCosto": 116578.43000000001,
-      "totalVol": 50.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-14",
-      "primeraFecha": "2026-05-14",
-      "productos": [
-        {
-          "codigo": "K-43",
-          "slug": "K-43",
-          "nombre": "TCCA 87% TABLETAS",
-          "unidad": "kg",
-          "vol": 50.0,
-          "monto": 116578.43231933043,
-          "costo": 116578.43000000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-14",
-          "primeraFecha": "2026-05-14"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8260 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
-      "totalHaber": 109401.24550235261,
-      "totalCosto": 109401.245,
-      "totalVol": 50.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-02-12",
-      "primeraFecha": "2026-02-12",
-      "productos": [
-        {
-          "codigo": "K-33",
-          "slug": "K-33",
-          "nombre": "SDIC 56% GRANULAR",
-          "unidad": "kg",
-          "vol": 50.0,
-          "monto": 109401.24550235261,
-          "costo": 109401.245,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-12",
-          "primeraFecha": "2026-02-12"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8276 AGRICOLA EL QUISCAL LIMITADA",
+      "nombre": "AGRICOLA EL QUISCAL LIMITADA",
       "totalHaber": 109401.24550235261,
       "totalCosto": 109401.245,
       "totalVol": 50.0,
@@ -3579,78 +2715,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "8035 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
-      "totalHaber": 77459.36603182885,
-      "totalCosto": 77459.365,
-      "totalVol": 50.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-06",
-      "primeraFecha": "2026-01-06",
-      "productos": [
-        {
-          "codigo": "K-34",
-          "slug": "K-34",
-          "nombre": "SDIC 60% GRANULAR",
-          "unidad": "kg",
-          "vol": 50.0,
-          "monto": 77459.36603182885,
-          "costo": 77459.365,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-06",
-          "primeraFecha": "2026-01-06"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8108 002",
-      "totalHaber": 77459.36603182885,
-      "totalCosto": 77459.365,
-      "totalVol": 50.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-16",
-      "primeraFecha": "2026-01-16",
-      "productos": [
-        {
-          "codigo": "K-34",
-          "slug": "K-34",
-          "nombre": "SDIC 60% GRANULAR",
-          "unidad": "kg",
-          "vol": 50.0,
-          "monto": 77459.36603182885,
-          "costo": 77459.365,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-16",
-          "primeraFecha": "2026-01-16"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8113 002",
-      "totalHaber": 77459.36603182885,
-      "totalCosto": 77459.365,
-      "totalVol": 50.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-20",
-      "primeraFecha": "2026-01-20",
-      "productos": [
-        {
-          "codigo": "K-34",
-          "slug": "K-34",
-          "nombre": "SDIC 60% GRANULAR",
-          "unidad": "kg",
-          "vol": 50.0,
-          "monto": 77459.36603182885,
-          "costo": 77459.365,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-20",
-          "primeraFecha": "2026-01-20"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "COMITE DE AGUA POTABLE RURAL HUALCAPO COT 0142",
       "totalHaber": 73072.19885634257,
       "totalCosto": 73072.2,
@@ -3747,30 +2811,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "8175 002",
-      "totalHaber": 54700.622751176306,
-      "totalCosto": 54700.6225,
-      "totalVol": 25.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-30",
-      "primeraFecha": "2026-01-30",
-      "productos": [
-        {
-          "codigo": "K-33",
-          "slug": "K-33",
-          "nombre": "SDIC 56% GRANULAR",
-          "unidad": "kg",
-          "vol": 25.0,
-          "monto": 54700.622751176306,
-          "costo": 54700.6225,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-30",
-          "primeraFecha": "2026-01-30"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "SERVICIOS DE INGENIERIA Y CONSTRUCCION GOCAT LIMITADA",
       "totalHaber": 48364.918444165625,
       "totalCosto": 48364.918,
@@ -3819,7 +2859,7 @@
       "nProductos": 1
     },
     {
-      "nombre": "002 ROSARIO JOANNON GREZ",
+      "nombre": "ROSARIO JOANNON GREZ",
       "totalHaber": 45356.68645745814,
       "totalCosto": 45356.6784,
       "totalVol": 176.0,
@@ -3838,54 +2878,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-20",
           "primeraFecha": "2026-01-20"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8350 002",
-      "totalHaber": 38729.683015914416,
-      "totalCosto": 38729.6825,
-      "totalVol": 25.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-03-03",
-      "primeraFecha": "2026-03-03",
-      "productos": [
-        {
-          "codigo": "K-34",
-          "slug": "K-34",
-          "nombre": "SDIC 60% GRANULAR",
-          "unidad": "kg",
-          "vol": 25.0,
-          "monto": 38729.683015914416,
-          "costo": 38729.6825,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-03",
-          "primeraFecha": "2026-03-03"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "8729 002",
-      "totalHaber": 38729.68301591439,
-      "totalCosto": 38729.6825,
-      "totalVol": 25.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-20",
-      "primeraFecha": "2026-05-20",
-      "productos": [
-        {
-          "codigo": "K-34",
-          "slug": "K-34",
-          "nombre": "SDIC 60% GRANULAR",
-          "unidad": "kg",
-          "vol": 25.0,
-          "monto": 38729.68301591439,
-          "costo": 38729.6825,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-20",
-          "primeraFecha": "2026-05-20"
         }
       ],
       "nProductos": 1
@@ -4059,31 +3051,7 @@
       "nProductos": 1
     },
     {
-      "nombre": "8083 002",
-      "totalHaber": 7745.936603182885,
-      "totalCosto": 7745.9365,
-      "totalVol": 5.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-15",
-      "primeraFecha": "2026-01-15",
-      "productos": [
-        {
-          "codigo": "K-34",
-          "slug": "K-34",
-          "nombre": "SDIC 60% GRANULAR",
-          "unidad": "kg",
-          "vol": 5.0,
-          "monto": 7745.936603182885,
-          "costo": 7745.9365,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-15",
-          "primeraFecha": "2026-01-15"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "002 RODRIGO AGUAYO",
+      "nombre": "RODRIGO AGUAYO",
       "totalHaber": 5449.2154047235135,
       "totalCosto": 5449.2152,
       "totalVol": 22.0,

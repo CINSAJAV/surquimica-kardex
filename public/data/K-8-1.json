@@ -292,7 +292,7 @@
     {
       "fecha": "2026-01-20",
       "detalle": "002 Rosario Joannon Grez OC 1033",
-      "cliente": "002 ROSARIO JOANNON GREZ",
+      "cliente": "ROSARIO JOANNON GREZ",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 176.0,
@@ -352,7 +352,7 @@
     {
       "fecha": "2026-01-28",
       "detalle": "002 K8 TRASPASO A K8L",
-      "cliente": "002",
+      "cliente": "002 K8 TRASPASO A K8L",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 47000.0,
@@ -520,7 +520,7 @@
     {
       "fecha": "2026-02-06",
       "detalle": "002 Rodrigo Aguayo - OC 1039",
-      "cliente": "002 RODRIGO AGUAYO",
+      "cliente": "RODRIGO AGUAYO",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 22.0,
@@ -568,7 +568,7 @@
     {
       "fecha": "2026-02-10",
       "detalle": "002 TRASPASO K8 A K8 L QUIMPAC",
-      "cliente": "002 TRASPASO",
+      "cliente": "TRASPASO",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 47000.0,
@@ -652,7 +652,7 @@
     {
       "fecha": "2026-02-23",
       "detalle": "002 K8 SALIDA A K8 L QUIMPAC AG ADUANA 57756",
-      "cliente": "002",
+      "cliente": "002 K8 SALIDA A K8 L QUIMPAC AG ADUANA 57756",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 10702.0,
@@ -688,7 +688,7 @@
     {
       "fecha": "2026-02-25",
       "detalle": "002 SALIDA K8 A K8 L QUIMPAC",
-      "cliente": "002 SALIDA",
+      "cliente": "SALIDA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 20000.0,
@@ -796,7 +796,7 @@
     {
       "fecha": "2026-03-03",
       "detalle": "002 K8 A K8 L QUIMPAC AG ADUANA 58383",
-      "cliente": "002",
+      "cliente": "002 K8 A K8 L QUIMPAC AG ADUANA 58383",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 32853.0,
@@ -928,7 +928,7 @@
     {
       "fecha": "2026-03-12",
       "detalle": "002 TRASPASO K8 A K8 L",
-      "cliente": "002 TRASPASO",
+      "cliente": "TRASPASO",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 4925.0,
@@ -964,7 +964,7 @@
     {
       "fecha": "2026-03-18",
       "detalle": "002 TRASPASO K8 A K8 L",
-      "cliente": "002 TRASPASO",
+      "cliente": "TRASPASO",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 11600.0,
@@ -1060,7 +1060,7 @@
     {
       "fecha": "2026-03-27",
       "detalle": "002 K8 L TRASPASO QUIMPAC GD AD.59448",
-      "cliente": "002",
+      "cliente": "002 K8 L TRASPASO QUIMPAC GD AD.59448",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 32853.0,
@@ -1264,7 +1264,7 @@
     {
       "fecha": "2026-04-15",
       "detalle": "002 TRASPASO K8 A K8L",
-      "cliente": "002 TRASPASO",
+      "cliente": "TRASPASO",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 38110.0,
@@ -1396,7 +1396,7 @@
     {
       "fecha": "2026-04-24",
       "detalle": "002 TRASPASO K8 A K8L",
-      "cliente": "002 TRASPASO",
+      "cliente": "TRASPASO",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1005.0,
@@ -1408,7 +1408,7 @@
     {
       "fecha": "2026-04-28",
       "detalle": "002 TRASPASO K8 A K8 L",
-      "cliente": "002 TRASPASO",
+      "cliente": "TRASPASO",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 5429.0,
@@ -1432,7 +1432,7 @@
     {
       "fecha": "2026-05-04",
       "detalle": "002 TRASPASO K8L 04.05.26",
-      "cliente": "002 TRASPASO K8L 04.05.26",
+      "cliente": "TRASPASO K8L 04.05.26",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 10556.0,
@@ -1576,7 +1576,7 @@
     {
       "fecha": "2026-05-06",
       "detalle": "002 SALIDA K8 INGRESO K8 L",
-      "cliente": "002 SALIDA",
+      "cliente": "SALIDA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 2900.0,
@@ -1588,7 +1588,7 @@
     {
       "fecha": "2026-05-06",
       "detalle": "002 SALIDA K8 INGRESO K8 L",
-      "cliente": "002 SALIDA",
+      "cliente": "SALIDA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 5568.0,
@@ -1600,7 +1600,7 @@
     {
       "fecha": "2026-05-06",
       "detalle": "002 SALIDA K8 INGRESO K8 L",
-      "cliente": "002 SALIDA",
+      "cliente": "SALIDA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 38110.0,
@@ -1660,7 +1660,7 @@
     {
       "fecha": "2026-05-12",
       "detalle": "002 K8 L SALIDA DESPACHO 13.05.26",
-      "cliente": "002",
+      "cliente": "002 K8 L SALIDA DESPACHO 13.05.26",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 27492.0,
