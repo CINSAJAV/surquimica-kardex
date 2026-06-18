@@ -1,10 +1,11 @@
 {
-  "generado": "2026-06-18T10:41:47",
+  "generado": "2026-06-18T11:10:21",
   "total": 157,
   "empresas": [
     {
       "nombre": "ESVAL S.A",
       "totalHaber": 128768350.82498246,
+      "totalCosto": 128768347.72509997,
       "totalVol": 374821.0,
       "nMovimientos": 265,
       "ultimaFecha": "2026-04-30",
@@ -17,6 +18,7 @@
           "unidad": "lt",
           "vol": 269921.0,
           "monto": 80816749.19682792,
+          "costo": 80816746.34009998,
           "nMovimientos": 234,
           "ultimaFecha": "2026-04-29",
           "primeraFecha": "2026-01-02"
@@ -28,6 +30,7 @@
           "unidad": "kg",
           "vol": 104900.0,
           "monto": 47951601.62815458,
+          "costo": 47951601.385000005,
           "nMovimientos": 31,
           "ultimaFecha": "2026-04-30",
           "primeraFecha": "2026-01-08"
@@ -38,6 +41,7 @@
     {
       "nombre": "NUEVA ATACAMA S.A",
       "totalHaber": 46440175.41306341,
+      "totalCosto": 46440175.758,
       "totalVol": 167300.0,
       "nMovimientos": 21,
       "ultimaFecha": "2026-05-13",
@@ -50,6 +54,7 @@
           "unidad": "kg",
           "vol": 142000.0,
           "monto": 34953316.51582286,
+          "costo": 34953317.1,
           "nMovimientos": 13,
           "ultimaFecha": "2026-05-13",
           "primeraFecha": "2026-01-14"
@@ -61,6 +66,7 @@
           "unidad": "kg",
           "vol": 25300.0,
           "monto": 11486858.897240544,
+          "costo": 11486858.658000002,
           "nMovimientos": 8,
           "ultimaFecha": "2026-04-29",
           "primeraFecha": "2026-01-16"
@@ -71,6 +77,7 @@
     {
       "nombre": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 38986802.654001504,
+      "totalCosto": 38986802.19729999,
       "totalVol": 141959.0,
       "nMovimientos": 87,
       "ultimaFecha": "2026-05-15",
@@ -83,6 +90,7 @@
           "unidad": "kg",
           "vol": 138354.0,
           "monto": 34479022.38350585,
+          "costo": 34479022.04429999,
           "nMovimientos": 73,
           "ultimaFecha": "2026-05-15",
           "primeraFecha": "2026-01-02"
@@ -94,6 +102,7 @@
           "unidad": "kg",
           "vol": 3105.0,
           "monto": 4364476.939751831,
+          "costo": 4364476.803,
           "nMovimientos": 12,
           "ultimaFecha": "2026-03-02",
           "primeraFecha": "2026-01-02"
@@ -105,6 +114,7 @@
           "unidad": "kg",
           "vol": 500.0,
           "monto": 143303.33074383377,
+          "costo": 143303.35,
           "nMovimientos": 2,
           "ultimaFecha": "2026-03-20",
           "primeraFecha": "2026-02-23"
@@ -115,6 +125,7 @@
     {
       "nombre": "002",
       "totalHaber": 37629846.10779712,
+      "totalCosto": 37629844.85210001,
       "totalVol": 151325.0,
       "nMovimientos": 19,
       "ultimaFecha": "2026-05-20",
@@ -127,6 +138,7 @@
           "unidad": "kg",
           "vol": 150900.0,
           "monto": 36798079.11608337,
+          "costo": 36798077.8791,
           "nMovimientos": 5,
           "ultimaFecha": "2026-05-12",
           "primeraFecha": "2026-01-28"
@@ -138,6 +150,7 @@
           "unidad": "kg",
           "vol": 235.0,
           "monto": 547918.631900853,
+          "costo": 547918.621,
           "nMovimientos": 11,
           "ultimaFecha": "2026-05-20",
           "primeraFecha": "2026-01-06"
@@ -149,6 +162,7 @@
           "unidad": "kg",
           "vol": 180.0,
           "monto": 253013.15592764228,
+          "costo": 253013.148,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-07",
           "primeraFecha": "2026-04-07"
@@ -160,6 +174,7 @@
           "unidad": "kg",
           "vol": 5.0,
           "monto": 16056.617283950618,
+          "costo": 16056.6175,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-20",
           "primeraFecha": "2026-01-20"
@@ -171,6 +186,7 @@
           "unidad": "kg",
           "vol": 5.0,
           "monto": 14778.58660130719,
+          "costo": 14778.5865,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-20",
           "primeraFecha": "2026-01-20"
@@ -181,6 +197,7 @@
     {
       "nombre": "002 TRASPASO",
       "totalHaber": 26200827.163177315,
+      "totalCosto": 26200826.701799996,
       "totalVol": 108069.0,
       "nMovimientos": 6,
       "ultimaFecha": "2026-04-28",
@@ -193,6 +210,7 @@
           "unidad": "kg",
           "vol": 108069.0,
           "monto": 26200827.163177315,
+          "costo": 26200826.701799996,
           "nMovimientos": 6,
           "ultimaFecha": "2026-04-28",
           "primeraFecha": "2026-02-10"
@@ -203,6 +221,7 @@
     {
       "nombre": "AGUAS DEL VALLE S.A",
       "totalHaber": 23786353.35233027,
+      "totalCosto": 23786352.164000005,
       "totalVol": 77680.0,
       "nMovimientos": 23,
       "ultimaFecha": "2026-04-24",
@@ -215,6 +234,7 @@
           "unidad": "lt",
           "vol": 61000.0,
           "monto": 17989787.683712445,
+          "costo": 17989786.700000003,
           "nMovimientos": 14,
           "ultimaFecha": "2026-04-24",
           "primeraFecha": "2026-01-23"
@@ -226,6 +246,7 @@
           "unidad": "kg",
           "vol": 16680.0,
           "monto": 5796565.66861783,
+          "costo": 5796565.464000001,
           "nMovimientos": 9,
           "ultimaFecha": "2026-04-24",
           "primeraFecha": "2026-02-10"
@@ -236,6 +257,7 @@
     {
       "nombre": "OC 5400011540 NUEVOSUR S.A.",
       "totalHaber": 22634893.712429594,
+      "totalCosto": 22634893.8,
       "totalVol": 29000.0,
       "nMovimientos": 7,
       "ultimaFecha": "2026-04-24",
@@ -248,6 +270,7 @@
           "unidad": "un",
           "vol": 29000.0,
           "monto": 22634893.712429594,
+          "costo": 22634893.8,
           "nMovimientos": 7,
           "ultimaFecha": "2026-04-24",
           "primeraFecha": "2026-01-29"
@@ -258,6 +281,7 @@
     {
       "nombre": "C-4313 DESPACHO 2 EP. AGUAS DE ANTOFAGASTA S.A",
       "totalHaber": 20022905.24137931,
+      "totalCosto": 20022905.0,
       "totalVol": 7000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-05",
@@ -270,6 +294,7 @@
           "unidad": "kg",
           "vol": 7000.0,
           "monto": 20022905.24137931,
+          "costo": 20022905.0,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-05",
           "primeraFecha": "2026-01-05"
@@ -280,6 +305,7 @@
     {
       "nombre": "AGUAS PATAGONIA DE AYSEN S.A",
       "totalHaber": 16782781.064265754,
+      "totalCosto": 16782781.8,
       "totalVol": 43000.0,
       "nMovimientos": 9,
       "ultimaFecha": "2026-04-24",
@@ -292,6 +318,7 @@
           "unidad": "kg",
           "vol": 23000.0,
           "monto": 9931625.851957614,
+          "costo": 9931625.899999999,
           "nMovimientos": 5,
           "ultimaFecha": "2026-04-24",
           "primeraFecha": "2026-02-26"
@@ -303,6 +330,7 @@
           "unidad": "kg",
           "vol": 19000.0,
           "monto": 5445526.568265683,
+          "costo": 5445527.3,
           "nMovimientos": 3,
           "ultimaFecha": "2026-04-10",
           "primeraFecha": "2026-03-19"
@@ -314,6 +342,7 @@
           "unidad": "kg",
           "vol": 1000.0,
           "monto": 1405628.6440424577,
+          "costo": 1405628.6,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-26",
           "primeraFecha": "2026-02-26"
@@ -324,6 +353,7 @@
     {
       "nombre": "002 SALIDA",
       "totalHaber": 16135235.769084617,
+      "totalCosto": 16135235.8538,
       "totalVol": 66578.0,
       "nMovimientos": 4,
       "ultimaFecha": "2026-05-06",
@@ -336,6 +366,7 @@
           "unidad": "kg",
           "vol": 66578.0,
           "monto": 16135235.769084617,
+          "costo": 16135235.8538,
           "nMovimientos": 4,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-02-25"
@@ -346,6 +377,7 @@
     {
       "nombre": "C-4313 E.P. AGUAS DE ANTOFAGASTA S.A",
       "totalHaber": 14192148.553834874,
+      "totalCosto": 14192148.2,
       "totalVol": 11000.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-02-26",
@@ -358,6 +390,7 @@
           "unidad": "kg",
           "vol": 10000.0,
           "monto": 13408558.351957222,
+          "costo": 13408558.0,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-26",
           "primeraFecha": "2026-02-26"
@@ -369,6 +402,7 @@
           "unidad": "un",
           "vol": 1000.0,
           "monto": 783590.2018776523,
+          "costo": 783590.2,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-26",
           "primeraFecha": "2026-02-26"
@@ -379,6 +413,7 @@
     {
       "nombre": "C-4313 E.P. DESPACHO 3 AGUAS DE ANTOFAGASTA S.A",
       "totalHaber": 14169843.018329296,
+      "totalCosto": 14169842.7,
       "totalVol": 11000.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-01-29",
@@ -391,6 +426,7 @@
           "unidad": "kg",
           "vol": 10000.0,
           "monto": 13408558.351957224,
+          "costo": 13408558.0,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-29",
           "primeraFecha": "2026-01-29"
@@ -402,6 +438,7 @@
           "unidad": "un",
           "vol": 1000.0,
           "monto": 761284.6663720724,
+          "costo": 761284.7000000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-29",
           "primeraFecha": "2026-01-29"
@@ -412,6 +449,7 @@
     {
       "nombre": "OC 4000198035 SURALIS S.A.",
       "totalHaber": 10970262.826287132,
+      "totalCosto": 10970262.8,
       "totalVol": 14000.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-04-28",
@@ -424,6 +462,7 @@
           "unidad": "un",
           "vol": 14000.0,
           "monto": 10970262.826287132,
+          "costo": 10970262.8,
           "nMovimientos": 3,
           "ultimaFecha": "2026-04-28",
           "primeraFecha": "2026-02-04"
@@ -434,6 +473,7 @@
     {
       "nombre": "AGUAS DE ANTOFAGASTA S.A",
       "totalHaber": 10593780.0,
+      "totalCosto": 10593780.0,
       "totalVol": 3000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-13",
@@ -446,6 +486,7 @@
           "unidad": "kg",
           "vol": 3000.0,
           "monto": 10593780.0,
+          "costo": 10593780.0,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-13",
           "primeraFecha": "2026-05-13"
@@ -456,6 +497,7 @@
     {
       "nombre": "FACTURA[FT]8385 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
       "totalHaber": 7150881.066013531,
+      "totalCosto": 7150880.261,
       "totalVol": 20530.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-26",
@@ -468,6 +510,7 @@
           "unidad": "kg",
           "vol": 20530.0,
           "monto": 7150881.066013531,
+          "costo": 7150880.261,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-26",
           "primeraFecha": "2026-01-26"
@@ -478,6 +521,7 @@
     {
       "nombre": "FACTURA[FT]8413 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
       "totalHaber": 7049870.081642173,
+      "totalCosto": 7049869.288,
       "totalVol": 20240.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-28",
@@ -490,6 +534,7 @@
           "unidad": "kg",
           "vol": 20240.0,
           "monto": 7049870.081642173,
+          "costo": 7049869.288,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-28",
           "primeraFecha": "2026-01-28"
@@ -500,6 +545,7 @@
     {
       "nombre": "COMERCIALIZADORA YUKON LIMITADA",
       "totalHaber": 6994705.939159825,
+      "totalCosto": 6994705.8,
       "totalVol": 3000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-28",
@@ -512,6 +558,7 @@
           "unidad": "kg",
           "vol": 3000.0,
           "monto": 6994705.939159825,
+          "costo": 6994705.8,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-28",
           "primeraFecha": "2026-01-28"
@@ -522,6 +569,7 @@
     {
       "nombre": "8373 COMERCIALIZADORA YUKON LIMITADA",
       "totalHaber": 6196749.282546307,
+      "totalCosto": 6196749.2,
       "totalVol": 4000.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-03-06",
@@ -534,6 +582,7 @@
           "unidad": "kg",
           "vol": 4000.0,
           "monto": 6196749.282546307,
+          "costo": 6196749.2,
           "nMovimientos": 2,
           "ultimaFecha": "2026-03-06",
           "primeraFecha": "2026-03-06"
@@ -544,6 +593,7 @@
     {
       "nombre": "OC 5400011539 ESSBIO S.A.",
       "totalHaber": 5810009.907565652,
+      "totalCosto": 5810010.0,
       "totalVol": 7500.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-04-01",
@@ -556,6 +606,7 @@
           "unidad": "un",
           "vol": 7500.0,
           "monto": 5810009.907565652,
+          "costo": 5810010.0,
           "nMovimientos": 3,
           "ultimaFecha": "2026-04-01",
           "primeraFecha": "2026-01-08"
@@ -566,6 +617,7 @@
     {
       "nombre": "OC 4543006179 ESVAL S.A.",
       "totalHaber": 5485131.413143564,
+      "totalCosto": 5485131.399999999,
       "totalVol": 7000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-21",
@@ -578,6 +630,7 @@
           "unidad": "un",
           "vol": 7000.0,
           "monto": 5485131.413143564,
+          "costo": 5485131.399999999,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-21",
           "primeraFecha": "2026-04-21"
@@ -588,6 +641,7 @@
     {
       "nombre": "OC 4543005639 ESVAL S.A.",
       "totalHaber": 5328992.664604507,
+      "totalCosto": 5328992.9,
       "totalVol": 7000.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-01-15",
@@ -600,6 +654,7 @@
           "unidad": "un",
           "vol": 7000.0,
           "monto": 5328992.664604507,
+          "costo": 5328992.9,
           "nMovimientos": 2,
           "ultimaFecha": "2026-01-15",
           "primeraFecha": "2026-01-12"
@@ -610,6 +665,7 @@
     {
       "nombre": "SERVICIOS MARITIMOS PACIFIC SHIPS SERVICES",
       "totalHaber": 4973368.246966043,
+      "totalCosto": 4973366.6195,
       "totalVol": 4740.0,
       "nMovimientos": 4,
       "ultimaFecha": "2026-04-14",
@@ -622,6 +678,7 @@
           "unidad": "kg",
           "vol": 4115.0,
           "monto": 2880149.113086748,
+          "costo": 2880147.4945,
           "nMovimientos": 2,
           "ultimaFecha": "2026-04-14",
           "primeraFecha": "2026-02-05"
@@ -633,6 +690,7 @@
           "unidad": "kg",
           "vol": 625.0,
           "monto": 2093219.133879295,
+          "costo": 2093219.125,
           "nMovimientos": 2,
           "ultimaFecha": "2026-04-14",
           "primeraFecha": "2026-02-05"
@@ -643,6 +701,7 @@
     {
       "nombre": "FACTURA[FT]8606 ZETAENE SA",
       "totalHaber": 4729628.030986982,
+      "totalCosto": 4729628.800000001,
       "totalVol": 16000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-06",
@@ -655,6 +714,7 @@
           "unidad": "kg",
           "vol": 16000.0,
           "monto": 4729628.030986982,
+          "costo": 4729628.800000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-06",
           "primeraFecha": "2026-03-06"
@@ -665,6 +725,7 @@
     {
       "nombre": "FACTURA[FT]8768 ZETAENE SA",
       "totalHaber": 4720759.978428882,
+      "totalCosto": 4720760.746,
       "totalVol": 15970.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-13",
@@ -677,6 +738,7 @@
           "unidad": "kg",
           "vol": 15970.0,
           "monto": 4720759.978428882,
+          "costo": 4720760.746,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-13",
           "primeraFecha": "2026-04-13"
@@ -687,6 +749,7 @@
     {
       "nombre": "OC 4532061957 NUEVA ATACAMA S.A.",
       "totalHaber": 4523822.7881066445,
+      "totalCosto": 4523822.9575,
       "totalVol": 5525.0,
       "nMovimientos": 6,
       "ultimaFecha": "2026-04-30",
@@ -699,6 +762,7 @@
           "unidad": "kg",
           "vol": 5525.0,
           "monto": 4523822.7881066445,
+          "costo": 4523822.9575,
           "nMovimientos": 6,
           "ultimaFecha": "2026-04-30",
           "primeraFecha": "2026-03-20"
@@ -709,6 +773,7 @@
     {
       "nombre": "SURALIS S.A",
       "totalHaber": 4492941.7182176495,
+      "totalCosto": 4492941.981,
       "totalVol": 6490.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-01-27",
@@ -721,6 +786,7 @@
           "unidad": "un",
           "vol": 6490.0,
           "monto": 4492941.7182176495,
+          "costo": 4492941.981,
           "nMovimientos": 3,
           "ultimaFecha": "2026-01-27",
           "primeraFecha": "2026-01-13"
@@ -731,6 +797,7 @@
     {
       "nombre": "FACTURA[FT]8365 ZETAENE SA",
       "totalHaber": 4200663.694891532,
+      "totalCosto": 4200663.222,
       "totalVol": 12060.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-20",
@@ -743,6 +810,7 @@
           "unidad": "kg",
           "vol": 12060.0,
           "monto": 4200663.694891532,
+          "costo": 4200663.222,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-20",
           "primeraFecha": "2026-01-20"
@@ -753,6 +821,7 @@
     {
       "nombre": "8548 AGUAS PATAGONIA DE AYSEN S.A",
       "totalHaber": 4108236.50273224,
+      "totalCosto": 4108236.44,
       "totalVol": 2800.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-10",
@@ -765,6 +834,7 @@
           "unidad": "kg",
           "vol": 2800.0,
           "monto": 4108236.50273224,
+          "costo": 4108236.44,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-10",
           "primeraFecha": "2026-04-10"
@@ -775,6 +845,7 @@
     {
       "nombre": "8656 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 4018308.5427291375,
+      "totalCosto": 4018308.555,
       "totalVol": 2350.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-05-06",
@@ -787,6 +858,7 @@
           "unidad": "kg",
           "vol": 600.0,
           "monto": 2630095.067912856,
+          "costo": 2630095.08,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-05-06"
@@ -798,6 +870,7 @@
           "unidad": "kg",
           "vol": 750.0,
           "monto": 1100420.4918032787,
+          "costo": 1100420.475,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-05-06"
@@ -809,6 +882,7 @@
           "unidad": "kg",
           "vol": 1000.0,
           "monto": 287792.9830130029,
+          "costo": 287793.0,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-05-06"
@@ -819,6 +893,7 @@
     {
       "nombre": "OC 4000197488 SURALIS S.A.",
       "totalHaber": 3917951.009388262,
+      "totalCosto": 3917951.0,
       "totalVol": 5000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-03",
@@ -831,6 +906,7 @@
           "unidad": "un",
           "vol": 5000.0,
           "monto": 3917951.009388262,
+          "costo": 3917951.0,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-03",
           "primeraFecha": "2026-03-03"
@@ -841,6 +917,7 @@
     {
       "nombre": "OC 4543005995 ESVAL S.A.",
       "totalHaber": 3917951.009388262,
+      "totalCosto": 3917951.0,
       "totalVol": 5000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-16",
@@ -853,6 +930,7 @@
           "unidad": "un",
           "vol": 5000.0,
           "monto": 3917951.009388262,
+          "costo": 3917951.0,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-16",
           "primeraFecha": "2026-03-16"
@@ -863,6 +941,7 @@
     {
       "nombre": "8495 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 3892394.4629849857,
+      "totalCosto": 3892394.4850000003,
       "totalVol": 2050.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-04-01",
@@ -875,6 +954,7 @@
           "unidad": "kg",
           "vol": 600.0,
           "monto": 2626363.313811189,
+          "costo": 2626363.3200000003,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-01",
           "primeraFecha": "2026-04-01"
@@ -886,6 +966,7 @@
           "unidad": "kg",
           "vol": 750.0,
           "monto": 1100420.4918032787,
+          "costo": 1100420.475,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-01",
           "primeraFecha": "2026-04-01"
@@ -897,6 +978,7 @@
           "unidad": "kg",
           "vol": 700.0,
           "monto": 165610.65737051793,
+          "costo": 165610.69,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-01",
           "primeraFecha": "2026-04-01"
@@ -907,6 +989,7 @@
     {
       "nombre": "8520 COMERCIALIZADORA YUKON LIMITADA",
       "totalHaber": 3872968.3015914424,
+      "totalCosto": 3872968.25,
       "totalVol": 2500.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-07",
@@ -919,6 +1002,7 @@
           "unidad": "kg",
           "vol": 2500.0,
           "monto": 3872968.3015914424,
+          "costo": 3872968.25,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-07",
           "primeraFecha": "2026-04-07"
@@ -929,6 +1013,7 @@
     {
       "nombre": "OREGON CHEM GROUP",
       "totalHaber": 3773035.1765652415,
+      "totalCosto": 3773034.96,
       "totalVol": 6600.0,
       "nMovimientos": 8,
       "ultimaFecha": "2026-04-29",
@@ -941,6 +1026,7 @@
           "unidad": "kg",
           "vol": 1420.0,
           "monto": 1995992.6745402894,
+          "costo": 1995992.6120000002,
           "nMovimientos": 4,
           "ultimaFecha": "2026-03-20",
           "primeraFecha": "2026-01-14"
@@ -952,6 +1038,7 @@
           "unidad": "kg",
           "vol": 5000.0,
           "monto": 1357360.1456753626,
+          "costo": 1357360.0,
           "nMovimientos": 2,
           "ultimaFecha": "2026-01-15",
           "primeraFecha": "2026-01-15"
@@ -963,6 +1050,7 @@
           "unidad": "kg",
           "vol": 180.0,
           "monto": 419682.35634958954,
+          "costo": 419682.348,
           "nMovimientos": 2,
           "ultimaFecha": "2026-04-29",
           "primeraFecha": "2026-01-12"
@@ -973,6 +1061,7 @@
     {
       "nombre": "FACTURA[FT]8896 ZETAENE SA",
       "totalHaber": 3724582.074402248,
+      "totalCosto": 3724582.68,
       "totalVol": 12600.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-12",
@@ -985,6 +1074,7 @@
           "unidad": "kg",
           "vol": 12600.0,
           "monto": 3724582.074402248,
+          "costo": 3724582.68,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-12",
           "primeraFecha": "2026-05-12"
@@ -995,6 +1085,7 @@
     {
       "nombre": "FACTURA[FT]8652 GALVANIZADO BBOSCH S.A",
       "totalHaber": 3718670.039363515,
+      "totalCosto": 3718670.6440000003,
       "totalVol": 12580.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-16",
@@ -1007,6 +1098,7 @@
           "unidad": "kg",
           "vol": 12580.0,
           "monto": 3718670.039363515,
+          "costo": 3718670.6440000003,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-16",
           "primeraFecha": "2026-03-16"
@@ -1017,6 +1109,7 @@
     {
       "nombre": "GUÍA[ST]8477 GALVANIZADO BBOSCH S.A",
       "totalHaber": 3718670.039363515,
+      "totalCosto": 3718670.6440000003,
       "totalVol": 12580.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-30",
@@ -1029,6 +1122,7 @@
           "unidad": "kg",
           "vol": 12580.0,
           "monto": 3718670.039363515,
+          "costo": 3718670.6440000003,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-30",
           "primeraFecha": "2026-03-30"
@@ -1039,6 +1133,7 @@
     {
       "nombre": "SOC DE SERVICIOS TECNICOS GEOLOGICOS GEOTEC BOYLES BROS S A",
       "totalHaber": 3713527.108495806,
+      "totalCosto": 3713527.11,
       "totalVol": 2750.0,
       "nMovimientos": 6,
       "ultimaFecha": "2026-05-15",
@@ -1051,6 +1146,7 @@
           "unidad": "kg",
           "vol": 2750.0,
           "monto": 3713527.108495806,
+          "costo": 3713527.11,
           "nMovimientos": 6,
           "ultimaFecha": "2026-05-15",
           "primeraFecha": "2026-03-31"
@@ -1061,6 +1157,7 @@
     {
       "nombre": "FACTURA[FT]8733 MAESTRANZA Y GALVANIZADORA P Y P",
       "totalHaber": 3692065.881689213,
+      "totalCosto": 3692066.4820000003,
       "totalVol": 12490.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-31",
@@ -1073,6 +1170,7 @@
           "unidad": "kg",
           "vol": 12490.0,
           "monto": 3692065.881689213,
+          "costo": 3692066.4820000003,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-31",
           "primeraFecha": "2026-03-31"
@@ -1083,6 +1181,7 @@
     {
       "nombre": "OC 4532054576 NUEVA ATACAMA S.A.",
       "totalHaber": 3301793.6494660117,
+      "totalCosto": 3301793.8075,
       "totalVol": 3925.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-02-20",
@@ -1095,6 +1194,7 @@
           "unidad": "kg",
           "vol": 3925.0,
           "monto": 3301793.6494660117,
+          "costo": 3301793.8075,
           "nMovimientos": 3,
           "ultimaFecha": "2026-02-20",
           "primeraFecha": "2026-01-16"
@@ -1105,6 +1205,7 @@
     {
       "nombre": "OC 4000197969 SURALIS S.A.",
       "totalHaber": 3134360.8075106097,
+      "totalCosto": 3134360.8,
       "totalVol": 4000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-02",
@@ -1117,6 +1218,7 @@
           "unidad": "un",
           "vol": 4000.0,
           "monto": 3134360.8075106097,
+          "costo": 3134360.8,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-02",
           "primeraFecha": "2026-02-02"
@@ -1127,6 +1229,7 @@
     {
       "nombre": "OC 4543006026 ESVAL S.A.",
       "totalHaber": 3134360.807510609,
+      "totalCosto": 3134360.8,
       "totalVol": 4000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-18",
@@ -1139,6 +1242,7 @@
           "unidad": "un",
           "vol": 4000.0,
           "monto": 3134360.807510609,
+          "costo": 3134360.8,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-18",
           "primeraFecha": "2026-03-18"
@@ -1149,6 +1253,7 @@
     {
       "nombre": "8222 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 2743372.350552336,
+      "totalCosto": 2743372.39,
       "totalVol": 1300.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-02-05",
@@ -1161,6 +1266,7 @@
           "unidad": "kg",
           "vol": 600.0,
           "monto": 2577761.693181818,
+          "costo": 2577761.7,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-05",
           "primeraFecha": "2026-02-05"
@@ -1172,6 +1278,7 @@
           "unidad": "kg",
           "vol": 700.0,
           "monto": 165610.65737051793,
+          "costo": 165610.69,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-05",
           "primeraFecha": "2026-02-05"
@@ -1182,6 +1289,7 @@
     {
       "nombre": "8339 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 2701879.2849928956,
+      "totalCosto": 2701879.33,
       "totalVol": 1300.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-03-02",
@@ -1194,6 +1302,7 @@
           "unidad": "kg",
           "vol": 600.0,
           "monto": 2536268.6276223776,
+          "costo": 2536268.64,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-02",
           "primeraFecha": "2026-03-02"
@@ -1205,6 +1314,7 @@
           "unidad": "kg",
           "vol": 700.0,
           "monto": 165610.6573705179,
+          "costo": 165610.69,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-02",
           "primeraFecha": "2026-03-02"
@@ -1215,6 +1325,7 @@
     {
       "nombre": "I. MUNICIPALIDAD DE MAIPU",
       "totalHaber": 2619217.933136412,
+      "totalCosto": 2619218.0,
       "totalVol": 3500.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-17",
@@ -1227,6 +1338,7 @@
           "unidad": "kg",
           "vol": 3500.0,
           "monto": 2619217.933136412,
+          "costo": 2619218.0,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-17",
           "primeraFecha": "2026-02-17"
@@ -1237,6 +1349,7 @@
     {
       "nombre": "002 TRASPASO K8L 04.05.26",
       "totalHaber": 2575291.508545929,
+      "totalCosto": 2575291.3732,
       "totalVol": 10556.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-04",
@@ -1249,6 +1362,7 @@
           "unidad": "kg",
           "vol": 10556.0,
           "monto": 2575291.508545929,
+          "costo": 2575291.3732,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-04",
           "primeraFecha": "2026-05-04"
@@ -1259,6 +1373,7 @@
     {
       "nombre": "OC 4000196822 SURALIS S.A.",
       "totalHaber": 2350770.6056329575,
+      "totalCosto": 2350770.6,
       "totalVol": 3000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-04",
@@ -1271,6 +1386,7 @@
           "unidad": "un",
           "vol": 3000.0,
           "monto": 2350770.6056329575,
+          "costo": 2350770.6,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-04",
           "primeraFecha": "2026-02-04"
@@ -1281,6 +1397,7 @@
     {
       "nombre": "OC 4000198121 SURALIS S.A.",
       "totalHaber": 2350770.6056329566,
+      "totalCosto": 2350770.6,
       "totalVol": 3000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-27",
@@ -1293,6 +1410,7 @@
           "unidad": "un",
           "vol": 3000.0,
           "monto": 2350770.6056329566,
+          "costo": 2350770.6,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-27",
           "primeraFecha": "2026-03-27"
@@ -1303,6 +1421,7 @@
     {
       "nombre": "PROQUIMSA S.A",
       "totalHaber": 2009490.368524123,
+      "totalCosto": 2009490.3599999999,
       "totalVol": 600.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-05-11",
@@ -1315,6 +1434,7 @@
           "unidad": "kg",
           "vol": 600.0,
           "monto": 2009490.368524123,
+          "costo": 2009490.3599999999,
           "nMovimientos": 3,
           "ultimaFecha": "2026-05-11",
           "primeraFecha": "2026-01-08"
@@ -1325,6 +1445,7 @@
     {
       "nombre": "8028 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 1953040.9073705182,
+      "totalCosto": 1953040.93,
       "totalVol": 1100.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-01-03",
@@ -1337,6 +1458,7 @@
           "unidad": "kg",
           "vol": 400.0,
           "monto": 1787430.2500000002,
+          "costo": 1787430.24,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-03",
           "primeraFecha": "2026-01-03"
@@ -1348,6 +1470,7 @@
           "unidad": "kg",
           "vol": 700.0,
           "monto": 165610.65737051793,
+          "costo": 165610.69,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-03",
           "primeraFecha": "2026-01-03"
@@ -1358,6 +1481,7 @@
     {
       "nombre": "FACTURA[FT]8367 ZETAENE SA",
       "totalHaber": 1929658.1152320972,
+      "totalCosto": 1929657.8979999998,
       "totalVol": 5540.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-23",
@@ -1370,6 +1494,7 @@
           "unidad": "kg",
           "vol": 5540.0,
           "monto": 1929658.1152320972,
+          "costo": 1929657.8979999998,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-23",
           "primeraFecha": "2026-01-23"
@@ -1380,6 +1505,7 @@
     {
       "nombre": "8192 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 1771191.4375,
+      "totalCosto": 1771191.4400000002,
       "totalVol": 400.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-03",
@@ -1392,6 +1518,7 @@
           "unidad": "kg",
           "vol": 400.0,
           "monto": 1771191.4375,
+          "costo": 1771191.4400000002,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-03",
           "primeraFecha": "2026-02-03"
@@ -1402,6 +1529,7 @@
     {
       "nombre": "IDADQUIM",
       "totalHaber": 1767409.5417482643,
+      "totalCosto": 1767409.5350000001,
       "totalVol": 525.0,
       "nMovimientos": 4,
       "ultimaFecha": "2026-04-30",
@@ -1414,6 +1542,7 @@
           "unidad": "kg",
           "vol": 475.0,
           "monto": 1590846.5417482643,
+          "costo": 1590846.5350000001,
           "nMovimientos": 3,
           "ultimaFecha": "2026-04-30",
           "primeraFecha": "2026-01-21"
@@ -1425,6 +1554,7 @@
           "unidad": "kg",
           "vol": 50.0,
           "monto": 176563.0,
+          "costo": 176563.0,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-30",
           "primeraFecha": "2026-04-30"
@@ -1435,6 +1565,7 @@
     {
       "nombre": "8503 AGUAS PATAGONIA DE AYSEN S.A",
       "totalHaber": 1760672.786885246,
+      "totalCosto": 1760672.76,
       "totalVol": 1200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-02",
@@ -1447,6 +1578,7 @@
           "unidad": "kg",
           "vol": 1200.0,
           "monto": 1760672.786885246,
+          "costo": 1760672.76,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-02",
           "primeraFecha": "2026-04-02"
@@ -1457,6 +1589,7 @@
     {
       "nombre": "8644 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 1750908.875874126,
+      "totalCosto": 1750908.8800000001,
       "totalVol": 400.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-05",
@@ -1469,6 +1602,7 @@
           "unidad": "kg",
           "vol": 400.0,
           "monto": 1750908.875874126,
+          "costo": 1750908.8800000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-05",
           "primeraFecha": "2026-05-05"
@@ -1479,6 +1613,7 @@
     {
       "nombre": "8360 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 1690845.751748252,
+      "totalCosto": 1690845.7600000002,
       "totalVol": 400.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-04",
@@ -1491,6 +1626,7 @@
           "unidad": "kg",
           "vol": 400.0,
           "monto": 1690845.751748252,
+          "costo": 1690845.7600000002,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-04",
           "primeraFecha": "2026-03-04"
@@ -1501,6 +1637,7 @@
     {
       "nombre": "OVEL",
       "totalHaber": 1674575.3071034362,
+      "totalCosto": 1674575.3,
       "totalVol": 500.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-27",
@@ -1513,6 +1650,7 @@
           "unidad": "kg",
           "vol": 500.0,
           "monto": 1674575.3071034362,
+          "costo": 1674575.3,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-27",
           "primeraFecha": "2026-03-27"
@@ -1523,6 +1661,7 @@
     {
       "nombre": "DESARROLLO E INVESTIGACIONES TECNOLOGICAS",
       "totalHaber": 1674575.307103436,
+      "totalCosto": 1674575.3,
       "totalVol": 500.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-16",
@@ -1535,6 +1674,7 @@
           "unidad": "kg",
           "vol": 500.0,
           "monto": 1674575.307103436,
+          "costo": 1674575.3,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-16",
           "primeraFecha": "2026-02-16"
@@ -1545,6 +1685,7 @@
     {
       "nombre": "I MUNICIPALIDAD DE SANTIAGO",
       "totalHaber": 1568731.4066085573,
+      "totalCosto": 1568731.5,
       "totalVol": 5000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-02",
@@ -1557,6 +1698,7 @@
           "unidad": "lt",
           "vol": 5000.0,
           "monto": 1568731.4066085573,
+          "costo": 1568731.5,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-02",
           "primeraFecha": "2026-02-02"
@@ -1567,6 +1709,7 @@
     {
       "nombre": "8743 AGUAS DEL VALLE S.A",
       "totalHaber": 1393865.956284153,
+      "totalCosto": 1393865.935,
       "totalVol": 950.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-25",
@@ -1579,6 +1722,7 @@
           "unidad": "kg",
           "vol": 950.0,
           "monto": 1393865.956284153,
+          "costo": 1393865.935,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-25",
           "primeraFecha": "2026-05-25"
@@ -1589,6 +1733,7 @@
     {
       "nombre": "FACTURA[FT]8607 ZETAENE SA",
       "totalHaber": 1279955.585885852,
+      "totalCosto": 1279955.7940000002,
       "totalVol": 4330.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-06",
@@ -1601,6 +1746,7 @@
           "unidad": "kg",
           "vol": 4330.0,
           "monto": 1279955.585885852,
+          "costo": 1279955.7940000002,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-06",
           "primeraFecha": "2026-03-06"
@@ -1611,6 +1757,7 @@
     {
       "nombre": "OC 4532073785 AGUAS DEL VALLE S.A.",
       "totalHaber": 1275684.8486568183,
+      "totalCosto": 1275684.8456000001,
       "totalVol": 1628.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-02-02",
@@ -1623,6 +1770,7 @@
           "unidad": "un",
           "vol": 1628.0,
           "monto": 1275684.8486568183,
+          "costo": 1275684.8456000001,
           "nMovimientos": 2,
           "ultimaFecha": "2026-02-02",
           "primeraFecha": "2026-02-02"
@@ -1633,6 +1781,7 @@
     {
       "nombre": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
       "totalHaber": 1257858.0921966815,
+      "totalCosto": 1257857.98,
       "totalVol": 2300.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-04-14",
@@ -1645,6 +1794,7 @@
           "unidad": "kg",
           "vol": 300.0,
           "monto": 699470.5939159828,
+          "costo": 699470.5800000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-14",
           "primeraFecha": "2026-04-14"
@@ -1656,6 +1806,7 @@
           "unidad": "lt",
           "vol": 2000.0,
           "monto": 558387.4982806988,
+          "costo": 558387.3999999999,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-14",
           "primeraFecha": "2026-04-14"
@@ -1666,6 +1817,7 @@
     {
       "nombre": "8655 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 1221715.6224169678,
+      "totalCosto": 1221715.637,
       "totalVol": 1030.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-05-06",
@@ -1678,6 +1830,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 876698.3559709522,
+          "costo": 876698.36,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-05-06"
@@ -1689,6 +1842,7 @@
           "unidad": "kg",
           "vol": 740.0,
           "monto": 212966.80742962216,
+          "costo": 212966.82,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-05-06"
@@ -1700,6 +1854,7 @@
           "unidad": "kg",
           "vol": 90.0,
           "monto": 132050.45901639343,
+          "costo": 132050.457,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-05-06"
@@ -1710,6 +1865,7 @@
     {
       "nombre": "OC 4543006038 ESVAL S.A.",
       "totalHaber": 1175385.3028164783,
+      "totalCosto": 1175385.2999999998,
       "totalVol": 1500.0,
       "nMovimientos": 4,
       "ultimaFecha": "2026-03-18",
@@ -1722,6 +1878,7 @@
           "unidad": "un",
           "vol": 1500.0,
           "monto": 1175385.3028164783,
+          "costo": 1175385.2999999998,
           "nMovimientos": 4,
           "ultimaFecha": "2026-03-18",
           "primeraFecha": "2026-03-18"
@@ -1732,6 +1889,7 @@
     {
       "nombre": "8648 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 1109758.9831152903,
+      "totalCosto": 1109758.99,
       "totalVol": 600.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-05-06",
@@ -1744,6 +1902,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 876698.3559709522,
+          "costo": 876698.36,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-05-06"
@@ -1755,6 +1914,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 146722.73224043715,
+          "costo": 146722.73,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-05-06"
@@ -1766,6 +1926,7 @@
           "unidad": "kg",
           "vol": 300.0,
           "monto": 86337.89490390087,
+          "costo": 86337.90000000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-05-06"
@@ -1776,6 +1937,7 @@
     {
       "nombre": "8746 AGUAS DEL VALLE S.A",
       "totalHaber": 1100420.4918032787,
+      "totalCosto": 1100420.475,
       "totalVol": 750.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-25",
@@ -1788,6 +1950,7 @@
           "unidad": "kg",
           "vol": 750.0,
           "monto": 1100420.4918032787,
+          "costo": 1100420.475,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-25",
           "primeraFecha": "2026-05-25"
@@ -1798,6 +1961,7 @@
     {
       "nombre": "8494 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 1069494.5008547911,
+      "totalCosto": 1069494.51,
       "totalVol": 500.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-04-01",
@@ -1810,6 +1974,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 875454.437937063,
+          "costo": 875454.4400000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-01",
           "primeraFecha": "2026-04-01"
@@ -1821,6 +1986,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 146722.73224043715,
+          "costo": 146722.73,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-01",
           "primeraFecha": "2026-04-01"
@@ -1832,6 +1998,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 47317.33067729083,
+          "costo": 47317.340000000004,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-01",
           "primeraFecha": "2026-04-01"
@@ -1842,6 +2009,7 @@
     {
       "nombre": "GUÍA[ST]8390 GALVANIZADO BBOSCH S.A",
       "totalHaber": 975485.7813910651,
+      "totalCosto": 975485.9400000001,
       "totalVol": 3300.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-10",
@@ -1854,6 +2022,7 @@
           "unidad": "kg",
           "vol": 3300.0,
           "monto": 975485.7813910651,
+          "costo": 975485.9400000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-10",
           "primeraFecha": "2026-03-10"
@@ -1864,6 +2033,7 @@
     {
       "nombre": "OC 4000194237 SURALIS S.A.",
       "totalHaber": 952062.0952813474,
+      "totalCosto": 952062.093,
       "totalVol": 1215.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-27",
@@ -1876,6 +2046,7 @@
           "unidad": "un",
           "vol": 1215.0,
           "monto": 952062.0952813474,
+          "costo": 952062.093,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-27",
           "primeraFecha": "2026-03-27"
@@ -1886,6 +2057,7 @@
     {
       "nombre": "8027 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 941032.4556772909,
+      "totalCosto": 941032.46,
       "totalVol": 400.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-01-03",
@@ -1898,6 +2070,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 893715.1250000001,
+          "costo": 893715.12,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-03",
           "primeraFecha": "2026-01-03"
@@ -1909,6 +2082,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 47317.33067729083,
+          "costo": 47317.340000000004,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-03",
           "primeraFecha": "2026-01-03"
@@ -1919,6 +2093,7 @@
     {
       "nombre": "8211 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 932913.0494272908,
+      "totalCosto": 932913.06,
       "totalVol": 400.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-02-04",
@@ -1931,6 +2106,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 885595.71875,
+          "costo": 885595.7200000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-04",
           "primeraFecha": "2026-02-04"
@@ -1942,6 +2118,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 47317.330677290825,
+          "costo": 47317.340000000004,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-04",
           "primeraFecha": "2026-02-04"
@@ -1952,6 +2129,7 @@
     {
       "nombre": "8340 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 892740.2065514168,
+      "totalCosto": 892740.2200000001,
       "totalVol": 400.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-03-02",
@@ -1964,6 +2142,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 845422.875874126,
+          "costo": 845422.8800000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-02",
           "primeraFecha": "2026-03-02"
@@ -1975,6 +2154,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 47317.33067729083,
+          "costo": 47317.340000000004,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-02",
           "primeraFecha": "2026-03-02"
@@ -1985,6 +2165,7 @@
     {
       "nombre": "8048 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 885595.71875,
+      "totalCosto": 885595.7200000001,
       "totalVol": 200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-07",
@@ -1997,6 +2178,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 885595.71875,
+          "costo": 885595.7200000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-07",
           "primeraFecha": "2026-01-07"
@@ -2007,6 +2189,7 @@
     {
       "nombre": "8051 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 885595.71875,
+      "totalCosto": 885595.7200000001,
       "totalVol": 200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-08",
@@ -2019,6 +2202,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 885595.71875,
+          "costo": 885595.7200000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-08",
           "primeraFecha": "2026-01-08"
@@ -2029,6 +2213,7 @@
     {
       "nombre": "8052 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 885595.71875,
+      "totalCosto": 885595.7200000001,
       "totalVol": 200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-08",
@@ -2041,6 +2226,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 885595.71875,
+          "costo": 885595.7200000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-08",
           "primeraFecha": "2026-01-08"
@@ -2051,6 +2237,7 @@
     {
       "nombre": "8115 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 885595.71875,
+      "totalCosto": 885595.7200000001,
       "totalVol": 200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-20",
@@ -2063,6 +2250,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 885595.71875,
+          "costo": 885595.7200000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-20",
           "primeraFecha": "2026-01-20"
@@ -2073,6 +2261,7 @@
     {
       "nombre": "8197 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 885595.71875,
+      "totalCosto": 885595.7200000001,
       "totalVol": 200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-03",
@@ -2085,6 +2274,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 885595.71875,
+          "costo": 885595.7200000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-03",
           "primeraFecha": "2026-02-03"
@@ -2095,6 +2285,7 @@
     {
       "nombre": "8712 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 876698.3559709522,
+      "totalCosto": 876698.36,
       "totalVol": 200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-19",
@@ -2107,6 +2298,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 876698.3559709522,
+          "costo": 876698.36,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-19",
           "primeraFecha": "2026-05-19"
@@ -2117,6 +2309,7 @@
     {
       "nombre": "8501 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 875454.437937063,
+      "totalCosto": 875454.4400000001,
       "totalVol": 200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-02",
@@ -2129,6 +2322,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 875454.437937063,
+          "costo": 875454.4400000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-02",
           "primeraFecha": "2026-04-02"
@@ -2139,6 +2333,7 @@
     {
       "nombre": "8641 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 875454.437937063,
+      "totalCosto": 875454.4400000001,
       "totalVol": 200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-05",
@@ -2151,6 +2346,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 875454.437937063,
+          "costo": 875454.4400000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-05",
           "primeraFecha": "2026-05-05"
@@ -2161,6 +2357,7 @@
     {
       "nombre": "8318 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 859253.8977272727,
+      "totalCosto": 859253.9,
       "totalVol": 200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-25",
@@ -2173,6 +2370,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 859253.8977272727,
+          "costo": 859253.9,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-25",
           "primeraFecha": "2026-02-25"
@@ -2183,6 +2381,7 @@
     {
       "nombre": "8330 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 859253.8977272727,
+      "totalCosto": 859253.9,
       "totalVol": 200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-27",
@@ -2195,6 +2394,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 859253.8977272727,
+          "costo": 859253.9,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-27",
           "primeraFecha": "2026-02-27"
@@ -2205,6 +2405,7 @@
     {
       "nombre": "CORPORACION MUNICIPAL DE DESARROLLO SOCIAL DE COLINA",
       "totalHaber": 852985.0529336487,
+      "totalCosto": 852985.1200000001,
       "totalVol": 3480.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-05-11",
@@ -2217,6 +2418,7 @@
           "unidad": "kg",
           "vol": 3480.0,
           "monto": 852985.0529336487,
+          "costo": 852985.1200000001,
           "nMovimientos": 3,
           "ultimaFecha": "2026-05-11",
           "primeraFecha": "2026-02-09"
@@ -2227,6 +2429,7 @@
     {
       "nombre": "OC 1233 SOCIEDAD IMPORTADORA LIPLATA LTDA",
       "totalHaber": 821883.868358017,
+      "totalCosto": 821883.9,
       "totalVol": 1000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-10",
@@ -2239,6 +2442,7 @@
           "unidad": "kg",
           "vol": 1000.0,
           "monto": 821883.868358017,
+          "costo": 821883.9,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-10",
           "primeraFecha": "2026-03-10"
@@ -2249,6 +2453,7 @@
     {
       "nombre": "8021 CORP MUNICIPAL DE DESARROLLO SOCIAL DE PUDAHUEL",
       "totalHaber": 774593.6603182886,
+      "totalCosto": 774593.65,
       "totalVol": 500.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-02",
@@ -2261,6 +2466,7 @@
           "unidad": "kg",
           "vol": 500.0,
           "monto": 774593.6603182886,
+          "costo": 774593.65,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-02",
           "primeraFecha": "2026-01-02"
@@ -2271,6 +2477,7 @@
     {
       "nombre": "OC 4000197489 SURALIS S.A.",
       "totalHaber": 705231.1816898872,
+      "totalCosto": 705231.1799999999,
       "totalVol": 900.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-02",
@@ -2283,6 +2490,7 @@
           "unidad": "un",
           "vol": 900.0,
           "monto": 705231.1816898872,
+          "costo": 705231.1799999999,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-02",
           "primeraFecha": "2026-02-02"
@@ -2293,6 +2501,7 @@
     {
       "nombre": "AGUAS DE ANTOFAGASTA S.A.  C-4313 DESPACHO 2 EP",
       "totalHaber": 692286.8595096533,
+      "totalCosto": 692286.8999999999,
       "totalVol": 1000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-05",
@@ -2305,6 +2514,7 @@
           "unidad": "un",
           "vol": 1000.0,
           "monto": 692286.8595096533,
+          "costo": 692286.8999999999,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-05",
           "primeraFecha": "2026-01-05"
@@ -2315,6 +2525,7 @@
     {
       "nombre": "INVERSIONES CIELO CUATRO",
       "totalHaber": 669830.1228413744,
+      "totalCosto": 669830.12,
       "totalVol": 200.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-30",
@@ -2327,6 +2538,7 @@
           "unidad": "kg",
           "vol": 200.0,
           "monto": 669830.1228413744,
+          "costo": 669830.12,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-30",
           "primeraFecha": "2026-01-30"
@@ -2337,6 +2549,7 @@
     {
       "nombre": "OC 4532061015 NUEVA ATACAMA S.A.",
       "totalHaber": 630477.9980986011,
+      "totalCosto": 630478.0,
       "totalVol": 2000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-09",
@@ -2349,6 +2562,7 @@
           "unidad": "kg",
           "vol": 2000.0,
           "monto": 630477.9980986011,
+          "costo": 630478.0,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-09",
           "primeraFecha": "2026-03-09"
@@ -2359,6 +2573,7 @@
     {
       "nombre": "OC 4532058298 NUEVA ATACAMA S.A.",
       "totalHaber": 472858.49857395084,
+      "totalCosto": 472858.49999999994,
       "totalVol": 1500.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-02",
@@ -2371,6 +2586,7 @@
           "unidad": "kg",
           "vol": 1500.0,
           "monto": 472858.49857395084,
+          "costo": 472858.49999999994,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-02",
           "primeraFecha": "2026-01-02"
@@ -2381,6 +2597,7 @@
     {
       "nombre": "SERVICIOS SANITARIOS LARAPINTA S.A",
       "totalHaber": 463318.238044111,
+      "totalCosto": 463318.225,
       "totalVol": 1000.0,
       "nMovimientos": 4,
       "ultimaFecha": "2026-04-16",
@@ -2393,6 +2610,7 @@
           "unidad": "kg",
           "vol": 1000.0,
           "monto": 463318.238044111,
+          "costo": 463318.225,
           "nMovimientos": 4,
           "ultimaFecha": "2026-04-16",
           "primeraFecha": "2026-01-20"
@@ -2403,6 +2621,7 @@
     {
       "nombre": "8627 PATAGONIA SOSTENIBLE DE AYSEN",
       "totalHaber": 440168.1967213115,
+      "totalCosto": 440168.19,
       "totalVol": 300.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-30",
@@ -2415,6 +2634,7 @@
           "unidad": "kg",
           "vol": 300.0,
           "monto": 440168.1967213115,
+          "costo": 440168.19,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-30",
           "primeraFecha": "2026-04-30"
@@ -2425,6 +2645,7 @@
     {
       "nombre": "8441 OREGON CHEM GROUP",
       "totalHaber": 396151.37704918033,
+      "totalCosto": 396151.371,
       "totalVol": 270.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-20",
@@ -2437,6 +2658,7 @@
           "unidad": "kg",
           "vol": 270.0,
           "monto": 396151.37704918033,
+          "costo": 396151.371,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-20",
           "primeraFecha": "2026-03-20"
@@ -2447,6 +2669,7 @@
     {
       "nombre": "OC 4543006027 ESVAL S.A.",
       "totalHaber": 391795.10093882604,
+      "totalCosto": 391795.1,
       "totalVol": 500.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-30",
@@ -2459,6 +2682,7 @@
           "unidad": "un",
           "vol": 500.0,
           "monto": 391795.10093882604,
+          "costo": 391795.1,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-30",
           "primeraFecha": "2026-03-30"
@@ -2469,6 +2693,7 @@
     {
       "nombre": "8221 OREGON CHEM GROUP",
       "totalHaber": 387296.83015914424,
+      "totalCosto": 387296.825,
       "totalVol": 250.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-05",
@@ -2481,6 +2706,7 @@
           "unidad": "kg",
           "vol": 250.0,
           "monto": 387296.83015914424,
+          "costo": 387296.825,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-05",
           "primeraFecha": "2026-02-05"
@@ -2491,6 +2717,7 @@
     {
       "nombre": "8745 AGUAS DEL VALLE S.A",
       "totalHaber": 366806.83060109295,
+      "totalCosto": 366806.825,
       "totalVol": 250.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-25",
@@ -2503,6 +2730,7 @@
           "unidad": "kg",
           "vol": 250.0,
           "monto": 366806.83060109295,
+          "costo": 366806.825,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-25",
           "primeraFecha": "2026-05-25"
@@ -2513,6 +2741,7 @@
     {
       "nombre": "8744 AGUAS DEL VALLE S.A",
       "totalHaber": 366806.8306010929,
+      "totalCosto": 366806.825,
       "totalVol": 250.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-25",
@@ -2525,6 +2754,7 @@
           "unidad": "kg",
           "vol": 250.0,
           "monto": 366806.8306010929,
+          "costo": 366806.825,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-25",
           "primeraFecha": "2026-05-25"
@@ -2535,6 +2765,7 @@
     {
       "nombre": "CORRETAJES Y SERVICIOS DE NUTRICION ANIMAL",
       "totalHaber": 353126.0,
+      "totalCosto": 353126.0,
       "totalVol": 100.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-28",
@@ -2547,6 +2778,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 353126.0,
+          "costo": 353126.0,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-28",
           "primeraFecha": "2026-04-28"
@@ -2557,6 +2789,7 @@
     {
       "nombre": "SOC COMERCIALIZADORA DIST. E INVERS. QUIMICOS ROBLES",
       "totalHaber": 334915.06142068724,
+      "totalCosto": 334915.06,
       "totalVol": 100.0,
       "nMovimientos": 3,
       "ultimaFecha": "2026-05-14",
@@ -2569,6 +2802,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 334915.06142068724,
+          "costo": 334915.06,
           "nMovimientos": 3,
           "ultimaFecha": "2026-05-14",
           "primeraFecha": "2026-01-27"
@@ -2579,6 +2813,7 @@
     {
       "nombre": "QUÍMICOS LUCÍA RODRÍGUEZ",
       "totalHaber": 334915.06142068724,
+      "totalCosto": 334915.06,
       "totalVol": 100.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-05-15",
@@ -2591,6 +2826,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 334915.06142068724,
+          "costo": 334915.06,
           "nMovimientos": 2,
           "ultimaFecha": "2026-05-15",
           "primeraFecha": "2026-02-19"
@@ -2601,6 +2837,7 @@
     {
       "nombre": "INDUSTRIAL ALIANZA",
       "totalHaber": 334915.06142068724,
+      "totalCosto": 334915.06,
       "totalVol": 100.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-27",
@@ -2613,6 +2850,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 334915.06142068724,
+          "costo": 334915.06,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-27",
           "primeraFecha": "2026-02-27"
@@ -2623,6 +2861,7 @@
     {
       "nombre": "CIA TRATAMIENTOS DE AGUA Y COMBUSTION",
       "totalHaber": 334915.0614206872,
+      "totalCosto": 334915.06,
       "totalVol": 100.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-21",
@@ -2635,6 +2874,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 334915.0614206872,
+          "costo": 334915.06,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-21",
           "primeraFecha": "2026-01-21"
@@ -2645,6 +2885,7 @@
     {
       "nombre": "ALA BASE N.2",
       "totalHaber": 297402.8044077591,
+      "totalCosto": 297402.8,
       "totalVol": 1000.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-19",
@@ -2657,6 +2898,7 @@
           "unidad": "lt",
           "vol": 1000.0,
           "monto": 297402.8044077591,
+          "costo": 297402.8,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-19",
           "primeraFecha": "2026-02-19"
@@ -2667,6 +2909,7 @@
     {
       "nombre": "IDADQUIM P210126",
       "totalHaber": 286041.5034482762,
+      "totalCosto": 286041.5,
       "totalVol": 100.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-21",
@@ -2679,6 +2922,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 286041.5034482762,
+          "costo": 286041.5,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-21",
           "primeraFecha": "2026-01-21"
@@ -2689,6 +2933,7 @@
     {
       "nombre": "IVAN ANDRES SCHAPIRA PEREZ COT/",
       "totalHaber": 282999.066873179,
+      "totalCosto": 282999.05199999997,
       "totalVol": 1160.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-21",
@@ -2701,6 +2946,7 @@
           "unidad": "kg",
           "vol": 1160.0,
           "monto": 282999.066873179,
+          "costo": 282999.05199999997,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-21",
           "primeraFecha": "2026-04-21"
@@ -2711,6 +2957,7 @@
     {
       "nombre": "COMITE DE AGUA POTABLE RURAL LA LLAVERIA",
       "totalHaber": 253013.15592764234,
+      "totalCosto": 253013.148,
       "totalVol": 180.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-23",
@@ -2723,6 +2970,7 @@
           "unidad": "kg",
           "vol": 180.0,
           "monto": 253013.15592764234,
+          "costo": 253013.148,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-23",
           "primeraFecha": "2026-01-23"
@@ -2733,6 +2981,7 @@
     {
       "nombre": "DISTRIBUIDORA CIENTIFICA",
       "totalHaber": 251186.29606551537,
+      "totalCosto": 251186.29499999998,
       "totalVol": 75.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-04-22",
@@ -2745,6 +2994,7 @@
           "unidad": "kg",
           "vol": 75.0,
           "monto": 251186.29606551537,
+          "costo": 251186.29499999998,
           "nMovimientos": 2,
           "ultimaFecha": "2026-04-22",
           "primeraFecha": "2026-01-14"
@@ -2755,6 +3005,7 @@
     {
       "nombre": "TRANSFERENCIA HACIA OTRA BODEGA",
       "totalHaber": 234002.98739423242,
+      "totalCosto": 234002.99,
       "totalVol": 100.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-03-31",
@@ -2767,6 +3018,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 234002.98739423242,
+          "costo": 234002.99,
           "nMovimientos": 2,
           "ultimaFecha": "2026-03-31",
           "primeraFecha": "2026-01-21"
@@ -2777,6 +3029,7 @@
     {
       "nombre": "OSCAR RENE ALVAREZ MONDON",
       "totalHaber": 233156.86463866092,
+      "totalCosto": 233156.86000000002,
       "totalVol": 100.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-27",
@@ -2789,6 +3042,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 233156.86463866092,
+          "costo": 233156.86000000002,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-27",
           "primeraFecha": "2026-01-27"
@@ -2799,6 +3053,7 @@
     {
       "nombre": "8493 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 220084.09836065574,
+      "totalCosto": 220084.095,
       "totalVol": 150.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-01",
@@ -2811,6 +3066,7 @@
           "unidad": "kg",
           "vol": 150.0,
           "monto": 220084.09836065574,
+          "costo": 220084.095,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-01",
           "primeraFecha": "2026-04-01"
@@ -2821,6 +3077,7 @@
     {
       "nombre": "8647 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 220084.09836065574,
+      "totalCosto": 220084.095,
       "totalVol": 150.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-06",
@@ -2833,6 +3090,7 @@
           "unidad": "kg",
           "vol": 150.0,
           "monto": 220084.09836065574,
+          "costo": 220084.095,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-05-06"
@@ -2843,6 +3101,7 @@
     {
       "nombre": "PROVEEDOR LOCAL",
       "totalHaber": 175703.58050530715,
+      "totalCosto": 175703.57499999998,
       "totalVol": 125.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-04-10",
@@ -2855,6 +3114,7 @@
           "unidad": "kg",
           "vol": 125.0,
           "monto": 175703.58050530715,
+          "costo": 175703.57499999998,
           "nMovimientos": 2,
           "ultimaFecha": "2026-04-10",
           "primeraFecha": "2026-01-15"
@@ -2865,6 +3125,7 @@
     {
       "nombre": "OC 6141 CORRETAJES Y SERVICIOS DE NUTRICION ANIMAL SPA",
       "totalHaber": 167606.9793994653,
+      "totalCosto": 167606.975,
       "totalVol": 125.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-25",
@@ -2877,6 +3138,7 @@
           "unidad": "kg",
           "vol": 125.0,
           "monto": 167606.9793994653,
+          "costo": 167606.975,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-25",
           "primeraFecha": "2026-02-25"
@@ -2887,6 +3149,7 @@
     {
       "nombre": "COMERCIALIZADORA FOSFAMET",
       "totalHaber": 167457.5307103436,
+      "totalCosto": 167457.53,
       "totalVol": 50.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-04-16",
@@ -2899,6 +3162,7 @@
           "unidad": "kg",
           "vol": 50.0,
           "monto": 167457.5307103436,
+          "costo": 167457.53,
           "nMovimientos": 2,
           "ultimaFecha": "2026-04-16",
           "primeraFecha": "2026-01-06"
@@ -2909,6 +3173,7 @@
     {
       "nombre": "8482 EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "totalHaber": 165172.590490497,
+      "totalCosto": 165172.595,
       "totalVol": 230.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-03-31",
@@ -2921,6 +3186,7 @@
           "unidad": "kg",
           "vol": 90.0,
           "monto": 132050.45901639343,
+          "costo": 132050.457,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-31",
           "primeraFecha": "2026-03-31"
@@ -2932,6 +3198,7 @@
           "unidad": "kg",
           "vol": 140.0,
           "monto": 33122.13147410359,
+          "costo": 33122.138,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-31",
           "primeraFecha": "2026-03-31"
@@ -2942,6 +3209,7 @@
     {
       "nombre": "LUIS RENE LOPEZ RODRIGUEZ COT 0005",
       "totalHaber": 164429.615929589,
+      "totalCosto": 164429.6,
       "totalVol": 500.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-27",
@@ -2954,6 +3222,7 @@
           "unidad": "lt",
           "vol": 500.0,
           "monto": 164429.615929589,
+          "costo": 164429.6,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-27",
           "primeraFecha": "2026-01-27"
@@ -2964,6 +3233,7 @@
     {
       "nombre": "8690 FULLSOLUTION",
       "totalHaber": 154918.73206365755,
+      "totalCosto": 154918.73,
       "totalVol": 100.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-14",
@@ -2976,6 +3246,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 154918.73206365755,
+          "costo": 154918.73,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-14",
           "primeraFecha": "2026-05-14"
@@ -2986,6 +3257,7 @@
     {
       "nombre": "QUIMICOS MYM",
       "totalHaber": 151534.7889819106,
+      "totalCosto": 151534.787,
       "totalVol": 70.0,
       "nMovimientos": 2,
       "ultimaFecha": "2026-04-17",
@@ -2998,6 +3270,7 @@
           "unidad": "kg",
           "vol": 25.0,
           "monto": 88281.5,
+          "costo": 88281.5,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-17",
           "primeraFecha": "2026-04-17"
@@ -3009,6 +3282,7 @@
           "unidad": "kg",
           "vol": 45.0,
           "monto": 63253.28898191059,
+          "costo": 63253.287,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-27",
           "primeraFecha": "2026-02-27"
@@ -3019,6 +3293,7 @@
     {
       "nombre": "SERVICIOS SANITARIOS LARAPINTA S.A.  1206305302-1271",
       "totalHaber": 133813.0452788515,
+      "totalCosto": 133813.05000000002,
       "totalVol": 250.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-29",
@@ -3031,6 +3306,7 @@
           "unidad": "kg",
           "vol": 250.0,
           "monto": 133813.0452788515,
+          "costo": 133813.05000000002,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-29",
           "primeraFecha": "2026-01-29"
@@ -3041,6 +3317,7 @@
     {
       "nombre": "AGUAS BLANCAS SA",
       "totalHaber": 126506.57796382118,
+      "totalCosto": 126506.574,
       "totalVol": 90.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-20",
@@ -3053,6 +3330,7 @@
           "unidad": "kg",
           "vol": 90.0,
           "monto": 126506.57796382118,
+          "costo": 126506.574,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-20",
           "primeraFecha": "2026-01-20"
@@ -3063,6 +3341,7 @@
     {
       "nombre": "FULLSOLUTION",
       "totalHaber": 116578.43231933043,
+      "totalCosto": 116578.43000000001,
       "totalVol": 50.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-14",
@@ -3075,6 +3354,7 @@
           "unidad": "kg",
           "vol": 50.0,
           "monto": 116578.43231933043,
+          "costo": 116578.43000000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-14",
           "primeraFecha": "2026-05-14"
@@ -3085,6 +3365,7 @@
     {
       "nombre": "8260 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
       "totalHaber": 109401.24550235261,
+      "totalCosto": 109401.245,
       "totalVol": 50.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-12",
@@ -3097,6 +3378,7 @@
           "unidad": "kg",
           "vol": 50.0,
           "monto": 109401.24550235261,
+          "costo": 109401.245,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-12",
           "primeraFecha": "2026-02-12"
@@ -3107,6 +3389,7 @@
     {
       "nombre": "8276 AGRICOLA EL QUISCAL LIMITADA",
       "totalHaber": 109401.24550235261,
+      "totalCosto": 109401.245,
       "totalVol": 50.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-17",
@@ -3119,6 +3402,7 @@
           "unidad": "kg",
           "vol": 50.0,
           "monto": 109401.24550235261,
+          "costo": 109401.245,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-17",
           "primeraFecha": "2026-02-17"
@@ -3129,6 +3413,7 @@
     {
       "nombre": "OC 23789 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
       "totalHaber": 106437.78269719347,
+      "totalCosto": 106437.7875,
       "totalVol": 125.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-15",
@@ -3141,6 +3426,7 @@
           "unidad": "kg",
           "vol": 125.0,
           "monto": 106437.78269719347,
+          "costo": 106437.7875,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-15",
           "primeraFecha": "2026-05-15"
@@ -3151,6 +3437,7 @@
     {
       "nombre": "LAVANDERÍA QUICK CLEANING",
       "totalHaber": 96474.53139354216,
+      "totalCosto": 96474.5275,
       "totalVol": 390.0,
       "nMovimientos": 4,
       "ultimaFecha": "2026-05-11",
@@ -3163,6 +3450,7 @@
           "unidad": "kg",
           "vol": 390.0,
           "monto": 96474.53139354216,
+          "costo": 96474.5275,
           "nMovimientos": 4,
           "ultimaFecha": "2026-05-11",
           "primeraFecha": "2026-01-06"
@@ -3173,6 +3461,7 @@
     {
       "nombre": "COMITE DE AGUA POTABLE RURAL HUALCAPO COT 0009",
       "totalHaber": 89220.84132232776,
+      "totalCosto": 89220.84000000001,
       "totalVol": 300.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-10",
@@ -3185,6 +3474,7 @@
           "unidad": "lt",
           "vol": 300.0,
           "monto": 89220.84132232776,
+          "costo": 89220.84000000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-10",
           "primeraFecha": "2026-02-10"
@@ -3195,6 +3485,7 @@
     {
       "nombre": "PAPELERA Y PRODUCTOS BELPRO LIMITADA",
       "totalHaber": 83728.7653551718,
+      "totalCosto": 83728.765,
       "totalVol": 25.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-08",
@@ -3207,6 +3498,7 @@
           "unidad": "kg",
           "vol": 25.0,
           "monto": 83728.7653551718,
+          "costo": 83728.765,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-08",
           "primeraFecha": "2026-04-08"
@@ -3217,6 +3509,7 @@
     {
       "nombre": "OC 21552 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
       "totalHaber": 83561.52166214144,
+      "totalCosto": 83561.51999999999,
       "totalVol": 100.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-04",
@@ -3229,6 +3522,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 83561.52166214144,
+          "costo": 83561.51999999999,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-04",
           "primeraFecha": "2026-02-04"
@@ -3239,6 +3533,7 @@
     {
       "nombre": "OC 22184 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
       "totalHaber": 82188.38683580168,
+      "totalCosto": 82188.39,
       "totalVol": 100.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-03",
@@ -3251,6 +3546,7 @@
           "unidad": "kg",
           "vol": 100.0,
           "monto": 82188.38683580168,
+          "costo": 82188.39,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-03",
           "primeraFecha": "2026-03-03"
@@ -3261,6 +3557,7 @@
     {
       "nombre": "OC 23790 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
       "totalHaber": 78809.74976232514,
+      "totalCosto": 78809.75,
       "totalVol": 250.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-15",
@@ -3273,6 +3570,7 @@
           "unidad": "kg",
           "vol": 250.0,
           "monto": 78809.74976232514,
+          "costo": 78809.75,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-15",
           "primeraFecha": "2026-05-15"
@@ -3283,6 +3581,7 @@
     {
       "nombre": "8035 AGRO TURISMO Y RECREACIÓN CAROL NAVARRO",
       "totalHaber": 77459.36603182885,
+      "totalCosto": 77459.365,
       "totalVol": 50.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-06",
@@ -3295,6 +3594,7 @@
           "unidad": "kg",
           "vol": 50.0,
           "monto": 77459.36603182885,
+          "costo": 77459.365,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-06",
           "primeraFecha": "2026-01-06"
@@ -3305,6 +3605,7 @@
     {
       "nombre": "8108 002",
       "totalHaber": 77459.36603182885,
+      "totalCosto": 77459.365,
       "totalVol": 50.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-16",
@@ -3317,6 +3618,7 @@
           "unidad": "kg",
           "vol": 50.0,
           "monto": 77459.36603182885,
+          "costo": 77459.365,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-16",
           "primeraFecha": "2026-01-16"
@@ -3327,6 +3629,7 @@
     {
       "nombre": "8113 002",
       "totalHaber": 77459.36603182885,
+      "totalCosto": 77459.365,
       "totalVol": 50.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-20",
@@ -3339,6 +3642,7 @@
           "unidad": "kg",
           "vol": 50.0,
           "monto": 77459.36603182885,
+          "costo": 77459.365,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-20",
           "primeraFecha": "2026-01-20"
@@ -3349,6 +3653,7 @@
     {
       "nombre": "COMITE DE AGUA POTABLE RURAL HUALCAPO COT 0142",
       "totalHaber": 73072.19885634257,
+      "totalCosto": 73072.2,
       "totalVol": 300.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-08",
@@ -3361,6 +3666,7 @@
           "unidad": "kg",
           "vol": 300.0,
           "monto": 73072.19885634257,
+          "costo": 73072.2,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-08",
           "primeraFecha": "2026-05-08"
@@ -3371,6 +3677,7 @@
     {
       "nombre": "TRATAGUA",
       "totalHaber": 70281.43220212286,
+      "totalCosto": 70281.43,
       "totalVol": 50.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-27",
@@ -3383,6 +3690,7 @@
           "unidad": "kg",
           "vol": 50.0,
           "monto": 70281.43220212286,
+          "costo": 70281.43,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-27",
           "primeraFecha": "2026-03-27"
@@ -3393,6 +3701,7 @@
     {
       "nombre": "OC 21554 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
       "totalHaber": 62671.14124660607,
+      "totalCosto": 62671.14,
       "totalVol": 75.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-04",
@@ -3405,6 +3714,7 @@
           "unidad": "kg",
           "vol": 75.0,
           "monto": 62671.14124660607,
+          "costo": 62671.14,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-04",
           "primeraFecha": "2026-02-04"
@@ -3415,6 +3725,7 @@
     {
       "nombre": "OC 22185 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
       "totalHaber": 61641.290126851265,
+      "totalCosto": 61641.2925,
       "totalVol": 75.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-03",
@@ -3427,6 +3738,7 @@
           "unidad": "kg",
           "vol": 75.0,
           "monto": 61641.290126851265,
+          "costo": 61641.2925,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-03",
           "primeraFecha": "2026-03-03"
@@ -3437,6 +3749,7 @@
     {
       "nombre": "8175 002",
       "totalHaber": 54700.622751176306,
+      "totalCosto": 54700.6225,
       "totalVol": 25.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-30",
@@ -3449,6 +3762,7 @@
           "unidad": "kg",
           "vol": 25.0,
           "monto": 54700.622751176306,
+          "costo": 54700.6225,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-30",
           "primeraFecha": "2026-01-30"
@@ -3459,6 +3773,7 @@
     {
       "nombre": "SERVICIOS DE INGENIERIA Y CONSTRUCCION GOCAT LIMITADA",
       "totalHaber": 48364.918444165625,
+      "totalCosto": 48364.918,
       "totalVol": 20.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-07",
@@ -3471,6 +3786,7 @@
           "unidad": "kg",
           "vol": 20.0,
           "monto": 48364.918444165625,
+          "costo": 48364.918,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-07",
           "primeraFecha": "2026-04-07"
@@ -3481,6 +3797,7 @@
     {
       "nombre": "AGRICOLA RINCON NATURAL LIMITADA",
       "totalHaber": 46631.37292773217,
+      "totalCosto": 46631.372,
       "totalVol": 20.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-12",
@@ -3493,6 +3810,7 @@
           "unidad": "kg",
           "vol": 20.0,
           "monto": 46631.37292773217,
+          "costo": 46631.372,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-12",
           "primeraFecha": "2026-02-12"
@@ -3503,6 +3821,7 @@
     {
       "nombre": "002 ROSARIO JOANNON GREZ",
       "totalHaber": 45356.68645745814,
+      "totalCosto": 45356.6784,
       "totalVol": 176.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-20",
@@ -3515,6 +3834,7 @@
           "unidad": "kg",
           "vol": 176.0,
           "monto": 45356.68645745814,
+          "costo": 45356.6784,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-20",
           "primeraFecha": "2026-01-20"
@@ -3525,6 +3845,7 @@
     {
       "nombre": "8350 002",
       "totalHaber": 38729.683015914416,
+      "totalCosto": 38729.6825,
       "totalVol": 25.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-03",
@@ -3537,6 +3858,7 @@
           "unidad": "kg",
           "vol": 25.0,
           "monto": 38729.683015914416,
+          "costo": 38729.6825,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-03",
           "primeraFecha": "2026-03-03"
@@ -3547,6 +3869,7 @@
     {
       "nombre": "8729 002",
       "totalHaber": 38729.68301591439,
+      "totalCosto": 38729.6825,
       "totalVol": 25.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-20",
@@ -3559,6 +3882,7 @@
           "unidad": "kg",
           "vol": 25.0,
           "monto": 38729.68301591439,
+          "costo": 38729.6825,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-20",
           "primeraFecha": "2026-05-20"
@@ -3569,6 +3893,7 @@
     {
       "nombre": "LAVANDERÍA QUICK CLEANING SPA  LAVANDERÍA QUICK CLEANING P210426",
       "totalHaber": 31715.412666821783,
+      "totalCosto": 31715.411,
       "totalVol": 130.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-04-21",
@@ -3581,6 +3906,7 @@
           "unidad": "kg",
           "vol": 130.0,
           "monto": 31715.412666821783,
+          "costo": 31715.411,
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-21",
           "primeraFecha": "2026-04-21"
@@ -3591,6 +3917,7 @@
     {
       "nombre": "LAVANDERÍA QUICK CLEANING SPA  65 KILOS",
       "totalHaber": 16497.610572834557,
+      "totalCosto": 16497.611,
       "totalVol": 65.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-21",
@@ -3603,6 +3930,7 @@
           "unidad": "kg",
           "vol": 65.0,
           "monto": 16497.610572834557,
+          "costo": 16497.611,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-21",
           "primeraFecha": "2026-01-21"
@@ -3613,6 +3941,7 @@
     {
       "nombre": "LAVANDERÍA QUICK CLEANING SPA  LAVANDERÍA QUICK CLEANING P020226",
       "totalHaber": 16497.610572834554,
+      "totalCosto": 16497.611,
       "totalVol": 65.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-03",
@@ -3625,6 +3954,7 @@
           "unidad": "kg",
           "vol": 65.0,
           "monto": 16497.610572834554,
+          "costo": 16497.611,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-03",
           "primeraFecha": "2026-02-03"
@@ -3635,6 +3965,7 @@
     {
       "nombre": "REFRIGERACION INDUSTRIAL HC-FRIO LIMITADA",
       "totalHaber": 16056.617283950618,
+      "totalCosto": 16056.6175,
       "totalVol": 5.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-20",
@@ -3647,6 +3978,7 @@
           "unidad": "kg",
           "vol": 5.0,
           "monto": 16056.617283950618,
+          "costo": 16056.6175,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-20",
           "primeraFecha": "2026-01-20"
@@ -3657,6 +3989,7 @@
     {
       "nombre": "LAVANDERÍA QUICK CLEANING SPA  P130226",
       "totalHaber": 15644.699041035483,
+      "totalCosto": 15644.7005,
       "totalVol": 65.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-19",
@@ -3669,6 +4002,7 @@
           "unidad": "kg",
           "vol": 65.0,
           "monto": 15644.699041035483,
+          "costo": 15644.7005,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-19",
           "primeraFecha": "2026-02-19"
@@ -3679,6 +4013,7 @@
     {
       "nombre": "LAVANDERÍA QUICK CLEANING SPA  LAVANDERÍA QUICK CLEANING P170326",
       "totalHaber": 15334.618531922866,
+      "totalCosto": 15334.618,
       "totalVol": 65.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-17",
@@ -3691,6 +4026,7 @@
           "unidad": "kg",
           "vol": 65.0,
           "monto": 15334.618531922866,
+          "costo": 15334.618,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-17",
           "primeraFecha": "2026-03-17"
@@ -3701,6 +4037,7 @@
     {
       "nombre": "SERVICIOS ADMINISTRATIVOS E INMOBILIARIOS PAUPE LIMITADA",
       "totalHaber": 10380.357160070862,
+      "totalCosto": 10380.3568,
       "totalVol": 44.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-04",
@@ -3713,6 +4050,7 @@
           "unidad": "kg",
           "vol": 44.0,
           "monto": 10380.357160070862,
+          "costo": 10380.3568,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-04",
           "primeraFecha": "2026-03-04"
@@ -3723,6 +4061,7 @@
     {
       "nombre": "8083 002",
       "totalHaber": 7745.936603182885,
+      "totalCosto": 7745.9365,
       "totalVol": 5.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-15",
@@ -3735,6 +4074,7 @@
           "unidad": "kg",
           "vol": 5.0,
           "monto": 7745.936603182885,
+          "costo": 7745.9365,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-15",
           "primeraFecha": "2026-01-15"
@@ -3745,6 +4085,7 @@
     {
       "nombre": "002 RODRIGO AGUAYO",
       "totalHaber": 5449.2154047235135,
+      "totalCosto": 5449.2152,
       "totalVol": 22.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-02-06",
@@ -3757,6 +4098,7 @@
           "unidad": "kg",
           "vol": 22.0,
           "monto": 5449.2154047235135,
+          "costo": 5449.2152,
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-06",
           "primeraFecha": "2026-02-06"
@@ -3767,6 +4109,7 @@
     {
       "nombre": "COMERCIAL SERVICETRANS SPA COT 0036",
       "totalHaber": 5358.627916131787,
+      "totalCosto": 5358.628000000001,
       "totalVol": 22.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-05-14",
@@ -3779,6 +4122,7 @@
           "unidad": "kg",
           "vol": 22.0,
           "monto": 5358.627916131787,
+          "costo": 5358.628000000001,
           "nMovimientos": 1,
           "ultimaFecha": "2026-05-14",
           "primeraFecha": "2026-05-14"
@@ -3789,6 +4133,7 @@
     {
       "nombre": "VENTA CON BOLETA A CLIENTES NO HABITUALES",
       "totalHaber": 2340.0298739423242,
+      "totalCosto": 2340.0299,
       "totalVol": 1.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-03-31",
@@ -3801,6 +4146,7 @@
           "unidad": "kg",
           "vol": 1.0,
           "monto": 2340.0298739423242,
+          "costo": 2340.0299,
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-31",
           "primeraFecha": "2026-03-31"
@@ -3811,6 +4157,7 @@
     {
       "nombre": "5125",
       "totalHaber": 1549.187320636577,
+      "totalCosto": 1549.1873,
       "totalVol": 1.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-30",
@@ -3823,6 +4170,7 @@
           "unidad": "kg",
           "vol": 1.0,
           "monto": 1549.187320636577,
+          "costo": 1549.1873,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-30",
           "primeraFecha": "2026-01-30"
@@ -3833,6 +4181,7 @@
     {
       "nombre": "GUÍA[EA]41212016 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
       "totalHaber": -7150881.066013529,
+      "totalCosto": -7150880.261,
       "totalVol": -20530.0,
       "nMovimientos": 1,
       "ultimaFecha": "2026-01-28",
@@ -3845,6 +4194,7 @@
           "unidad": "kg",
           "vol": -20530.0,
           "monto": -7150881.066013529,
+          "costo": -7150880.261,
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-28",
           "primeraFecha": "2026-01-28"

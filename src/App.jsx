@@ -673,34 +673,45 @@ function VistaEmpresas({ onIrProducto }) {
         </div>
 
         {/* KPIs */}
-        <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:10}}>
-          <KPI label="Facturado total"   value={clp(e.totalHaber)}
-            sub={`${num(e.nMovimientos)} movimientos`} color={C.teal}/>
-          <KPI label="Volumen total"     value={num(e.totalVol)}
-            sub="unidades despachadas" color={C.accent}/>
-          <KPI label="Productos distintos" value={e.nProductos}
-            sub="líneas de producto" color={C.green}/>
-          <KPI label="Última compra"     value={fmtFecha(e.ultimaFecha)}
-            sub={`Primera: ${fmtFecha(e.primeraFecha)}`} color={C.amber}/>
-        </div>
+        {(()=>{
+          const totalCosto  = e.totalCosto ?? 0;
+          const totalMargen = e.totalHaber - totalCosto;
+          const mPct        = e.totalHaber > 0 ? (totalMargen / e.totalHaber) * 100 : 0;
+          return (
+            <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:10}}>
+              <KPI label="Facturado total"      value={clp(e.totalHaber)}
+                sub={`${num(e.nMovimientos)} movimientos`} color={C.teal}/>
+              <KPI label="Costo total"          value={clp(totalCosto)}
+                sub="Vol × PMP venta" color={C.sub}/>
+              <KPI label="Margen bruto"         value={clp(totalMargen)}
+                sub={`${mPct.toFixed(1)}% sobre ventas`} color={mPct>=20?C.green:C.amber}/>
+              <KPI label="Productos distintos"  value={e.nProductos}
+                sub="líneas de producto" color={C.accent}/>
+              <KPI label="Última compra"        value={fmtFecha(e.ultimaFecha)}
+                sub={`Primera: ${fmtFecha(e.primeraFecha)}`} color={C.amber}/>
+            </div>
+          );
+        })()}
 
         {/* Tabla de productos */}
         <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
-          {/* Header */}
           <div style={{display:"grid",
-            gridTemplateColumns:"2fr 90px 120px 110px 100px 90px",
+            gridTemplateColumns:"2fr 70px 115px 105px 95px 80px 80px",
             padding:"8px 16px",background:C.surface,borderBottom:`1px solid ${C.border}`}}>
-            {["Producto","Unidad","Facturado","Volumen","Movimientos","Última fecha"].map(h=>(
+            {["Producto","Unidad","Facturado","Costo","Margen $","Margen %","Última fecha"].map(h=>(
               <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
                 letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
             ))}
           </div>
           {e.productos.map((p,i)=>{
-            const pct = e.totalHaber > 0 ? (p.monto / e.totalHaber * 100) : 0;
+            const pct    = e.totalHaber > 0 ? (p.monto / e.totalHaber * 100) : 0;
+            const costo  = p.costo ?? 0;
+            const margen = p.monto - costo;
+            const mPct   = p.monto > 0 ? (margen / p.monto) * 100 : 0;
             return (
               <div key={p.slug}
                 style={{display:"grid",
-                  gridTemplateColumns:"2fr 90px 120px 110px 100px 90px",
+                  gridTemplateColumns:"2fr 70px 115px 105px 95px 80px 80px",
                   padding:"11px 16px",
                   borderBottom:i<e.productos.length-1?`1px solid ${C.border}22`:"none",
                   background:i%2===0?"transparent":"#ffffff03",
@@ -714,12 +725,18 @@ function VistaEmpresas({ onIrProducto }) {
                     <div style={{width:`${pct}%`,height:"100%",borderRadius:99,
                       background:`linear-gradient(90deg,${C.accent},${C.teal})`}}/>
                   </div>
-                  <div style={{color:C.muted,fontSize:10,marginTop:2}}>{pct.toFixed(1)}% del total</div>
+                  <div style={{color:C.muted,fontSize:10,marginTop:2}}>{pct.toFixed(1)}% del facturado</div>
                 </div>
                 <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{p.unidad}</div>
                 <div style={{fontFamily:MONO,fontSize:12,color:C.text,alignSelf:"center"}}>{clp(p.monto)}</div>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.sub,alignSelf:"center"}}>{num(p.vol)}</div>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center"}}>{p.nMovimientos}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center"}}>{clp(costo)}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:margen>=0?C.green:C.red,alignSelf:"center"}}>{clp(margen)}</div>
+                <div style={{alignSelf:"center"}}>
+                  <span style={{fontFamily:MONO,fontSize:13,fontWeight:800,
+                    color:mPct>=25?C.green:mPct>=10?C.amber:C.red}}>
+                    {mPct.toFixed(1)}%
+                  </span>
+                </div>
                 <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{fmtFecha(p.ultimaFecha)}</div>
               </div>
             );
@@ -752,19 +769,22 @@ function VistaEmpresas({ onIrProducto }) {
 
       {/* Tabla */}
       <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
-        <div style={{display:"grid",gridTemplateColumns:"2.2fr 120px 90px 80px 100px 90px",
+        <div style={{display:"grid",gridTemplateColumns:"2fr 115px 105px 75px 80px 80px",
           padding:"8px 16px",background:C.surface,borderBottom:`1px solid ${C.border}`}}>
-          {["Empresa","Facturado","Volumen","Prods.","Movimientos","Última venta"].map(h=>(
+          {["Empresa","Facturado","Margen $","Margen %","Prods.","Última venta"].map(h=>(
             <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
               letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
           ))}
         </div>
         <div style={{maxHeight:"calc(100vh - 260px)",overflowY:"auto"}}>
           {empresas.map((e,i)=>{
-            const pct = (e.totalHaber / maxHaber) * 100;
+            const pct      = (e.totalHaber / maxHaber) * 100;
+            const costo    = e.totalCosto ?? 0;
+            const margen   = e.totalHaber - costo;
+            const mPct     = e.totalHaber > 0 ? (margen / e.totalHaber) * 100 : 0;
             return (
               <div key={e.nombre}
-                style={{display:"grid",gridTemplateColumns:"2.2fr 120px 90px 80px 100px 90px",
+                style={{display:"grid",gridTemplateColumns:"2fr 115px 105px 75px 80px 80px",
                   padding:"10px 16px",
                   borderBottom:i<empresas.length-1?`1px solid ${C.border}22`:"none",
                   background:i%2===0?"transparent":"#ffffff03",
@@ -780,9 +800,14 @@ function VistaEmpresas({ onIrProducto }) {
                   </div>
                 </div>
                 <div style={{fontFamily:MONO,fontSize:12,color:C.text,alignSelf:"center"}}>{clp(e.totalHaber)}</div>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.sub,alignSelf:"center"}}>{num(e.totalVol)}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:margen>=0?C.green:C.red,alignSelf:"center"}}>{clp(margen)}</div>
+                <div style={{alignSelf:"center"}}>
+                  <span style={{fontFamily:MONO,fontSize:13,fontWeight:800,
+                    color:mPct>=25?C.green:mPct>=10?C.amber:C.red}}>
+                    {mPct.toFixed(1)}%
+                  </span>
+                </div>
                 <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center",textAlign:"center"}}>{e.nProductos}</div>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center",textAlign:"center"}}>{e.nMovimientos}</div>
                 <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{fmtFecha(e.ultimaFecha)}</div>
               </div>
             );

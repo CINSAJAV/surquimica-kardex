@@ -378,6 +378,7 @@ def main():
                 empresas[nombre] = {
                     "nombre": nombre,
                     "totalHaber": 0,
+                    "totalCosto": 0,
                     "totalVol": 0,
                     "nMovimientos": 0,
                     "ultimaFecha": "",
@@ -386,6 +387,7 @@ def main():
                 }
             e = empresas[nombre]
             e["totalHaber"]   += mv["haber"] or 0
+            e["totalCosto"]   += (mv["salida"] or 0) * (mv["pmp"] or 0)
             e["totalVol"]     += mv["salida"] or 0
             e["nMovimientos"] += 1
             if mv["fecha"]:
@@ -403,6 +405,7 @@ def main():
                     "unidad": p["unidad"],
                     "vol": 0,
                     "monto": 0,
+                    "costo": 0,
                     "nMovimientos": 0,
                     "ultimaFecha": "",
                     "primeraFecha": "",
@@ -410,6 +413,7 @@ def main():
             ep = e["productos"][slug]
             ep["vol"]          += mv["salida"] or 0
             ep["monto"]        += mv["haber"] or 0
+            ep["costo"]        += (mv["salida"] or 0) * (mv["pmp"] or 0)
             ep["nMovimientos"] += 1
             if mv["fecha"]:
                 if not ep["ultimaFecha"] or mv["fecha"] > ep["ultimaFecha"]:
