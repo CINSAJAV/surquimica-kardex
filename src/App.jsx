@@ -365,6 +365,15 @@ function VistaMovimientos({ p }) {
 
 // ─── VISTA MÁRGENES ───────────────────────────────────────────────────────────
 function VistaMargen({ p }) {
+  const [preciosData, setPreciosData] = useState(null);
+
+  useEffect(() => {
+    fetch("./data/precios.json").then(r=>r.json()).then(setPreciosData).catch(()=>{});
+  }, []);
+
+  // Precios acordados para este producto (puede ser null si no hay archivo)
+  const preciosProd = preciosData?.productos?.[p.codigo] ?? null;
+
   const ventas = p.movimientos.filter(m=>m.tipo==="Venta");
   const por={};
   ventas.forEach(v=>{
@@ -374,24 +383,52 @@ function VistaMargen({ p }) {
     por[v.cliente].costo +=v.salida*v.pmp;
     por[v.cliente].n++;
   });
-  const arr=Object.entries(por).map(([k,v])=>({
-    cliente:k,...v,
-    margen:v.monto-v.costo,
-    mPct:v.monto>0?((v.monto-v.costo)/v.monto)*100:0,
-    pMed:v.vol>0?v.monto/v.vol:0,
-  })).sort((a,b)=>b.monto-a.monto);
+  const arr=Object.entries(por).map(([k,v])=>{
+    // Buscar coincidencia en precios acordados (comparación flexible)
+    let acuerdo = null;
+    if (preciosProd) {
+      const key = Object.keys(preciosProd).find(name =>
+        name === k || k.includes(name) || name.includes(k)
+      );
+      if (key) acuerdo = preciosProd[key];
+    }
+    const pMed = v.vol>0 ? v.monto/v.vol : 0;
+    const margenAcordado = acuerdo?.margen ?? null;
+    const precioAcordado = acuerdo?.precio_venta ?? null;
+    // Diferencia precio real vs acordado
+    const diffPrecio = precioAcordado != null ? pMed - precioAcordado : null;
+    return {
+      cliente:k,...v,
+      margen:v.monto-v.costo,
+      mPct:v.monto>0?((v.monto-v.costo)/v.monto)*100:0,
+      pMed,
+      precioAcordado,
+      margenAcordado,
+      diffPrecio,
+    };
+  }).sort((a,b)=>b.monto-a.monto);
 
   const totM=arr.reduce((s,r)=>s+r.monto,0);
   const totC=arr.reduce((s,r)=>s+r.costo,0);
   const totMg=totM-totC;
   const totPct=totM>0?(totMg/totM)*100:0;
-  const GRID="1.6fr 80px 108px 108px 90px 108px 90px";
+  const hayAcuerdos = arr.some(r=>r.precioAcordado!=null);
+
+  // Columnas variables según si hay datos de precios acordados
+  const GRID = hayAcuerdos
+    ? "1.4fr 75px 105px 90px 95px 95px 80px 90px"
+    : "1.6fr 80px 108px 108px 90px 108px 90px";
+  const headers = hayAcuerdos
+    ? ["Cliente",`Vol(${p.unidad})`,"Ingreso","Costo",`P.real/$${p.unidad}`,`P.acordado/$${p.unidad}`,"Δ precio","Margen %"]
+    : ["Cliente",`Vol(${p.unidad})`,"Ingreso","Costo",`P.vta/$${p.unidad}`,"Margen $","Margen %"];
 
   return (
     <div style={{display:"flex",flexDirection:"column",gap:14}}>
       <div style={{background:"#0A1F0A",border:`1px solid #2A5A2A`,borderRadius:8,
         padding:"10px 14px",fontSize:12,color:"#6EE68E"}}>
-        Margen = precio real de venta (haber/salida del Kardex) menos costo PMP al momento de cada venta.
+        {hayAcuerdos
+          ? "Precio real = haber ÷ salida del Kardex. Precio acordado = tabla de precios por cliente (Enero–Abril 2026). Δ = real − acordado."
+          : "Margen = precio real de venta (haber/salida del Kardex) menos costo PMP al momento de cada venta."}
       </div>
       <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:10}}>
         <KPI label="Margen bruto total" value={clp(totMg)}
@@ -404,7 +441,7 @@ function VistaMargen({ p }) {
       <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
         <div style={{display:"grid",gridTemplateColumns:GRID,padding:"8px 16px",
           borderBottom:`1px solid ${C.border}`,background:C.surface}}>
-          {["Cliente",`Vol(${p.unidad})`,"Ingreso","Costo",`P.vta/$${p.unidad}`,"Margen $","Margen %"].map(h=>(
+          {headers.map(h=>(
             <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
               letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
           ))}
@@ -413,12 +450,28 @@ function VistaMargen({ p }) {
           <div key={r.cliente} style={{display:"grid",gridTemplateColumns:GRID,
             padding:"11px 16px",borderBottom:i<arr.length-1?`1px solid ${C.border}22`:"none",
             background:i%2===0?"transparent":"#ffffff03"}}>
-            <div style={{color:C.text,fontWeight:600,fontSize:12}}>{corto(r.cliente)}</div>
+            <div style={{color:C.text,fontWeight:600,fontSize:12,
+              overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{corto(r.cliente)}</div>
             <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>{num(r.vol)}</div>
             <div style={{fontFamily:MONO,fontSize:12,color:C.text}}>{clp(r.monto)}</div>
-            <div style={{fontFamily:MONO,fontSize:12,color:C.muted}}>{clp(r.costo)}</div>
+            {!hayAcuerdos && <div style={{fontFamily:MONO,fontSize:12,color:C.muted}}>{clp(r.costo)}</div>}
             <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>${num(r.pMed,0)}</div>
-            <div style={{fontFamily:MONO,fontSize:12,color:r.margen>=0?C.green:C.red}}>{clp(r.margen)}</div>
+            {hayAcuerdos && (
+              <>
+                <div style={{fontFamily:MONO,fontSize:12,color:r.precioAcordado!=null?C.sub:C.muted}}>
+                  {r.precioAcordado!=null ? `$${num(r.precioAcordado,0)}` : "—"}
+                </div>
+                <div style={{fontFamily:MONO,fontSize:12,
+                  color:r.diffPrecio==null?C.muted:r.diffPrecio>=0?C.green:C.red}}>
+                  {r.diffPrecio!=null
+                    ? `${r.diffPrecio>=0?"+":""}$${num(r.diffPrecio,0)}`
+                    : "—"}
+                </div>
+              </>
+            )}
+            {!hayAcuerdos && (
+              <div style={{fontFamily:MONO,fontSize:12,color:r.margen>=0?C.green:C.red}}>{clp(r.margen)}</div>
+            )}
             <div>
               <span style={{fontFamily:MONO,fontSize:14,fontWeight:800,
                 color:r.mPct>=25?C.green:r.mPct>=10?C.amber:C.red}}>
@@ -432,13 +485,46 @@ function VistaMargen({ p }) {
           <div style={{color:C.text,fontWeight:800}}>TOTAL</div>
           <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{num(arr.reduce((s,r)=>s+r.vol,0))}</div>
           <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{clp(totM)}</div>
-          <div style={{fontFamily:MONO,fontWeight:700,color:C.muted}}>{clp(totC)}</div>
+          {!hayAcuerdos && <div style={{fontFamily:MONO,fontWeight:700,color:C.muted}}>{clp(totC)}</div>}
           <div/>
-          <div style={{fontFamily:MONO,fontWeight:700,color:C.green}}>{clp(totMg)}</div>
+          {hayAcuerdos && <><div/><div/></>}
+          {!hayAcuerdos && <div style={{fontFamily:MONO,fontWeight:700,color:C.green}}>{clp(totMg)}</div>}
           <div style={{fontFamily:MONO,fontSize:14,fontWeight:800,
             color:totPct>=20?C.green:C.amber}}>{totPct.toFixed(1)}%</div>
         </div>
       </div>
+
+      {/* Panel de precios acordados completo si hay datos */}
+      {preciosProd && (
+        <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,padding:16}}>
+          <div style={{color:C.muted,fontSize:10,textTransform:"uppercase",letterSpacing:1.2,marginBottom:12}}>
+            Tabla de precios acordados (Enero–Abril 2026)
+          </div>
+          <div style={{display:"grid",gridTemplateColumns:"2fr 90px 100px 110px 100px",gap:0,
+            background:C.surface,borderRadius:8,overflow:"hidden",border:`1px solid ${C.border}`}}>
+            {["Cliente","Vol (kg)","PMP pond.","P.venta","Margen"].map(h=>(
+              <div key={h} style={{padding:"7px 12px",color:C.muted,fontSize:10,
+                textTransform:"uppercase",letterSpacing:0.8,fontFamily:MONO,
+                borderBottom:`1px solid ${C.border}`}}>{h}</div>
+            ))}
+            {Object.entries(preciosProd).map(([nombre, d], i) => (
+              <>
+                <div key={nombre+"n"} style={{padding:"9px 12px",color:C.text,fontSize:11,fontWeight:600,
+                  borderBottom:`1px solid ${C.border}22`}}>{corto(nombre)}</div>
+                <div key={nombre+"v"} style={{padding:"9px 12px",fontFamily:MONO,fontSize:11,color:C.sub,
+                  borderBottom:`1px solid ${C.border}22`}}>{d.cantidad!=null?num(d.cantidad,0):"—"}</div>
+                <div key={nombre+"p"} style={{padding:"9px 12px",fontFamily:MONO,fontSize:11,color:C.muted,
+                  borderBottom:`1px solid ${C.border}22`}}>{d.pmp_pond!=null?`$${num(d.pmp_pond,0)}`:"—"}</div>
+                <div key={nombre+"pv"} style={{padding:"9px 12px",fontFamily:MONO,fontSize:12,fontWeight:700,color:C.accent,
+                  borderBottom:`1px solid ${C.border}22`}}>{d.precio_venta!=null?`$${num(d.precio_venta,0)}`:"—"}</div>
+                <div key={nombre+"m"} style={{padding:"9px 12px",fontFamily:MONO,fontSize:12,fontWeight:700,
+                  color:d.margen!=null&&d.margen>0?C.green:C.muted,
+                  borderBottom:`1px solid ${C.border}22`}}>{d.margen!=null?`$${num(d.margen,0)}`:"—"}</div>
+              </>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
