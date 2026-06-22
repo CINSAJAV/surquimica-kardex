@@ -477,59 +477,113 @@ function VistaMargen({ p }) {
         <KPI label="Costo total" value={clp(totC)}
           sub={hayAcuerdos?"PMP último × cantidad":"Vol × PMP venta"} color={C.sub}/>
       </div>
-      <div style={{overflowX:"auto"}}>
-        <div style={{minWidth:600,background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
-          <div style={{display:"grid",gridTemplateColumns:GRID,padding:"8px 16px",
-            borderBottom:`1px solid ${C.border}`,background:C.surface}}>
-            {headers.map(h=>(
-              <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
-                letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
-            ))}
-          </div>
+      {mobile ? (
+        /* ── Tarjetas apiladas en móvil ── */
+        <div style={{display:"flex",flexDirection:"column",gap:8}}>
           {arr.map((r,i)=>(
-            <div key={r.cliente} style={{display:"grid",gridTemplateColumns:GRID,
-              padding:"11px 16px",borderBottom:i<arr.length-1?`1px solid ${C.border}22`:"none",
-              background:i%2===0?"transparent":"#ffffff03"}}>
-              <div style={{color:C.text,fontWeight:600,fontSize:12,
-                overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{corto(r.cliente)}</div>
-              <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>{num(r.vol)}</div>
-              <div style={{fontFamily:MONO,fontSize:12,color:C.text}}>{clp(r.ingreso)}</div>
-              <div style={{fontFamily:MONO,fontSize:12,color:C.muted}}>{clp(r.costo)}</div>
-              {hayAcuerdos ? (
-                <>
-                  <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>
-                    {r.precioAcordado!=null?`$${num(r.precioAcordado,0)}`:"—"}
+            <div key={r.cliente} style={{background:C.card,border:`1px solid ${C.border}`,
+              borderRadius:10,padding:"12px 14px"}}>
+              <div style={{color:C.text,fontWeight:700,fontSize:13,marginBottom:8}}>
+                {corto(r.cliente)}
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"6px 12px"}}>
+                <div>
+                  <div style={{color:C.muted,fontSize:9,textTransform:"uppercase",letterSpacing:0.8}}>Volumen</div>
+                  <div style={{fontFamily:MONO,fontSize:13,color:C.sub}}>{num(r.vol)} {p.unidad}</div>
+                </div>
+                <div>
+                  <div style={{color:C.muted,fontSize:9,textTransform:"uppercase",letterSpacing:0.8}}>Margen</div>
+                  <div style={{fontFamily:MONO,fontSize:16,fontWeight:800,
+                    color:r.mPct>=25?C.green:r.mPct>=10?C.amber:C.red}}>{r.mPct.toFixed(1)}%</div>
+                </div>
+                <div>
+                  <div style={{color:C.muted,fontSize:9,textTransform:"uppercase",letterSpacing:0.8}}>Ingreso</div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:C.text}}>{clp(r.ingreso)}</div>
+                </div>
+                <div>
+                  <div style={{color:C.muted,fontSize:9,textTransform:"uppercase",letterSpacing:0.8}}>Costo</div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:C.muted}}>{clp(r.costo)}</div>
+                </div>
+                {hayAcuerdos && <>
+                  <div>
+                    <div style={{color:C.muted,fontSize:9,textTransform:"uppercase",letterSpacing:0.8}}>P.Venta</div>
+                    <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>{r.precioAcordado!=null?`$${num(r.precioAcordado,0)}`:"—"}</div>
                   </div>
-                  <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>
-                    {r.pmpUltimo!=null?`$${num(r.pmpUltimo,0)}`:"—"}
+                  <div>
+                    <div style={{color:C.muted,fontSize:9,textTransform:"uppercase",letterSpacing:0.8}}>PMP Último</div>
+                    <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>{r.pmpUltimo!=null?`$${num(r.pmpUltimo,0)}`:"—"}</div>
                   </div>
-                </>
-              ) : (
-                <>
-                  <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>${num(r.vol>0?r.ingreso/r.vol:0,0)}</div>
-                  <div style={{fontFamily:MONO,fontSize:12,color:r.margen>=0?C.green:C.red}}>{clp(r.margen)}</div>
-                </>
-              )}
-              <div>
-                <span style={{fontFamily:MONO,fontSize:14,fontWeight:800,
-                  color:r.mPct>=25?C.green:r.mPct>=10?C.amber:C.red}}>
-                  {r.mPct.toFixed(1)}%
-                </span>
+                </>}
               </div>
             </div>
           ))}
-          <div style={{display:"grid",gridTemplateColumns:GRID,padding:"11px 16px",
-            background:C.surface,borderTop:`1px solid ${C.border}`}}>
-            <div style={{color:C.text,fontWeight:800}}>TOTAL</div>
-            <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{num(arr.reduce((s,r)=>s+r.vol,0))}</div>
-            <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{clp(totM)}</div>
-            <div style={{fontFamily:MONO,fontWeight:700,color:C.muted}}>{clp(totC)}</div>
-            <div/><div/>
-            <div style={{fontFamily:MONO,fontSize:14,fontWeight:800,
-              color:totPct>=20?C.green:C.amber}}>{totPct.toFixed(1)}%</div>
+          {/* Total */}
+          <div style={{background:C.surface,border:`1px solid ${C.border}`,borderRadius:10,padding:"12px 14px",
+            display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+            <div style={{color:C.text,fontWeight:800,fontSize:13}}>TOTAL</div>
+            <div style={{textAlign:"right"}}>
+              <div style={{fontFamily:MONO,fontSize:16,fontWeight:800,
+                color:totPct>=20?C.green:C.amber}}>{totPct.toFixed(1)}%</div>
+              <div style={{fontFamily:MONO,fontSize:12,color:C.text}}>{clp(totM)}</div>
+            </div>
           </div>
         </div>
-      </div>
+      ) : (
+        /* ── Tabla en desktop ── */
+        <div style={{overflowX:"auto"}}>
+          <div style={{minWidth:600,background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
+            <div style={{display:"grid",gridTemplateColumns:GRID,padding:"8px 16px",
+              borderBottom:`1px solid ${C.border}`,background:C.surface}}>
+              {headers.map(h=>(
+                <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
+                  letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
+              ))}
+            </div>
+            {arr.map((r,i)=>(
+              <div key={r.cliente} style={{display:"grid",gridTemplateColumns:GRID,
+                padding:"11px 16px",borderBottom:i<arr.length-1?`1px solid ${C.border}22`:"none",
+                background:i%2===0?"transparent":"#ffffff03"}}>
+                <div style={{color:C.text,fontWeight:600,fontSize:12,
+                  overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{corto(r.cliente)}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>{num(r.vol)}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.text}}>{clp(r.ingreso)}</div>
+                <div style={{fontFamily:MONO,fontSize:12,color:C.muted}}>{clp(r.costo)}</div>
+                {hayAcuerdos ? (
+                  <>
+                    <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>
+                      {r.precioAcordado!=null?`$${num(r.precioAcordado,0)}`:"—"}
+                    </div>
+                    <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>
+                      {r.pmpUltimo!=null?`$${num(r.pmpUltimo,0)}`:"—"}
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>${num(r.vol>0?r.ingreso/r.vol:0,0)}</div>
+                    <div style={{fontFamily:MONO,fontSize:12,color:r.margen>=0?C.green:C.red}}>{clp(r.margen)}</div>
+                  </>
+                )}
+                <div>
+                  <span style={{fontFamily:MONO,fontSize:14,fontWeight:800,
+                    color:r.mPct>=25?C.green:r.mPct>=10?C.amber:C.red}}>
+                    {r.mPct.toFixed(1)}%
+                  </span>
+                </div>
+              </div>
+            ))}
+            <div style={{display:"grid",gridTemplateColumns:GRID,padding:"11px 16px",
+              background:C.surface,borderTop:`1px solid ${C.border}`}}>
+              <div style={{color:C.text,fontWeight:800}}>TOTAL</div>
+              <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{num(arr.reduce((s,r)=>s+r.vol,0))}</div>
+              <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{clp(totM)}</div>
+              <div style={{fontFamily:MONO,fontWeight:700,color:C.muted}}>{clp(totC)}</div>
+              <div/><div/>
+              <div style={{fontFamily:MONO,fontSize:14,fontWeight:800,
+                color:totPct>=20?C.green:C.amber}}>{totPct.toFixed(1)}%</div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Panel de precios acordados completo si hay datos */}
       {preciosProd && (
@@ -1024,11 +1078,10 @@ function App() {
                       borderBottom:vista===v.id?`2px solid ${C.accent}`:"2px solid transparent",
                       borderTop:"2px solid transparent",borderLeft:"none",borderRight:"none",
                       color:vista===v.id?C.accent:C.muted,
-                      padding:"0 10px",height:52,fontFamily:FONT,
-                      fontWeight:vista===v.id?700:400,fontSize:13,cursor:"pointer",
-                      display:"flex",alignItems:"center",gap:6}}>
-                    <span style={{fontSize:10}}>{v.icon}</span>
-                    {!mobile && v.label}
+                      padding:mobile?"0 8px":"0 10px",height:52,fontFamily:FONT,
+                      fontWeight:vista===v.id?700:400,fontSize:mobile?11:13,cursor:"pointer",
+                      display:"flex",alignItems:"center",gap:4}}>
+                    {mobile ? v.label : <><span style={{fontSize:10}}>{v.icon}</span>{v.label}</>}
                   </button>
                 ))}
               </div>
