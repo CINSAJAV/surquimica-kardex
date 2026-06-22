@@ -3,6 +3,7 @@ import { useState, useEffect, useMemo, useContext, createContext } from "react";
 // Contextos globales cargados una vez en App
 const BodegaCtx  = createContext(null);
 const PreciosCtx = createContext(null);
+const MobileCtx  = createContext(false);
 
 // ─── TOKENS ──────────────────────────────────────────────────────────────────
 const C = {
@@ -36,6 +37,17 @@ const fmtFecha = (iso) => {
 const corto = (s) =>
   (s||"").replace("SERVICIOS SANITARIOS ","SS ")
          .replace(" S.A.","").replace(" S.A","").replace(" LTDA","").replace(" SPA","").trim();
+
+// ─── MOBILE HOOK ─────────────────────────────────────────────────────────────
+function useMobile() {
+  const [mobile, setMobile] = useState(window.innerWidth < 768);
+  useEffect(() => {
+    const fn = () => setMobile(window.innerWidth < 768);
+    window.addEventListener("resize", fn);
+    return () => window.removeEventListener("resize", fn);
+  }, []);
+  return mobile;
+}
 
 // ─── LOGO ─────────────────────────────────────────────────────────────────────
 function Logo({ size=28 }) {
@@ -166,6 +178,7 @@ function PanelBodega({ slug, unidad }) {
 
 // ─── VISTA RESUMEN ────────────────────────────────────────────────────────────
 function VistaResumen({ p }) {
+  const mobile = useContext(MobileCtx);
   const preciosCtx = useContext(PreciosCtx);
   const ventas  = p.movimientos.filter(m=>m.tipo==="Venta");
   const compras = p.movimientos.filter(m=>m.tipo==="Compra");
@@ -207,7 +220,7 @@ function VistaResumen({ p }) {
 
   return (
     <div style={{display:"flex",flexDirection:"column",gap:16}}>
-      <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:10}}>
+      <div style={{display:"grid",gridTemplateColumns:mobile?"repeat(2,1fr)":"repeat(4,1fr)",gap:10}}>
         <KPI label="Stock actual" value={`${num(p.stockActual)} ${p.unidad}`}
           sub={`Saldo: ${clp(p.saldoActualPesos)}`} color={C.teal}/>
         <KPI label="PMP actual" value={`$${num(p.pmpActual,2)}/${p.unidad}`}
@@ -218,7 +231,7 @@ function VistaResumen({ p }) {
           sub={clp(margen)} color={mPct>20?C.green:C.amber}/>
       </div>
 
-      <div style={{display:"grid",gridTemplateColumns:"1.4fr 1fr",gap:14}}>
+      <div style={{display:"grid",gridTemplateColumns:mobile?"1fr":"1.4fr 1fr",gap:14}}>
         <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,padding:16}}>
           <div style={{color:C.muted,fontSize:10,textTransform:"uppercase",letterSpacing:1.2,marginBottom:14}}>
             Volumen por cliente
@@ -226,7 +239,8 @@ function VistaResumen({ p }) {
           <div style={{display:"flex",flexDirection:"column",gap:10}}>
             {cli.map(c=>(
               <div key={c.cliente}>
-                <div style={{display:"flex",justifyContent:"space-between",marginBottom:4}}>
+                <div style={{display:"flex",justifyContent:"space-between",marginBottom:4,
+                  flexDirection:mobile?"column":"row",gap:mobile?2:0}}>
                   <span style={{color:C.text,fontSize:12,fontWeight:600}}>{corto(c.cliente)}</span>
                   <span style={{color:C.sub,fontSize:11,fontFamily:MONO}}>
                     {num(c.vol)} {p.unidad} · {clp(c.monto)}
@@ -289,6 +303,7 @@ function VistaResumen({ p }) {
 
 // ─── VISTA MOVIMIENTOS ────────────────────────────────────────────────────────
 function VistaMovimientos({ p }) {
+  const mobile = useContext(MobileCtx);
   const [filtroTipo,setFiltroTipo]     = useState("Todos");
   const [filtroCliente,setFiltroCliente] = useState("Todos");
   const [buscar,setBuscar]             = useState("");
@@ -336,44 +351,46 @@ function VistaMovimientos({ p }) {
         <div style={{color:C.muted,fontSize:11,marginLeft:"auto"}}>{filtered.length} mov.</div>
       </div>
 
-      <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
-        <div style={{display:"grid",gridTemplateColumns:GRID,padding:"8px 14px",
-          borderBottom:`1px solid ${C.border}`,background:C.surface}}>
-          {["Fecha","Tipo","Cliente","Detalle",`Mov.(${p.unidad})`,`Saldo(${p.unidad})`,`PMP $/${p.unidad}`,"Monto $"].map(h=>(
-            <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
-              letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
-          ))}
-        </div>
-        <div style={{maxHeight:480,overflowY:"auto"}}>
-          {filtered.map((m,i)=>{
-            const v=m.tipo==="Venta";
-            return (
-              <div key={i} style={{display:"grid",gridTemplateColumns:GRID,
-                padding:"9px 14px",borderBottom:`1px solid ${C.border}22`,
-                background:i%2===0?"transparent":"#ffffff03",transition:"background 0.1s"}}
-                onMouseEnter={e=>e.currentTarget.style.background=C.surface}
-                onMouseLeave={e=>e.currentTarget.style.background=i%2===0?"transparent":"#ffffff03"}>
-                <div style={{color:C.sub,fontSize:11,fontFamily:MONO}}>{fmtFecha(m.fecha)}</div>
-                <div><Tag label={m.tipo}/></div>
-                <div style={{color:C.text,fontSize:11,fontWeight:600,
-                  overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{corto(m.cliente)}</div>
-                <div style={{color:C.muted,fontSize:10,
-                  overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{m.detalle}</div>
-                <div style={{fontFamily:MONO,fontSize:12,color:v?C.red+"CC":C.green}}>
-                  {v?`−${num(m.salida)}`:`+${num(m.entrada)}`}
+      <div style={{overflowX:"auto"}}>
+        <div style={{minWidth:700,background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
+          <div style={{display:"grid",gridTemplateColumns:GRID,padding:"8px 14px",
+            borderBottom:`1px solid ${C.border}`,background:C.surface}}>
+            {["Fecha","Tipo","Cliente","Detalle",`Mov.(${p.unidad})`,`Saldo(${p.unidad})`,`PMP $/${p.unidad}`,"Monto $"].map(h=>(
+              <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
+                letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
+            ))}
+          </div>
+          <div style={{maxHeight:480,overflowY:"auto"}}>
+            {filtered.map((m,i)=>{
+              const v=m.tipo==="Venta";
+              return (
+                <div key={i} style={{display:"grid",gridTemplateColumns:GRID,
+                  padding:"9px 14px",borderBottom:`1px solid ${C.border}22`,
+                  background:i%2===0?"transparent":"#ffffff03",transition:"background 0.1s"}}
+                  onMouseEnter={e=>e.currentTarget.style.background=C.surface}
+                  onMouseLeave={e=>e.currentTarget.style.background=i%2===0?"transparent":"#ffffff03"}>
+                  <div style={{color:C.sub,fontSize:11,fontFamily:MONO}}>{fmtFecha(m.fecha)}</div>
+                  <div><Tag label={m.tipo}/></div>
+                  <div style={{color:C.text,fontSize:11,fontWeight:600,
+                    overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{corto(m.cliente)}</div>
+                  <div style={{color:C.muted,fontSize:10,
+                    overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{m.detalle}</div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:v?C.red+"CC":C.green}}>
+                    {v?`−${num(m.salida)}`:`+${num(m.entrada)}`}
+                  </div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:C.text}}>
+                    {m.saldo_kg!=null?num(m.saldo_kg):"—"}
+                  </div>
+                  <div style={{fontFamily:MONO,fontSize:11,color:C.sub}}>
+                    {m.pmp>0?`$${num(m.pmp,0)}`:"—"}
+                  </div>
+                  <div style={{fontFamily:MONO,fontSize:11,color:v?C.green:C.accent}}>
+                    {v?clp(m.haber):"—"}
+                  </div>
                 </div>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.text}}>
-                  {m.saldo_kg!=null?num(m.saldo_kg):"—"}
-                </div>
-                <div style={{fontFamily:MONO,fontSize:11,color:C.sub}}>
-                  {m.pmp>0?`$${num(m.pmp,0)}`:"—"}
-                </div>
-                <div style={{fontFamily:MONO,fontSize:11,color:v?C.green:C.accent}}>
-                  {v?clp(m.haber):"—"}
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
@@ -382,6 +399,7 @@ function VistaMovimientos({ p }) {
 
 // ─── VISTA MÁRGENES ───────────────────────────────────────────────────────────
 function VistaMargen({ p }) {
+  const mobile = useContext(MobileCtx);
   const preciosData = useContext(PreciosCtx);
   const preciosProd = preciosData?.productos?.[p.codigo] ?? null;
 
@@ -459,55 +477,57 @@ function VistaMargen({ p }) {
         <KPI label="Costo total" value={clp(totC)}
           sub={hayAcuerdos?"PMP último × cantidad":"Vol × PMP venta"} color={C.sub}/>
       </div>
-      <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
-        <div style={{display:"grid",gridTemplateColumns:GRID,padding:"8px 16px",
-          borderBottom:`1px solid ${C.border}`,background:C.surface}}>
-          {headers.map(h=>(
-            <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
-              letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
-          ))}
-        </div>
-        {arr.map((r,i)=>(
-          <div key={r.cliente} style={{display:"grid",gridTemplateColumns:GRID,
-            padding:"11px 16px",borderBottom:i<arr.length-1?`1px solid ${C.border}22`:"none",
-            background:i%2===0?"transparent":"#ffffff03"}}>
-            <div style={{color:C.text,fontWeight:600,fontSize:12,
-              overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{corto(r.cliente)}</div>
-            <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>{num(r.vol)}</div>
-            <div style={{fontFamily:MONO,fontSize:12,color:C.text}}>{clp(r.ingreso)}</div>
-            <div style={{fontFamily:MONO,fontSize:12,color:C.muted}}>{clp(r.costo)}</div>
-            {hayAcuerdos ? (
-              <>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>
-                  {r.precioAcordado!=null?`$${num(r.precioAcordado,0)}`:"—"}
-                </div>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>
-                  {r.pmpUltimo!=null?`$${num(r.pmpUltimo,0)}`:"—"}
-                </div>
-              </>
-            ) : (
-              <>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>${num(r.vol>0?r.ingreso/r.vol:0,0)}</div>
-                <div style={{fontFamily:MONO,fontSize:12,color:r.margen>=0?C.green:C.red}}>{clp(r.margen)}</div>
-              </>
-            )}
-            <div>
-              <span style={{fontFamily:MONO,fontSize:14,fontWeight:800,
-                color:r.mPct>=25?C.green:r.mPct>=10?C.amber:C.red}}>
-                {r.mPct.toFixed(1)}%
-              </span>
-            </div>
+      <div style={{overflowX:"auto"}}>
+        <div style={{minWidth:600,background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
+          <div style={{display:"grid",gridTemplateColumns:GRID,padding:"8px 16px",
+            borderBottom:`1px solid ${C.border}`,background:C.surface}}>
+            {headers.map(h=>(
+              <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
+                letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
+            ))}
           </div>
-        ))}
-        <div style={{display:"grid",gridTemplateColumns:GRID,padding:"11px 16px",
-          background:C.surface,borderTop:`1px solid ${C.border}`}}>
-          <div style={{color:C.text,fontWeight:800}}>TOTAL</div>
-          <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{num(arr.reduce((s,r)=>s+r.vol,0))}</div>
-          <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{clp(totM)}</div>
-          <div style={{fontFamily:MONO,fontWeight:700,color:C.muted}}>{clp(totC)}</div>
-          <div/><div/>
-          <div style={{fontFamily:MONO,fontSize:14,fontWeight:800,
-            color:totPct>=20?C.green:C.amber}}>{totPct.toFixed(1)}%</div>
+          {arr.map((r,i)=>(
+            <div key={r.cliente} style={{display:"grid",gridTemplateColumns:GRID,
+              padding:"11px 16px",borderBottom:i<arr.length-1?`1px solid ${C.border}22`:"none",
+              background:i%2===0?"transparent":"#ffffff03"}}>
+              <div style={{color:C.text,fontWeight:600,fontSize:12,
+                overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{corto(r.cliente)}</div>
+              <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>{num(r.vol)}</div>
+              <div style={{fontFamily:MONO,fontSize:12,color:C.text}}>{clp(r.ingreso)}</div>
+              <div style={{fontFamily:MONO,fontSize:12,color:C.muted}}>{clp(r.costo)}</div>
+              {hayAcuerdos ? (
+                <>
+                  <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>
+                    {r.precioAcordado!=null?`$${num(r.precioAcordado,0)}`:"—"}
+                  </div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:C.sub}}>
+                    {r.pmpUltimo!=null?`$${num(r.pmpUltimo,0)}`:"—"}
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div style={{fontFamily:MONO,fontSize:12,color:C.accent}}>${num(r.vol>0?r.ingreso/r.vol:0,0)}</div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:r.margen>=0?C.green:C.red}}>{clp(r.margen)}</div>
+                </>
+              )}
+              <div>
+                <span style={{fontFamily:MONO,fontSize:14,fontWeight:800,
+                  color:r.mPct>=25?C.green:r.mPct>=10?C.amber:C.red}}>
+                  {r.mPct.toFixed(1)}%
+                </span>
+              </div>
+            </div>
+          ))}
+          <div style={{display:"grid",gridTemplateColumns:GRID,padding:"11px 16px",
+            background:C.surface,borderTop:`1px solid ${C.border}`}}>
+            <div style={{color:C.text,fontWeight:800}}>TOTAL</div>
+            <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{num(arr.reduce((s,r)=>s+r.vol,0))}</div>
+            <div style={{fontFamily:MONO,fontWeight:700,color:C.text}}>{clp(totM)}</div>
+            <div style={{fontFamily:MONO,fontWeight:700,color:C.muted}}>{clp(totC)}</div>
+            <div/><div/>
+            <div style={{fontFamily:MONO,fontSize:14,fontWeight:800,
+              color:totPct>=20?C.green:C.amber}}>{totPct.toFixed(1)}%</div>
+          </div>
         </div>
       </div>
 
@@ -547,7 +567,7 @@ function VistaMargen({ p }) {
 }
 
 // ─── SIDEBAR ─────────────────────────────────────────────────────────────────
-function Sidebar({ productos, selMeta, onSelect, modoEmpresa, onEmpresa, bodega }) {
+function Sidebar({ productos, selMeta, onSelect, modoEmpresa, onEmpresa, bodega, mobile, sidebarOpen, setSidebarOpen }) {
   const [buscar,setBuscar]=useState("");
   const lista=useMemo(()=>
     productos.filter(p=>
@@ -556,19 +576,43 @@ function Sidebar({ productos, selMeta, onSelect, modoEmpresa, onEmpresa, bodega 
     ),[productos,buscar]);
   const totalVentas=productos.reduce((s,p)=>s+(p.totalHaber||0),0);
 
+  // On mobile, hide when closed
+  if (mobile && !sidebarOpen) return null;
+
+  const mobileOverlayStyle = mobile ? {
+    position:"fixed",
+    top:0,
+    left:0,
+    width:"100%",
+    height:"100%",
+    zIndex:200,
+    background:C.surface,
+  } : {};
+
   return (
-    <div style={{width:240,flexShrink:0,background:C.surface,
+    <div style={{width:mobile?undefined:240,flexShrink:0,background:C.surface,
       borderRight:`1px solid ${C.border}`,display:"flex",flexDirection:"column",
-      height:"100vh",position:"sticky",top:0,overflow:"hidden"}}>
-      <div style={{padding:"16px 14px 12px",borderBottom:`1px solid ${C.border}`}}>
-        <Logo size={24}/>
-        <div style={{color:C.muted,fontSize:10,marginTop:6,letterSpacing:1}}>
-          KARDEX 2026 · {productos.length} productos
+      height:"100vh",position:mobile?"fixed":"sticky",top:0,overflow:"hidden",
+      ...mobileOverlayStyle}}>
+      <div style={{padding:"16px 14px 12px",borderBottom:`1px solid ${C.border}`,
+        display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+        <div>
+          <Logo size={24}/>
+          <div style={{color:C.muted,fontSize:10,marginTop:6,letterSpacing:1}}>
+            KARDEX 2026 · {productos.length} productos
+          </div>
         </div>
+        {mobile && (
+          <button onClick={()=>setSidebarOpen(false)}
+            style={{background:"transparent",border:"none",color:C.text,
+              fontSize:22,cursor:"pointer",padding:"4px 8px",lineHeight:1}}>
+            ×
+          </button>
+        )}
       </div>
 
       {/* Botón Por Empresa */}
-      <button onClick={onEmpresa}
+      <button onClick={()=>{onEmpresa();if(mobile)setSidebarOpen(false);}}
         style={{margin:"10px 12px 0",display:"flex",alignItems:"center",gap:8,
           padding:"9px 12px",borderRadius:8,cursor:"pointer",textAlign:"left",
           background:modoEmpresa?C.accent+"22":"transparent",
@@ -591,7 +635,7 @@ function Sidebar({ productos, selMeta, onSelect, modoEmpresa, onEmpresa, bodega 
         {lista.map(prod=>{
           const activo=!modoEmpresa&&selMeta?.slug===prod.slug;
           return (
-            <button key={prod.slug} onClick={()=>onSelect(prod)}
+            <button key={prod.slug} onClick={()=>{onSelect(prod);if(mobile)setSidebarOpen(false);}}
               style={{width:"100%",display:"flex",alignItems:"flex-start",gap:8,
                 padding:"10px 14px",
                 background:activo?C.card:"transparent",
@@ -664,6 +708,7 @@ function calcMargen(prod, acuerdo) {
 }
 
 function VistaEmpresas({ onIrProducto }) {
+  const mobile                        = useContext(MobileCtx);
   const precios               = useContext(PreciosCtx);
   const [data, setData]       = useState(null);
   const [loading, setLoading] = useState(true);
@@ -719,7 +764,7 @@ function VistaEmpresas({ onIrProducto }) {
           const totalMargen = totales.ingreso - totales.costo;
           const mPct = totales.ingreso > 0 ? (totalMargen / totales.ingreso) * 100 : 0;
           return (
-            <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:10}}>
+            <div style={{display:"grid",gridTemplateColumns:mobile?"repeat(2,1fr)":"repeat(5,1fr)",gap:10}}>
               <KPI label="Facturado total"      value={clp(e.totalHaber)}
                 sub={`${num(e.nMovimientos)} movimientos`} color={C.teal}/>
               <KPI label="Costo total"          value={clp(totales.costo)}
@@ -735,54 +780,56 @@ function VistaEmpresas({ onIrProducto }) {
         })()}
 
         {/* Tabla de productos */}
-        <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
-          <div style={{display:"grid",
-            gridTemplateColumns:"2fr 70px 115px 105px 95px 80px 80px",
-            padding:"8px 16px",background:C.surface,borderBottom:`1px solid ${C.border}`}}>
-            {["Producto","Unidad","Ingreso","Costo","Margen $","Margen %","Última fecha"].map(h=>(
-              <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
-                letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
-            ))}
-          </div>
-          {e.productos.map((p,i)=>{
-            const pct    = e.totalHaber > 0 ? (p.monto / e.totalHaber * 100) : 0;
-            const ac     = buscarAcuerdo(precios, p.slug, e.nombre);
-            const m      = calcMargen(p, ac);
-            const { ingreso, costo, margen } = m;
-            const mPct   = ingreso > 0 ? (margen / ingreso) * 100 : 0;
-            return (
-              <div key={p.slug}
-                style={{display:"grid",
-                  gridTemplateColumns:"2fr 70px 115px 105px 95px 80px 80px",
-                  padding:"11px 16px",
-                  borderBottom:i<e.productos.length-1?`1px solid ${C.border}22`:"none",
-                  background:i%2===0?"transparent":"#ffffff03",
-                  cursor:"pointer",transition:"background 0.1s"}}
-                onMouseEnter={ev=>ev.currentTarget.style.background=C.surface}
-                onMouseLeave={ev=>ev.currentTarget.style.background=i%2===0?"transparent":"#ffffff03"}
-                onClick={()=>onIrProducto(p.slug)}>
-                <div>
-                  <div style={{color:C.text,fontWeight:600,fontSize:12}}>{p.nombre}</div>
-                  <div style={{marginTop:4,background:C.border,borderRadius:99,height:3,overflow:"hidden"}}>
-                    <div style={{width:`${pct}%`,height:"100%",borderRadius:99,
-                      background:`linear-gradient(90deg,${C.accent},${C.teal})`}}/>
+        <div style={{overflowX:"auto"}}>
+          <div style={{minWidth:600,background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
+            <div style={{display:"grid",
+              gridTemplateColumns:"2fr 70px 115px 105px 95px 80px 80px",
+              padding:"8px 16px",background:C.surface,borderBottom:`1px solid ${C.border}`}}>
+              {["Producto","Unidad","Ingreso","Costo","Margen $","Margen %","Última fecha"].map(h=>(
+                <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
+                  letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
+              ))}
+            </div>
+            {e.productos.map((p,i)=>{
+              const pct    = e.totalHaber > 0 ? (p.monto / e.totalHaber * 100) : 0;
+              const ac     = buscarAcuerdo(precios, p.slug, e.nombre);
+              const m      = calcMargen(p, ac);
+              const { ingreso, costo, margen } = m;
+              const mPct   = ingreso > 0 ? (margen / ingreso) * 100 : 0;
+              return (
+                <div key={p.slug}
+                  style={{display:"grid",
+                    gridTemplateColumns:"2fr 70px 115px 105px 95px 80px 80px",
+                    padding:"11px 16px",
+                    borderBottom:i<e.productos.length-1?`1px solid ${C.border}22`:"none",
+                    background:i%2===0?"transparent":"#ffffff03",
+                    cursor:"pointer",transition:"background 0.1s"}}
+                  onMouseEnter={ev=>ev.currentTarget.style.background=C.surface}
+                  onMouseLeave={ev=>ev.currentTarget.style.background=i%2===0?"transparent":"#ffffff03"}
+                  onClick={()=>onIrProducto(p.slug)}>
+                  <div>
+                    <div style={{color:C.text,fontWeight:600,fontSize:12}}>{p.nombre}</div>
+                    <div style={{marginTop:4,background:C.border,borderRadius:99,height:3,overflow:"hidden"}}>
+                      <div style={{width:`${pct}%`,height:"100%",borderRadius:99,
+                        background:`linear-gradient(90deg,${C.accent},${C.teal})`}}/>
+                    </div>
+                    <div style={{color:C.muted,fontSize:10,marginTop:2}}>{pct.toFixed(1)}% del facturado</div>
                   </div>
-                  <div style={{color:C.muted,fontSize:10,marginTop:2}}>{pct.toFixed(1)}% del facturado</div>
+                  <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{p.unidad}</div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:C.text,alignSelf:"center"}}>{clp(ingreso)}</div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center"}}>{clp(costo)}</div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:margen>=0?C.green:C.red,alignSelf:"center"}}>{clp(margen)}</div>
+                  <div style={{alignSelf:"center"}}>
+                    <span style={{fontFamily:MONO,fontSize:13,fontWeight:800,
+                      color:mPct>=25?C.green:mPct>=10?C.amber:C.red}}>
+                      {mPct.toFixed(1)}%
+                    </span>
+                  </div>
+                  <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{fmtFecha(p.ultimaFecha)}</div>
                 </div>
-                <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{p.unidad}</div>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.text,alignSelf:"center"}}>{clp(ingreso)}</div>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center"}}>{clp(costo)}</div>
-                <div style={{fontFamily:MONO,fontSize:12,color:margen>=0?C.green:C.red,alignSelf:"center"}}>{clp(margen)}</div>
-                <div style={{alignSelf:"center"}}>
-                  <span style={{fontFamily:MONO,fontSize:13,fontWeight:800,
-                    color:mPct>=25?C.green:mPct>=10?C.amber:C.red}}>
-                    {mPct.toFixed(1)}%
-                  </span>
-                </div>
-                <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{fmtFecha(p.ultimaFecha)}</div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     );
@@ -810,56 +857,58 @@ function VistaEmpresas({ onIrProducto }) {
       </div>
 
       {/* Tabla */}
-      <div style={{background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
-        <div style={{display:"grid",gridTemplateColumns:"2fr 115px 105px 75px 80px 80px",
-          padding:"8px 16px",background:C.surface,borderBottom:`1px solid ${C.border}`}}>
-          {["Empresa","Facturado","Margen $","Margen %","Prods.","Última venta"].map(h=>(
-            <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
-              letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
-          ))}
-        </div>
-        <div style={{maxHeight:"calc(100vh - 260px)",overflowY:"auto"}}>
-          {empresas.map((e,i)=>{
-            const pct = (e.totalHaber / maxHaber) * 100;
-            const totales = e.productos.reduce((acc, p) => {
-              const ac = buscarAcuerdo(precios, p.slug, e.nombre);
-              const m  = calcMargen(p, ac);
-              acc.ingreso += m.ingreso;
-              acc.costo   += m.costo;
-              return acc;
-            }, { ingreso: 0, costo: 0 });
-            const margen = totales.ingreso - totales.costo;
-            const mPct   = totales.ingreso > 0 ? (margen / totales.ingreso) * 100 : 0;
-            return (
-              <div key={e.nombre}
-                style={{display:"grid",gridTemplateColumns:"2fr 115px 105px 75px 80px 80px",
-                  padding:"10px 16px",
-                  borderBottom:i<empresas.length-1?`1px solid ${C.border}22`:"none",
-                  background:i%2===0?"transparent":"#ffffff03",
-                  cursor:"pointer",transition:"background 0.1s"}}
-                onMouseEnter={ev=>ev.currentTarget.style.background=C.surface}
-                onMouseLeave={ev=>ev.currentTarget.style.background=i%2===0?"transparent":"#ffffff03"}
-                onClick={()=>setSel(e)}>
-                <div>
-                  <div style={{color:C.text,fontWeight:600,fontSize:12}}>{e.nombre}</div>
-                  <div style={{marginTop:4,background:C.border,borderRadius:99,height:3,overflow:"hidden"}}>
-                    <div style={{width:`${pct}%`,height:"100%",borderRadius:99,
-                      background:`linear-gradient(90deg,${C.accent},${C.teal})`}}/>
+      <div style={{overflowX:"auto"}}>
+        <div style={{minWidth:600,background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
+          <div style={{display:"grid",gridTemplateColumns:"2fr 115px 105px 75px 80px 80px",
+            padding:"8px 16px",background:C.surface,borderBottom:`1px solid ${C.border}`}}>
+            {["Empresa","Facturado","Margen $","Margen %","Prods.","Última venta"].map(h=>(
+              <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
+                letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
+            ))}
+          </div>
+          <div style={{maxHeight:"calc(100vh - 260px)",overflowY:"auto"}}>
+            {empresas.map((e,i)=>{
+              const pct = (e.totalHaber / maxHaber) * 100;
+              const totales = e.productos.reduce((acc, p) => {
+                const ac = buscarAcuerdo(precios, p.slug, e.nombre);
+                const m  = calcMargen(p, ac);
+                acc.ingreso += m.ingreso;
+                acc.costo   += m.costo;
+                return acc;
+              }, { ingreso: 0, costo: 0 });
+              const margen = totales.ingreso - totales.costo;
+              const mPct   = totales.ingreso > 0 ? (margen / totales.ingreso) * 100 : 0;
+              return (
+                <div key={e.nombre}
+                  style={{display:"grid",gridTemplateColumns:"2fr 115px 105px 75px 80px 80px",
+                    padding:"10px 16px",
+                    borderBottom:i<empresas.length-1?`1px solid ${C.border}22`:"none",
+                    background:i%2===0?"transparent":"#ffffff03",
+                    cursor:"pointer",transition:"background 0.1s"}}
+                  onMouseEnter={ev=>ev.currentTarget.style.background=C.surface}
+                  onMouseLeave={ev=>ev.currentTarget.style.background=i%2===0?"transparent":"#ffffff03"}
+                  onClick={()=>setSel(e)}>
+                  <div>
+                    <div style={{color:C.text,fontWeight:600,fontSize:12}}>{e.nombre}</div>
+                    <div style={{marginTop:4,background:C.border,borderRadius:99,height:3,overflow:"hidden"}}>
+                      <div style={{width:`${pct}%`,height:"100%",borderRadius:99,
+                        background:`linear-gradient(90deg,${C.accent},${C.teal})`}}/>
+                    </div>
                   </div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:C.text,alignSelf:"center"}}>{clp(e.totalHaber)}</div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:margen>=0?C.green:C.red,alignSelf:"center"}}>{clp(margen)}</div>
+                  <div style={{alignSelf:"center"}}>
+                    <span style={{fontFamily:MONO,fontSize:13,fontWeight:800,
+                      color:mPct>=25?C.green:mPct>=10?C.amber:C.red}}>
+                      {mPct.toFixed(1)}%
+                    </span>
+                  </div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center",textAlign:"center"}}>{e.nProductos}</div>
+                  <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{fmtFecha(e.ultimaFecha)}</div>
                 </div>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.text,alignSelf:"center"}}>{clp(e.totalHaber)}</div>
-                <div style={{fontFamily:MONO,fontSize:12,color:margen>=0?C.green:C.red,alignSelf:"center"}}>{clp(margen)}</div>
-                <div style={{alignSelf:"center"}}>
-                  <span style={{fontFamily:MONO,fontSize:13,fontWeight:800,
-                    color:mPct>=25?C.green:mPct>=10?C.amber:C.red}}>
-                    {mPct.toFixed(1)}%
-                  </span>
-                </div>
-                <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center",textAlign:"center"}}>{e.nProductos}</div>
-                <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{fmtFecha(e.ultimaFecha)}</div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
@@ -874,6 +923,8 @@ const VISTAS=[
 ];
 
 function App() {
+  const mobile = useMobile();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [index,setIndex]       = useState(null);
   const [selMeta,setSelMeta]   = useState(null);
   const [producto,setProducto] = useState(null);
@@ -917,6 +968,7 @@ function App() {
   );
 
   return (
+    <MobileCtx.Provider value={mobile}>
     <PreciosCtx.Provider value={precios}>
     <BodegaCtx.Provider value={bodega}>
     <div style={{display:"flex",height:"100vh",overflow:"hidden",background:C.bg}}>
@@ -924,23 +976,40 @@ function App() {
         onSelect={p=>{setSelMeta(p);setVista("resumen");setModoEmpresa(false);}}
         modoEmpresa={modoEmpresa}
         onEmpresa={()=>setModoEmpresa(true)}
-        bodega={bodega}/>
+        bodega={bodega}
+        mobile={mobile}
+        sidebarOpen={sidebarOpen}
+        setSidebarOpen={setSidebarOpen}/>
 
       <div style={{flex:1,display:"flex",flexDirection:"column",overflow:"hidden"}}>
         {/* Topbar */}
         <div style={{background:C.surface,borderBottom:`1px solid ${C.border}`,
           padding:"0 20px",flexShrink:0}}>
           <div style={{display:"flex",alignItems:"center",height:52}}>
-            <div style={{display:"flex",alignItems:"center",gap:8,marginRight:20}}>
-              <span style={{color:C.muted,fontSize:12}}>Kardex</span>
-              <span style={{color:C.muted,fontSize:12}}>›</span>
+            {/* Hamburger button — mobile only */}
+            {mobile && (
+              <button onClick={()=>setSidebarOpen(true)}
+                style={{background:"transparent",border:"none",color:C.text,
+                  fontSize:20,cursor:"pointer",marginRight:10,padding:"4px 6px",lineHeight:1}}>
+                ☰
+              </button>
+            )}
+            <div style={{display:"flex",alignItems:"center",gap:8,marginRight:20,minWidth:0,flex:1}}>
+              <span style={{color:C.muted,fontSize:12,flexShrink:0}}>Kardex</span>
+              <span style={{color:C.muted,fontSize:12,flexShrink:0}}>›</span>
               {modoEmpresa
-                ? <span style={{color:C.text,fontSize:13,fontWeight:700}}>Por Empresa</span>
+                ? <span style={{color:C.text,fontSize:13,fontWeight:700,
+                    overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>Por Empresa</span>
                 : <>
-                    <span style={{color:C.text,fontSize:13,fontWeight:700}}>{selMeta?.nombre??"—"}</span>
-                    {selMeta&&(
+                    <span style={{color:C.text,fontSize:13,fontWeight:700,
+                      overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
+                      {mobile
+                        ? (selMeta?.codigo ?? "—")
+                        : (selMeta?.nombre ?? "—")}
+                    </span>
+                    {selMeta&&!mobile&&(
                       <span style={{background:C.card,color:C.accent,border:`1px solid ${C.border}`,
-                        borderRadius:4,padding:"1px 7px",fontSize:10,fontFamily:MONO,fontWeight:700}}>
+                        borderRadius:4,padding:"1px 7px",fontSize:10,fontFamily:MONO,fontWeight:700,flexShrink:0}}>
                         {selMeta.codigo}
                       </span>
                     )}
@@ -948,22 +1017,23 @@ function App() {
               }
             </div>
             {!modoEmpresa && (
-              <div style={{display:"flex",gap:2}}>
+              <div style={{display:"flex",gap:2,flexShrink:0}}>
                 {VISTAS.map(v=>(
                   <button key={v.id} onClick={()=>setVista(v.id)}
                     style={{background:"transparent",
                       borderBottom:vista===v.id?`2px solid ${C.accent}`:"2px solid transparent",
                       borderTop:"2px solid transparent",borderLeft:"none",borderRight:"none",
                       color:vista===v.id?C.accent:C.muted,
-                      padding:"0 16px",height:52,fontFamily:FONT,
+                      padding:"0 10px",height:52,fontFamily:FONT,
                       fontWeight:vista===v.id?700:400,fontSize:13,cursor:"pointer",
                       display:"flex",alignItems:"center",gap:6}}>
-                    <span style={{fontSize:10}}>{v.icon}</span>{v.label}
+                    <span style={{fontSize:10}}>{v.icon}</span>
+                    {!mobile && v.label}
                   </button>
                 ))}
               </div>
             )}
-            {!modoEmpresa && producto&&(
+            {!modoEmpresa && producto && !mobile &&(
               <div style={{marginLeft:"auto",display:"flex",gap:8,alignItems:"center"}}>
                 <div style={{textAlign:"right"}}>
                   <div style={{color:C.teal,fontWeight:800,fontSize:16,fontFamily:MONO}}>
@@ -982,7 +1052,7 @@ function App() {
         </div>
 
         {/* Content */}
-        <div style={{flex:1,overflowY:"auto",padding:"20px 24px"}}>
+        <div style={{flex:1,overflowY:"auto",padding:mobile?"12px 12px":"20px 24px"}}>
           {modoEmpresa
             ? <VistaEmpresas onIrProducto={slug=>{
                 const meta = index.productos.find(p=>p.slug===slug);
@@ -1015,6 +1085,7 @@ function App() {
     </div>
     </BodegaCtx.Provider>
     </PreciosCtx.Provider>
+    </MobileCtx.Provider>
   );
 }
 
