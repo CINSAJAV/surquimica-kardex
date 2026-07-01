@@ -969,11 +969,261 @@ function VistaEmpresas({ onIrProducto }) {
   );
 }
 
+// ─── VISTA MENSUAL ────────────────────────────────────────────────────────────
+const MESES = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+
+function VistaMensual({ p }) {
+  const mobile = useContext(MobileCtx);
+  const ventas = p.movimientos.filter(m => m.tipo === "Venta");
+
+  // Extraer meses presentes (ordenados)
+  const mesesPresentes = useMemo(() => {
+    const set = new Set();
+    ventas.forEach(v => { if (v.fecha) set.add(v.fecha.slice(0, 7)); }); // "2026-01"
+    return Array.from(set).sort();
+  }, [ventas]);
+
+  // Pivot: { cliente: { "2026-01": { vol, monto }, ... } }
+  const pivot = useMemo(() => {
+    const data = {};
+    ventas.forEach(v => {
+      const mes = v.fecha?.slice(0, 7);
+      if (!mes) return;
+      if (!data[v.cliente]) data[v.cliente] = {};
+      if (!data[v.cliente][mes]) data[v.cliente][mes] = { vol: 0, monto: 0 };
+      data[v.cliente][mes].vol   += v.salida;
+      data[v.cliente][mes].monto += v.haber;
+    });
+    return data;
+  }, [ventas]);
+
+  // Totales por cliente (para ordenar)
+  const clientes = useMemo(() =>
+    Object.entries(pivot)
+      .map(([c, meses]) => ({
+        cliente: c,
+        totalVol: Object.values(meses).reduce((s, m) => s + m.vol, 0),
+        totalMonto: Object.values(meses).reduce((s, m) => s + m.monto, 0),
+      }))
+      .sort((a, b) => b.totalVol - a.totalVol),
+    [pivot]
+  );
+
+  // Totales por mes
+  const totPorMes = useMemo(() => {
+    const t = {};
+    mesesPresentes.forEach(mes => {
+      t[mes] = clientes.reduce((s, c) => ({
+        vol:   s.vol   + (pivot[c.cliente][mes]?.vol   || 0),
+        monto: s.monto + (pivot[c.cliente][mes]?.monto || 0),
+      }), { vol: 0, monto: 0 });
+    });
+    return t;
+  }, [mesesPresentes, clientes, pivot]);
+
+  const totalGeneral = clientes.reduce((s, c) => ({
+    vol:   s.vol   + c.totalVol,
+    monto: s.monto + c.totalMonto,
+  }), { vol: 0, monto: 0 });
+
+  const labelMes = iso => {
+    const [, m] = iso.split("-");
+    return MESES[parseInt(m) - 1];
+  };
+
+  const CeldaMes = ({ vol, monto }) => vol > 0 ? (
+    <div style={{ textAlign: "right" }}>
+      <div style={{ fontFamily: MONO, fontSize: 12, fontWeight: 700, color: C.text }}>
+        {num(vol)}
+      </div>
+      <div style={{ fontFamily: MONO, fontSize: 10, color: C.sub }}>
+        {clp(monto)}
+      </div>
+    </div>
+  ) : <div style={{ color: C.muted, textAlign: "center", fontSize: 12 }}>—</div>;
+
+  if (ventas.length === 0) return (
+    <div style={{ color: C.muted, fontSize: 13, padding: 40, textAlign: "center" }}>
+      Sin ventas registradas.
+    </div>
+  );
+
+  /* ── MÓVIL: tarjeta por cliente con fila de meses ── */
+  if (mobile) return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+      {clientes.map(c => (
+        <div key={c.cliente} style={{
+          background: C.card, border: `1px solid ${C.border}`,
+          borderRadius: 10, padding: "12px 14px",
+        }}>
+          <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 10 }}>
+            <div style={{ color: C.text, fontWeight: 700, fontSize: 13 }}>{corto(c.cliente)}</div>
+            <div style={{ textAlign: "right" }}>
+              <div style={{ fontFamily: MONO, fontSize: 13, fontWeight: 800, color: C.teal }}>
+                {num(c.totalVol)} {p.unidad}
+              </div>
+              <div style={{ fontFamily: MONO, fontSize: 11, color: C.sub }}>{clp(c.totalMonto)}</div>
+            </div>
+          </div>
+          <div style={{ display: "flex", gap: 6, overflowX: "auto", paddingBottom: 4 }}>
+            {mesesPresentes.map(mes => {
+              const d = pivot[c.cliente][mes];
+              return d ? (
+                <div key={mes} style={{
+                  flexShrink: 0, minWidth: 64,
+                  background: C.surface, borderRadius: 7,
+                  padding: "7px 8px", textAlign: "center",
+                }}>
+                  <div style={{ color: C.muted, fontSize: 9, textTransform: "uppercase", marginBottom: 4 }}>
+                    {labelMes(mes)}
+                  </div>
+                  <div style={{ fontFamily: MONO, fontSize: 12, fontWeight: 700, color: C.text }}>
+                    {num(d.vol)}
+                  </div>
+                  <div style={{ fontFamily: MONO, fontSize: 10, color: C.sub }}>{clp(d.monto)}</div>
+                </div>
+              ) : null;
+            })}
+          </div>
+        </div>
+      ))}
+      {/* Total general */}
+      <div style={{
+        background: C.surface, border: `1px solid ${C.border}`,
+        borderRadius: 10, padding: "12px 14px",
+        display: "flex", justifyContent: "space-between", alignItems: "center",
+      }}>
+        <div style={{ color: C.text, fontWeight: 800, fontSize: 13 }}>TOTAL</div>
+        <div style={{ textAlign: "right" }}>
+          <div style={{ fontFamily: MONO, fontSize: 14, fontWeight: 800, color: C.teal }}>
+            {num(totalGeneral.vol)} {p.unidad}
+          </div>
+          <div style={{ fontFamily: MONO, fontSize: 11, color: C.sub }}>{clp(totalGeneral.monto)}</div>
+        </div>
+      </div>
+    </div>
+  );
+
+  /* ── DESKTOP: tabla pivote completa ── */
+  const colW = `180px repeat(${mesesPresentes.length}, 1fr) 110px`;
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+      {/* KPIs resumen */}
+      <div style={{ display: "grid", gridTemplateColumns: `repeat(${Math.min(mesesPresentes.length, 6)}, 1fr)`, gap: 10 }}>
+        {mesesPresentes.map(mes => (
+          <div key={mes} style={{
+            background: C.card, border: `1px solid ${C.border}`,
+            borderRadius: 10, padding: "12px 14px",
+          }}>
+            <div style={{ color: C.muted, fontSize: 10, textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>
+              {labelMes(mes)}
+            </div>
+            <div style={{ fontFamily: MONO, fontSize: 15, fontWeight: 800, color: C.text }}>
+              {num(totPorMes[mes].vol)} {p.unidad}
+            </div>
+            <div style={{ fontFamily: MONO, fontSize: 11, color: C.sub, marginTop: 2 }}>
+              {clp(totPorMes[mes].monto)}
+            </div>
+            <div style={{ color: C.muted, fontSize: 10, marginTop: 4 }}>
+              {clientes.filter(c => pivot[c.cliente][mes]?.vol > 0).length} clientes
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Tabla pivote */}
+      <div style={{ overflowX: "auto" }}>
+        <div style={{
+          minWidth: 500, background: C.card,
+          border: `1px solid ${C.border}`, borderRadius: 10, overflow: "hidden",
+        }}>
+          {/* Header */}
+          <div style={{
+            display: "grid", gridTemplateColumns: colW,
+            padding: "8px 16px", background: C.surface,
+            borderBottom: `1px solid ${C.border}`,
+          }}>
+            <div style={{ color: C.muted, fontSize: 10, textTransform: "uppercase", letterSpacing: 0.8, fontFamily: MONO }}>
+              Cliente
+            </div>
+            {mesesPresentes.map(mes => (
+              <div key={mes} style={{
+                color: C.muted, fontSize: 10, textTransform: "uppercase",
+                letterSpacing: 0.8, fontFamily: MONO, textAlign: "right",
+              }}>
+                {labelMes(mes)}
+              </div>
+            ))}
+            <div style={{
+              color: C.muted, fontSize: 10, textTransform: "uppercase",
+              letterSpacing: 0.8, fontFamily: MONO, textAlign: "right",
+            }}>
+              Total
+            </div>
+          </div>
+
+          {/* Filas */}
+          {clientes.map((c, i) => (
+            <div key={c.cliente} style={{
+              display: "grid", gridTemplateColumns: colW,
+              padding: "10px 16px",
+              borderBottom: i < clientes.length - 1 ? `1px solid ${C.border}22` : "none",
+              background: i % 2 === 0 ? "transparent" : "#ffffff03",
+              alignItems: "center",
+            }}>
+              <div style={{
+                color: C.text, fontWeight: 600, fontSize: 12,
+                overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+              }}>
+                {corto(c.cliente)}
+              </div>
+              {mesesPresentes.map(mes => (
+                <CeldaMes key={mes} vol={pivot[c.cliente][mes]?.vol || 0} monto={pivot[c.cliente][mes]?.monto || 0} />
+              ))}
+              <div style={{ textAlign: "right" }}>
+                <div style={{ fontFamily: MONO, fontSize: 12, fontWeight: 700, color: C.teal }}>
+                  {num(c.totalVol)}
+                </div>
+                <div style={{ fontFamily: MONO, fontSize: 10, color: C.sub }}>{clp(c.totalMonto)}</div>
+              </div>
+            </div>
+          ))}
+
+          {/* Fila de totales */}
+          <div style={{
+            display: "grid", gridTemplateColumns: colW,
+            padding: "10px 16px", background: C.surface,
+            borderTop: `1px solid ${C.border}`, alignItems: "center",
+          }}>
+            <div style={{ color: C.text, fontWeight: 800, fontSize: 12 }}>TOTAL</div>
+            {mesesPresentes.map(mes => (
+              <div key={mes} style={{ textAlign: "right" }}>
+                <div style={{ fontFamily: MONO, fontSize: 12, fontWeight: 700, color: C.text }}>
+                  {num(totPorMes[mes].vol)}
+                </div>
+                <div style={{ fontFamily: MONO, fontSize: 10, color: C.sub }}>{clp(totPorMes[mes].monto)}</div>
+              </div>
+            ))}
+            <div style={{ textAlign: "right" }}>
+              <div style={{ fontFamily: MONO, fontSize: 13, fontWeight: 800, color: C.teal }}>
+                {num(totalGeneral.vol)}
+              </div>
+              <div style={{ fontFamily: MONO, fontSize: 10, color: C.sub }}>{clp(totalGeneral.monto)}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── APP ─────────────────────────────────────────────────────────────────────
 const VISTAS=[
   {id:"resumen",    label:"Resumen",     icon:"▦"},
   {id:"movimientos",label:"Movimientos", icon:"≡"},
   {id:"margen",     label:"Márgenes",    icon:"◈"},
+  {id:"mensual",    label:"Mensual",     icon:"▦"},
 ];
 
 function App() {
@@ -1118,6 +1368,7 @@ function App() {
                     {vista==="resumen"     &&<VistaResumen     p={producto}/>}
                     {vista==="movimientos" &&<VistaMovimientos p={producto}/>}
                     {vista==="margen"      &&<VistaMargen      p={producto}/>}
+                    {vista==="mensual"     &&<VistaMensual     p={producto}/>}
                   </>
                 )}
               </>
