@@ -180,6 +180,7 @@ function PanelBodega({ slug, unidad }) {
 function VistaResumen({ p }) {
   const mobile = useContext(MobileCtx);
   const preciosCtx = useContext(PreciosCtx);
+  const [clienteSel, setClienteSel] = useState(null);
   const ventas  = p.movimientos.filter(m=>m.tipo==="Venta");
   const compras = p.movimientos.filter(m=>m.tipo==="Compra");
 
@@ -237,21 +238,74 @@ function VistaResumen({ p }) {
             Volumen por cliente
           </div>
           <div style={{display:"flex",flexDirection:"column",gap:10}}>
-            {cli.map(c=>(
-              <div key={c.cliente}>
-                <div style={{display:"flex",justifyContent:"space-between",marginBottom:4,
-                  flexDirection:mobile?"column":"row",gap:mobile?2:0}}>
-                  <span style={{color:C.text,fontSize:12,fontWeight:600}}>{corto(c.cliente)}</span>
-                  <span style={{color:C.sub,fontSize:11,fontFamily:MONO}}>
-                    {num(c.vol)} {p.unidad} · {clp(c.monto)}
-                  </span>
+            {cli.map(c=>{
+              const sel = clienteSel === c.cliente;
+              // desglose mensual para este cliente
+              const mesesCli = ventas
+                .filter(v => v.cliente === c.cliente && v.fecha)
+                .reduce((acc, v) => {
+                  const mes = v.fecha.slice(0,7);
+                  if (!acc[mes]) acc[mes] = { vol:0, monto:0 };
+                  acc[mes].vol   += v.salida;
+                  acc[mes].monto += v.haber;
+                  return acc;
+                }, {});
+              const mesesOrden = Object.keys(mesesCli).sort();
+              return (
+                <div key={c.cliente}>
+                  <div
+                    onClick={() => setClienteSel(sel ? null : c.cliente)}
+                    style={{
+                      display:"flex", justifyContent:"space-between", marginBottom:4,
+                      flexDirection:mobile?"column":"row", gap:mobile?2:0,
+                      cursor:"pointer", padding:"4px 6px", margin:"0 -6px",
+                      borderRadius:6, background: sel ? `${C.teal}18` : "transparent",
+                      transition:"background .15s",
+                    }}
+                  >
+                    <span style={{color: sel ? C.teal : C.text, fontSize:12, fontWeight:600,
+                      display:"flex", alignItems:"center", gap:5}}>
+                      <span style={{fontSize:9, opacity:.7}}>{sel ? "▲" : "▶"}</span>
+                      {corto(c.cliente)}
+                    </span>
+                    <span style={{color:C.sub,fontSize:11,fontFamily:MONO}}>
+                      {num(c.vol)} {p.unidad} · {clp(c.monto)}
+                    </span>
+                  </div>
+                  <div style={{background:C.line,borderRadius:99,height:5,overflow:"hidden",marginBottom:sel?8:0}}>
+                    <div style={{width:`${(c.vol/maxVol)*100}%`,height:"100%",borderRadius:99,
+                      background:`linear-gradient(90deg,${C.accent},${C.teal})`}}/>
+                  </div>
+                  {sel && (
+                    <div style={{
+                      display:"flex", gap:6, flexWrap:"wrap",
+                      padding:"8px 6px 4px", marginBottom:4,
+                    }}>
+                      {mesesOrden.map(mes => {
+                        const [, m] = mes.split("-");
+                        return (
+                          <div key={mes} style={{
+                            background:C.surface, border:`1px solid ${C.border}`,
+                            borderRadius:8, padding:"8px 12px", textAlign:"center",
+                            minWidth:72, flex:"0 0 auto",
+                          }}>
+                            <div style={{color:C.muted,fontSize:9,textTransform:"uppercase",letterSpacing:.8,marginBottom:4}}>
+                              {MESES[parseInt(m)-1]}
+                            </div>
+                            <div style={{fontFamily:MONO,fontSize:13,fontWeight:800,color:C.teal}}>
+                              {num(mesesCli[mes].vol)}
+                            </div>
+                            <div style={{fontFamily:MONO,fontSize:10,color:C.sub,marginTop:2}}>
+                              {clp(mesesCli[mes].monto)}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
-                <div style={{background:C.line,borderRadius:99,height:5,overflow:"hidden"}}>
-                  <div style={{width:`${(c.vol/maxVol)*100}%`,height:"100%",borderRadius:99,
-                    background:`linear-gradient(90deg,${C.accent},${C.teal})`}}/>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
