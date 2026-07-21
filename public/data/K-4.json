@@ -16,7 +16,7 @@
     {
       "fecha": "2026-01-05",
       "detalle": "AGUAS DE ANTOFAGASTA S.A.  C-4313 DESPACHO 2 EP.",
-      "cliente": "AGUAS DE ANTOFAGASTA S.A.  C-4313 DESPACHO 2 EP",
+      "cliente": "AGUAS DE ANTOFAGASTA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1000.0,

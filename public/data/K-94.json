@@ -64,7 +64,7 @@
     {
       "fecha": "2026-01-29",
       "detalle": "C-4313 E.P. DESPACHO 3 AGUAS DE ANTOFAGASTA S.A.",
-      "cliente": "C-4313 E.P. DESPACHO 3 AGUAS DE ANTOFAGASTA S.A",
+      "cliente": "AGUAS DE ANTOFAGASTA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1000.0,
@@ -208,7 +208,7 @@
     {
       "fecha": "2026-02-26",
       "detalle": "C-4313 E.P. AGUAS DE ANTOFAGASTA S.A.",
-      "cliente": "C-4313 E.P. AGUAS DE ANTOFAGASTA S.A",
+      "cliente": "AGUAS DE ANTOFAGASTA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1000.0,

@@ -80,13 +80,27 @@ _TOKENS_OC = re.compile(
     r"CONTRATO\s+PENDIENTE|APA|CLASE\s+\d+)\b.*",
     re.IGNORECASE,
 )
+# Referencia de contrato tipo "C-4313" al inicio o al final
+_CONTRATO_INICIO = re.compile(r"^[A-Z]-\d+\s+", re.IGNORECASE)
+_CONTRATO_FINAL  = re.compile(r"\s+[A-Z]-\d+.*$", re.IGNORECASE)
+# Tokens de despacho/ruta: "E.P.", "EP.", "DESPACHO N" (consume la puntuación final también)
+_DESPACHO_TOKENS = re.compile(r"\b(?:E\.P\.|E\.P|EP\.?|DESPACHO\s*\d*)\s*", re.IGNORECASE)
 
 
 def extraer_cliente(detalle: str) -> str:
     if not detalle:
         return "DESCONOCIDO"
+    nombre = detalle.strip()
+    # Quitar referencia contrato al inicio (ej: "C-4313 E.P. AGUAS DE...")
+    nombre = _CONTRATO_INICIO.sub("", nombre)
+    # Quitar referencia contrato al final (ej: "AGUAS DE ANTOFAGASTA S.A.  C-4313 DESPACHO 2 EP")
+    nombre = _CONTRATO_FINAL.sub("", nombre)
+    # Quitar tokens de despacho/ruta (E.P., EP., DESPACHO N)
+    nombre = _DESPACHO_TOKENS.sub("", nombre)
+    # Limpiar puntuación sobrante al inicio y fin
+    nombre = nombre.strip().strip(",.-").strip()
     # Quitar número de OC/factura al inicio (ej: "8656 EMP.SERV..." → "EMP.SERV...")
-    nombre = re.sub(r"^\d+\s+", "", detalle.strip())
+    nombre = re.sub(r"^\d+\s+", "", nombre)
     # Quitar tokens de OC / GD / F- etc. y todo lo que sigue
     nombre = _TOKENS_OC.sub("", nombre).strip().rstrip(",.-")
     # Quitar sufijos legales para normalizar

@@ -1,6 +1,6 @@
 {
-  "generado": "2026-06-18T16:00:09",
-  "total": 109,
+  "generado": "2026-07-21T16:39:22",
+  "total": 105,
   "empresas": [
     {
       "nombre": "ESVAL S.A",
@@ -133,6 +133,66 @@
         }
       ],
       "nProductos": 7
+    },
+    {
+      "nombre": "AGUAS DE ANTOFAGASTA S.A",
+      "totalHaber": 59670963.67305314,
+      "totalCosto": 59670962.800000004,
+      "totalVol": 33000.0,
+      "nMovimientos": 7,
+      "ultimaFecha": "2026-05-13",
+      "primeraFecha": "2026-01-05",
+      "productos": [
+        {
+          "codigo": "K-5",
+          "slug": "K-5",
+          "nombre": "FLUORURO DE SODIO",
+          "unidad": "kg",
+          "vol": 27000.0,
+          "monto": 46840021.945293754,
+          "costo": 46840021.0,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-02-26",
+          "primeraFecha": "2026-01-05"
+        },
+        {
+          "codigo": "K-103",
+          "slug": "K-103",
+          "nombre": "ALAR P-23 A",
+          "unidad": "kg",
+          "vol": 3000.0,
+          "monto": 10593780.0,
+          "costo": 10593780.0,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-13",
+          "primeraFecha": "2026-05-13"
+        },
+        {
+          "codigo": "K-94",
+          "slug": "K-94",
+          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
+          "unidad": "un",
+          "vol": 2000.0,
+          "monto": 1544874.8682497246,
+          "costo": 1544874.9,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-02-26",
+          "primeraFecha": "2026-01-29"
+        },
+        {
+          "codigo": "K-4",
+          "slug": "K-4",
+          "nombre": "FLUORSILICATO DE SODIO",
+          "unidad": "un",
+          "vol": 1000.0,
+          "monto": 692286.8595096533,
+          "costo": 692286.8999999999,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-05",
+          "primeraFecha": "2026-01-05"
+        }
+      ],
+      "nProductos": 4
     },
     {
       "nombre": "NUEVA ATACAMA S.A",
@@ -339,30 +399,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "C-4313 DESPACHO 2 EP. AGUAS DE ANTOFAGASTA S.A",
-      "totalHaber": 20022905.24137931,
-      "totalCosto": 20022905.0,
-      "totalVol": 7000.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-05",
-      "primeraFecha": "2026-01-05",
-      "productos": [
-        {
-          "codigo": "K-5",
-          "slug": "K-5",
-          "nombre": "FLUORURO DE SODIO",
-          "unidad": "kg",
-          "vol": 7000.0,
-          "monto": 20022905.24137931,
-          "costo": 20022905.0,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-05",
-          "primeraFecha": "2026-01-05"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "COMERCIALIZADORA YUKON LIMITADA",
       "totalHaber": 17064423.523297574,
       "totalCosto": 17064423.25,
@@ -423,78 +459,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "C-4313 E.P. AGUAS DE ANTOFAGASTA S.A",
-      "totalHaber": 14192148.553834874,
-      "totalCosto": 14192148.2,
-      "totalVol": 11000.0,
-      "nMovimientos": 2,
-      "ultimaFecha": "2026-02-26",
-      "primeraFecha": "2026-02-26",
-      "productos": [
-        {
-          "codigo": "K-5",
-          "slug": "K-5",
-          "nombre": "FLUORURO DE SODIO",
-          "unidad": "kg",
-          "vol": 10000.0,
-          "monto": 13408558.351957222,
-          "costo": 13408558.0,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-26",
-          "primeraFecha": "2026-02-26"
-        },
-        {
-          "codigo": "K-94",
-          "slug": "K-94",
-          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
-          "unidad": "un",
-          "vol": 1000.0,
-          "monto": 783590.2018776523,
-          "costo": 783590.2,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-26",
-          "primeraFecha": "2026-02-26"
-        }
-      ],
-      "nProductos": 2
-    },
-    {
-      "nombre": "C-4313 E.P. DESPACHO 3 AGUAS DE ANTOFAGASTA S.A",
-      "totalHaber": 14169843.018329296,
-      "totalCosto": 14169842.7,
-      "totalVol": 11000.0,
-      "nMovimientos": 2,
-      "ultimaFecha": "2026-01-29",
-      "primeraFecha": "2026-01-29",
-      "productos": [
-        {
-          "codigo": "K-5",
-          "slug": "K-5",
-          "nombre": "FLUORURO DE SODIO",
-          "unidad": "kg",
-          "vol": 10000.0,
-          "monto": 13408558.351957224,
-          "costo": 13408558.0,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-29",
-          "primeraFecha": "2026-01-29"
-        },
-        {
-          "codigo": "K-94",
-          "slug": "K-94",
-          "nombre": "FLUORSILICATO DE SODIO TAIWAN",
-          "unidad": "un",
-          "vol": 1000.0,
-          "monto": 761284.6663720724,
-          "costo": 761284.7000000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-29",
-          "primeraFecha": "2026-01-29"
-        }
-      ],
-      "nProductos": 2
-    },
-    {
       "nombre": "002 K8 TRASPASO A K8L",
       "totalHaber": 11929041.491126526,
       "totalCosto": 11929041.8,
@@ -538,30 +502,6 @@
           "nMovimientos": 3,
           "ultimaFecha": "2026-04-28",
           "primeraFecha": "2026-02-04"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "AGUAS DE ANTOFAGASTA S.A",
-      "totalHaber": 10593780.0,
-      "totalCosto": 10593780.0,
-      "totalVol": 3000.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-13",
-      "primeraFecha": "2026-05-13",
-      "productos": [
-        {
-          "codigo": "K-103",
-          "slug": "K-103",
-          "nombre": "ALAR P-23 A",
-          "unidad": "kg",
-          "vol": 3000.0,
-          "monto": 10593780.0,
-          "costo": 10593780.0,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-13",
-          "primeraFecha": "2026-05-13"
         }
       ],
       "nProductos": 1
@@ -1834,30 +1774,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-02",
           "primeraFecha": "2026-02-02"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "AGUAS DE ANTOFAGASTA S.A.  C-4313 DESPACHO 2 EP",
-      "totalHaber": 692286.8595096533,
-      "totalCosto": 692286.8999999999,
-      "totalVol": 1000.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-05",
-      "primeraFecha": "2026-01-05",
-      "productos": [
-        {
-          "codigo": "K-4",
-          "slug": "K-4",
-          "nombre": "FLUORSILICATO DE SODIO",
-          "unidad": "un",
-          "vol": 1000.0,
-          "monto": 692286.8595096533,
-          "costo": 692286.8999999999,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-05",
-          "primeraFecha": "2026-01-05"
         }
       ],
       "nProductos": 1
