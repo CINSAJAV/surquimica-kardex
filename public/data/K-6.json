@@ -28,7 +28,7 @@
     {
       "fecha": "2026-01-16",
       "detalle": "OC 4532054576 NUEVA ATACAMA S.A.",
-      "cliente": "OC 4532054576 NUEVA ATACAMA S.A.",
+      "cliente": "NUEVA ATACAMA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1250.0,
@@ -40,7 +40,7 @@
     {
       "fecha": "2026-01-30",
       "detalle": "OC 4532054576 NUEVA ATACAMA S.A.",
-      "cliente": "OC 4532054576 NUEVA ATACAMA S.A.",
+      "cliente": "NUEVA ATACAMA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1250.0,
@@ -64,7 +64,7 @@
     {
       "fecha": "2026-02-04",
       "detalle": "OC 21554 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "OC 21554 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 75.0,
@@ -76,7 +76,7 @@
     {
       "fecha": "2026-02-04",
       "detalle": "OC 21552 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "OC 21552 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 100.0,
@@ -100,7 +100,7 @@
     {
       "fecha": "2026-02-20",
       "detalle": "OC 4532054576 NUEVA ATACAMA S.A.",
-      "cliente": "OC 4532054576 NUEVA ATACAMA S.A.",
+      "cliente": "NUEVA ATACAMA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1425.0,
@@ -112,7 +112,7 @@
     {
       "fecha": "2026-03-03",
       "detalle": "OC 22184 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "OC 22184 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 100.0,
@@ -124,7 +124,7 @@
     {
       "fecha": "2026-03-03",
       "detalle": "OC 22185 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "OC 22185 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 75.0,
@@ -136,7 +136,7 @@
     {
       "fecha": "2026-03-10",
       "detalle": "OC 1233 SOCIEDAD IMPORTADORA LIPLATA LTDA",
-      "cliente": "OC 1233 SOCIEDAD IMPORTADORA LIPLATA LTDA",
+      "cliente": "SOCIEDAD IMPORTADORA LIPLATA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1000.0,
@@ -148,7 +148,7 @@
     {
       "fecha": "2026-03-20",
       "detalle": "OC 4532061957 NUEVA ATACAMA S.A.",
-      "cliente": "OC 4532061957 NUEVA ATACAMA S.A.",
+      "cliente": "NUEVA ATACAMA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 825.0,
@@ -172,7 +172,7 @@
     {
       "fecha": "2026-03-30",
       "detalle": "OC 4532061957 NUEVA ATACAMA S.A.",
-      "cliente": "OC 4532061957 NUEVA ATACAMA S.A.",
+      "cliente": "NUEVA ATACAMA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1175.0,
@@ -184,7 +184,7 @@
     {
       "fecha": "2026-04-06",
       "detalle": "OC 4532061957 NUEVA ATACAMA S.A.",
-      "cliente": "OC 4532061957 NUEVA ATACAMA S.A.",
+      "cliente": "NUEVA ATACAMA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1000.0,
@@ -196,7 +196,7 @@
     {
       "fecha": "2026-04-06",
       "detalle": "OC 4532061957 NUEVA ATACAMA S.A.",
-      "cliente": "OC 4532061957 NUEVA ATACAMA S.A.",
+      "cliente": "NUEVA ATACAMA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 25.0,
@@ -208,7 +208,7 @@
     {
       "fecha": "2026-04-21",
       "detalle": "OC 4532061957 NUEVA ATACAMA S.A.",
-      "cliente": "OC 4532061957 NUEVA ATACAMA S.A.",
+      "cliente": "NUEVA ATACAMA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1500.0,
@@ -232,7 +232,7 @@
     {
       "fecha": "2026-04-30",
       "detalle": "OC 4532061957 NUEVA ATACAMA S.A.",
-      "cliente": "OC 4532061957 NUEVA ATACAMA S.A.",
+      "cliente": "NUEVA ATACAMA S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1000.0,
@@ -244,7 +244,7 @@
     {
       "fecha": "2026-05-15",
       "detalle": "OC 23789 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
-      "cliente": "OC 23789 EMP.SERV.SANIT.SAN.ISIDRO S.A.",
+      "cliente": "EMP.SERV.SANIT.SAN.ISIDRO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 125.0,

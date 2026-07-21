@@ -16,7 +16,7 @@
     {
       "fecha": "2026-01-08",
       "detalle": "OC 5400011539 ESSBIO S.A.",
-      "cliente": "OC 5400011539 ESSBIO S.A.",
+      "cliente": "ESSBIO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 3000.0,
@@ -28,7 +28,7 @@
     {
       "fecha": "2026-01-12",
       "detalle": "OC 4543005639 ESVAL S.A.",
-      "cliente": "OC 4543005639 ESVAL S.A.",
+      "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 6000.0,
@@ -40,7 +40,7 @@
     {
       "fecha": "2026-01-15",
       "detalle": "OC 4543005639 ESVAL S.A.",
-      "cliente": "OC 4543005639 ESVAL S.A.",
+      "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1000.0,
@@ -52,7 +52,7 @@
     {
       "fecha": "2026-01-29",
       "detalle": "OC 5400011540 NUEVOSUR S.A.",
-      "cliente": "OC 5400011540 NUEVOSUR S.A.",
+      "cliente": "NUEVOSUR S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1000.0,
@@ -76,7 +76,7 @@
     {
       "fecha": "2026-01-29",
       "detalle": "OC 5400011540 NUEVOSUR S.A.",
-      "cliente": "OC 5400011540 NUEVOSUR S.A.",
+      "cliente": "NUEVOSUR S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 3000.0,
@@ -112,7 +112,7 @@
     {
       "fecha": "2026-02-02",
       "detalle": "OC 4532073785 AGUAS DEL VALLE S.A.",
-      "cliente": "OC 4532073785 AGUAS DEL VALLE S.A.",
+      "cliente": "AGUAS DEL VALLE S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1128.0,
@@ -124,7 +124,7 @@
     {
       "fecha": "2026-02-02",
       "detalle": "OC 4532073785 AGUAS DEL VALLE S.A.",
-      "cliente": "OC 4532073785 AGUAS DEL VALLE S.A.",
+      "cliente": "AGUAS DEL VALLE S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 500.0,
@@ -136,7 +136,7 @@
     {
       "fecha": "2026-02-02",
       "detalle": "OC 4000197489 SURALIS S.A.",
-      "cliente": "OC 4000197489 SURALIS S.A.",
+      "cliente": "SURALIS S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 900.0,
@@ -148,7 +148,7 @@
     {
       "fecha": "2026-02-02",
       "detalle": "OC 4000197969 SURALIS S.A.",
-      "cliente": "OC 4000197969 SURALIS S.A.",
+      "cliente": "SURALIS S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 4000.0,
@@ -160,7 +160,7 @@
     {
       "fecha": "2026-02-04",
       "detalle": "OC 4000196822 SURALIS S.A.",
-      "cliente": "OC 4000196822 SURALIS S.A.",
+      "cliente": "SURALIS S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 3000.0,
@@ -172,7 +172,7 @@
     {
       "fecha": "2026-02-04",
       "detalle": "OC 4000198035 SURALIS S.A.",
-      "cliente": "OC 4000198035 SURALIS S.A.",
+      "cliente": "SURALIS S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 3000.0,
@@ -184,7 +184,7 @@
     {
       "fecha": "2026-02-26",
       "detalle": "OC 5400011540 NUEVOSUR S.A.",
-      "cliente": "OC 5400011540 NUEVOSUR S.A.",
+      "cliente": "NUEVOSUR S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 6000.0,
@@ -196,7 +196,7 @@
     {
       "fecha": "2026-02-26",
       "detalle": "OC 5400011540 NUEVOSUR S.A.",
-      "cliente": "OC 5400011540 NUEVOSUR S.A.",
+      "cliente": "NUEVOSUR S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 6000.0,
@@ -220,7 +220,7 @@
     {
       "fecha": "2026-03-03",
       "detalle": "OC 4000197488 SURALIS S.A.",
-      "cliente": "OC 4000197488 SURALIS S.A.",
+      "cliente": "SURALIS S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 5000.0,
@@ -232,7 +232,7 @@
     {
       "fecha": "2026-03-16",
       "detalle": "OC 4543005995 ESVAL S.A.",
-      "cliente": "OC 4543005995 ESVAL S.A.",
+      "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 5000.0,
@@ -244,7 +244,7 @@
     {
       "fecha": "2026-03-17",
       "detalle": "OC 4000198035 SURALIS S.A.",
-      "cliente": "OC 4000198035 SURALIS S.A.",
+      "cliente": "SURALIS S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 5000.0,
@@ -256,7 +256,7 @@
     {
       "fecha": "2026-03-18",
       "detalle": "OC 4543006026 ESVAL S.A.",
-      "cliente": "OC 4543006026 ESVAL S.A.",
+      "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 4000.0,
@@ -268,7 +268,7 @@
     {
       "fecha": "2026-03-18",
       "detalle": "OC 4543006038 ESVAL S.A.",
-      "cliente": "OC 4543006038 ESVAL S.A.",
+      "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 500.0,
@@ -280,7 +280,7 @@
     {
       "fecha": "2026-03-18",
       "detalle": "OC 4543006038 ESVAL S.A.",
-      "cliente": "OC 4543006038 ESVAL S.A.",
+      "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 300.0,
@@ -292,7 +292,7 @@
     {
       "fecha": "2026-03-18",
       "detalle": "OC 4543006038 ESVAL S.A.",
-      "cliente": "OC 4543006038 ESVAL S.A.",
+      "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 500.0,
@@ -304,7 +304,7 @@
     {
       "fecha": "2026-03-18",
       "detalle": "OC 4543006038 ESVAL S.A.",
-      "cliente": "OC 4543006038 ESVAL S.A.",
+      "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 200.0,
@@ -316,7 +316,7 @@
     {
       "fecha": "2026-03-27",
       "detalle": "OC 4000194237 SURALIS S.A.",
-      "cliente": "OC 4000194237 SURALIS S.A.",
+      "cliente": "SURALIS S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1215.0,
@@ -328,7 +328,7 @@
     {
       "fecha": "2026-03-27",
       "detalle": "OC 4000198121 SURALIS S.A.",
-      "cliente": "OC 4000198121 SURALIS S.A.",
+      "cliente": "SURALIS S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 3000.0,
@@ -340,7 +340,7 @@
     {
       "fecha": "2026-03-30",
       "detalle": "OC 4543006027 ESVAL S.A.",
-      "cliente": "OC 4543006027 ESVAL S.A.",
+      "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 500.0,
@@ -352,7 +352,7 @@
     {
       "fecha": "2026-03-31",
       "detalle": "OC 5400011540 NUEVOSUR S.A.",
-      "cliente": "OC 5400011540 NUEVOSUR S.A.",
+      "cliente": "NUEVOSUR S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 5000.0,
@@ -364,7 +364,7 @@
     {
       "fecha": "2026-04-01",
       "detalle": "OC 5400011539 ESSBIO S.A.",
-      "cliente": "OC 5400011539 ESSBIO S.A.",
+      "cliente": "ESSBIO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 3000.0,
@@ -376,7 +376,7 @@
     {
       "fecha": "2026-04-01",
       "detalle": "OC 5400011539 ESSBIO S.A.",
-      "cliente": "OC 5400011539 ESSBIO S.A.",
+      "cliente": "ESSBIO S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 1500.0,
@@ -388,7 +388,7 @@
     {
       "fecha": "2026-04-21",
       "detalle": "OC 4543006179 ESVAL S.A.",
-      "cliente": "OC 4543006179 ESVAL S.A.",
+      "cliente": "ESVAL S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 7000.0,
@@ -400,7 +400,7 @@
     {
       "fecha": "2026-04-24",
       "detalle": "OC 5400011540 NUEVOSUR S.A.",
-      "cliente": "OC 5400011540 NUEVOSUR S.A.",
+      "cliente": "NUEVOSUR S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 4000.0,
@@ -412,7 +412,7 @@
     {
       "fecha": "2026-04-24",
       "detalle": "OC 5400011540 NUEVOSUR S.A.",
-      "cliente": "OC 5400011540 NUEVOSUR S.A.",
+      "cliente": "NUEVOSUR S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 4000.0,
@@ -424,7 +424,7 @@
     {
       "fecha": "2026-04-28",
       "detalle": "OC 4000198035 SURALIS S.A.",
-      "cliente": "OC 4000198035 SURALIS S.A.",
+      "cliente": "SURALIS S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 6000.0,
