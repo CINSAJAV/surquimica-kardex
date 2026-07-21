@@ -1,9 +1,10 @@
 import { useState, useEffect, useMemo, useContext, createContext } from "react";
 
 // Contextos globales cargados una vez en App
-const BodegaCtx  = createContext(null);
-const PreciosCtx = createContext(null);
-const MobileCtx  = createContext(false);
+const BodegaCtx    = createContext(null);
+const PreciosCtx   = createContext(null);
+const DespachosCtx = createContext(null);
+const MobileCtx    = createContext(false);
 
 // ─── TOKENS ──────────────────────────────────────────────────────────────────
 const C = {
@@ -804,20 +805,55 @@ function buscarAcuerdo(preciosData, slug, nombreEmpresa) {
   return key ? prod[key] : null;
 }
 
-// Calcula ingreso y costo usando precios acordados si existen, o datos Kardex si no
-function calcMargen(prod, acuerdo) {
-  if (acuerdo?.precio_venta != null && acuerdo?.pmp_ultimo != null) {
-    const vol     = acuerdo.cantidad ?? prod.vol;
-    const ingreso = acuerdo.precio_venta * vol;
-    const costo   = acuerdo.pmp_ultimo  * vol;
-    return { ingreso, costo, margen: ingreso - costo, usaAcuerdo: true };
+// Busca costo de transporte ($/kg) para un cliente en un producto
+function buscarDespacho(despachosData, slug, nombreEmpresa) {
+  if (!despachosData || !nombreEmpresa) return null;
+  // K-8-1 y K-8-2 se buscan también como K-8 en despachos
+  const slugsToCheck = [slug];
+  if (slug.startsWith("K-8-")) slugsToCheck.push("K-8");
+  for (const s of slugsToCheck) {
+    const prod = despachosData?.productos?.[s];
+    if (!prod) continue;
+    const key = Object.keys(prod).find(name =>
+      name === nombreEmpresa ||
+      nombreEmpresa.includes(name) ||
+      name.includes(nombreEmpresa)
+    );
+    if (key != null) return prod[key];
   }
-  return { ingreso: prod.monto, costo: prod.costo ?? 0, margen: prod.monto - (prod.costo ?? 0), usaAcuerdo: false };
+  return null;
+}
+
+// Calcula ingreso, costo (producto) y costo transporte
+// Devuelve: { ingreso, costo, transporte, margenBruto, margenNeto, usaAcuerdo }
+function calcMargen(prod, acuerdo, costoTransporteKg) {
+  let ingreso, costo, vol;
+  let usaAcuerdo = false;
+  if (acuerdo?.precio_venta != null && acuerdo?.pmp_ultimo != null) {
+    vol       = acuerdo.cantidad ?? prod.vol;
+    ingreso   = acuerdo.precio_venta * vol;
+    costo     = acuerdo.pmp_ultimo  * vol;
+    usaAcuerdo = true;
+  } else {
+    vol     = prod.vol ?? 0;
+    ingreso = prod.monto ?? 0;
+    costo   = prod.costo ?? 0;
+  }
+  const transporte = costoTransporteKg != null ? costoTransporteKg * vol : 0;
+  return {
+    ingreso,
+    costo,
+    transporte,
+    margen:     ingreso - costo,            // bruto (sin transporte)
+    margenNeto: ingreso - costo - transporte, // neto (con transporte)
+    usaAcuerdo,
+  };
 }
 
 function VistaEmpresas({ onIrProducto }) {
   const mobile                        = useContext(MobileCtx);
   const precios               = useContext(PreciosCtx);
+  const despachosCtx          = useContext(DespachosCtx);
   const [data, setData]       = useState(null);
   const [loading, setLoading] = useState(true);
   const [sel, setSel]         = useState(null);
@@ -863,22 +899,35 @@ function VistaEmpresas({ onIrProducto }) {
         {/* KPIs — recalcula con precios acordados si existen */}
         {(()=>{
           const totales = e.productos.reduce((acc, p) => {
-            const ac = buscarAcuerdo(precios, p.slug, e.nombre);
-            const m  = calcMargen(p, ac);
-            acc.ingreso += m.ingreso;
-            acc.costo   += m.costo;
+            const ac  = buscarAcuerdo(precios, p.slug, e.nombre);
+            const tkg = buscarDespacho(despachosCtx, p.slug, e.nombre);
+            const m   = calcMargen(p, ac, tkg);
+            acc.ingreso    += m.ingreso;
+            acc.costo      += m.costo;
+            acc.transporte += m.transporte;
             return acc;
-          }, { ingreso: 0, costo: 0 });
-          const totalMargen = totales.ingreso - totales.costo;
-          const mPct = totales.ingreso > 0 ? (totalMargen / totales.ingreso) * 100 : 0;
+          }, { ingreso: 0, costo: 0, transporte: 0 });
+          const margenBruto = totales.ingreso - totales.costo;
+          const margenNeto  = margenBruto - totales.transporte;
+          const mBrPct = totales.ingreso > 0 ? (margenBruto / totales.ingreso) * 100 : 0;
+          const mNePct = totales.ingreso > 0 ? (margenNeto  / totales.ingreso) * 100 : 0;
+          const tieneTransporte = totales.transporte > 0;
           return (
-            <div style={{display:"grid",gridTemplateColumns:mobile?"repeat(2,1fr)":"repeat(5,1fr)",gap:10}}>
+            <div style={{display:"grid",gridTemplateColumns:mobile?"repeat(2,1fr)":tieneTransporte?"repeat(6,1fr)":"repeat(5,1fr)",gap:10}}>
               <KPI label="Facturado total"      value={clp(e.totalHaber)}
                 sub={`${num(e.nMovimientos)} movimientos`} color={C.teal}/>
-              <KPI label="Costo total"          value={clp(totales.costo)}
+              <KPI label="Costo producto"       value={clp(totales.costo)}
                 sub="PMP último × cantidad" color={C.sub}/>
-              <KPI label="Margen bruto"         value={clp(totalMargen)}
-                sub={`${mPct.toFixed(1)}% sobre ventas`} color={mPct>=20?C.green:C.amber}/>
+              {tieneTransporte && (
+                <KPI label="Costo transporte"   value={clp(totales.transporte)}
+                  sub="Despacho a cliente" color={C.muted}/>
+              )}
+              <KPI label="Margen bruto"         value={clp(margenBruto)}
+                sub={`${mBrPct.toFixed(1)}% (sin transporte)`} color={mBrPct>=20?C.green:C.amber}/>
+              {tieneTransporte && (
+                <KPI label="Margen neto"        value={clp(margenNeto)}
+                  sub={`${mNePct.toFixed(1)}% (con transporte)`} color={mNePct>=20?C.green:C.amber}/>
+              )}
               <KPI label="Productos distintos"  value={e.nProductos}
                 sub="líneas de producto" color={C.accent}/>
               <KPI label="Última compra"        value={fmtFecha(e.ultimaFecha)}
@@ -889,11 +938,11 @@ function VistaEmpresas({ onIrProducto }) {
 
         {/* Tabla de productos */}
         <div style={{overflowX:"auto"}}>
-          <div style={{minWidth:600,background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
+          <div style={{minWidth:680,background:C.card,border:`1px solid ${C.border}`,borderRadius:10,overflow:"hidden"}}>
             <div style={{display:"grid",
-              gridTemplateColumns:"2fr 70px 115px 105px 95px 80px 80px",
+              gridTemplateColumns:"2fr 70px 115px 105px 90px 95px 80px 80px",
               padding:"8px 16px",background:C.surface,borderBottom:`1px solid ${C.border}`}}>
-              {["Producto","Unidad","Ingreso","Costo","Margen $","Margen %","Última fecha"].map(h=>(
+              {["Producto","Unidad","Ingreso","Costo prod.","Transporte","Margen neto","Mg %","Última fecha"].map(h=>(
                 <div key={h} style={{color:C.muted,fontSize:10,textTransform:"uppercase",
                   letterSpacing:0.8,fontFamily:MONO}}>{h}</div>
               ))}
@@ -901,13 +950,14 @@ function VistaEmpresas({ onIrProducto }) {
             {e.productos.map((p,i)=>{
               const pct    = e.totalHaber > 0 ? (p.monto / e.totalHaber * 100) : 0;
               const ac     = buscarAcuerdo(precios, p.slug, e.nombre);
-              const m      = calcMargen(p, ac);
-              const { ingreso, costo, margen } = m;
-              const mPct   = ingreso > 0 ? (margen / ingreso) * 100 : 0;
+              const tkg    = buscarDespacho(despachosCtx, p.slug, e.nombre);
+              const m      = calcMargen(p, ac, tkg);
+              const { ingreso, costo, transporte, margenNeto } = m;
+              const mPct   = ingreso > 0 ? (margenNeto / ingreso) * 100 : 0;
               return (
                 <div key={p.slug}
                   style={{display:"grid",
-                    gridTemplateColumns:"2fr 70px 115px 105px 95px 80px 80px",
+                    gridTemplateColumns:"2fr 70px 115px 105px 90px 95px 80px 80px",
                     padding:"11px 16px",
                     borderBottom:i<e.productos.length-1?`1px solid ${C.border}22`:"none",
                     background:i%2===0?"transparent":"#ffffff03",
@@ -926,7 +976,10 @@ function VistaEmpresas({ onIrProducto }) {
                   <div style={{fontFamily:MONO,fontSize:11,color:C.sub,alignSelf:"center"}}>{p.unidad}</div>
                   <div style={{fontFamily:MONO,fontSize:12,color:C.text,alignSelf:"center"}}>{clp(ingreso)}</div>
                   <div style={{fontFamily:MONO,fontSize:12,color:C.muted,alignSelf:"center"}}>{clp(costo)}</div>
-                  <div style={{fontFamily:MONO,fontSize:12,color:margen>=0?C.green:C.red,alignSelf:"center"}}>{clp(margen)}</div>
+                  <div style={{fontFamily:MONO,fontSize:11,color:transporte>0?C.amber:C.border,alignSelf:"center"}}>
+                    {transporte>0 ? clp(transporte) : "—"}
+                  </div>
+                  <div style={{fontFamily:MONO,fontSize:12,color:margenNeto>=0?C.green:C.red,alignSelf:"center"}}>{clp(margenNeto)}</div>
                   <div style={{alignSelf:"center"}}>
                     <span style={{fontFamily:MONO,fontSize:13,fontWeight:800,
                       color:mPct>=25?C.green:mPct>=10?C.amber:C.red}}>
@@ -978,13 +1031,15 @@ function VistaEmpresas({ onIrProducto }) {
             {empresas.map((e,i)=>{
               const pct = (e.totalHaber / maxHaber) * 100;
               const totales = e.productos.reduce((acc, p) => {
-                const ac = buscarAcuerdo(precios, p.slug, e.nombre);
-                const m  = calcMargen(p, ac);
-                acc.ingreso += m.ingreso;
-                acc.costo   += m.costo;
+                const ac  = buscarAcuerdo(precios, p.slug, e.nombre);
+                const tkg = buscarDespacho(despachosCtx, p.slug, e.nombre);
+                const m   = calcMargen(p, ac, tkg);
+                acc.ingreso    += m.ingreso;
+                acc.costo      += m.costo;
+                acc.transporte += m.transporte;
                 return acc;
-              }, { ingreso: 0, costo: 0 });
-              const margen = totales.ingreso - totales.costo;
+              }, { ingreso: 0, costo: 0, transporte: 0 });
+              const margen = totales.ingreso - totales.costo - totales.transporte;
               const mPct   = totales.ingreso > 0 ? (margen / totales.ingreso) * 100 : 0;
               return (
                 <div key={e.nombre}
@@ -1290,8 +1345,9 @@ function App() {
   const [modoEmpresa,setModoEmpresa] = useState(false);
   const [loading,setLoading]   = useState(false);
   const [err,setErr]           = useState(null);
-  const [bodega,setBodega]     = useState(null);
-  const [precios,setPrecios]   = useState(null);
+  const [bodega,setBodega]       = useState(null);
+  const [precios,setPrecios]     = useState(null);
+  const [despachos,setDespachos] = useState(null);
 
   useEffect(()=>{
     fetch("./data/index.json")
@@ -1300,6 +1356,7 @@ function App() {
       .catch(e=>setErr(`Error cargando datos: ${e.message} — verifica que data/index.json existe.`));
     fetch("./data/bodega.json").then(r=>r.json()).then(setBodega).catch(()=>{});
     fetch("./data/precios.json").then(r=>r.json()).then(setPrecios).catch(()=>{});
+    fetch("./data/despachos.json").then(r=>r.json()).then(setDespachos).catch(()=>{});
   },[]);
 
   useEffect(()=>{
@@ -1328,6 +1385,7 @@ function App() {
   return (
     <MobileCtx.Provider value={mobile}>
     <PreciosCtx.Provider value={precios}>
+    <DespachosCtx.Provider value={despachos}>
     <BodegaCtx.Provider value={bodega}>
     <div style={{display:"flex",height:"100vh",overflow:"hidden",background:C.bg}}>
       <Sidebar productos={index.productos} selMeta={modoEmpresa?null:selMeta}
@@ -1442,6 +1500,7 @@ function App() {
       </div>
     </div>
     </BodegaCtx.Provider>
+    </DespachosCtx.Provider>
     </PreciosCtx.Provider>
     </MobileCtx.Provider>
   );

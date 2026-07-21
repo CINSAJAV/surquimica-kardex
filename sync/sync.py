@@ -23,10 +23,11 @@ import openpyxl
 
 # ─── CONFIGURACIÓN ────────────────────────────────────────────────────────────
 
-DRIVE_PATH  = Path(r"G:\Mi unidad\Surquimica\Kardex")
-BODEGA_PATH   = Path(r"G:\Mi unidad\Surquimica\INVENTARIO BODEGAS SQ 29052026.xlsx")
-PRECIOS_GLOB  = r"G:\Mi unidad\Surquimica\Clientes_K*.xlsx"
-OUTPUT_DIR  = Path(__file__).parent.parent / "public" / "data"
+DRIVE_PATH      = Path(r"G:\Mi unidad\Surquimica\Kardex")
+BODEGA_PATH     = Path(r"G:\Mi unidad\Surquimica\INVENTARIO BODEGAS SQ 29052026.xlsx")
+PRECIOS_GLOB    = r"G:\Mi unidad\Surquimica\Clientes_K*.xlsx"
+DESPACHOS_PATH  = Path(r"G:\Mi unidad\Surquimica\Consolidado_Despachos_Clientes_2026.xlsx")
+OUTPUT_DIR      = Path(__file__).parent.parent / "public" / "data"
 
 # Patrones de texto en detalle que indican que NO es nombre de cliente
 SKIP_PATTERNS = re.compile(
@@ -473,6 +474,18 @@ def main():
         total_cl = sum(len(v) for v in precios.values())
         print(f"OK {len(precios)} productos / {total_cl} registros precios -> precios.json")
 
+    # ── Costos de despacho ───────────────────────────────────────────────────
+    despachos = parse_despachos()
+    if despachos:
+        despachos_json = {
+            "generado": datetime.now().isoformat(timespec="seconds"),
+            "productos": despachos,
+        }
+        with open(OUTPUT_DIR / "despachos.json", "w", encoding="utf-8") as f:
+            json.dump(despachos_json, f, ensure_ascii=False, indent=2, default=str)
+        total_d = sum(len(v) for v in despachos.values())
+        print(f"OK {len(despachos)} productos / {total_d} registros despacho -> despachos.json")
+
     print(f"\nOK {len(todos_productos)} productos -> {OUTPUT_DIR}")
     if errores:
         print(f"WARN Con errores: {errores}")
@@ -668,6 +681,79 @@ def parse_precios() -> dict:
             print(f"  OK precios {slug}: {len(clientes)} clientes")
 
     return resultado
+
+
+# ─── PARSEO COSTOS DE DESPACHO ───────────────────────────────────────────────
+
+def parse_despachos() -> dict:
+    """
+    Lee Consolidado_Despachos_Clientes_2026.xlsx y devuelve dict:
+    { "K-4": { "SURALIS S.A.": 112.5, ... }, ... }
+    Valor = costo promedio ponderado de transporte en $/kg.
+    """
+    from openpyxl import load_workbook as _lw
+
+    if not DESPACHOS_PATH.exists():
+        print(f"  [despachos] No encontrado: {DESPACHOS_PATH}")
+        return {}
+
+    wb  = _lw(DESPACHOS_PATH, data_only=True)
+    ws  = wb.active
+
+    # Encontrar fila de encabezado (tiene "Kardex" y "Valor por Kilo")
+    header_idx = None
+    col_map    = {}
+    for i, row in enumerate(ws.iter_rows(values_only=True), 1):
+        row_str = [str(c).strip() if c is not None else "" for c in row]
+        joined  = " ".join(row_str).lower()
+        if "kardex" in joined and "valor por kilo" in joined:
+            header_idx = i
+            for j, h in enumerate(row_str):
+                hl = h.lower()
+                if hl == "cliente":
+                    col_map["cliente"] = j
+                elif hl == "kardex":
+                    col_map["kardex"]  = j
+                elif hl == "cantidad (kg)":
+                    col_map["cantidad"] = j
+                elif hl == "valor por kilo":
+                    col_map["costo_kg"] = j
+            break
+
+    if header_idx is None or len(col_map) < 4:
+        print(f"  [despachos] Header no encontrado o columnas incompletas: {col_map}")
+        return {}
+
+    # Acumular (slug, cliente) → {kg, costo_total}
+    acum: dict = {}
+    for row in ws.iter_rows(min_row=header_idx + 1, values_only=True):
+        try:
+            cliente  = str(row[col_map["cliente"]] or "").strip().upper()
+            kardex   = int(row[col_map["kardex"]])
+            cantidad = float(row[col_map["cantidad"]])
+            costo_kg = float(row[col_map["costo_kg"]])
+        except (TypeError, ValueError):
+            continue
+
+        if not cliente or cantidad <= 0 or costo_kg <= 0:
+            continue
+
+        slug = f"K-{kardex}"
+        acum.setdefault(slug, {}).setdefault(cliente, {"kg": 0.0, "costo_total": 0.0})
+        acum[slug][cliente]["kg"]          += cantidad
+        acum[slug][cliente]["costo_total"] += costo_kg * cantidad
+
+    # Calcular promedio ponderado
+    result: dict = {}
+    for slug, clientes in acum.items():
+        result[slug] = {
+            cliente: round(d["costo_total"] / d["kg"], 2)
+            for cliente, d in clientes.items()
+            if d["kg"] > 0
+        }
+        print(f"  OK despachos {slug}: {len(result[slug])} clientes")
+
+    return result
 
 
 if __name__ == "__main__":
