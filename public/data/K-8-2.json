@@ -664,7 +664,7 @@
     {
       "fecha": "2026-01-27",
       "detalle": "LUIS RENE LOPEZ RODRIGUEZ COT 0005",
-      "cliente": "LUIS RENE LOPEZ RODRIGUEZ COT 0005",
+      "cliente": "LUIS RENE LOPEZ RODRIGUEZ",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 500.0,
@@ -1120,7 +1120,7 @@
     {
       "fecha": "2026-02-10",
       "detalle": "COMITE DE AGUA POTABLE RURAL HUALCAPO COT 0009",
-      "cliente": "COMITE DE AGUA POTABLE RURAL HUALCAPO COT 0009",
+      "cliente": "COMITE DE AGUA POTABLE RURAL HUALCAPO",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 300.0,

@@ -91,10 +91,18 @@ def extraer_cliente(detalle: str) -> str:
     if not detalle:
         return "DESCONOCIDO"
     nombre = detalle.strip()
-    # Quitar "OC XXXXXXX NOMBRE" al inicio (ej: "OC 4532061957 NUEVA ATACAMA S.A.")
+    # Quitar prefijos de documento al inicio
+    # "OC XXXXXXX NOMBRE"
     nombre = re.sub(r"^OC\s+\d+\s+", "", nombre, flags=re.IGNORECASE)
-    # Quitar "FACTURA[FT]XXXX NOMBRE" al inicio (ej: "FACTURA[FT]8606 ZETAENE SA")
-    nombre = re.sub(r"^FACTURA\[FT\]\d+\s+", "", nombre, flags=re.IGNORECASE)
+    # "FACTURA[FT]XXXX NOMBRE"
+    nombre = re.sub(r"^FACTURA\s*\[FT\]\s*\d+\s+", "", nombre, flags=re.IGNORECASE)
+    # "GUÍA[ST]XXXX NOMBRE" / "GUÍA[EA]XXXX NOMBRE" (incluyendo variantes de encoding del acento)
+    nombre = re.sub(r"^GU.{0,2}A\s*\[(?:ST|EA)\]\s*\d+\s+", "", nombre, flags=re.IGNORECASE)
+    # Quitar sufijos que no son parte del nombre (primera pasada, antes de _TOKENS_OC)
+    # "... COT XXXX" o "... COT-XXXX"
+    nombre = re.sub(r"\s+COT[-\s]*\d+.*$", "", nombre, flags=re.IGNORECASE)
+    # "... XXXXXXXXXX-XXXX" (número tipo RUT/correlativo al final)
+    nombre = re.sub(r"\s+\d{8,}-\d+\s*$", "", nombre)
     # Quitar referencia contrato al inicio (ej: "C-4313 E.P. AGUAS DE...")
     nombre = _CONTRATO_INICIO.sub("", nombre)
     # Quitar referencia contrato al final (ej: "AGUAS DE ANTOFAGASTA S.A.  C-4313 DESPACHO 2 EP")
@@ -109,6 +117,9 @@ def extraer_cliente(detalle: str) -> str:
     nombre = _TOKENS_OC.sub("", nombre).strip().rstrip(",.-")
     # Quitar sufijos legales para normalizar
     nombre = _SUFIJOS.sub("", nombre).strip()
+    # Segunda pasada de sufijos (pueden quedar expuestos tras _TOKENS_OC)
+    nombre = re.sub(r"\s+P\d{4,}\s*$", "", nombre, flags=re.IGNORECASE).strip()
+    nombre = re.sub(r"\s+COT[-\s]*\d+.*$", "", nombre, flags=re.IGNORECASE).strip()
     return nombre.upper() if nombre else detalle.upper()
 
 

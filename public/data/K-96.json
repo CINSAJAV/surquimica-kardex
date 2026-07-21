@@ -52,7 +52,7 @@
     {
       "fecha": "2026-01-28",
       "detalle": "Guía[EA]41212016 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A.",
-      "cliente": "GUÍA[EA]41212016 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
+      "cliente": "TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": -20530.0,
@@ -76,7 +76,7 @@
     {
       "fecha": "2026-02-02",
       "detalle": "Guía[EA]41212030 QUIMICA DEL PACIFICO LTDA.",
-      "cliente": "GUÍA[EA]41212030 QUIMICA DEL PACIFICO",
+      "cliente": "QUIMICA DEL PACIFICO",
       "tipo": "Compra",
       "entrada": 25300.0,
       "salida": 0,
@@ -88,7 +88,7 @@
     {
       "fecha": "2026-02-02",
       "detalle": "Guía[EA]41212030 QUIMICA DEL PACIFICO LTDA.",
-      "cliente": "GUÍA[EA]41212030 QUIMICA DEL PACIFICO",
+      "cliente": "QUIMICA DEL PACIFICO",
       "tipo": "Compra",
       "entrada": 25300.0,
       "salida": 0,
@@ -100,7 +100,7 @@
     {
       "fecha": "2026-02-03",
       "detalle": "Guía[EA]41212031 QUIMICA DEL PACIFICO LTDA.",
-      "cliente": "GUÍA[EA]41212031 QUIMICA DEL PACIFICO",
+      "cliente": "QUIMICA DEL PACIFICO",
       "tipo": "Compra",
       "entrada": 25300.0,
       "salida": 0,
@@ -112,7 +112,7 @@
     {
       "fecha": "2026-02-03",
       "detalle": "Guía[EA]41212031 QUIMICA DEL PACIFICO LTDA.",
-      "cliente": "GUÍA[EA]41212031 QUIMICA DEL PACIFICO",
+      "cliente": "QUIMICA DEL PACIFICO",
       "tipo": "Compra",
       "entrada": 25300.0,
       "salida": 0,
@@ -148,7 +148,7 @@
     {
       "fecha": "2026-03-10",
       "detalle": "Guía[ST]8390 GALVANIZADO BBOSCH S.A",
-      "cliente": "GUÍA[ST]8390 GALVANIZADO BBOSCH S.A",
+      "cliente": "GALVANIZADO BBOSCH S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 3300.0,
@@ -172,7 +172,7 @@
     {
       "fecha": "2026-03-30",
       "detalle": "Guía[ST]8477 GALVANIZADO BBOSCH S.A",
-      "cliente": "GUÍA[ST]8477 GALVANIZADO BBOSCH S.A",
+      "cliente": "GALVANIZADO BBOSCH S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 12580.0,

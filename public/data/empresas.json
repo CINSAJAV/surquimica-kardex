@@ -1,6 +1,6 @@
 {
-  "generado": "2026-07-21T16:58:53",
-  "total": 77,
+  "generado": "2026-07-21T17:09:03",
+  "total": 71,
   "empresas": [
     {
       "nombre": "ESVAL S.A",
@@ -567,30 +567,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
-      "totalHaber": 14200751.147655703,
-      "totalCosto": 14200749.548999999,
-      "totalVol": 40770.0,
-      "nMovimientos": 2,
-      "ultimaFecha": "2026-01-28",
-      "primeraFecha": "2026-01-26",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 40770.0,
-          "monto": 14200751.147655703,
-          "costo": 14200749.548999999,
-          "nMovimientos": 2,
-          "ultimaFecha": "2026-01-28",
-          "primeraFecha": "2026-01-26"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "002 K8 TRASPASO A K8L",
       "totalHaber": 11929041.491126526,
       "totalCosto": 11929041.8,
@@ -610,6 +586,30 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-28",
           "primeraFecha": "2026-01-28"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "GALVANIZADO BBOSCH S.A",
+      "totalHaber": 8412825.860118095,
+      "totalCosto": 8412827.228,
+      "totalVol": 28460.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-03-30",
+      "primeraFecha": "2026-03-10",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 28460.0,
+          "monto": 8412825.860118095,
+          "costo": 8412827.228,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-03-30",
+          "primeraFecha": "2026-03-10"
         }
       ],
       "nProductos": 1
@@ -658,6 +658,30 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-03",
           "primeraFecha": "2026-03-03"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
+      "totalHaber": 7049870.081642175,
+      "totalCosto": 7049869.288,
+      "totalVol": 20240.0,
+      "nMovimientos": 3,
+      "ultimaFecha": "2026-01-28",
+      "primeraFecha": "2026-01-26",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 20240.0,
+          "monto": 7049870.081642175,
+          "costo": 7049869.288,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-01-28",
+          "primeraFecha": "2026-01-26"
         }
       ],
       "nProductos": 1
@@ -819,54 +843,6 @@
       "nProductos": 5
     },
     {
-      "nombre": "GALVANIZADO BBOSCH S.A",
-      "totalHaber": 3718670.039363515,
-      "totalCosto": 3718670.6440000003,
-      "totalVol": 12580.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-03-16",
-      "primeraFecha": "2026-03-16",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 12580.0,
-          "monto": 3718670.039363515,
-          "costo": 3718670.6440000003,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-16",
-          "primeraFecha": "2026-03-16"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "GUÍA[ST]8477 GALVANIZADO BBOSCH S.A",
-      "totalHaber": 3718670.039363515,
-      "totalCosto": 3718670.6440000003,
-      "totalVol": 12580.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-03-30",
-      "primeraFecha": "2026-03-30",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 12580.0,
-          "monto": 3718670.039363515,
-          "costo": 3718670.6440000003,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-30",
-          "primeraFecha": "2026-03-30"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "SOC DE SERVICIOS TECNICOS GEOLOGICOS GEOTEC BOYLES BROS S A",
       "totalHaber": 3713527.108495806,
       "totalCosto": 3713527.11,
@@ -987,6 +963,54 @@
       "nProductos": 1
     },
     {
+      "nombre": "IDADQUIM",
+      "totalHaber": 2053451.0451965407,
+      "totalCosto": 2053451.0350000001,
+      "totalVol": 625.0,
+      "nMovimientos": 5,
+      "ultimaFecha": "2026-04-30",
+      "primeraFecha": "2026-01-21",
+      "productos": [
+        {
+          "codigo": "K-1",
+          "slug": "K-1",
+          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
+          "unidad": "kg",
+          "vol": 475.0,
+          "monto": 1590846.5417482643,
+          "costo": 1590846.5350000001,
+          "nMovimientos": 3,
+          "ultimaFecha": "2026-04-30",
+          "primeraFecha": "2026-01-21"
+        },
+        {
+          "codigo": "K-5",
+          "slug": "K-5",
+          "nombre": "FLUORURO DE SODIO",
+          "unidad": "kg",
+          "vol": 100.0,
+          "monto": 286041.5034482762,
+          "costo": 286041.5,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-01-21",
+          "primeraFecha": "2026-01-21"
+        },
+        {
+          "codigo": "K-103",
+          "slug": "K-103",
+          "nombre": "ALAR P-23 A",
+          "unidad": "kg",
+          "vol": 50.0,
+          "monto": 176563.0,
+          "costo": 176563.0,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-04-30",
+          "primeraFecha": "2026-04-30"
+        }
+      ],
+      "nProductos": 3
+    },
+    {
       "nombre": "PROQUIMSA S.A",
       "totalHaber": 2009490.368524123,
       "totalCosto": 2009490.3599999999,
@@ -1009,42 +1033,6 @@
         }
       ],
       "nProductos": 1
-    },
-    {
-      "nombre": "IDADQUIM",
-      "totalHaber": 1767409.5417482643,
-      "totalCosto": 1767409.5350000001,
-      "totalVol": 525.0,
-      "nMovimientos": 4,
-      "ultimaFecha": "2026-04-30",
-      "primeraFecha": "2026-01-21",
-      "productos": [
-        {
-          "codigo": "K-1",
-          "slug": "K-1",
-          "nombre": "ACIDO FLUORHIDRICO ACUOSO AL 70%",
-          "unidad": "kg",
-          "vol": 475.0,
-          "monto": 1590846.5417482643,
-          "costo": 1590846.5350000001,
-          "nMovimientos": 3,
-          "ultimaFecha": "2026-04-30",
-          "primeraFecha": "2026-01-21"
-        },
-        {
-          "codigo": "K-103",
-          "slug": "K-103",
-          "nombre": "ALAR P-23 A",
-          "unidad": "kg",
-          "vol": 50.0,
-          "monto": 176563.0,
-          "costo": 176563.0,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-30",
-          "primeraFecha": "2026-04-30"
-        }
-      ],
-      "nProductos": 2
     },
     {
       "nombre": "OVEL",
@@ -1239,30 +1227,6 @@
       "nProductos": 6
     },
     {
-      "nombre": "GUÍA[ST]8390 GALVANIZADO BBOSCH S.A",
-      "totalHaber": 975485.7813910651,
-      "totalCosto": 975485.9400000001,
-      "totalVol": 3300.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-03-10",
-      "primeraFecha": "2026-03-10",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 3300.0,
-          "monto": 975485.7813910651,
-          "costo": 975485.9400000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-10",
-          "primeraFecha": "2026-03-10"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "CORPORACION MUNICIPAL DE DESARROLLO SOCIAL DE COLINA",
       "totalHaber": 852985.0529336487,
       "totalCosto": 852985.1200000001,
@@ -1359,6 +1323,30 @@
       "nProductos": 1
     },
     {
+      "nombre": "SERVICIOS SANITARIOS LARAPINTA S.A",
+      "totalHaber": 597131.2833229625,
+      "totalCosto": 597131.275,
+      "totalVol": 1250.0,
+      "nMovimientos": 5,
+      "ultimaFecha": "2026-04-16",
+      "primeraFecha": "2026-01-20",
+      "productos": [
+        {
+          "codigo": "K-2",
+          "slug": "K-2",
+          "nombre": "ACIDO FLUORSILICICO",
+          "unidad": "kg",
+          "vol": 1250.0,
+          "monto": 597131.2833229625,
+          "costo": 597131.275,
+          "nMovimientos": 5,
+          "ultimaFecha": "2026-04-16",
+          "primeraFecha": "2026-01-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
       "nombre": "CORRETAJES Y SERVICIOS DE NUTRICION ANIMAL",
       "totalHaber": 520732.97939946526,
       "totalCosto": 520732.975,
@@ -1393,30 +1381,6 @@
         }
       ],
       "nProductos": 2
-    },
-    {
-      "nombre": "SERVICIOS SANITARIOS LARAPINTA S.A",
-      "totalHaber": 463318.238044111,
-      "totalCosto": 463318.225,
-      "totalVol": 1000.0,
-      "nMovimientos": 4,
-      "ultimaFecha": "2026-04-16",
-      "primeraFecha": "2026-01-20",
-      "productos": [
-        {
-          "codigo": "K-2",
-          "slug": "K-2",
-          "nombre": "ACIDO FLUORSILICICO",
-          "unidad": "kg",
-          "vol": 1000.0,
-          "monto": 463318.238044111,
-          "costo": 463318.225,
-          "nMovimientos": 4,
-          "ultimaFecha": "2026-04-16",
-          "primeraFecha": "2026-01-20"
-        }
-      ],
-      "nProductos": 1
     },
     {
       "nombre": "PATAGONIA SOSTENIBLE DE AYSEN",
@@ -1558,30 +1522,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-19",
           "primeraFecha": "2026-02-19"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "IDADQUIM P210126",
-      "totalHaber": 286041.5034482762,
-      "totalCosto": 286041.5,
-      "totalVol": 100.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-21",
-      "primeraFecha": "2026-01-21",
-      "productos": [
-        {
-          "codigo": "K-5",
-          "slug": "K-5",
-          "nombre": "FLUORURO DE SODIO",
-          "unidad": "kg",
-          "vol": 100.0,
-          "monto": 286041.5034482762,
-          "costo": 286041.5,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-21",
-          "primeraFecha": "2026-01-21"
         }
       ],
       "nProductos": 1
@@ -1851,7 +1791,7 @@
       "nProductos": 1
     },
     {
-      "nombre": "LUIS RENE LOPEZ RODRIGUEZ COT 0005",
+      "nombre": "LUIS RENE LOPEZ RODRIGUEZ",
       "totalHaber": 164429.615929589,
       "totalCosto": 164429.6,
       "totalVol": 500.0,
@@ -1873,6 +1813,42 @@
         }
       ],
       "nProductos": 1
+    },
+    {
+      "nombre": "COMITE DE AGUA POTABLE RURAL HUALCAPO",
+      "totalHaber": 162293.04017867032,
+      "totalCosto": 162293.04,
+      "totalVol": 600.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-05-08",
+      "primeraFecha": "2026-02-10",
+      "productos": [
+        {
+          "codigo": "K-8-2",
+          "slug": "K-8-2",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "lt",
+          "vol": 300.0,
+          "monto": 89220.84132232776,
+          "costo": 89220.84000000001,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-02-10",
+          "primeraFecha": "2026-02-10"
+        },
+        {
+          "codigo": "K-8-1",
+          "slug": "K-8-1",
+          "nombre": "HIPOCLORITO DE SODIO",
+          "unidad": "kg",
+          "vol": 300.0,
+          "monto": 73072.19885634257,
+          "costo": 73072.2,
+          "nMovimientos": 1,
+          "ultimaFecha": "2026-05-08",
+          "primeraFecha": "2026-05-08"
+        }
+      ],
+      "nProductos": 2
     },
     {
       "nombre": "QUIMICOS MYM",
@@ -1909,30 +1885,6 @@
         }
       ],
       "nProductos": 2
-    },
-    {
-      "nombre": "SERVICIOS SANITARIOS LARAPINTA S.A.  1206305302-1271",
-      "totalHaber": 133813.0452788515,
-      "totalCosto": 133813.05000000002,
-      "totalVol": 250.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-29",
-      "primeraFecha": "2026-01-29",
-      "productos": [
-        {
-          "codigo": "K-2",
-          "slug": "K-2",
-          "nombre": "ACIDO FLUORSILICICO",
-          "unidad": "kg",
-          "vol": 250.0,
-          "monto": 133813.0452788515,
-          "costo": 133813.05000000002,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-29",
-          "primeraFecha": "2026-01-29"
-        }
-      ],
-      "nProductos": 1
     },
     {
       "nombre": "AGUAS BLANCAS SA",
@@ -1983,30 +1935,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "COMITE DE AGUA POTABLE RURAL HUALCAPO COT 0009",
-      "totalHaber": 89220.84132232776,
-      "totalCosto": 89220.84000000001,
-      "totalVol": 300.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-02-10",
-      "primeraFecha": "2026-02-10",
-      "productos": [
-        {
-          "codigo": "K-8-2",
-          "slug": "K-8-2",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "lt",
-          "vol": 300.0,
-          "monto": 89220.84132232776,
-          "costo": 89220.84000000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-02-10",
-          "primeraFecha": "2026-02-10"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "PAPELERA Y PRODUCTOS BELPRO LIMITADA",
       "totalHaber": 83728.7653551718,
       "totalCosto": 83728.765,
@@ -2026,30 +1954,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-04-08",
           "primeraFecha": "2026-04-08"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "COMITE DE AGUA POTABLE RURAL HUALCAPO",
-      "totalHaber": 73072.19885634257,
-      "totalCosto": 73072.2,
-      "totalVol": 300.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-08",
-      "primeraFecha": "2026-05-08",
-      "productos": [
-        {
-          "codigo": "K-8-1",
-          "slug": "K-8-1",
-          "nombre": "HIPOCLORITO DE SODIO",
-          "unidad": "kg",
-          "vol": 300.0,
-          "monto": 73072.19885634257,
-          "costo": 73072.2,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-08",
-          "primeraFecha": "2026-05-08"
         }
       ],
       "nProductos": 1
@@ -2290,30 +2194,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-01-30",
           "primeraFecha": "2026-01-30"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "GUÍA[EA]41212016 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
-      "totalHaber": -7150881.066013529,
-      "totalCosto": -7150880.261,
-      "totalVol": -20530.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-28",
-      "primeraFecha": "2026-01-28",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": -20530.0,
-          "monto": -7150881.066013529,
-          "costo": -7150880.261,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-28",
-          "primeraFecha": "2026-01-28"
         }
       ],
       "nProductos": 1
