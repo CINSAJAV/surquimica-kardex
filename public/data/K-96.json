@@ -16,7 +16,7 @@
     {
       "fecha": "2026-01-20",
       "detalle": "Factura[FT]8365 ZETAENE SA",
-      "cliente": "FACTURA[FT]8365 ZETAENE SA",
+      "cliente": "ZETAENE SA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 12060.0,
@@ -28,7 +28,7 @@
     {
       "fecha": "2026-01-23",
       "detalle": "Factura[FT]8367 ZETAENE SA",
-      "cliente": "FACTURA[FT]8367 ZETAENE SA",
+      "cliente": "ZETAENE SA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 5540.0,
@@ -40,7 +40,7 @@
     {
       "fecha": "2026-01-26",
       "detalle": "Factura[FT]8385 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A.",
-      "cliente": "FACTURA[FT]8385 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
+      "cliente": "TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 20530.0,
@@ -64,7 +64,7 @@
     {
       "fecha": "2026-01-28",
       "detalle": "Factura[FT]8413 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A.",
-      "cliente": "FACTURA[FT]8413 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
+      "cliente": "TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 20240.0,
@@ -124,7 +124,7 @@
     {
       "fecha": "2026-03-06",
       "detalle": "Factura[FT]8606 ZETAENE SA",
-      "cliente": "FACTURA[FT]8606 ZETAENE SA",
+      "cliente": "ZETAENE SA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 16000.0,
@@ -136,7 +136,7 @@
     {
       "fecha": "2026-03-06",
       "detalle": "Factura[FT]8607 ZETAENE SA",
-      "cliente": "FACTURA[FT]8607 ZETAENE SA",
+      "cliente": "ZETAENE SA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 4330.0,
@@ -160,7 +160,7 @@
     {
       "fecha": "2026-03-16",
       "detalle": "Factura[FT]8652 GALVANIZADO BBOSCH S.A",
-      "cliente": "FACTURA[FT]8652 GALVANIZADO BBOSCH S.A",
+      "cliente": "GALVANIZADO BBOSCH S.A",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 12580.0,
@@ -184,7 +184,7 @@
     {
       "fecha": "2026-03-31",
       "detalle": "Factura[FT]8733 MAESTRANZA Y GALVANIZADORA P Y P SPA",
-      "cliente": "FACTURA[FT]8733 MAESTRANZA Y GALVANIZADORA P Y P",
+      "cliente": "MAESTRANZA Y GALVANIZADORA P Y P",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 12490.0,
@@ -196,7 +196,7 @@
     {
       "fecha": "2026-04-13",
       "detalle": "Factura[FT]8768 ZETAENE SA",
-      "cliente": "FACTURA[FT]8768 ZETAENE SA",
+      "cliente": "ZETAENE SA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 15970.0,
@@ -208,7 +208,7 @@
     {
       "fecha": "2026-05-12",
       "detalle": "Factura[FT]8896 ZETAENE SA",
-      "cliente": "FACTURA[FT]8896 ZETAENE SA",
+      "cliente": "ZETAENE SA",
       "tipo": "Venta",
       "entrada": 0,
       "salida": 12600.0,

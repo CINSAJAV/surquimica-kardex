@@ -93,6 +93,8 @@ def extraer_cliente(detalle: str) -> str:
     nombre = detalle.strip()
     # Quitar "OC XXXXXXX NOMBRE" al inicio (ej: "OC 4532061957 NUEVA ATACAMA S.A.")
     nombre = re.sub(r"^OC\s+\d+\s+", "", nombre, flags=re.IGNORECASE)
+    # Quitar "FACTURA[FT]XXXX NOMBRE" al inicio (ej: "FACTURA[FT]8606 ZETAENE SA")
+    nombre = re.sub(r"^FACTURA\[FT\]\d+\s+", "", nombre, flags=re.IGNORECASE)
     # Quitar referencia contrato al inicio (ej: "C-4313 E.P. AGUAS DE...")
     nombre = _CONTRATO_INICIO.sub("", nombre)
     # Quitar referencia contrato al final (ej: "AGUAS DE ANTOFAGASTA S.A.  C-4313 DESPACHO 2 EP")

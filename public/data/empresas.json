@@ -1,6 +1,6 @@
 {
-  "generado": "2026-07-21T16:45:10",
-  "total": 83,
+  "generado": "2026-07-21T16:58:53",
+  "total": 77,
   "empresas": [
     {
       "nombre": "ESVAL S.A",
@@ -483,6 +483,30 @@
       "nProductos": 1
     },
     {
+      "nombre": "ZETAENE SA",
+      "totalHaber": 20585247.479827594,
+      "totalCosto": 20585249.14,
+      "totalVol": 66500.0,
+      "nMovimientos": 6,
+      "ultimaFecha": "2026-05-12",
+      "primeraFecha": "2026-01-20",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 66500.0,
+          "monto": 20585247.479827594,
+          "costo": 20585249.14,
+          "nMovimientos": 6,
+          "ultimaFecha": "2026-05-12",
+          "primeraFecha": "2026-01-20"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
       "nombre": "COMERCIALIZADORA YUKON LIMITADA",
       "totalHaber": 17064423.523297574,
       "totalCosto": 17064423.25,
@@ -538,6 +562,30 @@
           "nMovimientos": 4,
           "ultimaFecha": "2026-05-06",
           "primeraFecha": "2026-02-25"
+        }
+      ],
+      "nProductos": 1
+    },
+    {
+      "nombre": "TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
+      "totalHaber": 14200751.147655703,
+      "totalCosto": 14200749.548999999,
+      "totalVol": 40770.0,
+      "nMovimientos": 2,
+      "ultimaFecha": "2026-01-28",
+      "primeraFecha": "2026-01-26",
+      "productos": [
+        {
+          "codigo": "K-96",
+          "slug": "K-96",
+          "nombre": "ACIDO CLORHIDRICO",
+          "unidad": "kg",
+          "vol": 40770.0,
+          "monto": 14200751.147655703,
+          "costo": 14200749.548999999,
+          "nMovimientos": 2,
+          "ultimaFecha": "2026-01-28",
+          "primeraFecha": "2026-01-26"
         }
       ],
       "nProductos": 1
@@ -610,54 +658,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-03-03",
           "primeraFecha": "2026-03-03"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "FACTURA[FT]8385 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
-      "totalHaber": 7150881.066013531,
-      "totalCosto": 7150880.261,
-      "totalVol": 20530.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-26",
-      "primeraFecha": "2026-01-26",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 20530.0,
-          "monto": 7150881.066013531,
-          "costo": 7150880.261,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-26",
-          "primeraFecha": "2026-01-26"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "FACTURA[FT]8413 TRANSPORTES  INMOBILIARIA E INVERSIONES TAUROS S. A",
-      "totalHaber": 7049870.081642173,
-      "totalCosto": 7049869.288,
-      "totalVol": 20240.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-28",
-      "primeraFecha": "2026-01-28",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 20240.0,
-          "monto": 7049870.081642173,
-          "costo": 7049869.288,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-28",
-          "primeraFecha": "2026-01-28"
         }
       ],
       "nProductos": 1
@@ -747,54 +747,6 @@
       "nProductos": 2
     },
     {
-      "nombre": "FACTURA[FT]8606 ZETAENE SA",
-      "totalHaber": 4729628.030986982,
-      "totalCosto": 4729628.800000001,
-      "totalVol": 16000.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-03-06",
-      "primeraFecha": "2026-03-06",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 16000.0,
-          "monto": 4729628.030986982,
-          "costo": 4729628.800000001,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-06",
-          "primeraFecha": "2026-03-06"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "FACTURA[FT]8768 ZETAENE SA",
-      "totalHaber": 4720759.978428882,
-      "totalCosto": 4720760.746,
-      "totalVol": 15970.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-04-13",
-      "primeraFecha": "2026-04-13",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 15970.0,
-          "monto": 4720759.978428882,
-          "costo": 4720760.746,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-04-13",
-          "primeraFecha": "2026-04-13"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "OREGON CHEM GROUP",
       "totalHaber": 4556483.383773566,
       "totalCosto": 4556483.1559999995,
@@ -867,55 +819,7 @@
       "nProductos": 5
     },
     {
-      "nombre": "FACTURA[FT]8365 ZETAENE SA",
-      "totalHaber": 4200663.694891532,
-      "totalCosto": 4200663.222,
-      "totalVol": 12060.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-20",
-      "primeraFecha": "2026-01-20",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 12060.0,
-          "monto": 4200663.694891532,
-          "costo": 4200663.222,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-20",
-          "primeraFecha": "2026-01-20"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "FACTURA[FT]8896 ZETAENE SA",
-      "totalHaber": 3724582.074402248,
-      "totalCosto": 3724582.68,
-      "totalVol": 12600.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-05-12",
-      "primeraFecha": "2026-05-12",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 12600.0,
-          "monto": 3724582.074402248,
-          "costo": 3724582.68,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-05-12",
-          "primeraFecha": "2026-05-12"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "FACTURA[FT]8652 GALVANIZADO BBOSCH S.A",
+      "nombre": "GALVANIZADO BBOSCH S.A",
       "totalHaber": 3718670.039363515,
       "totalCosto": 3718670.6440000003,
       "totalVol": 12580.0,
@@ -987,7 +891,7 @@
       "nProductos": 1
     },
     {
-      "nombre": "FACTURA[FT]8733 MAESTRANZA Y GALVANIZADORA P Y P",
+      "nombre": "MAESTRANZA Y GALVANIZADORA P Y P",
       "totalHaber": 3692065.881689213,
       "totalCosto": 3692066.4820000003,
       "totalVol": 12490.0,
@@ -1107,30 +1011,6 @@
       "nProductos": 1
     },
     {
-      "nombre": "FACTURA[FT]8367 ZETAENE SA",
-      "totalHaber": 1929658.1152320972,
-      "totalCosto": 1929657.8979999998,
-      "totalVol": 5540.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-01-23",
-      "primeraFecha": "2026-01-23",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 5540.0,
-          "monto": 1929658.1152320972,
-          "costo": 1929657.8979999998,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-01-23",
-          "primeraFecha": "2026-01-23"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
       "nombre": "IDADQUIM",
       "totalHaber": 1767409.5417482643,
       "totalCosto": 1767409.5350000001,
@@ -1234,30 +1114,6 @@
           "nMovimientos": 1,
           "ultimaFecha": "2026-02-02",
           "primeraFecha": "2026-02-02"
-        }
-      ],
-      "nProductos": 1
-    },
-    {
-      "nombre": "FACTURA[FT]8607 ZETAENE SA",
-      "totalHaber": 1279955.585885852,
-      "totalCosto": 1279955.7940000002,
-      "totalVol": 4330.0,
-      "nMovimientos": 1,
-      "ultimaFecha": "2026-03-06",
-      "primeraFecha": "2026-03-06",
-      "productos": [
-        {
-          "codigo": "K-96",
-          "slug": "K-96",
-          "nombre": "ACIDO CLORHIDRICO",
-          "unidad": "kg",
-          "vol": 4330.0,
-          "monto": 1279955.585885852,
-          "costo": 1279955.7940000002,
-          "nMovimientos": 1,
-          "ultimaFecha": "2026-03-06",
-          "primeraFecha": "2026-03-06"
         }
       ],
       "nProductos": 1
